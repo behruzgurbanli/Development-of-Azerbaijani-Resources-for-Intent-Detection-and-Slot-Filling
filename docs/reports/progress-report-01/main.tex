@@ -1,0 +1,106 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[round,authoryear]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{Latin Modern Roman}
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7em}
+\setlength{\headheight}{15pt}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=0.7em,topsep=0.4em}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.6em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Progress Report I}
+\rhead{Bahruz Gurbanli}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    {\Large \textbf{ADA University}\par}
+    \vspace{0.4cm}
+    {\large Master of Science in Computer Science and Data Analytics\par}
+    \vfill
+    {\large Master's Thesis I (CSCI-6998)\par}
+    \vspace{0.8cm}
+    {\LARGE \textbf{Progress Report I}\par}
+    \vspace{1.2cm}
+    {\Large \textbf{Development of Azerbaijani Resources for Intent Detection and Slot Filling}\par}
+    \vfill
+    \begin{tabular}{rl}
+        \textbf{Student:} & Bahruz Gurbanli \\
+        \textbf{Supervisor:} & Assoc. Prof. Samir Rustamov \\
+        \textbf{Submission date:} & 20 September 2026
+    \end{tabular}
+    \vfill
+\end{titlepage}
+
+\section{Thesis Topic and Brief Description}
+
+The proposed thesis, \textit{Development of Azerbaijani Resources for Intent Detection and Slot Filling}, concerns the creation and evaluation of language resources for a central problem in conversational natural language understanding. Intent detection identifies the purpose expressed by a user, such as requesting transport information, checking an account balance, or creating a reminder. Slot filling complements this decision by extracting the information needed to complete the request, such as a location, date, amount, or service name. Together, these tasks transform an utterance into a structured representation that a chatbot, virtual assistant, customer-service platform, or other intelligent system can use.
+
+The topic is significant because the performance of data-driven language systems depends strongly on the availability, quality, and representativeness of annotated data. Azerbaijani is included in the multilingual MASSIVE benchmark, which contains localized virtual-assistant utterances for intent classification and slot filling across 51 languages \citep{fitzgerald2023massive}. This resource provides an important starting point; however, it was produced by localizing scenarios originally designed in English. There is therefore room to investigate and develop Azerbaijani-centered resources that more directly represent native expressions, locally relevant scenarios, and realistic conversational language. The thesis will build upon existing work rather than incorrectly assuming that no Azerbaijani data exists.
+
+Azerbaijani also presents relevant linguistic and practical challenges. Its agglutinative structure allows several grammatical meanings to be expressed through suffixes, which can affect tokenization, slot boundaries, and normalization. The availability of the MorAz morphological analyzer illustrates both the complexity of Azerbaijani morphology and previous efforts to support its computational processing \citep{ozenc2018moraz}. In everyday digital communication, users may additionally omit Azerbaijani characters, make spelling errors, mix languages, or use English and Russian keyboard conventions. Research by \citet{rustamov2021dialogue} on Azerbaijani banking conversations demonstrates the importance of these noisy, domain-specific patterns for intent and entity recognition.
+
+Accordingly, this study will examine existing resources, define an appropriate intent-and-slot representation, develop or extend an annotated Azerbaijani resource, and evaluate it through reproducible baseline experiments. The work belongs to both Computer Science and Data Analytics: it combines linguistic data design, annotation, preprocessing, machine learning, quantitative evaluation, and error analysis. The intended contribution is not necessarily a new neural architecture; rather, it is a carefully documented and empirically validated foundation that can support future Azerbaijani conversational-AI work.
+
+\enlargethispage{\baselineskip}
+
+\section{Research Objectives}
+
+\subsection{Primary Objective}
+
+The primary objective of this thesis is to develop and empirically evaluate an Azerbaijani-language resource for intent detection and slot filling that supports the training and assessment of conversational natural language understanding systems. The resource should be linguistically appropriate, clearly documented, and suitable for reproducible experimentation, while giving particular attention to characteristics of Azerbaijani and to realistic forms of digital communication. This objective keeps resource development as the main contribution and uses model-based evaluation to demonstrate the resource's usefulness.
+
+\subsection{Secondary Objectives}
+
+To achieve the primary objective, the research will pursue the following measurable and attainable objectives:
+
+\begin{enumerate}
+    \item \textbf{Review and characterize existing resources.} Identify and systematically compare relevant Azerbaijani and multilingual datasets, tools, models, and studies for intent detection, slot filling, named-entity extraction, morphology, and conversational language. The comparison will record properties such as language origin, domains, label inventories, annotation formats, accessibility, and reported limitations.
+
+    \item \textbf{Design the resource and its annotation framework.} Define a feasible scope for the resource, including the selected domains, intent categories, slot types, annotation format, and guidelines. The framework will include examples and rules for ambiguous cases, morphological variants, span boundaries, and any normalization decisions so that annotations can be applied consistently.
+
+    \item \textbf{Construct or extend and validate an Azerbaijani dataset.} Collect, adapt, or curate Azerbaijani utterances within the approved scope and annotate them for both intents and slots. Quality will be assessed through documented review procedures and quantitative checks, such as label-distribution analysis and, where multiple annotators are available, an appropriate inter-annotator agreement measure. Personal or sensitive information will not be included without an approved ethical basis.
+
+    \item \textbf{Establish reproducible baselines and analyze errors.} Prepare train, validation, and test partitions and evaluate suitable baseline approaches using intent accuracy, slot-level precision, recall and F1 score, and a joint or exact-match measure where appropriate. The analysis will identify common failure patterns associated with Azerbaijani morphology, spelling variation, tokenization, rare labels, or other observed linguistic phenomena.
+\end{enumerate}
+
+These objectives are deliberately expressed without fixing dataset size, domains, or model architecture before the literature review and feasibility analysis are complete. Their outputs can nevertheless be verified through a resource specification, annotation guidelines, a validated dataset, experiment configurations, quantitative results, and an error-analysis record.
+
+\section{Research Justification}
+
+\subsection{Relevance and Impact}
+
+Azerbaijani has benefited from recent work on corpora, language models, and evaluation datasets \citep{isbarov2024open}, but open resources for native conversational understanding remain more limited than those available for high-resource languages. Strengthening this area is important because intent detection and slot filling are core components of systems that must convert users' requests into reliable actions. A well-designed Azerbaijani resource could support research on multilingual transfer, morphology-aware processing, robust tokenization, and joint semantic understanding. It could also enable more credible comparisons among general multilingual models and Azerbaijani-focused approaches.
+
+The potential practical impact extends to customer support, banking, public services, education, telecommunications, transport, and voice-assistant applications. Better resources can help organizations evaluate systems on Azerbaijani examples instead of treating performance in English or another language as a substitute. Clear annotation guidelines and reproducible baselines would also lower the entry barrier for future researchers and developers. The expected contribution is therefore both scientific and infrastructural: the thesis can produce evidence about the challenges of Azerbaijani NLU while creating reusable material for developing systems that serve Azerbaijani-speaking users more accurately and inclusively.
+
+\section{Personal Motivation}
+
+I selected this topic because it connects my interests in natural language processing, artificial intelligence, machine learning, and data analytics with a meaningful opportunity to contribute to the Azerbaijani language. AI is developing rapidly and is becoming part of education, business, communication, and everyday decision-making. However, the benefits of this progress are not distributed equally across languages. Systems commonly understand and support English much more deeply because English has far larger datasets, benchmarks, tools, and research communities. I am motivated by a simple question: why should Azerbaijani speakers receive a weaker experience when interacting with intelligent systems in their own language?
+
+For me, improving Azerbaijani resources is therefore more than a technical exercise. Language is part of cultural identity and daily access to information and services. If AI systems cannot recognize Azerbaijani intentions, expressions, suffixes, spelling variants, and conversational habits, users may need to change languages or adapt their natural way of communicating to the technology. I would like the technology to adapt more effectively to the users instead. Developing structured, reusable resources is a practical step toward making Azerbaijani better represented in contemporary AI.
+
+The topic also aligns closely with my academic background in Computer Science and Data Analytics and with my goal of strengthening my skills in applied NLP research. It will allow me to gain experience in literature analysis, dataset design, annotation, preprocessing, model evaluation, and reproducible experimentation rather than focusing only on training a model. The project was suggested by my supervisor, Assoc. Prof. Samir Rustamov, whose prior research on Azerbaijani conversational systems makes the direction especially relevant. I see the thesis as an opportunity to learn from that research foundation while producing work that can be useful beyond a single course. Ultimately, I want my technical development to contribute to an AI ecosystem in which Azerbaijani is not an afterthought, but a language that intelligent systems can process with increasing depth, accuracy, and respect for its real usage.
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
