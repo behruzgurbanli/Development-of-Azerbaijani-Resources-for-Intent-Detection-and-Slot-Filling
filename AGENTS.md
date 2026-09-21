@@ -67,10 +67,23 @@ Keep entries factual and dated. Distinguish observations from interpretations.
 
 ## Git practice
 
-- Keep changes focused and reviewable.
-- Suggest a meaningful Conventional Commit-style message, such as `feat: add Azerbaijani normalization pipeline` or `eval: add macro-F1 reporting`.
-- Do not commit, push, rewrite history, delete branches, or open a pull request unless explicitly requested.
-- Before handoff, summarize changed files and show any important validation results.
+- Keep changes focused and reviewable. Do not mix unrelated work in one commit.
+- Codex is responsible for choosing a concise, specific Conventional Commit message from the actual diff. Do not ask Bahruz to provide or formulate the commit message.
+- Use the most accurate type:
+  - `feat:` for new functionality;
+  - `fix:` for bug fixes;
+  - `docs:` for documentation-only changes;
+  - `test:` for tests;
+  - `refactor:` for code restructuring without intended behavior changes;
+  - `chore:` for tooling, setup, dependencies, or maintenance;
+  - `data:` for dataset or annotation changes;
+  - `eval:` for evaluation or experiment-related changes.
+- Write the subject in imperative style and describe the concrete change, for example `feat: add Azerbaijani normalization pipeline` or `eval: add macro-F1 reporting`.
+- Never use vague subjects such as `update`, `changes`, `setup`, `work`, or `fix stuff`.
+- If a change contains multiple separable concerns, recommend separate commits and provide an appropriate message for each.
+- Do not commit, push, rewrite history, delete branches, or open a pull request unless Bahruz explicitly requests that action.
+- When a commit is authorized, inspect the final staged diff, exclude unrelated or sensitive files, choose the message according to these rules, and report the resulting commit hash.
+- Before handoff, summarize changed files, validation results, and the recommended commit message when no commit was requested.
 
 ## Academic integrity and writing
 
