@@ -1,0 +1,3201 @@
+{
+  "records": 16521,
+  "unique_ids": 16521,
+  "locales": [
+    "az-AZ"
+  ],
+  "split_counts": {
+    "dev": 2033,
+    "test": 2974,
+    "train": 11514
+  },
+  "intent_count": 60,
+  "scenario_count": 18,
+  "non_nfc_utterances": 0,
+  "empty_utterances": 0,
+  "exact_duplicate_text_groups": 576,
+  "cross_split_exact_duplicate_text_groups": 317,
+  "train_test_exact_duplicate_text_groups": 182,
+  "cross_split_exact_text_groups_with_multiple_intents": 19,
+  "train_dev_exact_duplicate_text_groups": 144,
+  "train_dev_conflicting_intent_text_groups": 12,
+  "dev_records_with_text_in_train": 162,
+  "train_dev_overlap": [
+    {
+      "text_sha256": "f2e4107e096e1a4cecda5663282cdc72df71dd0d9e61a87b4e971a4018c9a0ae",
+      "records": [
+        {
+          "id": "2",
+          "partition": "train",
+          "intent": "alarm_set"
+        },
+        {
+          "id": "7043",
+          "partition": "dev",
+          "intent": "alarm_set"
+        }
+      ]
+    },
+    {
+      "text_sha256": "0c14965b8c589d781c3ac976be318de4dae573034388642b500066c444a2c886",
+      "records": [
+        {
+          "id": "11",
+          "partition": "dev",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "978",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5729",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        }
+      ]
+    },
+    {
+      "text_sha256": "6cde983eea82af307679b51823f7f2f6deadd3a5d0b762b2205dec52f500e983",
+      "records": [
+        {
+          "id": "45",
+          "partition": "train",
+          "intent": "general_greet"
+        },
+        {
+          "id": "6425",
+          "partition": "dev",
+          "intent": "general_quirky"
+        }
+      ]
+    },
+    {
+      "text_sha256": "bbc40694249bc48529b42ecb6cbdb18e937462904c9a02b8bfc59b395a0dcf69",
+      "records": [
+        {
+          "id": "81",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "268",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "851",
+          "partition": "dev",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "852",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "853",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "2233",
+          "partition": "train",
+          "intent": "iot_hue_lighton"
+        },
+        {
+          "id": "2469",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "4284",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        }
+      ]
+    },
+    {
+      "text_sha256": "4ace7ee98b233c75b466eeb21d8f3b7d6d0049ac3e4c887115d4652321a4bf53",
+      "records": [
+        {
+          "id": "1795",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "1869",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "2182",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "2183",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "2409",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "2676",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "2677",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "2943",
+          "partition": "dev",
+          "intent": "datetime_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "5d2924a29c2f8a58c5009ba10abaa2c5cb033611824f5ab75008fb4bb286a01c",
+      "records": [
+        {
+          "id": "97",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1197",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4749",
+          "partition": "train",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "bfba37cc19cc7883895022e2be8486311a29c186da6ea907e9911724dd15b46b",
+      "records": [
+        {
+          "id": "101",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "789",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1350",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "2065",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "2514",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "2516",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3303",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3587",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3589",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4423",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "5075",
+          "partition": "train",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "5a48e9a92ba14e55b714809cf8f2315c53c7d7398e50a3fe36c9e98dd4ed4f3b",
+      "records": [
+        {
+          "id": "115",
+          "partition": "dev",
+          "intent": "audio_volume_down"
+        },
+        {
+          "id": "1367",
+          "partition": "train",
+          "intent": "audio_volume_down"
+        },
+        {
+          "id": "4732",
+          "partition": "train",
+          "intent": "audio_volume_down"
+        },
+        {
+          "id": "4963",
+          "partition": "train",
+          "intent": "audio_volume_down"
+        }
+      ]
+    },
+    {
+      "text_sha256": "1fde5c02e34204cb6ded79e5b96d1c375c093c87ede5d809ffca26924f94c676",
+      "records": [
+        {
+          "id": "117",
+          "partition": "train",
+          "intent": "music_query"
+        },
+        {
+          "id": "2364",
+          "partition": "dev",
+          "intent": "music_query"
+        },
+        {
+          "id": "3421",
+          "partition": "dev",
+          "intent": "music_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "fc9f000c5bc31cedb136ad65e0e4aa50ce07cbfda45b2858d151cf76de7a6fa6",
+      "records": [
+        {
+          "id": "123",
+          "partition": "train",
+          "intent": "general_joke"
+        },
+        {
+          "id": "4911",
+          "partition": "dev",
+          "intent": "general_joke"
+        },
+        {
+          "id": "6545",
+          "partition": "train",
+          "intent": "general_joke"
+        }
+      ]
+    },
+    {
+      "text_sha256": "43cc265b4ec65af4606c720ace5042be108e3897d7a0e9ea20a59ea436a25b60",
+      "records": [
+        {
+          "id": "127",
+          "partition": "dev",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "214",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "434",
+          "partition": "dev",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "5859",
+          "partition": "train",
+          "intent": "datetime_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "debc2397ba4c6e042c9d55275376511bb41d2bf299ef83ba52f09c1c2cf1c7e3",
+      "records": [
+        {
+          "id": "138",
+          "partition": "dev",
+          "intent": "music_query"
+        },
+        {
+          "id": "2031",
+          "partition": "train",
+          "intent": "music_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "d5697cc498fead48b1a60a2d1f8e6fb5712c468efe64f3b5df72735ab63acdea",
+      "records": [
+        {
+          "id": "664",
+          "partition": "train",
+          "intent": "iot_hue_lightdim"
+        },
+        {
+          "id": "1476",
+          "partition": "train",
+          "intent": "iot_hue_lightdim"
+        },
+        {
+          "id": "1477",
+          "partition": "train",
+          "intent": "iot_hue_lightdim"
+        },
+        {
+          "id": "2499",
+          "partition": "dev",
+          "intent": "iot_hue_lightdim"
+        },
+        {
+          "id": "2978",
+          "partition": "dev",
+          "intent": "iot_hue_lightdim"
+        },
+        {
+          "id": "5918",
+          "partition": "train",
+          "intent": "iot_hue_lightdim"
+        }
+      ]
+    },
+    {
+      "text_sha256": "6276090e5b8762f421e82a9d51a6195747a59b07498b6203e646a0f7a943beec",
+      "records": [
+        {
+          "id": "165",
+          "partition": "train",
+          "intent": "iot_coffee"
+        },
+        {
+          "id": "5989",
+          "partition": "dev",
+          "intent": "iot_coffee"
+        }
+      ]
+    },
+    {
+      "text_sha256": "c36f274b398cc2648266e46fbcb00c50e7bb342da64be4e2e1df239c8314e499",
+      "records": [
+        {
+          "id": "173",
+          "partition": "dev",
+          "intent": "alarm_set"
+        },
+        {
+          "id": "2081",
+          "partition": "train",
+          "intent": "alarm_set"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ce5c3c34b6887d2daf9a76f66a139e99dfd84f1fea494716098efe6df8e66beb",
+      "records": [
+        {
+          "id": "180",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1020",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "2331",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3880",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3970",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4237",
+          "partition": "train",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "16013e7db106daf869cae59c652f3adea6d89646190f1c6cbeff484f1702c1bc",
+      "records": [
+        {
+          "id": "187",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "188",
+          "partition": "dev",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "598",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "820",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "1946",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "2487",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "4260",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "5190",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "5511",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "5822",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        }
+      ]
+    },
+    {
+      "text_sha256": "2581ff3b114c8fb027258b00cba1f7c3e6fc8cb25afa6cb8885efaf0d72c7a00",
+      "records": [
+        {
+          "id": "196",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "480",
+          "partition": "dev",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "521",
+          "partition": "train",
+          "intent": "datetime_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "b9fa6e25b551cfcd11d4fcaa2d72529bee401021b5f336e5ce23c80adb9533db",
+      "records": [
+        {
+          "id": "787",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1196",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1991",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3252",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "5971",
+          "partition": "train",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "e2fca85b6f57679499f57e8848f39c08ae2eae81c3b0f6b84349b85d8c00f197",
+      "records": [
+        {
+          "id": "225",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "731",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "2463",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "2465",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "3833",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "4939",
+          "partition": "dev",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5309",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5346",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5431",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5681",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5682",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5796",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5815",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        }
+      ]
+    },
+    {
+      "text_sha256": "f2dcdab65fd9353423b5ad4cd8fac230a806d0d39b57b13c5d21aa6a53c1b247",
+      "records": [
+        {
+          "id": "264",
+          "partition": "train",
+          "intent": "iot_hue_lightchange"
+        },
+        {
+          "id": "2120",
+          "partition": "dev",
+          "intent": "iot_hue_lightchange"
+        }
+      ]
+    },
+    {
+      "text_sha256": "299a2fdea446f390c943a933506fde3ea24273bad5259f2ffb5eee57b0c80159",
+      "records": [
+        {
+          "id": "277",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "278",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "368",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "950",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1457",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3095",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3309",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3310",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3585",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3648",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3783",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3879",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4665",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4687",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "5188",
+          "partition": "train",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "c629db33a9554e56337b426fc1e5f9dec16143dc803cb94ca63fd2f2aa5d604a",
+      "records": [
+        {
+          "id": "288",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "2077",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "2646",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "4286",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "4287",
+          "partition": "dev",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "5003",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "5608",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "5804",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        }
+      ]
+    },
+    {
+      "text_sha256": "9f3c2de8e131a5bbf3942d03844f4e1e59cec7332df722eb665c2cb0e3478f54",
+      "records": [
+        {
+          "id": "1573",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "1661",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "2383",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "3380",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "3508",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "3753",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "5767",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "6158",
+          "partition": "dev",
+          "intent": "iot_cleaning"
+        }
+      ]
+    },
+    {
+      "text_sha256": "eb64f3c6ba89d2fbad04670d6514f9102aa66207c152dd395b3f92f8990c73ba",
+      "records": [
+        {
+          "id": "318",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "582",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4627",
+          "partition": "train",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "2e5435e179a4556f70ff0f6adc27eabe72d3f8ff35c4fc167aea722694892bb8",
+      "records": [
+        {
+          "id": "343",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4696",
+          "partition": "dev",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ec0efb7d48fa831124fde3263f39f464103e32363dd5645dd96f2f979d4bcce8",
+      "records": [
+        {
+          "id": "431",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4932",
+          "partition": "train",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "b3d8a85c38bb76694fe104bab006b54176c64fe4f4fe642eb403214a094ecc74",
+      "records": [
+        {
+          "id": "1610",
+          "partition": "train",
+          "intent": "iot_coffee"
+        },
+        {
+          "id": "2749",
+          "partition": "dev",
+          "intent": "iot_coffee"
+        },
+        {
+          "id": "2971",
+          "partition": "dev",
+          "intent": "iot_coffee"
+        },
+        {
+          "id": "4170",
+          "partition": "train",
+          "intent": "iot_coffee"
+        }
+      ]
+    },
+    {
+      "text_sha256": "c58c6e039e8812b02a1042feea32d37129ee07239f289e5c5ec21f37b17b7ef0",
+      "records": [
+        {
+          "id": "465",
+          "partition": "dev",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "572",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "810",
+          "partition": "train",
+          "intent": "datetime_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "cba6b43eb3ccdf1d1973e43b34c46a9b2bdda95eb33d46b3fbcdc76016250fb0",
+      "records": [
+        {
+          "id": "469",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "1944",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "1945",
+          "partition": "dev",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "3042",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "3593",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5364",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5761",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        }
+      ]
+    },
+    {
+      "text_sha256": "63418a786f146cc5702f069f4cc10df06db3760a36645314c72198e3e815db83",
+      "records": [
+        {
+          "id": "471",
+          "partition": "train",
+          "intent": "iot_hue_lighton"
+        },
+        {
+          "id": "1450",
+          "partition": "train",
+          "intent": "iot_hue_lighton"
+        },
+        {
+          "id": "2470",
+          "partition": "dev",
+          "intent": "iot_hue_lighton"
+        },
+        {
+          "id": "3808",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "5752",
+          "partition": "train",
+          "intent": "iot_hue_lighton"
+        }
+      ]
+    },
+    {
+      "text_sha256": "1d6e24ef886cbdce4c311a10daa4cef7cbac2d5a0ae11b0c4f1d6a564098c7a5",
+      "records": [
+        {
+          "id": "483",
+          "partition": "train",
+          "intent": "music_query"
+        },
+        {
+          "id": "2583",
+          "partition": "dev",
+          "intent": "music_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "02474b0dfeb875e08a5c991f4debfcc4dfc7b06c031ca20a019b4cc83c28cacb",
+      "records": [
+        {
+          "id": "496",
+          "partition": "train",
+          "intent": "iot_hue_lightchange"
+        },
+        {
+          "id": "2863",
+          "partition": "dev",
+          "intent": "iot_hue_lightchange"
+        },
+        {
+          "id": "4825",
+          "partition": "train",
+          "intent": "iot_hue_lightchange"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ff362e8b2d87f287b5ee827538d3090d0aaf2157236b2013e420289612f001b2",
+      "records": [
+        {
+          "id": "565",
+          "partition": "train",
+          "intent": "iot_hue_lightchange"
+        },
+        {
+          "id": "5476",
+          "partition": "dev",
+          "intent": "iot_hue_lightchange"
+        }
+      ]
+    },
+    {
+      "text_sha256": "6a45e2cd8e6c0a8dbec32aa79ddcc86d9ebe4859be658d7edeb0302004f232aa",
+      "records": [
+        {
+          "id": "600",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "3466",
+          "partition": "dev",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "3561",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "4070",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        }
+      ]
+    },
+    {
+      "text_sha256": "e9248609b930c27c086d126ebea05ceb00036ae1619878b0ef1e03a881685d4e",
+      "records": [
+        {
+          "id": "601",
+          "partition": "dev",
+          "intent": "alarm_set"
+        },
+        {
+          "id": "2195",
+          "partition": "train",
+          "intent": "alarm_set"
+        }
+      ]
+    },
+    {
+      "text_sha256": "f36e174b4b4eeed0aeea7e3b33a0e582d74c41351a310728bf4b8c963cef8296",
+      "records": [
+        {
+          "id": "2481",
+          "partition": "train",
+          "intent": "play_music"
+        },
+        {
+          "id": "2675",
+          "partition": "dev",
+          "intent": "play_music"
+        }
+      ]
+    },
+    {
+      "text_sha256": "76c1e2fae2bdd0f7a01ea18676fa20c0a38f056befc4d1bd166c4862e848657d",
+      "records": [
+        {
+          "id": "689",
+          "partition": "dev",
+          "intent": "audio_volume_down"
+        },
+        {
+          "id": "1787",
+          "partition": "train",
+          "intent": "audio_volume_down"
+        },
+        {
+          "id": "1906",
+          "partition": "train",
+          "intent": "audio_volume_down"
+        },
+        {
+          "id": "1947",
+          "partition": "train",
+          "intent": "audio_volume_down"
+        },
+        {
+          "id": "2047",
+          "partition": "train",
+          "intent": "audio_volume_down"
+        },
+        {
+          "id": "4390",
+          "partition": "train",
+          "intent": "audio_volume_down"
+        }
+      ]
+    },
+    {
+      "text_sha256": "0582bd2c13fff71d7f40ef5586e3f4da05a3a61fe5ba9f0b4d06e99905ab83ea",
+      "records": [
+        {
+          "id": "719",
+          "partition": "train",
+          "intent": "general_greet"
+        },
+        {
+          "id": "720",
+          "partition": "train",
+          "intent": "general_greet"
+        },
+        {
+          "id": "1277",
+          "partition": "dev",
+          "intent": "general_greet"
+        }
+      ]
+    },
+    {
+      "text_sha256": "da99cabc16f045461b53a94db1619833b2840bb35ae64c753f0b73aa194ec87c",
+      "records": [
+        {
+          "id": "762",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "763",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1349",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1555",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "2064",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4485",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "5175",
+          "partition": "dev",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "d92322855a8e675776560f3c6c2d1c832d97e97f89332fda564e71cff334cc43",
+      "records": [
+        {
+          "id": "904",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3402",
+          "partition": "dev",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "23f5ce3d08978056cf726faeae4491b7e46c4403bc204bd430cfa54e9672c27c",
+      "records": [
+        {
+          "id": "1027",
+          "partition": "dev",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "2410",
+          "partition": "train",
+          "intent": "datetime_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "1a942055116435f8a4306f5e6d7d2fb0187d51e4c16f22afa2bfefa220879122",
+      "records": [
+        {
+          "id": "1056",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "1058",
+          "partition": "dev",
+          "intent": "iot_cleaning"
+        }
+      ]
+    },
+    {
+      "text_sha256": "4e352668dccf940a7618fe5b6609d902c0b2370b929f16ef8ac1b53830d5efa9",
+      "records": [
+        {
+          "id": "1125",
+          "partition": "dev",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "5576",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "5709",
+          "partition": "train",
+          "intent": "datetime_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "5c45a16b0bc8aefc84ee189280f2885e64fc87b8a93dc011ffca05a0b4c7ec97",
+      "records": [
+        {
+          "id": "1146",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "1926",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "2958",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "4075",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "5605",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "5854",
+          "partition": "dev",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "5855",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        }
+      ]
+    },
+    {
+      "text_sha256": "6badbd3d4936de2d5ebf0f8e01ff2b0c6cd322ded79a917d74050bb66156907d",
+      "records": [
+        {
+          "id": "1155",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "4796",
+          "partition": "dev",
+          "intent": "iot_hue_lightoff"
+        }
+      ]
+    },
+    {
+      "text_sha256": "27d256a3d4b25414e803a9031d0c352e3c3f1ce3b07d1d54a97497fa8afd26dc",
+      "records": [
+        {
+          "id": "1271",
+          "partition": "dev",
+          "intent": "news_query"
+        },
+        {
+          "id": "2452",
+          "partition": "train",
+          "intent": "news_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "f5dfa0e4a28ed00e23a58da800b808f8f01f7d9a9851d37dcb16dd7faaf207c3",
+      "records": [
+        {
+          "id": "1321",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1327",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1328",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1691",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "1891",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "3106",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4789",
+          "partition": "train",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "75a876b65295a094cacd94e58f46b2bd7be00868871c5a615a0f63d08096a38b",
+      "records": [
+        {
+          "id": "1365",
+          "partition": "dev",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "1366",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "1880",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "3688",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        }
+      ]
+    },
+    {
+      "text_sha256": "d99e814bdb1f76f2458767213e69d6edb5c8ad59b8b89ef6ee6eae2d7de8dbd9",
+      "records": [
+        {
+          "id": "1375",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "5726",
+          "partition": "dev",
+          "intent": "audio_volume_up"
+        }
+      ]
+    },
+    {
+      "text_sha256": "e25189c798ffb4e325e0f20ebb918a24dce56f1a9d5eaa07168bb0fc86984905",
+      "records": [
+        {
+          "id": "1456",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "2139",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "2544",
+          "partition": "dev",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "e77d04cb0dec15365122be3b3abd879fbb220d494585ca1f3896bce5050c1b47",
+      "records": [
+        {
+          "id": "1466",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "4204",
+          "partition": "train",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "eba7e86de636e5aadb2d1200c76283a7c4692a3b48233e618644099b963d290f",
+      "records": [
+        {
+          "id": "1505",
+          "partition": "train",
+          "intent": "iot_wemo_on"
+        },
+        {
+          "id": "1507",
+          "partition": "train",
+          "intent": "iot_wemo_on"
+        },
+        {
+          "id": "3804",
+          "partition": "dev",
+          "intent": "iot_wemo_on"
+        },
+        {
+          "id": "3877",
+          "partition": "train",
+          "intent": "iot_wemo_on"
+        },
+        {
+          "id": "5651",
+          "partition": "dev",
+          "intent": "iot_wemo_on"
+        },
+        {
+          "id": "5653",
+          "partition": "dev",
+          "intent": "iot_wemo_on"
+        }
+      ]
+    },
+    {
+      "text_sha256": "5bc98ce031120c363557fa5901e4488e1d4bcc1c325700a7a8f06686dba5517c",
+      "records": [
+        {
+          "id": "5069",
+          "partition": "dev",
+          "intent": "iot_wemo_on"
+        },
+        {
+          "id": "5686",
+          "partition": "train",
+          "intent": "iot_wemo_on"
+        }
+      ]
+    },
+    {
+      "text_sha256": "db1297916ee3dc68ca48c422e1ffadae6b9dbb2a728711cbfc48a7c741542c47",
+      "records": [
+        {
+          "id": "1553",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5202",
+          "partition": "dev",
+          "intent": "iot_hue_lightoff"
+        }
+      ]
+    },
+    {
+      "text_sha256": "60a73456a0fbf0c9bb74912096ede374e05f209c2556943abd14723220b8d7e7",
+      "records": [
+        {
+          "id": "1566",
+          "partition": "dev",
+          "intent": "play_music"
+        },
+        {
+          "id": "4869",
+          "partition": "train",
+          "intent": "play_music"
+        }
+      ]
+    },
+    {
+      "text_sha256": "4b747a58c9b277234d4afcfab72f642b76f0b67bc1eae209d3aa6f423154ed67",
+      "records": [
+        {
+          "id": "1598",
+          "partition": "train",
+          "intent": "iot_cleaning"
+        },
+        {
+          "id": "3840",
+          "partition": "dev",
+          "intent": "iot_cleaning"
+        }
+      ]
+    },
+    {
+      "text_sha256": "c2b9997f75577e73c1720ca8bf40b0bde4b8d453f681c9068175e1087a437dd9",
+      "records": [
+        {
+          "id": "1621",
+          "partition": "dev",
+          "intent": "music_likeness"
+        },
+        {
+          "id": "1628",
+          "partition": "train",
+          "intent": "takeaway_order"
+        }
+      ]
+    },
+    {
+      "text_sha256": "4383370c2e74392ab13310dd7b2dae86b99f8f3a438a8d7492b5d542e75d868d",
+      "records": [
+        {
+          "id": "1695",
+          "partition": "train",
+          "intent": "music_query"
+        },
+        {
+          "id": "1696",
+          "partition": "dev",
+          "intent": "music_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "2acbf3ec35f21ba0e78e85bac3fabd7806072c2cab74a4645e21653eb8429149",
+      "records": [
+        {
+          "id": "1788",
+          "partition": "train",
+          "intent": "audio_volume_up"
+        },
+        {
+          "id": "2360",
+          "partition": "dev",
+          "intent": "audio_volume_up"
+        }
+      ]
+    },
+    {
+      "text_sha256": "6df0dafd9dc3982f7ced59deb632e4f7085ba8affd4973c7c89fd67caa5bc5e3",
+      "records": [
+        {
+          "id": "1827",
+          "partition": "dev",
+          "intent": "news_query"
+        },
+        {
+          "id": "11748",
+          "partition": "train",
+          "intent": "recommendation_events"
+        }
+      ]
+    },
+    {
+      "text_sha256": "39062eafbaaeb41901eabb658ad0a1598886e5e0dad2c3730b687df22adea11c",
+      "records": [
+        {
+          "id": "2184",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "2835",
+          "partition": "dev",
+          "intent": "datetime_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "0a6d4d3b65024b255bf98a7551c98d9a9575ee1591c9220804f5cd5c7a6bba4b",
+      "records": [
+        {
+          "id": "2219",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "2221",
+          "partition": "dev",
+          "intent": "weather_query"
+        },
+        {
+          "id": "2222",
+          "partition": "train",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "624f7e7eadd6c640ee68e493b947b431eeb304ed9eada048d0545dd0e4012dd2",
+      "records": [
+        {
+          "id": "4860",
+          "partition": "train",
+          "intent": "news_query"
+        },
+        {
+          "id": "5216",
+          "partition": "dev",
+          "intent": "news_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "aeb55c820ce68ec10522bd95132ccc2c42a12703bb589e4ae415c70850eee0c3",
+      "records": [
+        {
+          "id": "2426",
+          "partition": "train",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "2428",
+          "partition": "dev",
+          "intent": "datetime_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "7555a0c15b3da91871c5d7e3a1b079c77b9bf770a70f24640229506b8da16a2d",
+      "records": [
+        {
+          "id": "2525",
+          "partition": "train",
+          "intent": "takeaway_query"
+        },
+        {
+          "id": "2742",
+          "partition": "dev",
+          "intent": "takeaway_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "bdbead14a740fcde59b20b3a0c3fd58b312e5e82fcf95d2af0db4528fd54d56a",
+      "records": [
+        {
+          "id": "2563",
+          "partition": "dev",
+          "intent": "alarm_set"
+        },
+        {
+          "id": "4717",
+          "partition": "train",
+          "intent": "alarm_set"
+        }
+      ]
+    },
+    {
+      "text_sha256": "958a548e9c26919b4564a6e6489f6a97c1f69bcd3c630f1407e2a43b04e81392",
+      "records": [
+        {
+          "id": "2576",
+          "partition": "dev",
+          "intent": "iot_hue_lightdim"
+        },
+        {
+          "id": "3672",
+          "partition": "train",
+          "intent": "iot_hue_lightdim"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ee3a16066e06a67a0679d777a3940f0685fbbf316b531aa5c2375ebcec8c89c5",
+      "records": [
+        {
+          "id": "2695",
+          "partition": "train",
+          "intent": "iot_coffee"
+        },
+        {
+          "id": "2814",
+          "partition": "dev",
+          "intent": "iot_coffee"
+        }
+      ]
+    },
+    {
+      "text_sha256": "5b4bc6afaff8280bba69c1523243e73f8e8308b7d22f66e9255eb63a42d31671",
+      "records": [
+        {
+          "id": "2763",
+          "partition": "dev",
+          "intent": "datetime_query"
+        },
+        {
+          "id": "4404",
+          "partition": "train",
+          "intent": "datetime_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "65b735dd59196544842b8b2f24ad25984b6326eb73c3659316bba871b1e11364",
+      "records": [
+        {
+          "id": "2810",
+          "partition": "dev",
+          "intent": "iot_hue_lightup"
+        },
+        {
+          "id": "5472",
+          "partition": "train",
+          "intent": "iot_hue_lightup"
+        }
+      ]
+    },
+    {
+      "text_sha256": "64a991887c170af1211313014ca5fc3b8fd2065c9199cf1c22ac4782a19d88d3",
+      "records": [
+        {
+          "id": "2950",
+          "partition": "train",
+          "intent": "music_likeness"
+        },
+        {
+          "id": "3104",
+          "partition": "train",
+          "intent": "music_likeness"
+        },
+        {
+          "id": "5516",
+          "partition": "dev",
+          "intent": "music_likeness"
+        }
+      ]
+    },
+    {
+      "text_sha256": "c19915f79a208ca0213457146230a487ad71bfd99b3298ee8d47f0d17e3837b5",
+      "records": [
+        {
+          "id": "3165",
+          "partition": "train",
+          "intent": "play_music"
+        },
+        {
+          "id": "3166",
+          "partition": "dev",
+          "intent": "play_music"
+        }
+      ]
+    },
+    {
+      "text_sha256": "bfb6bdf3240e2f641a3f26839c73e317dcc26f726b3fe4437b25635cc5eba019",
+      "records": [
+        {
+          "id": "3277",
+          "partition": "train",
+          "intent": "iot_hue_lightdim"
+        },
+        {
+          "id": "3377",
+          "partition": "dev",
+          "intent": "iot_hue_lightdim"
+        }
+      ]
+    },
+    {
+      "text_sha256": "dc9d8bf8ce774cbbf9390c34e4671da61e21fe757660ac6ef392609062a788c9",
+      "records": [
+        {
+          "id": "3394",
+          "partition": "dev",
+          "intent": "iot_wemo_on"
+        },
+        {
+          "id": "4965",
+          "partition": "train",
+          "intent": "iot_wemo_on"
+        }
+      ]
+    },
+    {
+      "text_sha256": "2cdd90b64ccbc2ce807f6868b317662d41eeecd842b69d87102268621e2fb5df",
+      "records": [
+        {
+          "id": "3502",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "4632",
+          "partition": "dev",
+          "intent": "iot_hue_lightoff"
+        }
+      ]
+    },
+    {
+      "text_sha256": "f05f29ffa175ec60b198dfc7a948e605b5ea00874f8025dd874c3714eb536fde",
+      "records": [
+        {
+          "id": "3511",
+          "partition": "dev",
+          "intent": "general_quirky"
+        },
+        {
+          "id": "3512",
+          "partition": "train",
+          "intent": "general_quirky"
+        }
+      ]
+    },
+    {
+      "text_sha256": "c718c345be0005b05cb5cb1c2aee425107a9ecb0799dd55bc0184183df0ec3a7",
+      "records": [
+        {
+          "id": "3748",
+          "partition": "train",
+          "intent": "news_query"
+        },
+        {
+          "id": "4941",
+          "partition": "dev",
+          "intent": "news_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "6f935b88ebbae621675aba5f49811029fa3752d588b4615c3606931c53e62773",
+      "records": [
+        {
+          "id": "4339",
+          "partition": "dev",
+          "intent": "takeaway_order"
+        },
+        {
+          "id": "14951",
+          "partition": "train",
+          "intent": "qa_factoid"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ce751cee9704b7e683eae50c3b1c41ed127a970a9fd486c741d0645d2335ed38",
+      "records": [
+        {
+          "id": "4469",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "5462",
+          "partition": "dev",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "1352783adc7e5f5e3f758134d1d352f0f0dc3dcf0199341e0d97977068de7bc9",
+      "records": [
+        {
+          "id": "4471",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "16177",
+          "partition": "train",
+          "intent": "email_sendemail"
+        },
+        {
+          "id": "16509",
+          "partition": "train",
+          "intent": "email_sendemail"
+        },
+        {
+          "id": "16881",
+          "partition": "dev",
+          "intent": "email_sendemail"
+        },
+        {
+          "id": "17014",
+          "partition": "train",
+          "intent": "email_sendemail"
+        }
+      ]
+    },
+    {
+      "text_sha256": "356dc91a5d8dd6b1093579a714eb4f637596220c743b9fb81d59ca2a36b879b4",
+      "records": [
+        {
+          "id": "4700",
+          "partition": "train",
+          "intent": "general_quirky"
+        },
+        {
+          "id": "16586",
+          "partition": "dev",
+          "intent": "email_sendemail"
+        }
+      ]
+    },
+    {
+      "text_sha256": "7969a8cb6408a0bc5d804d618671502062999c2d1226a0ab652db808b34dba59",
+      "records": [
+        {
+          "id": "5183",
+          "partition": "dev",
+          "intent": "general_joke"
+        },
+        {
+          "id": "5508",
+          "partition": "train",
+          "intent": "general_joke"
+        }
+      ]
+    },
+    {
+      "text_sha256": "cfda7cb0dc3a32f2f1c769372f2f2fa6b4d679282c240c71ec718029d65f6342",
+      "records": [
+        {
+          "id": "5518",
+          "partition": "dev",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5519",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        },
+        {
+          "id": "5713",
+          "partition": "train",
+          "intent": "iot_hue_lightoff"
+        }
+      ]
+    },
+    {
+      "text_sha256": "d9c7d073fb7171036fa310dbb9e4e722a4a41bad5522ae065f1a260f1eb33986",
+      "records": [
+        {
+          "id": "5787",
+          "partition": "train",
+          "intent": "weather_query"
+        },
+        {
+          "id": "5788",
+          "partition": "dev",
+          "intent": "weather_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "c339f8f2594cde02d08281637a3738495e914ad6a3b05f89a4f35398dd06dda7",
+      "records": [
+        {
+          "id": "6237",
+          "partition": "train",
+          "intent": "general_quirky"
+        },
+        {
+          "id": "6673",
+          "partition": "dev",
+          "intent": "general_quirky"
+        }
+      ]
+    },
+    {
+      "text_sha256": "1cafe29b8e339307923a275b00618bd19faf6715844af871261cca9787f6ee12",
+      "records": [
+        {
+          "id": "6314",
+          "partition": "dev",
+          "intent": "general_quirky"
+        },
+        {
+          "id": "6480",
+          "partition": "train",
+          "intent": "recommendation_events"
+        },
+        {
+          "id": "12056",
+          "partition": "train",
+          "intent": "recommendation_events"
+        }
+      ]
+    },
+    {
+      "text_sha256": "5180015d433638695d51fe1edb3c7c092bc45a6dd22fa0f11c2cd2efd9a4a1a7",
+      "records": [
+        {
+          "id": "6511",
+          "partition": "train",
+          "intent": "calendar_set"
+        },
+        {
+          "id": "8418",
+          "partition": "dev",
+          "intent": "calendar_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "353485f42e7cb5ad19da9a3fc1393e810f662335497d9ef54da94ad2c23a485e",
+      "records": [
+        {
+          "id": "6569",
+          "partition": "train",
+          "intent": "general_quirky"
+        },
+        {
+          "id": "6570",
+          "partition": "dev",
+          "intent": "general_quirky"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ed8eac30de06d0c27da47d11511f6125195a3bc5b71ac5a700de0b37e7df5e6d",
+      "records": [
+        {
+          "id": "6688",
+          "partition": "train",
+          "intent": "transport_traffic"
+        },
+        {
+          "id": "12787",
+          "partition": "dev",
+          "intent": "transport_traffic"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ad10b97adb0a35cf1f958412eeeb267186d2f36aeeca83d51b0937f813d12bd4",
+      "records": [
+        {
+          "id": "6751",
+          "partition": "dev",
+          "intent": "calendar_query"
+        },
+        {
+          "id": "8506",
+          "partition": "train",
+          "intent": "calendar_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "3d15221e37c91e7427ce71a4f5d157bcfbc952df9603b1c71c3c1fae923fb4af",
+      "records": [
+        {
+          "id": "6778",
+          "partition": "dev",
+          "intent": "calendar_query"
+        },
+        {
+          "id": "6924",
+          "partition": "train",
+          "intent": "calendar_query"
+        },
+        {
+          "id": "7907",
+          "partition": "dev",
+          "intent": "calendar_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "e820ec16ae6519e20ad2bd08df9906094fafc003232dc10f33f489abbdd43978",
+      "records": [
+        {
+          "id": "6808",
+          "partition": "dev",
+          "intent": "calendar_remove"
+        },
+        {
+          "id": "7701",
+          "partition": "train",
+          "intent": "calendar_remove"
+        },
+        {
+          "id": "7994",
+          "partition": "train",
+          "intent": "calendar_remove"
+        }
+      ]
+    },
+    {
+      "text_sha256": "a04ffb03203b8ea07337abd9bfa9a2bb98db9d2691ac5316c75472ffe141120b",
+      "records": [
+        {
+          "id": "6854",
+          "partition": "train",
+          "intent": "calendar_remove"
+        },
+        {
+          "id": "8548",
+          "partition": "dev",
+          "intent": "calendar_remove"
+        }
+      ]
+    },
+    {
+      "text_sha256": "70fe84704fbff0199db03a3202a026c4717854f542a1674451374544f1246c26",
+      "records": [
+        {
+          "id": "6953",
+          "partition": "train",
+          "intent": "calendar_remove"
+        },
+        {
+          "id": "8333",
+          "partition": "dev",
+          "intent": "calendar_remove"
+        }
+      ]
+    },
+    {
+      "text_sha256": "c8d4fadfe15d90c6536c65a61162adad0dcda018b7c0d82bee4502ecd224a473",
+      "records": [
+        {
+          "id": "6993",
+          "partition": "train",
+          "intent": "calendar_set"
+        },
+        {
+          "id": "7800",
+          "partition": "train",
+          "intent": "calendar_set"
+        },
+        {
+          "id": "8890",
+          "partition": "dev",
+          "intent": "calendar_set"
+        }
+      ]
+    },
+    {
+      "text_sha256": "6ede950f5eefeb5c648114e55a39b883095d8fefadbcef3e99d7c98697af1c6c",
+      "records": [
+        {
+          "id": "7374",
+          "partition": "dev",
+          "intent": "calendar_query"
+        },
+        {
+          "id": "7375",
+          "partition": "train",
+          "intent": "calendar_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "a101318ae6c7051a60132493264cf63c32409b527a478a0264ab6318739f2780",
+      "records": [
+        {
+          "id": "7631",
+          "partition": "dev",
+          "intent": "calendar_set"
+        },
+        {
+          "id": "7633",
+          "partition": "train",
+          "intent": "calendar_set"
+        }
+      ]
+    },
+    {
+      "text_sha256": "a45e5587c6d7bf07e0c7765cd5de311750dd57ded7df8bc06b823f7e844529f8",
+      "records": [
+        {
+          "id": "7646",
+          "partition": "dev",
+          "intent": "calendar_query"
+        },
+        {
+          "id": "8197",
+          "partition": "train",
+          "intent": "calendar_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "938a77c505f109991efc5f4e5871c9e80e0256ca739cbdec0d47e2c08a8ea43b",
+      "records": [
+        {
+          "id": "7702",
+          "partition": "train",
+          "intent": "calendar_remove"
+        },
+        {
+          "id": "7830",
+          "partition": "dev",
+          "intent": "calendar_remove"
+        }
+      ]
+    },
+    {
+      "text_sha256": "3e4017b41b978f793e5d305db183c60a39d6be153625c236d04e6d7b5c220761",
+      "records": [
+        {
+          "id": "8072",
+          "partition": "dev",
+          "intent": "calendar_query"
+        },
+        {
+          "id": "8217",
+          "partition": "train",
+          "intent": "calendar_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "e7d0a34905384b3cbc3554fe72bedd072de610c7e66a864a0aacf436e5ea2602",
+      "records": [
+        {
+          "id": "8282",
+          "partition": "dev",
+          "intent": "calendar_remove"
+        },
+        {
+          "id": "8659",
+          "partition": "train",
+          "intent": "calendar_remove"
+        }
+      ]
+    },
+    {
+      "text_sha256": "7cf48edcf1e39a501481e08b7035a4b61fc3234bd6a1f3ce6a9d75a8e6181187",
+      "records": [
+        {
+          "id": "8750",
+          "partition": "train",
+          "intent": "calendar_set"
+        },
+        {
+          "id": "8751",
+          "partition": "dev",
+          "intent": "calendar_set"
+        }
+      ]
+    },
+    {
+      "text_sha256": "44d8993fe6540b2dfd9a1d63df8dc9a48d55db9a671180687649eb1aab76f173",
+      "records": [
+        {
+          "id": "9206",
+          "partition": "train",
+          "intent": "play_radio"
+        },
+        {
+          "id": "9355",
+          "partition": "dev",
+          "intent": "play_radio"
+        }
+      ]
+    },
+    {
+      "text_sha256": "4e6f76aaaff388cc4af9f9730e7200fab52b5911cdba9b59b4f6ae3d4c57a13e",
+      "records": [
+        {
+          "id": "9249",
+          "partition": "dev",
+          "intent": "play_radio"
+        },
+        {
+          "id": "9258",
+          "partition": "train",
+          "intent": "play_radio"
+        }
+      ]
+    },
+    {
+      "text_sha256": "7c84a0e478f22c7d4786097f2ca0e0d2c68993cdbe3c625cc81a721492adf67a",
+      "records": [
+        {
+          "id": "9255",
+          "partition": "train",
+          "intent": "play_radio"
+        },
+        {
+          "id": "9256",
+          "partition": "dev",
+          "intent": "play_radio"
+        },
+        {
+          "id": "9262",
+          "partition": "train",
+          "intent": "play_radio"
+        },
+        {
+          "id": "9307",
+          "partition": "train",
+          "intent": "play_radio"
+        },
+        {
+          "id": "9376",
+          "partition": "train",
+          "intent": "play_radio"
+        },
+        {
+          "id": "9415",
+          "partition": "train",
+          "intent": "play_radio"
+        }
+      ]
+    },
+    {
+      "text_sha256": "fd045e3e451d99ff0437efc5ab53c3659e8c035c1797c2be1815a4e25349f941",
+      "records": [
+        {
+          "id": "10153",
+          "partition": "train",
+          "intent": "cooking_recipe"
+        },
+        {
+          "id": "10238",
+          "partition": "dev",
+          "intent": "cooking_recipe"
+        }
+      ]
+    },
+    {
+      "text_sha256": "39388e653f06422c38bb66fb57cbf7a315e2bf2da606a30809ea6b7894469282",
+      "records": [
+        {
+          "id": "10324",
+          "partition": "dev",
+          "intent": "play_game"
+        },
+        {
+          "id": "10392",
+          "partition": "train",
+          "intent": "play_game"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ee8b8bf1feb293e1ae5a268ad96b1fa9e9ef193d3ec8b2828b1e3c610947ef09",
+      "records": [
+        {
+          "id": "10463",
+          "partition": "train",
+          "intent": "lists_remove"
+        },
+        {
+          "id": "10485",
+          "partition": "train",
+          "intent": "lists_remove"
+        },
+        {
+          "id": "11040",
+          "partition": "train",
+          "intent": "lists_remove"
+        },
+        {
+          "id": "11079",
+          "partition": "dev",
+          "intent": "lists_remove"
+        },
+        {
+          "id": "11094",
+          "partition": "train",
+          "intent": "lists_remove"
+        }
+      ]
+    },
+    {
+      "text_sha256": "d3f2d97e208c7274cf44888c9facd81734496dcdaa18e2d43e786a266b636403",
+      "records": [
+        {
+          "id": "10488",
+          "partition": "dev",
+          "intent": "lists_createoradd"
+        },
+        {
+          "id": "10489",
+          "partition": "train",
+          "intent": "lists_createoradd"
+        },
+        {
+          "id": "10922",
+          "partition": "train",
+          "intent": "lists_createoradd"
+        }
+      ]
+    },
+    {
+      "text_sha256": "26429e033deab1181912c193ce95034c8e584726b4914114cce4446113d42b52",
+      "records": [
+        {
+          "id": "10526",
+          "partition": "dev",
+          "intent": "lists_remove"
+        },
+        {
+          "id": "11138",
+          "partition": "train",
+          "intent": "lists_remove"
+        },
+        {
+          "id": "11149",
+          "partition": "train",
+          "intent": "lists_remove"
+        }
+      ]
+    },
+    {
+      "text_sha256": "7ea6d29d81dfcf6218d49b88d08a885618f22edf79591a776bf3e85da229fc25",
+      "records": [
+        {
+          "id": "10559",
+          "partition": "train",
+          "intent": "lists_createoradd"
+        },
+        {
+          "id": "10626",
+          "partition": "dev",
+          "intent": "lists_createoradd"
+        }
+      ]
+    },
+    {
+      "text_sha256": "c6e34347dff2b19e847e0446a28254b35927efa0a8e17d6247d8ea4ecb03a744",
+      "records": [
+        {
+          "id": "10596",
+          "partition": "train",
+          "intent": "lists_query"
+        },
+        {
+          "id": "10697",
+          "partition": "dev",
+          "intent": "lists_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "e20f0a76b67e128bce924d10e793431330aad2c13314bebfc5988117037cfaa9",
+      "records": [
+        {
+          "id": "10611",
+          "partition": "train",
+          "intent": "lists_remove"
+        },
+        {
+          "id": "10791",
+          "partition": "dev",
+          "intent": "lists_remove"
+        }
+      ]
+    },
+    {
+      "text_sha256": "2c335f7d5116dc46705456816066e2a913627653096708b51f5dd18ab6a61dfb",
+      "records": [
+        {
+          "id": "10715",
+          "partition": "train",
+          "intent": "lists_query"
+        },
+        {
+          "id": "10928",
+          "partition": "dev",
+          "intent": "lists_query"
+        },
+        {
+          "id": "11050",
+          "partition": "train",
+          "intent": "lists_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "2ed9c6e98603ad30d1dcfedbba68c2c7f4807a55ecab3526d1c2c98bdacccb46",
+      "records": [
+        {
+          "id": "10746",
+          "partition": "dev",
+          "intent": "lists_remove"
+        },
+        {
+          "id": "10748",
+          "partition": "train",
+          "intent": "lists_remove"
+        }
+      ]
+    },
+    {
+      "text_sha256": "8793eef239977bbb2c78c70b601f903afe502c4e34116ed02ef984076dde4fed",
+      "records": [
+        {
+          "id": "10901",
+          "partition": "dev",
+          "intent": "lists_createoradd"
+        },
+        {
+          "id": "11210",
+          "partition": "train",
+          "intent": "lists_createoradd"
+        }
+      ]
+    },
+    {
+      "text_sha256": "7c75da040c2008e19ead177950ed3d9a9df650b980c8cd550e019122f68bfaa6",
+      "records": [
+        {
+          "id": "10972",
+          "partition": "train",
+          "intent": "lists_createoradd"
+        },
+        {
+          "id": "10973",
+          "partition": "dev",
+          "intent": "lists_createoradd"
+        }
+      ]
+    },
+    {
+      "text_sha256": "b430c62f006360da8930b3f28a6342447a3ac479d2bbe2715cdda687c594ee8c",
+      "records": [
+        {
+          "id": "11044",
+          "partition": "train",
+          "intent": "lists_query"
+        },
+        {
+          "id": "11214",
+          "partition": "dev",
+          "intent": "lists_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "10a8b41799c968fcb7158c6708fa3dce669c08d422198c21d404ff482a6196a3",
+      "records": [
+        {
+          "id": "11358",
+          "partition": "dev",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11394",
+          "partition": "train",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11395",
+          "partition": "train",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11446",
+          "partition": "train",
+          "intent": "play_podcasts"
+        }
+      ]
+    },
+    {
+      "text_sha256": "90ef90bdeeae5cbdbe22386d855c4fcc10b3379e2fb2972379f8f7e50fd367e6",
+      "records": [
+        {
+          "id": "11260",
+          "partition": "train",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11299",
+          "partition": "train",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11300",
+          "partition": "dev",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11324",
+          "partition": "dev",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11364",
+          "partition": "dev",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11392",
+          "partition": "train",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11399",
+          "partition": "dev",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11501",
+          "partition": "train",
+          "intent": "play_podcasts"
+        }
+      ]
+    },
+    {
+      "text_sha256": "bb32435ca9f738a0d3232148d369c3b4ba5fc8295a14cee5e64c69744e0c50ee",
+      "records": [
+        {
+          "id": "11283",
+          "partition": "dev",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11311",
+          "partition": "train",
+          "intent": "play_podcasts"
+        }
+      ]
+    },
+    {
+      "text_sha256": "3e2c12eb12b2fc6b7b8cebb77eab1af203bd6fd7e98648e221d7707dbbe09d23",
+      "records": [
+        {
+          "id": "11373",
+          "partition": "train",
+          "intent": "play_podcasts"
+        },
+        {
+          "id": "11553",
+          "partition": "dev",
+          "intent": "play_podcasts"
+        }
+      ]
+    },
+    {
+      "text_sha256": "ddd46f838097b277d5fcaf987e986dfc2ef91953ae9ca7f39618cfaecb464ce4",
+      "records": [
+        {
+          "id": "12143",
+          "partition": "train",
+          "intent": "transport_traffic"
+        },
+        {
+          "id": "12258",
+          "partition": "dev",
+          "intent": "transport_traffic"
+        }
+      ]
+    },
+    {
+      "text_sha256": "08ff608457efe2b5242be377ce6d3a73c12d7bd55f8f83ee7669cc9d318ebb69",
+      "records": [
+        {
+          "id": "12156",
+          "partition": "train",
+          "intent": "transport_ticket"
+        },
+        {
+          "id": "12226",
+          "partition": "train",
+          "intent": "transport_ticket"
+        },
+        {
+          "id": "12461",
+          "partition": "dev",
+          "intent": "transport_ticket"
+        },
+        {
+          "id": "12471",
+          "partition": "train",
+          "intent": "transport_ticket"
+        }
+      ]
+    },
+    {
+      "text_sha256": "81a0f2b0e11f082527bd98e39dbb49c2d8613c89ac1607c83d5dba0f9999c03e",
+      "records": [
+        {
+          "id": "12317",
+          "partition": "dev",
+          "intent": "transport_traffic"
+        },
+        {
+          "id": "12319",
+          "partition": "train",
+          "intent": "transport_traffic"
+        }
+      ]
+    },
+    {
+      "text_sha256": "e25ec3cb82d47e43f1f9509af9c704dc0a0690948863067a9bb4e8fc6b5c84eb",
+      "records": [
+        {
+          "id": "12457",
+          "partition": "train",
+          "intent": "transport_query"
+        },
+        {
+          "id": "14421",
+          "partition": "dev",
+          "intent": "recommendation_locations"
+        }
+      ]
+    },
+    {
+      "text_sha256": "dfd787516784be491b6eb049819078bfd3aece3e769f23f92e8a6ca4a122cd16",
+      "records": [
+        {
+          "id": "12667",
+          "partition": "dev",
+          "intent": "transport_query"
+        },
+        {
+          "id": "12836",
+          "partition": "train",
+          "intent": "transport_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "df783f06b44560730d12c587c92a6ffaf7295e48b39b796da76b79dd8adf220b",
+      "records": [
+        {
+          "id": "13269",
+          "partition": "train",
+          "intent": "qa_factoid"
+        },
+        {
+          "id": "13603",
+          "partition": "train",
+          "intent": "qa_factoid"
+        },
+        {
+          "id": "13844",
+          "partition": "dev",
+          "intent": "qa_factoid"
+        },
+        {
+          "id": "13947",
+          "partition": "train",
+          "intent": "qa_factoid"
+        },
+        {
+          "id": "13972",
+          "partition": "train",
+          "intent": "qa_factoid"
+        }
+      ]
+    },
+    {
+      "text_sha256": "f5040a3e96c5ea9fa9994031def376b18f442daf1572a2b94fc10ed2aceed0a3",
+      "records": [
+        {
+          "id": "13875",
+          "partition": "dev",
+          "intent": "qa_factoid"
+        },
+        {
+          "id": "13876",
+          "partition": "train",
+          "intent": "qa_factoid"
+        }
+      ]
+    },
+    {
+      "text_sha256": "74fe7bc2c54168ee2a6400de2d2c5445e8381f3da53b850694ab50b78be69de0",
+      "records": [
+        {
+          "id": "13965",
+          "partition": "train",
+          "intent": "qa_currency"
+        },
+        {
+          "id": "14263",
+          "partition": "dev",
+          "intent": "qa_currency"
+        }
+      ]
+    },
+    {
+      "text_sha256": "b4e4c5e73e4306fcd6040c0282629686ce019a7daebde717080f268f25a370fd",
+      "records": [
+        {
+          "id": "14008",
+          "partition": "train",
+          "intent": "qa_factoid"
+        },
+        {
+          "id": "14285",
+          "partition": "dev",
+          "intent": "qa_factoid"
+        }
+      ]
+    },
+    {
+      "text_sha256": "b158f17a0b49a70adab36af1ec537975ce23c61b5af2fbaf248ec0574157f07b",
+      "records": [
+        {
+          "id": "14248",
+          "partition": "train",
+          "intent": "qa_factoid"
+        },
+        {
+          "id": "14755",
+          "partition": "dev",
+          "intent": "qa_factoid"
+        }
+      ]
+    },
+    {
+      "text_sha256": "235446c7de644dc831e99104eac386efbb40ebebeff6030e4a7f9ae9c0fe328f",
+      "records": [
+        {
+          "id": "14861",
+          "partition": "dev",
+          "intent": "qa_currency"
+        },
+        {
+          "id": "14862",
+          "partition": "train",
+          "intent": "qa_currency"
+        }
+      ]
+    },
+    {
+      "text_sha256": "cf4d906a899f7597752fe136327453d0da1a6bc936fd6ef0f326b6e36ca650b6",
+      "records": [
+        {
+          "id": "15029",
+          "partition": "train",
+          "intent": "qa_definition"
+        },
+        {
+          "id": "15030",
+          "partition": "dev",
+          "intent": "qa_definition"
+        }
+      ]
+    },
+    {
+      "text_sha256": "07d80c533d13f374b1a79609facb9d2d2e13bb4c4bc25e3774bd822a2be862fb",
+      "records": [
+        {
+          "id": "15145",
+          "partition": "dev",
+          "intent": "social_query"
+        },
+        {
+          "id": "15227",
+          "partition": "train",
+          "intent": "social_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "29838f7a57879cb50d6f703a6c1b58dc7a5037378ca6ca89eec59cd7f2ed95a0",
+      "records": [
+        {
+          "id": "15421",
+          "partition": "dev",
+          "intent": "social_post"
+        },
+        {
+          "id": "15422",
+          "partition": "train",
+          "intent": "social_post"
+        }
+      ]
+    },
+    {
+      "text_sha256": "08a0b6909429e7020cc5f956044ba701eb8029f87033a0af69da705a4ee6c980",
+      "records": [
+        {
+          "id": "15504",
+          "partition": "train",
+          "intent": "social_post"
+        },
+        {
+          "id": "15625",
+          "partition": "dev",
+          "intent": "social_post"
+        }
+      ]
+    },
+    {
+      "text_sha256": "2ed76afca246853fa7fcc6ada8ad160a94d90f469706f0087ffd31e200babe42",
+      "records": [
+        {
+          "id": "15776",
+          "partition": "train",
+          "intent": "email_query"
+        },
+        {
+          "id": "16260",
+          "partition": "train",
+          "intent": "email_query"
+        },
+        {
+          "id": "16299",
+          "partition": "train",
+          "intent": "email_query"
+        },
+        {
+          "id": "17006",
+          "partition": "dev",
+          "intent": "email_query"
+        },
+        {
+          "id": "17162",
+          "partition": "train",
+          "intent": "email_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "f60d919d7f7ca94c447e07096b5cd84a3979b3f58731dd25b8214b9992495725",
+      "records": [
+        {
+          "id": "15798",
+          "partition": "dev",
+          "intent": "email_query"
+        },
+        {
+          "id": "16270",
+          "partition": "train",
+          "intent": "email_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "73d6a4fe552070dacdbf0738ece66ec9f6a421e6a61904daae15854db9fe5299",
+      "records": [
+        {
+          "id": "16036",
+          "partition": "train",
+          "intent": "email_query"
+        },
+        {
+          "id": "16833",
+          "partition": "dev",
+          "intent": "email_query"
+        }
+      ]
+    },
+    {
+      "text_sha256": "4b42837ca3f30f5ecc8505af7f0e1f2cfef266ca6e5e79350bd3938c9e5145ba",
+      "records": [
+        {
+          "id": "16085",
+          "partition": "dev",
+          "intent": "email_sendemail"
+        },
+        {
+          "id": "16086",
+          "partition": "train",
+          "intent": "email_sendemail"
+        },
+        {
+          "id": "16127",
+          "partition": "train",
+          "intent": "email_sendemail"
+        }
+      ]
+    },
+    {
+      "text_sha256": "89bfacfb74f3b6999e834f0ff11dbd7e96f93fec73b03fcd0b4f7efdc912ec7b",
+      "records": [
+        {
+          "id": "16161",
+          "partition": "dev",
+          "intent": "email_sendemail"
+        },
+        {
+          "id": "16516",
+          "partition": "train",
+          "intent": "email_sendemail"
+        },
+        {
+          "id": "16887",
+          "partition": "train",
+          "intent": "email_sendemail"
+        }
+      ]
+    },
+    {
+      "text_sha256": "affe48da146217eee88e8398658372b1dc98c3d26f23023eb91c1c2d814f62e2",
+      "records": [
+        {
+          "id": "16561",
+          "partition": "train",
+          "intent": "email_query"
+        },
+        {
+          "id": "16843",
+          "partition": "dev",
+          "intent": "email_query"
+        }
+      ]
+    }
+  ],
+  "intent_counts_train": {
+    "alarm_query": 130,
+    "alarm_remove": 78,
+    "alarm_set": 182,
+    "audio_volume_down": 52,
+    "audio_volume_mute": 110,
+    "audio_volume_other": 18,
+    "audio_volume_up": 110,
+    "calendar_query": 566,
+    "calendar_remove": 312,
+    "calendar_set": 810,
+    "cooking_query": 4,
+    "cooking_recipe": 207,
+    "datetime_convert": 52,
+    "datetime_query": 350,
+    "email_addcontact": 54,
+    "email_query": 418,
+    "email_querycontact": 127,
+    "email_sendemail": 354,
+    "general_greet": 25,
+    "general_joke": 72,
+    "general_quirky": 555,
+    "iot_cleaning": 93,
+    "iot_coffee": 124,
+    "iot_hue_lightchange": 125,
+    "iot_hue_lightdim": 76,
+    "iot_hue_lightoff": 153,
+    "iot_hue_lighton": 22,
+    "iot_hue_lightup": 76,
+    "iot_wemo_off": 52,
+    "iot_wemo_on": 48,
+    "lists_createoradd": 177,
+    "lists_query": 198,
+    "lists_remove": 164,
+    "music_dislikeness": 14,
+    "music_likeness": 113,
+    "music_query": 154,
+    "music_settings": 51,
+    "news_query": 503,
+    "play_audiobook": 150,
+    "play_game": 112,
+    "play_music": 639,
+    "play_podcasts": 193,
+    "play_radio": 283,
+    "qa_currency": 142,
+    "qa_definition": 267,
+    "qa_factoid": 544,
+    "qa_maths": 78,
+    "qa_stock": 152,
+    "recommendation_events": 190,
+    "recommendation_locations": 173,
+    "recommendation_movies": 70,
+    "social_post": 283,
+    "social_query": 108,
+    "takeaway_order": 135,
+    "takeaway_query": 122,
+    "transport_query": 227,
+    "transport_taxi": 100,
+    "transport_ticket": 127,
+    "transport_traffic": 117,
+    "weather_query": 573
+  },
+  "intent_counts_dev": {
+    "alarm_query": 19,
+    "alarm_remove": 14,
+    "alarm_set": 31,
+    "audio_volume_down": 8,
+    "audio_volume_mute": 15,
+    "audio_volume_up": 12,
+    "calendar_query": 102,
+    "calendar_remove": 47,
+    "calendar_set": 131,
+    "cooking_query": 2,
+    "cooking_recipe": 41,
+    "datetime_convert": 9,
+    "datetime_query": 64,
+    "email_addcontact": 5,
+    "email_query": 73,
+    "email_querycontact": 16,
+    "email_sendemail": 63,
+    "general_greet": 2,
+    "general_joke": 15,
+    "general_quirky": 105,
+    "iot_cleaning": 19,
+    "iot_coffee": 14,
+    "iot_hue_lightchange": 22,
+    "iot_hue_lightdim": 17,
+    "iot_hue_lightoff": 17,
+    "iot_hue_lighton": 5,
+    "iot_hue_lightup": 12,
+    "iot_wemo_off": 5,
+    "iot_wemo_on": 7,
+    "lists_createoradd": 25,
+    "lists_query": 50,
+    "lists_remove": 37,
+    "music_dislikeness": 2,
+    "music_likeness": 16,
+    "music_query": 30,
+    "music_settings": 8,
+    "news_query": 82,
+    "play_audiobook": 35,
+    "play_game": 22,
+    "play_music": 123,
+    "play_podcasts": 34,
+    "play_radio": 46,
+    "qa_currency": 32,
+    "qa_definition": 55,
+    "qa_factoid": 90,
+    "qa_maths": 13,
+    "qa_stock": 24,
+    "recommendation_events": 26,
+    "recommendation_locations": 31,
+    "recommendation_movies": 12,
+    "social_post": 50,
+    "social_query": 18,
+    "takeaway_order": 20,
+    "takeaway_query": 24,
+    "transport_query": 36,
+    "transport_taxi": 27,
+    "transport_ticket": 25,
+    "transport_traffic": 22,
+    "weather_query": 126
+  },
+  "labels": [
+    "alarm_query",
+    "alarm_remove",
+    "alarm_set",
+    "audio_volume_down",
+    "audio_volume_mute",
+    "audio_volume_other",
+    "audio_volume_up",
+    "calendar_query",
+    "calendar_remove",
+    "calendar_set",
+    "cooking_query",
+    "cooking_recipe",
+    "datetime_convert",
+    "datetime_query",
+    "email_addcontact",
+    "email_query",
+    "email_querycontact",
+    "email_sendemail",
+    "general_greet",
+    "general_joke",
+    "general_quirky",
+    "iot_cleaning",
+    "iot_coffee",
+    "iot_hue_lightchange",
+    "iot_hue_lightdim",
+    "iot_hue_lightoff",
+    "iot_hue_lighton",
+    "iot_hue_lightup",
+    "iot_wemo_off",
+    "iot_wemo_on",
+    "lists_createoradd",
+    "lists_query",
+    "lists_remove",
+    "music_dislikeness",
+    "music_likeness",
+    "music_query",
+    "music_settings",
+    "news_query",
+    "play_audiobook",
+    "play_game",
+    "play_music",
+    "play_podcasts",
+    "play_radio",
+    "qa_currency",
+    "qa_definition",
+    "qa_factoid",
+    "qa_maths",
+    "qa_stock",
+    "recommendation_events",
+    "recommendation_locations",
+    "recommendation_movies",
+    "social_post",
+    "social_query",
+    "takeaway_order",
+    "takeaway_query",
+    "transport_query",
+    "transport_taxi",
+    "transport_ticket",
+    "transport_traffic",
+    "weather_query"
+  ],
+  "test_policy": "Structural validation only; no test records exposed to modeling."
+}

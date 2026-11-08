@@ -1,0 +1,6599 @@
+{
+  "audit_id": "AUD-001",
+  "date": "2026-10-10",
+  "source_url": "https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.0.tar.gz",
+  "release": "MASSIVE 1.0",
+  "archive_sha256": "7df623fd2d300a4d235d6ee5bd396c9a28258d3a0ccb29abdb054506eba153f8",
+  "file_sha256": "9a643dbf6e07e90ba8b1554bd95e9946b42037bd52550aac90f4e774ee58ed8c",
+  "archive_member": "1.0/data/az-AZ.jsonl",
+  "bytes": 12195341,
+  "license": "CC BY 4.0",
+  "license_member_sha256": {
+    "1.0/LICENSE": "c2e6ea015269147de02117ebdd91f30ef09831251f5345fa8365273b1db1d435"
+  },
+  "records": 16521,
+  "split_counts": {
+    "test": 2974,
+    "train": 11514,
+    "dev": 2033
+  },
+  "unique_ids": 16521,
+  "locales": [
+    "az-AZ"
+  ],
+  "intent_count": 60,
+  "scenario_count": 18,
+  "slot_type_count": 55,
+  "slot_labels": [
+    "alarm_type",
+    "app_name",
+    "artist_name",
+    "audiobook_author",
+    "audiobook_name",
+    "business_name",
+    "business_type",
+    "change_amount",
+    "coffee_type",
+    "color_type",
+    "cooking_type",
+    "currency_name",
+    "date",
+    "definition_word",
+    "device_type",
+    "drink_type",
+    "email_address",
+    "email_folder",
+    "event_name",
+    "food_type",
+    "game_name",
+    "game_type",
+    "general_frequency",
+    "house_place",
+    "ingredient",
+    "joke_type",
+    "list_name",
+    "meal_type",
+    "media_type",
+    "movie_name",
+    "movie_type",
+    "music_album",
+    "music_descriptor",
+    "music_genre",
+    "news_topic",
+    "order_type",
+    "person",
+    "personal_info",
+    "place_name",
+    "player_setting",
+    "playlist_name",
+    "podcast_descriptor",
+    "podcast_name",
+    "radio_name",
+    "relation",
+    "song_name",
+    "sport_type",
+    "time",
+    "time_zone",
+    "timeofday",
+    "transport_agency",
+    "transport_descriptor",
+    "transport_name",
+    "transport_type",
+    "weather_descriptor"
+  ],
+  "exact_duplicate_text_groups": 576,
+  "cross_split_exact_duplicate_text_groups": 317,
+  "cross_split_duplicates": [
+    {
+      "text_sha256": "f2e4107e096e1a4cecda5663282cdc72df71dd0d9e61a87b4e971a4018c9a0ae",
+      "records": [
+        [
+          "2",
+          "train",
+          "alarm_set"
+        ],
+        [
+          "7043",
+          "dev",
+          "alarm_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b891b4edf416c1f70ad612325df99dfdfdb3320ee60d2a1aef9bdc0c5debf9b3",
+      "records": [
+        [
+          "3",
+          "test",
+          "audio_volume_mute"
+        ],
+        [
+          "332",
+          "train",
+          "audio_volume_mute"
+        ],
+        [
+          "5841",
+          "train",
+          "audio_volume_mute"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0c14965b8c589d781c3ac976be318de4dae573034388642b500066c444a2c886",
+      "records": [
+        [
+          "11",
+          "dev",
+          "iot_hue_lightoff"
+        ],
+        [
+          "978",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5729",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "6cde983eea82af307679b51823f7f2f6deadd3a5d0b762b2205dec52f500e983",
+      "records": [
+        [
+          "45",
+          "train",
+          "general_greet"
+        ],
+        [
+          "6425",
+          "dev",
+          "general_quirky"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "bbc40694249bc48529b42ecb6cbdb18e937462904c9a02b8bfc59b395a0dcf69",
+      "records": [
+        [
+          "81",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "268",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "851",
+          "dev",
+          "iot_hue_lightup"
+        ],
+        [
+          "852",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "853",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "962",
+          "test",
+          "iot_hue_lightup"
+        ],
+        [
+          "2233",
+          "train",
+          "iot_hue_lighton"
+        ],
+        [
+          "2469",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "4284",
+          "train",
+          "iot_hue_lightup"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "4ace7ee98b233c75b466eeb21d8f3b7d6d0049ac3e4c887115d4652321a4bf53",
+      "records": [
+        [
+          "86",
+          "test",
+          "datetime_query"
+        ],
+        [
+          "1795",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "1869",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "2182",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "2183",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "2409",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "2497",
+          "test",
+          "datetime_query"
+        ],
+        [
+          "2676",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "2677",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "2943",
+          "dev",
+          "datetime_query"
+        ],
+        [
+          "3725",
+          "test",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5d2924a29c2f8a58c5009ba10abaa2c5cb033611824f5ab75008fb4bb286a01c",
+      "records": [
+        [
+          "97",
+          "train",
+          "weather_query"
+        ],
+        [
+          "1197",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "4749",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "bfba37cc19cc7883895022e2be8486311a29c186da6ea907e9911724dd15b46b",
+      "records": [
+        [
+          "101",
+          "train",
+          "weather_query"
+        ],
+        [
+          "102",
+          "test",
+          "weather_query"
+        ],
+        [
+          "789",
+          "train",
+          "weather_query"
+        ],
+        [
+          "1350",
+          "train",
+          "weather_query"
+        ],
+        [
+          "2065",
+          "train",
+          "weather_query"
+        ],
+        [
+          "2514",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "2516",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3303",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3587",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3589",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "4423",
+          "train",
+          "weather_query"
+        ],
+        [
+          "5038",
+          "test",
+          "weather_query"
+        ],
+        [
+          "5075",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5a48e9a92ba14e55b714809cf8f2315c53c7d7398e50a3fe36c9e98dd4ed4f3b",
+      "records": [
+        [
+          "115",
+          "dev",
+          "audio_volume_down"
+        ],
+        [
+          "1367",
+          "train",
+          "audio_volume_down"
+        ],
+        [
+          "4732",
+          "train",
+          "audio_volume_down"
+        ],
+        [
+          "4963",
+          "train",
+          "audio_volume_down"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1fde5c02e34204cb6ded79e5b96d1c375c093c87ede5d809ffca26924f94c676",
+      "records": [
+        [
+          "117",
+          "train",
+          "music_query"
+        ],
+        [
+          "2364",
+          "dev",
+          "music_query"
+        ],
+        [
+          "3421",
+          "dev",
+          "music_query"
+        ],
+        [
+          "4560",
+          "test",
+          "music_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "fc9f000c5bc31cedb136ad65e0e4aa50ce07cbfda45b2858d151cf76de7a6fa6",
+      "records": [
+        [
+          "123",
+          "train",
+          "general_joke"
+        ],
+        [
+          "4911",
+          "dev",
+          "general_joke"
+        ],
+        [
+          "6545",
+          "train",
+          "general_joke"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "43cc265b4ec65af4606c720ace5042be108e3897d7a0e9ea20a59ea436a25b60",
+      "records": [
+        [
+          "127",
+          "dev",
+          "datetime_query"
+        ],
+        [
+          "214",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "434",
+          "dev",
+          "datetime_query"
+        ],
+        [
+          "5859",
+          "train",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5b98d0ccd63bfcea2ee87d1a7968bbd6f65441137013a6e863a64bf29d89cbe9",
+      "records": [
+        [
+          "132",
+          "test",
+          "takeaway_order"
+        ],
+        [
+          "1416",
+          "dev",
+          "takeaway_order"
+        ],
+        [
+          "2478",
+          "dev",
+          "takeaway_order"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "debc2397ba4c6e042c9d55275376511bb41d2bf299ef83ba52f09c1c2cf1c7e3",
+      "records": [
+        [
+          "138",
+          "dev",
+          "music_query"
+        ],
+        [
+          "2031",
+          "train",
+          "music_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d5697cc498fead48b1a60a2d1f8e6fb5712c468efe64f3b5df72735ab63acdea",
+      "records": [
+        [
+          "158",
+          "test",
+          "iot_hue_lightdim"
+        ],
+        [
+          "664",
+          "train",
+          "iot_hue_lightdim"
+        ],
+        [
+          "1476",
+          "train",
+          "iot_hue_lightdim"
+        ],
+        [
+          "1477",
+          "train",
+          "iot_hue_lightdim"
+        ],
+        [
+          "2499",
+          "dev",
+          "iot_hue_lightdim"
+        ],
+        [
+          "2978",
+          "dev",
+          "iot_hue_lightdim"
+        ],
+        [
+          "3834",
+          "test",
+          "iot_hue_lightdim"
+        ],
+        [
+          "5918",
+          "train",
+          "iot_hue_lightdim"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "cca62cb6e0691558063f37f16b9e93244e1681693f2b2bc6b5500dedafd5f90d",
+      "records": [
+        [
+          "164",
+          "train",
+          "iot_coffee"
+        ],
+        [
+          "1276",
+          "test",
+          "iot_coffee"
+        ],
+        [
+          "3746",
+          "train",
+          "iot_coffee"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "6276090e5b8762f421e82a9d51a6195747a59b07498b6203e646a0f7a943beec",
+      "records": [
+        [
+          "165",
+          "train",
+          "iot_coffee"
+        ],
+        [
+          "5989",
+          "dev",
+          "iot_coffee"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c36f274b398cc2648266e46fbcb00c50e7bb342da64be4e2e1df239c8314e499",
+      "records": [
+        [
+          "173",
+          "dev",
+          "alarm_set"
+        ],
+        [
+          "2081",
+          "train",
+          "alarm_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ce5c3c34b6887d2daf9a76f66a139e99dfd84f1fea494716098efe6df8e66beb",
+      "records": [
+        [
+          "180",
+          "train",
+          "weather_query"
+        ],
+        [
+          "430",
+          "test",
+          "weather_query"
+        ],
+        [
+          "1020",
+          "train",
+          "weather_query"
+        ],
+        [
+          "2331",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3880",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "3970",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "4237",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "16013e7db106daf869cae59c652f3adea6d89646190f1c6cbeff484f1702c1bc",
+      "records": [
+        [
+          "187",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "188",
+          "dev",
+          "audio_volume_up"
+        ],
+        [
+          "443",
+          "test",
+          "audio_volume_up"
+        ],
+        [
+          "598",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "820",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "1946",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "2487",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "4260",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "5190",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "5511",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "5822",
+          "train",
+          "audio_volume_up"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "01a228a723097366e6d6ecd07d7283c72744548363f42f8d7cf2871e62031a31",
+      "records": [
+        [
+          "189",
+          "test",
+          "audio_volume_mute"
+        ],
+        [
+          "4406",
+          "train",
+          "audio_volume_mute"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c09351c1a25214dca39d0fe584fdb6a633741ade0bba3c2cd7c82a6d6a98127a",
+      "records": [
+        [
+          "195",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "197",
+          "test",
+          "datetime_query"
+        ],
+        [
+          "270",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "519",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "1395",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "1704",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "1850",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "2456",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "6011",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "6012",
+          "train",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "2581ff3b114c8fb027258b00cba1f7c3e6fc8cb25afa6cb8885efaf0d72c7a00",
+      "records": [
+        [
+          "196",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "480",
+          "dev",
+          "datetime_query"
+        ],
+        [
+          "521",
+          "train",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "26a0a9016819f1384bb4f1143d77198fa749452987f9085637fc83855f562e87",
+      "records": [
+        [
+          "202",
+          "train",
+          "alarm_remove"
+        ],
+        [
+          "6162",
+          "test",
+          "alarm_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b9fa6e25b551cfcd11d4fcaa2d72529bee401021b5f336e5ce23c80adb9533db",
+      "records": [
+        [
+          "216",
+          "test",
+          "weather_query"
+        ],
+        [
+          "787",
+          "train",
+          "weather_query"
+        ],
+        [
+          "1196",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "1991",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3252",
+          "train",
+          "weather_query"
+        ],
+        [
+          "4266",
+          "test",
+          "weather_query"
+        ],
+        [
+          "5971",
+          "train",
+          "weather_query"
+        ],
+        [
+          "6194",
+          "test",
+          "weather_query"
+        ],
+        [
+          "6289",
+          "test",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e2fca85b6f57679499f57e8848f39c08ae2eae81c3b0f6b84349b85d8c00f197",
+      "records": [
+        [
+          "225",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "369",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "730",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "731",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "2463",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "2465",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "2711",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "2774",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "3098",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "3833",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "4346",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "4939",
+          "dev",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5309",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5346",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5431",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5681",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5682",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5796",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5815",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "cc3d3550a7302e8686c0159cd92ab3da1841922a54b2e95cd43082139d91f65a",
+      "records": [
+        [
+          "229",
+          "dev",
+          "datetime_query"
+        ],
+        [
+          "5671",
+          "test",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b13020faf5dbb60f6503eca56d2f0e587dd6f91d6ec4a08ec1289feebb4e81ac",
+      "records": [
+        [
+          "230",
+          "dev",
+          "datetime_query"
+        ],
+        [
+          "3606",
+          "test",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0cd2265c8ce7d7a90a26f2d1c82416eea9b83c184d4314794d93bafd4c2f9c56",
+      "records": [
+        [
+          "243",
+          "train",
+          "news_query"
+        ],
+        [
+          "293",
+          "train",
+          "news_query"
+        ],
+        [
+          "2384",
+          "test",
+          "news_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f2dcdab65fd9353423b5ad4cd8fac230a806d0d39b57b13c5d21aa6a53c1b247",
+      "records": [
+        [
+          "264",
+          "train",
+          "iot_hue_lightchange"
+        ],
+        [
+          "2120",
+          "dev",
+          "iot_hue_lightchange"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "299a2fdea446f390c943a933506fde3ea24273bad5259f2ffb5eee57b0c80159",
+      "records": [
+        [
+          "277",
+          "train",
+          "weather_query"
+        ],
+        [
+          "278",
+          "train",
+          "weather_query"
+        ],
+        [
+          "368",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "950",
+          "train",
+          "weather_query"
+        ],
+        [
+          "1457",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3095",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3096",
+          "test",
+          "weather_query"
+        ],
+        [
+          "3309",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "3310",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3503",
+          "test",
+          "weather_query"
+        ],
+        [
+          "3585",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3648",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3783",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3879",
+          "train",
+          "weather_query"
+        ],
+        [
+          "4665",
+          "train",
+          "weather_query"
+        ],
+        [
+          "4687",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "5188",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c629db33a9554e56337b426fc1e5f9dec16143dc803cb94ca63fd2f2aa5d604a",
+      "records": [
+        [
+          "288",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "2077",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "2082",
+          "test",
+          "iot_hue_lightup"
+        ],
+        [
+          "2403",
+          "test",
+          "iot_hue_lightup"
+        ],
+        [
+          "2646",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "4286",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "4287",
+          "dev",
+          "iot_hue_lightup"
+        ],
+        [
+          "5003",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "5608",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "5804",
+          "train",
+          "iot_hue_lightup"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "4006a14baccd7a143513a6928c266af46fa116bbcd2ef9216f141a5726491005",
+      "records": [
+        [
+          "290",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "633",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "1151",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "1574",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "1575",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "1942",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "2960",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "3381",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "4043",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "5765",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "5766",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "5858",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "5880",
+          "train",
+          "iot_cleaning"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "9f3c2de8e131a5bbf3942d03844f4e1e59cec7332df722eb665c2cb0e3478f54",
+      "records": [
+        [
+          "292",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "1573",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "1661",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "1924",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "2383",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "3380",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "3508",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "3753",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "5767",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "6158",
+          "dev",
+          "iot_cleaning"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "48c32e16ba378f4ef8a8a2c817b92ee9ebc65b99361291586460a305eaeb4553",
+      "records": [
+        [
+          "299",
+          "test",
+          "weather_query"
+        ],
+        [
+          "2545",
+          "test",
+          "weather_query"
+        ],
+        [
+          "5778",
+          "train",
+          "weather_query"
+        ],
+        [
+          "6316",
+          "train",
+          "weather_query"
+        ],
+        [
+          "6474",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "eb64f3c6ba89d2fbad04670d6514f9102aa66207c152dd395b3f92f8990c73ba",
+      "records": [
+        [
+          "318",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "348",
+          "test",
+          "weather_query"
+        ],
+        [
+          "582",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "4627",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "294833c446b2b6b6dd07ac5a613c3952bbf30723f78f6da4558d9b9eec1e461a",
+      "records": [
+        [
+          "321",
+          "test",
+          "iot_wemo_off"
+        ],
+        [
+          "2690",
+          "test",
+          "iot_wemo_off"
+        ],
+        [
+          "3022",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "3077",
+          "test",
+          "iot_wemo_off"
+        ],
+        [
+          "4746",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "5394",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "5395",
+          "train",
+          "iot_wemo_off"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ce3324cf301644c12c03298c4bfbe1d6701ab17723825ad9f37732ed29d3c890",
+      "records": [
+        [
+          "341",
+          "train",
+          "iot_coffee"
+        ],
+        [
+          "5149",
+          "test",
+          "iot_coffee"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "2e5435e179a4556f70ff0f6adc27eabe72d3f8ff35c4fc167aea722694892bb8",
+      "records": [
+        [
+          "343",
+          "train",
+          "weather_query"
+        ],
+        [
+          "2322",
+          "test",
+          "weather_query"
+        ],
+        [
+          "4383",
+          "test",
+          "weather_query"
+        ],
+        [
+          "4696",
+          "dev",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "64decbb06b6675ecd23a22f6cd557bc8fe8875f451b4702d866bda7763fe99de",
+      "records": [
+        [
+          "367",
+          "train",
+          "news_query"
+        ],
+        [
+          "442",
+          "test",
+          "news_query"
+        ],
+        [
+          "6680",
+          "train",
+          "news_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c9366e4dde65953b84d3e84683a78f339dd327f1aacc0033913bb5723237ef91",
+      "records": [
+        [
+          "389",
+          "test",
+          "iot_wemo_on"
+        ],
+        [
+          "1292",
+          "train",
+          "iot_wemo_on"
+        ],
+        [
+          "1552",
+          "train",
+          "iot_wemo_on"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "da336b5e34b8e5bf6f3280e9e0261fafd9deea7cb9840e8214a49348d5608a14",
+      "records": [
+        [
+          "390",
+          "train",
+          "iot_wemo_on"
+        ],
+        [
+          "4618",
+          "test",
+          "iot_wemo_on"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "107a9f379ef72aa036df5de843375b91a94d501f168a225acfd45ce668bfc7aa",
+      "records": [
+        [
+          "410",
+          "train",
+          "alarm_query"
+        ],
+        [
+          "5006",
+          "test",
+          "alarm_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1430dffc42561835c1ecc4b73a4690b229f2593367049c9834b60e91a505d0ec",
+      "records": [
+        [
+          "427",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "428",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "429",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "3666",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5592",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ec0efb7d48fa831124fde3263f39f464103e32363dd5645dd96f2f979d4bcce8",
+      "records": [
+        [
+          "431",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "4932",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b3d8a85c38bb76694fe104bab006b54176c64fe4f4fe642eb403214a094ecc74",
+      "records": [
+        [
+          "448",
+          "test",
+          "iot_coffee"
+        ],
+        [
+          "1610",
+          "train",
+          "iot_coffee"
+        ],
+        [
+          "2749",
+          "dev",
+          "iot_coffee"
+        ],
+        [
+          "2971",
+          "dev",
+          "iot_coffee"
+        ],
+        [
+          "4170",
+          "train",
+          "iot_coffee"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c58c6e039e8812b02a1042feea32d37129ee07239f289e5c5ec21f37b17b7ef0",
+      "records": [
+        [
+          "465",
+          "dev",
+          "datetime_query"
+        ],
+        [
+          "572",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "810",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "8188",
+          "test",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "cba6b43eb3ccdf1d1973e43b34c46a9b2bdda95eb33d46b3fbcdc76016250fb0",
+      "records": [
+        [
+          "469",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "1944",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "1945",
+          "dev",
+          "iot_hue_lightoff"
+        ],
+        [
+          "3042",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "3593",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5364",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5761",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "63418a786f146cc5702f069f4cc10df06db3760a36645314c72198e3e815db83",
+      "records": [
+        [
+          "471",
+          "train",
+          "iot_hue_lighton"
+        ],
+        [
+          "1450",
+          "train",
+          "iot_hue_lighton"
+        ],
+        [
+          "2470",
+          "dev",
+          "iot_hue_lighton"
+        ],
+        [
+          "3808",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "5752",
+          "train",
+          "iot_hue_lighton"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1d6e24ef886cbdce4c311a10daa4cef7cbac2d5a0ae11b0c4f1d6a564098c7a5",
+      "records": [
+        [
+          "483",
+          "train",
+          "music_query"
+        ],
+        [
+          "2583",
+          "dev",
+          "music_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ca795d50e1ffd43db01e47a4975d1256cf407eb8708d135d318511a64ad3737a",
+      "records": [
+        [
+          "491",
+          "test",
+          "weather_query"
+        ],
+        [
+          "3935",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "02474b0dfeb875e08a5c991f4debfcc4dfc7b06c031ca20a019b4cc83c28cacb",
+      "records": [
+        [
+          "496",
+          "train",
+          "iot_hue_lightchange"
+        ],
+        [
+          "2863",
+          "dev",
+          "iot_hue_lightchange"
+        ],
+        [
+          "4825",
+          "train",
+          "iot_hue_lightchange"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "61c9b3e117fc4049a1c6d55d55e5e328d9c8bbb9de40649912fd7f379d17790f",
+      "records": [
+        [
+          "503",
+          "train",
+          "audio_volume_mute"
+        ],
+        [
+          "2048",
+          "train",
+          "audio_volume_mute"
+        ],
+        [
+          "3175",
+          "test",
+          "audio_volume_mute"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "34874d144a3a16afab7479a7d96f8201ac72c5d84111ab0055be872933759cb4",
+      "records": [
+        [
+          "506",
+          "test",
+          "play_music"
+        ],
+        [
+          "1034",
+          "train",
+          "play_music"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f6a50f39975cac31278d55af4b76f773dff90c977e2836f3aa426271a4a3ddf7",
+      "records": [
+        [
+          "529",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "4025",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "4026",
+          "test",
+          "iot_wemo_off"
+        ],
+        [
+          "4037",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5795",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "947cace53f9bb6c059691ce4c581311507d2a88d9d3ef45f7fbda22d03d5502f",
+      "records": [
+        [
+          "543",
+          "train",
+          "general_joke"
+        ],
+        [
+          "4982",
+          "test",
+          "general_joke"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f86d855e63b059814130b773b334064f11e6b1f782ace549daecdb1ac26dfb37",
+      "records": [
+        [
+          "563",
+          "train",
+          "iot_hue_lightchange"
+        ],
+        [
+          "564",
+          "test",
+          "iot_hue_lightchange"
+        ],
+        [
+          "3798",
+          "train",
+          "iot_hue_lightchange"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ff362e8b2d87f287b5ee827538d3090d0aaf2157236b2013e420289612f001b2",
+      "records": [
+        [
+          "565",
+          "train",
+          "iot_hue_lightchange"
+        ],
+        [
+          "5476",
+          "dev",
+          "iot_hue_lightchange"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "2a3cf540dfcd2a26330af09b497d5e9ea2a3b424cbdeda13fc280412988c573a",
+      "records": [
+        [
+          "566",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3936",
+          "test",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b93842b0ae9854165934d1ef95dff71c9221ca9d95bf811da877027201e2c04e",
+      "records": [
+        [
+          "585",
+          "test",
+          "news_query"
+        ],
+        [
+          "1958",
+          "train",
+          "news_query"
+        ],
+        [
+          "1959",
+          "train",
+          "news_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "334e689581909b833378ddc2cbdc7afb0f7dea3cda36d95ddb14157a01f500c6",
+      "records": [
+        [
+          "590",
+          "test",
+          "weather_query"
+        ],
+        [
+          "3033",
+          "train",
+          "weather_query"
+        ],
+        [
+          "4377",
+          "test",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "6a45e2cd8e6c0a8dbec32aa79ddcc86d9ebe4859be658d7edeb0302004f232aa",
+      "records": [
+        [
+          "600",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "3466",
+          "dev",
+          "audio_volume_up"
+        ],
+        [
+          "3561",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "4070",
+          "train",
+          "audio_volume_up"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e9248609b930c27c086d126ebea05ceb00036ae1619878b0ef1e03a881685d4e",
+      "records": [
+        [
+          "601",
+          "dev",
+          "alarm_set"
+        ],
+        [
+          "2195",
+          "train",
+          "alarm_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f36e174b4b4eeed0aeea7e3b33a0e582d74c41351a310728bf4b8c963cef8296",
+      "records": [
+        [
+          "614",
+          "test",
+          "play_music"
+        ],
+        [
+          "2481",
+          "train",
+          "play_music"
+        ],
+        [
+          "2675",
+          "dev",
+          "play_music"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "cb05e5f735b0e3d55c5504362b9cf705348c73ca8646bc892ddc911b1e5547a3",
+      "records": [
+        [
+          "635",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "4042",
+          "train",
+          "iot_cleaning"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "8818efe3886bd54f1e8382977f87af8894d20f6c18f11ce13cb3f7bd473923f4",
+      "records": [
+        [
+          "651",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "652",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "2776",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "69a010f54bf7be4f94cc8e14e979f62ca06f2b146c04e77637bd6cc688563366",
+      "records": [
+        [
+          "686",
+          "test",
+          "datetime_query"
+        ],
+        [
+          "974",
+          "test",
+          "datetime_query"
+        ],
+        [
+          "976",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "1233",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "4844",
+          "train",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "76c1e2fae2bdd0f7a01ea18676fa20c0a38f056befc4d1bd166c4862e848657d",
+      "records": [
+        [
+          "689",
+          "dev",
+          "audio_volume_down"
+        ],
+        [
+          "1787",
+          "train",
+          "audio_volume_down"
+        ],
+        [
+          "1906",
+          "train",
+          "audio_volume_down"
+        ],
+        [
+          "1947",
+          "train",
+          "audio_volume_down"
+        ],
+        [
+          "2047",
+          "train",
+          "audio_volume_down"
+        ],
+        [
+          "4390",
+          "train",
+          "audio_volume_down"
+        ],
+        [
+          "5481",
+          "test",
+          "audio_volume_down"
+        ],
+        [
+          "5611",
+          "test",
+          "audio_volume_down"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "dcf3c7c0d4d662d33c54704affcdac423943fa5c127bf0fc251da0c3e3cd814e",
+      "records": [
+        [
+          "710",
+          "dev",
+          "iot_coffee"
+        ],
+        [
+          "4084",
+          "test",
+          "iot_coffee"
+        ],
+        [
+          "6061",
+          "test",
+          "iot_coffee"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0582bd2c13fff71d7f40ef5586e3f4da05a3a61fe5ba9f0b4d06e99905ab83ea",
+      "records": [
+        [
+          "719",
+          "train",
+          "general_greet"
+        ],
+        [
+          "720",
+          "train",
+          "general_greet"
+        ],
+        [
+          "1277",
+          "dev",
+          "general_greet"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "da99cabc16f045461b53a94db1619833b2840bb35ae64c753f0b73aa194ec87c",
+      "records": [
+        [
+          "762",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "763",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "1249",
+          "test",
+          "weather_query"
+        ],
+        [
+          "1349",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "1555",
+          "train",
+          "weather_query"
+        ],
+        [
+          "2064",
+          "train",
+          "weather_query"
+        ],
+        [
+          "4485",
+          "train",
+          "weather_query"
+        ],
+        [
+          "5175",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "5176",
+          "test",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0804f5bd5ac949a51d6d63a61cb667dc225babfb042520d4f4392372862d91c0",
+      "records": [
+        [
+          "770",
+          "train",
+          "news_query"
+        ],
+        [
+          "2098",
+          "test",
+          "news_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ba8fe1295a7831eeb4594daf685a834d83e84da498bfe6d11ff165b174486d16",
+      "records": [
+        [
+          "781",
+          "test",
+          "play_music"
+        ],
+        [
+          "2007",
+          "test",
+          "play_music"
+        ],
+        [
+          "2216",
+          "train",
+          "play_music"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "162d953370eb03fcd1621011e7d1f7c4e115bed7e7f1574723aabf2897137e55",
+      "records": [
+        [
+          "827",
+          "test",
+          "play_music"
+        ],
+        [
+          "3145",
+          "train",
+          "play_music"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "cc2c0a2818b063674457d41cec647c9f846ec9c84e7a0b307abf9fd0cbcbe73a",
+      "records": [
+        [
+          "844",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "1059",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "2435",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "2436",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "4239",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "5853",
+          "train",
+          "iot_cleaning"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "8189da9e887fdcaf9f846e52c198db4fd6851cc7c750dedc69a06d1aed24c9f6",
+      "records": [
+        [
+          "867",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "3774",
+          "test",
+          "iot_wemo_off"
+        ],
+        [
+          "5226",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "5227",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "5228",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "5389",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "5442",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "5856",
+          "test",
+          "iot_wemo_off"
+        ],
+        [
+          "5857",
+          "train",
+          "iot_wemo_off"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "be2e5155d3502ce92db8385dbec3db5edeb3859e90c989f78f170e34b88e17c9",
+      "records": [
+        [
+          "868",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "2567",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "2692",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "2727",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "2728",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "3393",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "4769",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "5652",
+          "test",
+          "iot_wemo_off"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "cf2b6041e6bc1bd12c009b21fa6adbd0e8012601a37a6a3009b9d08eb57cd4b2",
+      "records": [
+        [
+          "884",
+          "test",
+          "alarm_set"
+        ],
+        [
+          "3397",
+          "train",
+          "alarm_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d92322855a8e675776560f3c6c2d1c832d97e97f89332fda564e71cff334cc43",
+      "records": [
+        [
+          "904",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3402",
+          "dev",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d55a0002fd734b641698cd11975b444a623e3c441b0cb1a5f37167f22ad50cd3",
+      "records": [
+        [
+          "908",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "2903",
+          "test",
+          "iot_cleaning"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "4576026f692b8a2573925ab97d5ea7d9494f4e7f331495422653836a93a0ea51",
+      "records": [
+        [
+          "913",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9233",
+          "test",
+          "play_radio"
+        ],
+        [
+          "9323",
+          "test",
+          "play_radio"
+        ],
+        [
+          "9490",
+          "train",
+          "play_radio"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "108918e482a1a2e58eb615a277e6cb2a4a67a3bdf8d707aaf939f32e2a0c5cf9",
+      "records": [
+        [
+          "914",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "1028",
+          "train",
+          "iot_hue_lightdim"
+        ],
+        [
+          "2571",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "4644",
+          "train",
+          "iot_hue_lightdim"
+        ],
+        [
+          "5584",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5730",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c867d1a9a0896802966dbddd4cab246f8947f2e727898786ede8f73ff6a27800",
+      "records": [
+        [
+          "973",
+          "train",
+          "news_query"
+        ],
+        [
+          "4258",
+          "test",
+          "news_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f21c2e6c55b3d0c38db27ceed78ce47e54c4f1c00264befd4db49abc4179409c",
+      "records": [
+        [
+          "997",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "1897",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "2442",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5156",
+          "test",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0d30a07b9955adf91892b04080c26b87615133a5927e7b23d45725868eee458c",
+      "records": [
+        [
+          "999",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5901",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "23f5ce3d08978056cf726faeae4491b7e46c4403bc204bd430cfa54e9672c27c",
+      "records": [
+        [
+          "1027",
+          "dev",
+          "datetime_query"
+        ],
+        [
+          "2410",
+          "train",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7d2ef6385fff7b93e4e10a41a0dbf5e006b2fd622d127abfba58f447e47a4c68",
+      "records": [
+        [
+          "1039",
+          "train",
+          "news_query"
+        ],
+        [
+          "2315",
+          "test",
+          "news_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "11c6f80528e282666d68b5952ff3682f6cf00556473d8a6c4647eda9a600b432",
+      "records": [
+        [
+          "1055",
+          "train",
+          "music_dislikeness"
+        ],
+        [
+          "3103",
+          "test",
+          "music_dislikeness"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1a942055116435f8a4306f5e6d7d2fb0187d51e4c16f22afa2bfefa220879122",
+      "records": [
+        [
+          "1056",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "1058",
+          "dev",
+          "iot_cleaning"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "4b8a71551fb924c73097bab029f7afc87565541e9676c3ef96c2342a08cd8809",
+      "records": [
+        [
+          "1070",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "4004",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "5574",
+          "test",
+          "iot_hue_lightup"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "4e352668dccf940a7618fe5b6609d902c0b2370b929f16ef8ac1b53830d5efa9",
+      "records": [
+        [
+          "1125",
+          "dev",
+          "datetime_query"
+        ],
+        [
+          "1796",
+          "test",
+          "datetime_query"
+        ],
+        [
+          "5576",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "5709",
+          "train",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f0a953e89cea57d80de21eb4a3cf036668e7a2f1efae21cf455f898536b3f236",
+      "records": [
+        [
+          "1133",
+          "train",
+          "alarm_set"
+        ],
+        [
+          "1982",
+          "test",
+          "alarm_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5c45a16b0bc8aefc84ee189280f2885e64fc87b8a93dc011ffca05a0b4c7ec97",
+      "records": [
+        [
+          "1146",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "1926",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "2434",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "2958",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "2959",
+          "test",
+          "iot_cleaning"
+        ],
+        [
+          "4075",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "5605",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "5854",
+          "dev",
+          "iot_cleaning"
+        ],
+        [
+          "5855",
+          "train",
+          "iot_cleaning"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "2f46e2de3630395a4fd8f06c8412953d07f79ea951947e88234b289241c7900e",
+      "records": [
+        [
+          "1154",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "2661",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "3154",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "3378",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "3509",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "4077",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "4171",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5397",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5646",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "6badbd3d4936de2d5ebf0f8e01ff2b0c6cd322ded79a917d74050bb66156907d",
+      "records": [
+        [
+          "1155",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "4796",
+          "dev",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "80ad6f5b91f4b36b11c1610a59aaf898331694fbe3843a15938fc373823c8806",
+      "records": [
+        [
+          "1270",
+          "train",
+          "news_query"
+        ],
+        [
+          "4023",
+          "test",
+          "news_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "27d256a3d4b25414e803a9031d0c352e3c3f1ce3b07d1d54a97497fa8afd26dc",
+      "records": [
+        [
+          "1271",
+          "dev",
+          "news_query"
+        ],
+        [
+          "2452",
+          "train",
+          "news_query"
+        ],
+        [
+          "3623",
+          "test",
+          "news_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0c960ae390d63b57f82adabbc4a44708a24e0ed3f7bcbd4e8e70b2afd609cae2",
+      "records": [
+        [
+          "1291",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "3076",
+          "train",
+          "iot_wemo_off"
+        ],
+        [
+          "3326",
+          "test",
+          "iot_wemo_off"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f5dfa0e4a28ed00e23a58da800b808f8f01f7d9a9851d37dcb16dd7faaf207c3",
+      "records": [
+        [
+          "1321",
+          "train",
+          "weather_query"
+        ],
+        [
+          "1327",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "1328",
+          "train",
+          "weather_query"
+        ],
+        [
+          "1691",
+          "train",
+          "weather_query"
+        ],
+        [
+          "1891",
+          "train",
+          "weather_query"
+        ],
+        [
+          "3106",
+          "train",
+          "weather_query"
+        ],
+        [
+          "4789",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "75a876b65295a094cacd94e58f46b2bd7be00868871c5a615a0f63d08096a38b",
+      "records": [
+        [
+          "1365",
+          "dev",
+          "audio_volume_up"
+        ],
+        [
+          "1366",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "1880",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "3688",
+          "train",
+          "audio_volume_up"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d99e814bdb1f76f2458767213e69d6edb5c8ad59b8b89ef6ee6eae2d7de8dbd9",
+      "records": [
+        [
+          "1375",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "5726",
+          "dev",
+          "audio_volume_up"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e9f1ad82abb27e1978b77629fea4f22db295bc2eb8e22f904ef6b1f5d8e22953",
+      "records": [
+        [
+          "1376",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "3785",
+          "test",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "cec6830284286827f51ecdc8cf1e33e9d21c980436bde60f8b9d3ad12eccd5f9",
+      "records": [
+        [
+          "1419",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "1804",
+          "test",
+          "iot_hue_lightup"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e25189c798ffb4e325e0f20ebb918a24dce56f1a9d5eaa07168bb0fc86984905",
+      "records": [
+        [
+          "1456",
+          "train",
+          "weather_query"
+        ],
+        [
+          "2139",
+          "train",
+          "weather_query"
+        ],
+        [
+          "2544",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "4871",
+          "test",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e77d04cb0dec15365122be3b3abd879fbb220d494585ca1f3896bce5050c1b47",
+      "records": [
+        [
+          "1466",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "4204",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "eba7e86de636e5aadb2d1200c76283a7c4692a3b48233e618644099b963d290f",
+      "records": [
+        [
+          "1505",
+          "train",
+          "iot_wemo_on"
+        ],
+        [
+          "1507",
+          "train",
+          "iot_wemo_on"
+        ],
+        [
+          "3804",
+          "dev",
+          "iot_wemo_on"
+        ],
+        [
+          "3877",
+          "train",
+          "iot_wemo_on"
+        ],
+        [
+          "5651",
+          "dev",
+          "iot_wemo_on"
+        ],
+        [
+          "5653",
+          "dev",
+          "iot_wemo_on"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "6d6f5e3b9374c13a01e3c5e8515c2e1472d75a86f87b7ffafdc58c9e7a69961d",
+      "records": [
+        [
+          "1549",
+          "test",
+          "weather_query"
+        ],
+        [
+          "3857",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5bc98ce031120c363557fa5901e4488e1d4bcc1c325700a7a8f06686dba5517c",
+      "records": [
+        [
+          "1551",
+          "test",
+          "iot_wemo_on"
+        ],
+        [
+          "4201",
+          "test",
+          "iot_wemo_on"
+        ],
+        [
+          "5069",
+          "dev",
+          "iot_wemo_on"
+        ],
+        [
+          "5686",
+          "train",
+          "iot_wemo_on"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "db1297916ee3dc68ca48c422e1ffadae6b9dbb2a728711cbfc48a7c741542c47",
+      "records": [
+        [
+          "1553",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5202",
+          "dev",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "60a73456a0fbf0c9bb74912096ede374e05f209c2556943abd14723220b8d7e7",
+      "records": [
+        [
+          "1566",
+          "dev",
+          "play_music"
+        ],
+        [
+          "4869",
+          "train",
+          "play_music"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7af4c17cc167a0b1c20639bc56c0f0d93419362ee5b6fdcef5e7aec8154baf1d",
+      "records": [
+        [
+          "1597",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "3841",
+          "test",
+          "iot_cleaning"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "4b747a58c9b277234d4afcfab72f642b76f0b67bc1eae209d3aa6f423154ed67",
+      "records": [
+        [
+          "1598",
+          "train",
+          "iot_cleaning"
+        ],
+        [
+          "3840",
+          "dev",
+          "iot_cleaning"
+        ],
+        [
+          "4240",
+          "test",
+          "iot_cleaning"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c2b9997f75577e73c1720ca8bf40b0bde4b8d453f681c9068175e1087a437dd9",
+      "records": [
+        [
+          "1621",
+          "dev",
+          "music_likeness"
+        ],
+        [
+          "1628",
+          "train",
+          "takeaway_order"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "59d0fa60cb0d21531a10e7a19dc49f61cb0105b0371fee1439e341ae5d72a114",
+      "records": [
+        [
+          "1639",
+          "test",
+          "audio_volume_down"
+        ],
+        [
+          "4071",
+          "train",
+          "audio_volume_down"
+        ],
+        [
+          "5924",
+          "train",
+          "audio_volume_down"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "4383370c2e74392ab13310dd7b2dae86b99f8f3a438a8d7492b5d542e75d868d",
+      "records": [
+        [
+          "1695",
+          "train",
+          "music_query"
+        ],
+        [
+          "1696",
+          "dev",
+          "music_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5b657c464b525207d816019b461655b3d227d9cb3307a9d5d38fe69ec329c4e8",
+      "records": [
+        [
+          "1750",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "4316",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5398",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c7519c56a7fd4ebfc7c9cc90579b6ad6bcda6256db84a9f9bda7543e1542c8a0",
+      "records": [
+        [
+          "1755",
+          "train",
+          "iot_hue_lightup"
+        ],
+        [
+          "3762",
+          "test",
+          "iot_hue_lightup"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "2acbf3ec35f21ba0e78e85bac3fabd7806072c2cab74a4645e21653eb8429149",
+      "records": [
+        [
+          "1788",
+          "train",
+          "audio_volume_up"
+        ],
+        [
+          "2360",
+          "dev",
+          "audio_volume_up"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5b09d3fe743098b8a621ceae4098c0fc52bd712e526c474fb02a28a375654c65",
+      "records": [
+        [
+          "1797",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "11999",
+          "test",
+          "recommendation_events"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "6df0dafd9dc3982f7ced59deb632e4f7085ba8affd4973c7c89fd67caa5bc5e3",
+      "records": [
+        [
+          "1827",
+          "dev",
+          "news_query"
+        ],
+        [
+          "11748",
+          "train",
+          "recommendation_events"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "84ffef86017b6cffbcb318ca618e3900856851ad2e3fa00e6d7a103e6d3886c4",
+      "records": [
+        [
+          "1898",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "2578",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "6073",
+          "test",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1d483b505807c93589fbed30e5f253c93a98b126c650a846c9a8cd59fb34de97",
+      "records": [
+        [
+          "1951",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "2801",
+          "test",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "864d1f1ec06c530aafa4dd14ca05ce0022fd17a613890c9b7205e9c18d1af180",
+      "records": [
+        [
+          "1993",
+          "test",
+          "iot_hue_lightup"
+        ],
+        [
+          "3427",
+          "train",
+          "iot_hue_lightup"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5c122024b269b1b823d103e473f4341bf42f496b419c4066dd48ad0629be7ebb",
+      "records": [
+        [
+          "2037",
+          "train",
+          "iot_hue_lightchange"
+        ],
+        [
+          "3734",
+          "test",
+          "iot_hue_lightchange"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "02949951887b214b171392401966c140ca85ab000bae1f70220286bdb4b99e03",
+      "records": [
+        [
+          "2075",
+          "test",
+          "iot_hue_lightup"
+        ],
+        [
+          "2402",
+          "train",
+          "iot_hue_lightup"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "8dbc5ad4dd6b76d188d02fd8161620ec70ba7488f5aea0be71faccdba6e80280",
+      "records": [
+        [
+          "2166",
+          "test",
+          "alarm_set"
+        ],
+        [
+          "2333",
+          "train",
+          "alarm_set"
+        ],
+        [
+          "3219",
+          "train",
+          "alarm_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "39062eafbaaeb41901eabb658ad0a1598886e5e0dad2c3730b687df22adea11c",
+      "records": [
+        [
+          "2184",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "2835",
+          "dev",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "eaf5547acbfdf5aac022f6ea4a85d4ac00e3ca7c1dcf65e2925b9d90c3b9271f",
+      "records": [
+        [
+          "2194",
+          "train",
+          "alarm_set"
+        ],
+        [
+          "5292",
+          "test",
+          "alarm_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0a6d4d3b65024b255bf98a7551c98d9a9575ee1591c9220804f5cd5c7a6bba4b",
+      "records": [
+        [
+          "2219",
+          "train",
+          "weather_query"
+        ],
+        [
+          "2220",
+          "test",
+          "weather_query"
+        ],
+        [
+          "2221",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "2222",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f44e0c1bbebfab83bb0365600fe59cdefe00913e757b4ca7f2a872b1f2199280",
+      "records": [
+        [
+          "2230",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "2232",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0d2bcd824417f8a71a31ec651bc0f908a55447968201c1fd91d96ab313be72bb",
+      "records": [
+        [
+          "2298",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "4323",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "624f7e7eadd6c640ee68e493b947b431eeb304ed9eada048d0545dd0e4012dd2",
+      "records": [
+        [
+          "2386",
+          "test",
+          "news_query"
+        ],
+        [
+          "4860",
+          "train",
+          "news_query"
+        ],
+        [
+          "5216",
+          "dev",
+          "news_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "aeb55c820ce68ec10522bd95132ccc2c42a12703bb589e4ae415c70850eee0c3",
+      "records": [
+        [
+          "2426",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "2428",
+          "dev",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7555a0c15b3da91871c5d7e3a1b079c77b9bf770a70f24640229506b8da16a2d",
+      "records": [
+        [
+          "2525",
+          "train",
+          "takeaway_query"
+        ],
+        [
+          "2742",
+          "dev",
+          "takeaway_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c0b7a7f84682a6c86b8f5dd2f118970b3d497542da1db9e8f6e2b6e352d2eb4b",
+      "records": [
+        [
+          "2557",
+          "train",
+          "weather_query"
+        ],
+        [
+          "4412",
+          "test",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "bdbead14a740fcde59b20b3a0c3fd58b312e5e82fcf95d2af0db4528fd54d56a",
+      "records": [
+        [
+          "2563",
+          "dev",
+          "alarm_set"
+        ],
+        [
+          "4717",
+          "train",
+          "alarm_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "958a548e9c26919b4564a6e6489f6a97c1f69bcd3c630f1407e2a43b04e81392",
+      "records": [
+        [
+          "2576",
+          "dev",
+          "iot_hue_lightdim"
+        ],
+        [
+          "3672",
+          "train",
+          "iot_hue_lightdim"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d56646eaca7e9e5ed7ec93cb7d0585d8115886e174cbc55303b31d3b29c0eb8f",
+      "records": [
+        [
+          "2693",
+          "dev",
+          "iot_coffee"
+        ],
+        [
+          "4988",
+          "test",
+          "iot_coffee"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ee3a16066e06a67a0679d777a3940f0685fbbf316b531aa5c2375ebcec8c89c5",
+      "records": [
+        [
+          "2695",
+          "train",
+          "iot_coffee"
+        ],
+        [
+          "2814",
+          "dev",
+          "iot_coffee"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5b4bc6afaff8280bba69c1523243e73f8e8308b7d22f66e9255eb63a42d31671",
+      "records": [
+        [
+          "2763",
+          "dev",
+          "datetime_query"
+        ],
+        [
+          "4404",
+          "train",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "17450d3e4b3c26a78d4dd3d0c89048efde52abec522aab65c3df3e3c271d5af9",
+      "records": [
+        [
+          "2795",
+          "test",
+          "audio_volume_mute"
+        ],
+        [
+          "2915",
+          "train",
+          "audio_volume_down"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "87bdaf217ee6796765044a7ba6ba98e7e07b81fd6cfce49bb4f0a18e99606b8d",
+      "records": [
+        [
+          "2802",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "4580",
+          "test",
+          "datetime_query"
+        ],
+        [
+          "4738",
+          "train",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "66d85fc698a49e981fd4d9456045f34d1c34559b5453cd4304f6488b95521be1",
+      "records": [
+        [
+          "2804",
+          "train",
+          "iot_hue_lightdim"
+        ],
+        [
+          "3172",
+          "train",
+          "iot_hue_lightdim"
+        ],
+        [
+          "6015",
+          "test",
+          "iot_hue_lightdim"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "65b735dd59196544842b8b2f24ad25984b6326eb73c3659316bba871b1e11364",
+      "records": [
+        [
+          "2810",
+          "dev",
+          "iot_hue_lightup"
+        ],
+        [
+          "5472",
+          "train",
+          "iot_hue_lightup"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "de22d55845102dbefe0dd584a923433b91ccf76c08c82958bacaf1658c4f0255",
+      "records": [
+        [
+          "2850",
+          "test",
+          "takeaway_query"
+        ],
+        [
+          "2851",
+          "dev",
+          "takeaway_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "64a991887c170af1211313014ca5fc3b8fd2065c9199cf1c22ac4782a19d88d3",
+      "records": [
+        [
+          "2950",
+          "train",
+          "music_likeness"
+        ],
+        [
+          "3104",
+          "train",
+          "music_likeness"
+        ],
+        [
+          "5516",
+          "dev",
+          "music_likeness"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "4d69ebe44aaac51f23dd0eddd2f3f0c540a541de68d91f8156e239d78b6e2f6b",
+      "records": [
+        [
+          "2965",
+          "test",
+          "iot_hue_lightoff"
+        ],
+        [
+          "2966",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "8db5a7e9aa4050efb996629430947f8b5d61e94ad43b320e2b4cb615ec640783",
+      "records": [
+        [
+          "2993",
+          "dev",
+          "play_music"
+        ],
+        [
+          "4477",
+          "test",
+          "play_music"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b482ce56dc159ff8b8c3e300193a5f13282e076c428b58d47d71c62a478e357c",
+      "records": [
+        [
+          "3004",
+          "dev",
+          "music_query"
+        ],
+        [
+          "3178",
+          "test",
+          "music_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "fc1b576df5fe6a70eaa8fe7e24ace5babecdec8165bdb8a33922155598021646",
+      "records": [
+        [
+          "3074",
+          "train",
+          "audio_volume_mute"
+        ],
+        [
+          "3581",
+          "test",
+          "audio_volume_mute"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c19915f79a208ca0213457146230a487ad71bfd99b3298ee8d47f0d17e3837b5",
+      "records": [
+        [
+          "3165",
+          "train",
+          "play_music"
+        ],
+        [
+          "3166",
+          "dev",
+          "play_music"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c108e923c91fe0edf34785e0b311dc5f45d2e3f93a01e04a21079004c3928ce6",
+      "records": [
+        [
+          "3192",
+          "train",
+          "music_likeness"
+        ],
+        [
+          "5198",
+          "test",
+          "music_likeness"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ebd26b052fa8ec075704d8c5b836a9ac13953316d4138462991ee25d7974bab3",
+      "records": [
+        [
+          "3223",
+          "train",
+          "iot_hue_lightdim"
+        ],
+        [
+          "3280",
+          "test",
+          "iot_hue_lightdim"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "bfb6bdf3240e2f641a3f26839c73e317dcc26f726b3fe4437b25635cc5eba019",
+      "records": [
+        [
+          "3277",
+          "train",
+          "iot_hue_lightdim"
+        ],
+        [
+          "3377",
+          "dev",
+          "iot_hue_lightdim"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ee3863ec268c8daee4a8515e0ff3ac66d565ce2fdf36b98a2f0262fecfe490d2",
+      "records": [
+        [
+          "3285",
+          "dev",
+          "weather_query"
+        ],
+        [
+          "4313",
+          "test",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1d43485f1dc4e4b5e6f0b55af9c56a34a97feaaa7586686d8018982e5b1fb59c",
+      "records": [
+        [
+          "3298",
+          "test",
+          "iot_wemo_off"
+        ],
+        [
+          "3299",
+          "train",
+          "iot_wemo_off"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "dc9d8bf8ce774cbbf9390c34e4671da61e21fe757660ac6ef392609062a788c9",
+      "records": [
+        [
+          "3394",
+          "dev",
+          "iot_wemo_on"
+        ],
+        [
+          "4965",
+          "train",
+          "iot_wemo_on"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "2cdd90b64ccbc2ce807f6868b317662d41eeecd842b69d87102268621e2fb5df",
+      "records": [
+        [
+          "3502",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "4632",
+          "dev",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f05f29ffa175ec60b198dfc7a948e605b5ea00874f8025dd874c3714eb536fde",
+      "records": [
+        [
+          "3511",
+          "dev",
+          "general_quirky"
+        ],
+        [
+          "3512",
+          "train",
+          "general_quirky"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e14a447a13cd57c5c72b7e618679b6ad67a506c24e982459ab5938116e164763",
+      "records": [
+        [
+          "3595",
+          "test",
+          "iot_hue_lightup"
+        ],
+        [
+          "5607",
+          "train",
+          "iot_hue_lightup"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "a17eeda4f46f85a2c050b8e118d6bc346e3eed80acd202439cff71e035c4cf99",
+      "records": [
+        [
+          "3678",
+          "train",
+          "iot_coffee"
+        ],
+        [
+          "5917",
+          "test",
+          "iot_coffee"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "6f23b3af3034999b58832d4d9d644077df3cf9698031484a06a06b53215325c9",
+      "records": [
+        [
+          "3736",
+          "train",
+          "audio_volume_down"
+        ],
+        [
+          "5219",
+          "test",
+          "audio_volume_down"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "a26f2ad7ffdf02d37e3664f7368666756b96d153b1d1e680d1f92a1f983630ce",
+      "records": [
+        [
+          "3741",
+          "test",
+          "music_query"
+        ],
+        [
+          "4335",
+          "train",
+          "music_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c718c345be0005b05cb5cb1c2aee425107a9ecb0799dd55bc0184183df0ec3a7",
+      "records": [
+        [
+          "3748",
+          "train",
+          "news_query"
+        ],
+        [
+          "4941",
+          "dev",
+          "news_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "8cc1d168036875a4394486ecccad1dd78082deffda1b42fa4f3b119a573e858d",
+      "records": [
+        [
+          "3809",
+          "test",
+          "audio_volume_down"
+        ],
+        [
+          "3811",
+          "dev",
+          "audio_volume_down"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c928aebc163578a2fb46fbb1556be8ada483311b3c77e6f397c91e951bdf135a",
+      "records": [
+        [
+          "3968",
+          "dev",
+          "play_music"
+        ],
+        [
+          "5328",
+          "test",
+          "play_music"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "093a1090980aac7f74d8436e9af53912155ffd14904878bda3fa199d5cf66afa",
+      "records": [
+        [
+          "4121",
+          "test",
+          "alarm_query"
+        ],
+        [
+          "5982",
+          "dev",
+          "alarm_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "24a16f51f2e5ecbc6b42e88292c8e4b711ab39b0a7834fa796c8055355bea954",
+      "records": [
+        [
+          "4185",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "4187",
+          "test",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "9c51e8e194ca3d3c96b63aaf0972e447c169cc57db470d811df5bf166d36a30a",
+      "records": [
+        [
+          "4186",
+          "test",
+          "datetime_query"
+        ],
+        [
+          "4188",
+          "train",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "6f935b88ebbae621675aba5f49811029fa3752d588b4615c3606931c53e62773",
+      "records": [
+        [
+          "4339",
+          "dev",
+          "takeaway_order"
+        ],
+        [
+          "14951",
+          "train",
+          "qa_factoid"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "21dd4350fa8c0ccc611f0b7d4738bb4584efd01b971cf40cdcb5c23379378d5e",
+      "records": [
+        [
+          "4389",
+          "train",
+          "audio_volume_other"
+        ],
+        [
+          "5579",
+          "test",
+          "audio_volume_other"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "a4833b90156a3345a66a00c48e54d9c7703aa44225591aeef43e928ec873a2cb",
+      "records": [
+        [
+          "4402",
+          "test",
+          "weather_query"
+        ],
+        [
+          "5452",
+          "train",
+          "weather_query"
+        ],
+        [
+          "5698",
+          "train",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ce751cee9704b7e683eae50c3b1c41ed127a970a9fd486c741d0645d2335ed38",
+      "records": [
+        [
+          "4469",
+          "train",
+          "weather_query"
+        ],
+        [
+          "5462",
+          "dev",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1352783adc7e5f5e3f758134d1d352f0f0dc3dcf0199341e0d97977068de7bc9",
+      "records": [
+        [
+          "4471",
+          "train",
+          "weather_query"
+        ],
+        [
+          "16056",
+          "test",
+          "email_sendemail"
+        ],
+        [
+          "16177",
+          "train",
+          "email_sendemail"
+        ],
+        [
+          "16509",
+          "train",
+          "email_sendemail"
+        ],
+        [
+          "16881",
+          "dev",
+          "email_sendemail"
+        ],
+        [
+          "16947",
+          "test",
+          "email_sendemail"
+        ],
+        [
+          "17014",
+          "train",
+          "email_sendemail"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "9ba5f65325460903ac56d26b42a6375baaf15e71ba77b7eb9c00940b95067bb8",
+      "records": [
+        [
+          "4610",
+          "train",
+          "datetime_query"
+        ],
+        [
+          "5997",
+          "test",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "bcad42773735ecd66ec5e2f2bd64b1cef080308d5b9b6dc93a006ada0c8b74a9",
+      "records": [
+        [
+          "4652",
+          "train",
+          "audio_volume_mute"
+        ],
+        [
+          "4653",
+          "test",
+          "audio_volume_mute"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b2113e2850e047d586b56d7373c4274de2c86d231b8b672d992fa718feade470",
+      "records": [
+        [
+          "4659",
+          "test",
+          "audio_volume_mute"
+        ],
+        [
+          "6066",
+          "train",
+          "audio_volume_mute"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "356dc91a5d8dd6b1093579a714eb4f637596220c743b9fb81d59ca2a36b879b4",
+      "records": [
+        [
+          "4700",
+          "train",
+          "general_quirky"
+        ],
+        [
+          "16586",
+          "dev",
+          "email_sendemail"
+        ],
+        [
+          "16961",
+          "test",
+          "email_sendemail"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0c35ceac312c3f9fb5ced9b6b2eff70823f6df5939bdf85c64c70a252546af70",
+      "records": [
+        [
+          "4813",
+          "test",
+          "datetime_query"
+        ],
+        [
+          "4815",
+          "train",
+          "datetime_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "bacf468b2c8a2d9616a6c42b91d0ce81207e52b81b35656547c5dd1a332d3e17",
+      "records": [
+        [
+          "5165",
+          "test",
+          "iot_hue_lightdim"
+        ],
+        [
+          "5612",
+          "train",
+          "iot_hue_lightdim"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7969a8cb6408a0bc5d804d618671502062999c2d1226a0ab652db808b34dba59",
+      "records": [
+        [
+          "5183",
+          "dev",
+          "general_joke"
+        ],
+        [
+          "5508",
+          "train",
+          "general_joke"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "31bb4dee68a3a7ca7606edcc0b7e60bad260b4e3ade41f3ee32402e85ecf9dee",
+      "records": [
+        [
+          "5406",
+          "test",
+          "takeaway_query"
+        ],
+        [
+          "5770",
+          "dev",
+          "takeaway_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "cfda7cb0dc3a32f2f1c769372f2f2fa6b4d679282c240c71ec718029d65f6342",
+      "records": [
+        [
+          "5518",
+          "dev",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5519",
+          "train",
+          "iot_hue_lightoff"
+        ],
+        [
+          "5713",
+          "train",
+          "iot_hue_lightoff"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ec26da0b1d7494b317d94f0870f7ef9faea86799b666586d276cb665dc5ebcf7",
+      "records": [
+        [
+          "5593",
+          "test",
+          "play_music"
+        ],
+        [
+          "5594",
+          "train",
+          "play_music"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d9c7d073fb7171036fa310dbb9e4e722a4a41bad5522ae065f1a260f1eb33986",
+      "records": [
+        [
+          "5787",
+          "train",
+          "weather_query"
+        ],
+        [
+          "5788",
+          "dev",
+          "weather_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c339f8f2594cde02d08281637a3738495e914ad6a3b05f89a4f35398dd06dda7",
+      "records": [
+        [
+          "6237",
+          "train",
+          "general_quirky"
+        ],
+        [
+          "6673",
+          "dev",
+          "general_quirky"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1cafe29b8e339307923a275b00618bd19faf6715844af871261cca9787f6ee12",
+      "records": [
+        [
+          "6314",
+          "dev",
+          "general_quirky"
+        ],
+        [
+          "6480",
+          "train",
+          "recommendation_events"
+        ],
+        [
+          "12056",
+          "train",
+          "recommendation_events"
+        ],
+        [
+          "15199",
+          "test",
+          "social_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5180015d433638695d51fe1edb3c7c092bc45a6dd22fa0f11c2cd2efd9a4a1a7",
+      "records": [
+        [
+          "6511",
+          "train",
+          "calendar_set"
+        ],
+        [
+          "8418",
+          "dev",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "353485f42e7cb5ad19da9a3fc1393e810f662335497d9ef54da94ad2c23a485e",
+      "records": [
+        [
+          "6569",
+          "train",
+          "general_quirky"
+        ],
+        [
+          "6570",
+          "dev",
+          "general_quirky"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ed8eac30de06d0c27da47d11511f6125195a3bc5b71ac5a700de0b37e7df5e6d",
+      "records": [
+        [
+          "6688",
+          "train",
+          "transport_traffic"
+        ],
+        [
+          "12717",
+          "test",
+          "transport_traffic"
+        ],
+        [
+          "12787",
+          "dev",
+          "transport_traffic"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1f9130dcb6189de0f47ebd5dda92dec06ced08e35a380c80802134e291cf2961",
+      "records": [
+        [
+          "6728",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "6729",
+          "test",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ad10b97adb0a35cf1f958412eeeb267186d2f36aeeca83d51b0937f813d12bd4",
+      "records": [
+        [
+          "6751",
+          "dev",
+          "calendar_query"
+        ],
+        [
+          "8506",
+          "train",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "050ac635d09baa217ae35242114175869dadfe4b62f54c53f95c68e75578e80c",
+      "records": [
+        [
+          "6769",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "6798",
+          "test",
+          "calendar_remove"
+        ],
+        [
+          "8254",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8340",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8341",
+          "train",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "3d15221e37c91e7427ce71a4f5d157bcfbc952df9603b1c71c3c1fae923fb4af",
+      "records": [
+        [
+          "6778",
+          "dev",
+          "calendar_query"
+        ],
+        [
+          "6924",
+          "train",
+          "calendar_query"
+        ],
+        [
+          "7907",
+          "dev",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e820ec16ae6519e20ad2bd08df9906094fafc003232dc10f33f489abbdd43978",
+      "records": [
+        [
+          "6808",
+          "dev",
+          "calendar_remove"
+        ],
+        [
+          "7701",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "7994",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8856",
+          "test",
+          "calendar_remove"
+        ],
+        [
+          "8925",
+          "test",
+          "calendar_remove"
+        ],
+        [
+          "9015",
+          "test",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "a04ffb03203b8ea07337abd9bfa9a2bb98db9d2691ac5316c75472ffe141120b",
+      "records": [
+        [
+          "6854",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8548",
+          "dev",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1fea040e6276868e624baa25f15d7c7624798e168c278c22ee76c31e6216313d",
+      "records": [
+        [
+          "6899",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8440",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8666",
+          "test",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "014c68351572bbe7e1630448cd03718195b28ecb87a020d35b08a2f483dcc3ec",
+      "records": [
+        [
+          "6928",
+          "test",
+          "calendar_remove"
+        ],
+        [
+          "7836",
+          "test",
+          "calendar_remove"
+        ],
+        [
+          "8295",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8727",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8728",
+          "train",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7ba9d74b5cc3c50c3932064d8a9b1e7ac83e06fc191163a2d902765ee1a7d319",
+      "records": [
+        [
+          "6942",
+          "train",
+          "calendar_set"
+        ],
+        [
+          "7001",
+          "train",
+          "calendar_set"
+        ],
+        [
+          "8990",
+          "test",
+          "calendar_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "70fe84704fbff0199db03a3202a026c4717854f542a1674451374544f1246c26",
+      "records": [
+        [
+          "6953",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8333",
+          "dev",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "69e78824068982f988b4f71e446e0325f9aefe6708aa12d9bb13befeb9f6ccff",
+      "records": [
+        [
+          "6956",
+          "train",
+          "calendar_set"
+        ],
+        [
+          "6959",
+          "test",
+          "calendar_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c8d4fadfe15d90c6536c65a61162adad0dcda018b7c0d82bee4502ecd224a473",
+      "records": [
+        [
+          "6993",
+          "train",
+          "calendar_set"
+        ],
+        [
+          "7800",
+          "train",
+          "calendar_set"
+        ],
+        [
+          "8890",
+          "dev",
+          "calendar_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "22dcfc053fb8b84eff03a41843b696d1e0b43d87f8a56ac352d18a99e9920d60",
+      "records": [
+        [
+          "6996",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8769",
+          "test",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "9f3d0bb1e9e1ce771fbbf7a7c373567c0d1bcab5f356643eee291a60d13a4f86",
+      "records": [
+        [
+          "7024",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8472",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "8670",
+          "test",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "369246a6619a4db4ff76a04acd41ec413ef6109472c43e5091cafb1111469c8c",
+      "records": [
+        [
+          "7080",
+          "test",
+          "calendar_remove"
+        ],
+        [
+          "7343",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "9088",
+          "test",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1b6b386ef0d5825f45e12cfff32926bb07a9ccc9003219bba60c5fb6bc31bda1",
+      "records": [
+        [
+          "7120",
+          "test",
+          "calendar_query"
+        ],
+        [
+          "8492",
+          "train",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "af934613739d258e22e638bc5b4f33fc753b9216023df41263599e96b4f9761a",
+      "records": [
+        [
+          "7308",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "7878",
+          "test",
+          "calendar_remove"
+        ],
+        [
+          "8545",
+          "train",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "470125092624d7a4e06837a3a30542bde5c22f359334a6dc6bc081965c118103",
+      "records": [
+        [
+          "7314",
+          "test",
+          "calendar_query"
+        ],
+        [
+          "7823",
+          "train",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "6ede950f5eefeb5c648114e55a39b883095d8fefadbcef3e99d7c98697af1c6c",
+      "records": [
+        [
+          "7374",
+          "dev",
+          "calendar_query"
+        ],
+        [
+          "7375",
+          "train",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0a2b3d729e1211bcba1a02657d8958125059cb63eaf9a3e22f62335aa6d7e3c2",
+      "records": [
+        [
+          "7512",
+          "train",
+          "calendar_query"
+        ],
+        [
+          "7777",
+          "test",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "a101318ae6c7051a60132493264cf63c32409b527a478a0264ab6318739f2780",
+      "records": [
+        [
+          "7631",
+          "dev",
+          "calendar_set"
+        ],
+        [
+          "7633",
+          "train",
+          "calendar_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "a45e5587c6d7bf07e0c7765cd5de311750dd57ded7df8bc06b823f7e844529f8",
+      "records": [
+        [
+          "7646",
+          "dev",
+          "calendar_query"
+        ],
+        [
+          "8197",
+          "train",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "064bb3865a2ea268784e2a995d709210286b4a5c45d31b4718d6fd1cd1859809",
+      "records": [
+        [
+          "7648",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "7870",
+          "test",
+          "calendar_remove"
+        ],
+        [
+          "8738",
+          "train",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "fa01fbb6c27918fceeb625ffccd784741e281648069a96eb2547936182d7211b",
+      "records": [
+        [
+          "7690",
+          "test",
+          "calendar_query"
+        ],
+        [
+          "10836",
+          "train",
+          "general_quirky"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "938a77c505f109991efc5f4e5871c9e80e0256ca739cbdec0d47e2c08a8ea43b",
+      "records": [
+        [
+          "7702",
+          "train",
+          "calendar_remove"
+        ],
+        [
+          "7830",
+          "dev",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "9428fe4762fd66fcbe3962ece8bc33c2b1c90ba04d08ff5bd70fec164f4603e4",
+      "records": [
+        [
+          "7771",
+          "train",
+          "calendar_query"
+        ],
+        [
+          "8044",
+          "test",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "a91030a73ca109d06cd7f52da644d6fbd9fd80f03177a5a7cf4a3a45e5923eb4",
+      "records": [
+        [
+          "7820",
+          "test",
+          "calendar_remove"
+        ],
+        [
+          "9090",
+          "train",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "64eda3c2b5f410bcbe70360730777fdd884e535b7bf4d77105e10ab869be671b",
+      "records": [
+        [
+          "7936",
+          "train",
+          "calendar_query"
+        ],
+        [
+          "8916",
+          "test",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "3e4017b41b978f793e5d305db183c60a39d6be153625c236d04e6d7b5c220761",
+      "records": [
+        [
+          "8072",
+          "dev",
+          "calendar_query"
+        ],
+        [
+          "8217",
+          "train",
+          "calendar_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e7d0a34905384b3cbc3554fe72bedd072de610c7e66a864a0aacf436e5ea2602",
+      "records": [
+        [
+          "8282",
+          "dev",
+          "calendar_remove"
+        ],
+        [
+          "8659",
+          "train",
+          "calendar_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7cf48edcf1e39a501481e08b7035a4b61fc3234bd6a1f3ce6a9d75a8e6181187",
+      "records": [
+        [
+          "8750",
+          "train",
+          "calendar_set"
+        ],
+        [
+          "8751",
+          "dev",
+          "calendar_set"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1cd374fee56e826f20ffbfb8f24cd9df05bddd868e802d6daddfb653cb148c66",
+      "records": [
+        [
+          "9204",
+          "test",
+          "play_radio"
+        ],
+        [
+          "9239",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9601",
+          "test",
+          "play_radio"
+        ],
+        [
+          "9644",
+          "train",
+          "play_radio"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "44d8993fe6540b2dfd9a1d63df8dc9a48d55db9a671180687649eb1aab76f173",
+      "records": [
+        [
+          "9206",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9355",
+          "dev",
+          "play_radio"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "4e6f76aaaff388cc4af9f9730e7200fab52b5911cdba9b59b4f6ae3d4c57a13e",
+      "records": [
+        [
+          "9249",
+          "dev",
+          "play_radio"
+        ],
+        [
+          "9258",
+          "train",
+          "play_radio"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7c84a0e478f22c7d4786097f2ca0e0d2c68993cdbe3c625cc81a721492adf67a",
+      "records": [
+        [
+          "9255",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9256",
+          "dev",
+          "play_radio"
+        ],
+        [
+          "9262",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9307",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9376",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9415",
+          "train",
+          "play_radio"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "00f98300997d81dcff17dd55a776e575314298e84fa00e3bfacbe4ba4e391aa0",
+      "records": [
+        [
+          "9301",
+          "test",
+          "play_radio"
+        ],
+        [
+          "9396",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9481",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9527",
+          "train",
+          "play_radio"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d861237f25438090684d6dfd00318134f96b1cecfe2fb7d0424b309b1e8811a3",
+      "records": [
+        [
+          "9345",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9352",
+          "test",
+          "play_radio"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "a4c202f56c38e990c9ce30b8d03e42505eadb4ec719967f986459e2294c2e85c",
+      "records": [
+        [
+          "9393",
+          "train",
+          "play_radio"
+        ],
+        [
+          "9394",
+          "test",
+          "play_radio"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "07c61cba2bf2b5e367cf5d03b37f390ac51cd6b0a5003c0d73e0a02c097b9103",
+      "records": [
+        [
+          "9408",
+          "test",
+          "play_radio"
+        ],
+        [
+          "9410",
+          "train",
+          "play_radio"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ad0e9a7f33030bb4dd8a29e22e6bd0b2edbcea5e265bb0b7e275c27400cb224a",
+      "records": [
+        [
+          "9876",
+          "dev",
+          "play_audiobook"
+        ],
+        [
+          "9878",
+          "test",
+          "play_audiobook"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "fd045e3e451d99ff0437efc5ab53c3659e8c035c1797c2be1815a4e25349f941",
+      "records": [
+        [
+          "10153",
+          "train",
+          "cooking_recipe"
+        ],
+        [
+          "10238",
+          "dev",
+          "cooking_recipe"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "981acd6464b6fcb19e826b331ffbe8267475009b8f46a103238bdb3ede0eefb9",
+      "records": [
+        [
+          "10258",
+          "train",
+          "play_game"
+        ],
+        [
+          "10323",
+          "test",
+          "play_game"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "1e875114da71161293cbce89f092e232852810cf88589309a98135d8a2e153b2",
+      "records": [
+        [
+          "10260",
+          "test",
+          "play_game"
+        ],
+        [
+          "10306",
+          "train",
+          "play_game"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "39388e653f06422c38bb66fb57cbf7a315e2bf2da606a30809ea6b7894469282",
+      "records": [
+        [
+          "10324",
+          "dev",
+          "play_game"
+        ],
+        [
+          "10392",
+          "train",
+          "play_game"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "457f9e416479298df3069b4391136f65c8f2b2487b4bd4d103675a3c2855510a",
+      "records": [
+        [
+          "10432",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "10873",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "11023",
+          "test",
+          "lists_remove"
+        ],
+        [
+          "11025",
+          "train",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7698429708df24e6f0fa94cf7b6c56c3cb30bc91cb2194cb7a5d0a28f86e025e",
+      "records": [
+        [
+          "10442",
+          "test",
+          "lists_remove"
+        ],
+        [
+          "10443",
+          "train",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b8ec82c26942611a4bbb7daf01e753ebf432d03d61a0aed984f262a06bf5fefb",
+      "records": [
+        [
+          "10455",
+          "test",
+          "lists_query"
+        ],
+        [
+          "10833",
+          "train",
+          "lists_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ee8b8bf1feb293e1ae5a268ad96b1fa9e9ef193d3ec8b2828b1e3c610947ef09",
+      "records": [
+        [
+          "10462",
+          "test",
+          "lists_remove"
+        ],
+        [
+          "10463",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "10485",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "10527",
+          "test",
+          "lists_remove"
+        ],
+        [
+          "11040",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "11079",
+          "dev",
+          "lists_remove"
+        ],
+        [
+          "11094",
+          "train",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b5fe3cc8f89f8d162028d7d9b46466ad816357516c7b749b3a580b4227234b89",
+      "records": [
+        [
+          "10465",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "10789",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "10790",
+          "test",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5c1e7fe8351352c91da34a0c7e0204ec361e80aec6e380b5847154b6b077fd5c",
+      "records": [
+        [
+          "10486",
+          "dev",
+          "lists_remove"
+        ],
+        [
+          "10825",
+          "test",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d3f2d97e208c7274cf44888c9facd81734496dcdaa18e2d43e786a266b636403",
+      "records": [
+        [
+          "10488",
+          "dev",
+          "lists_createoradd"
+        ],
+        [
+          "10489",
+          "train",
+          "lists_createoradd"
+        ],
+        [
+          "10922",
+          "train",
+          "lists_createoradd"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7b48b4e7d72b2f99e02232f7f056ab88f1cb06c0a6d7b007e5ca4ecd0a5e1722",
+      "records": [
+        [
+          "10522",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "10523",
+          "test",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "26429e033deab1181912c193ce95034c8e584726b4914114cce4446113d42b52",
+      "records": [
+        [
+          "10526",
+          "dev",
+          "lists_remove"
+        ],
+        [
+          "11138",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "11149",
+          "train",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "eed6bd525cc100230cf3a8a562f58a46c1105eff3a60b733345d4626ca4c4e4d",
+      "records": [
+        [
+          "10530",
+          "train",
+          "lists_createoradd"
+        ],
+        [
+          "11029",
+          "test",
+          "lists_createoradd"
+        ],
+        [
+          "11207",
+          "train",
+          "lists_createoradd"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7ea6d29d81dfcf6218d49b88d08a885618f22edf79591a776bf3e85da229fc25",
+      "records": [
+        [
+          "10559",
+          "train",
+          "lists_createoradd"
+        ],
+        [
+          "10626",
+          "dev",
+          "lists_createoradd"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c6e34347dff2b19e847e0446a28254b35927efa0a8e17d6247d8ea4ecb03a744",
+      "records": [
+        [
+          "10596",
+          "train",
+          "lists_query"
+        ],
+        [
+          "10697",
+          "dev",
+          "lists_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e20f0a76b67e128bce924d10e793431330aad2c13314bebfc5988117037cfaa9",
+      "records": [
+        [
+          "10611",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "10791",
+          "dev",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e85c8ca3eafc145bb3ed2216c7e65079b19b1d087f64cf2a2ef32de834805f0f",
+      "records": [
+        [
+          "10709",
+          "test",
+          "lists_createoradd"
+        ],
+        [
+          "11122",
+          "dev",
+          "lists_createoradd"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "2c335f7d5116dc46705456816066e2a913627653096708b51f5dd18ab6a61dfb",
+      "records": [
+        [
+          "10715",
+          "train",
+          "lists_query"
+        ],
+        [
+          "10928",
+          "dev",
+          "lists_query"
+        ],
+        [
+          "11050",
+          "train",
+          "lists_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "60031c932116ac78755207a8d6c1df6ba797b52077a47c57725c8dcf0b8e168e",
+      "records": [
+        [
+          "10743",
+          "test",
+          "lists_remove"
+        ],
+        [
+          "10744",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "10745",
+          "train",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "2ed9c6e98603ad30d1dcfedbba68c2c7f4807a55ecab3526d1c2c98bdacccb46",
+      "records": [
+        [
+          "10746",
+          "dev",
+          "lists_remove"
+        ],
+        [
+          "10748",
+          "train",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "579451c9ebb6da0f57c0fb1e61f019e691044d7b7370e64b7b186b407bef6551",
+      "records": [
+        [
+          "10854",
+          "dev",
+          "lists_remove"
+        ],
+        [
+          "10960",
+          "test",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c87916986608a1b3a9faa5e353ff898a27e37ea3a0aada4c0bf95191ce6ea2b3",
+      "records": [
+        [
+          "10857",
+          "train",
+          "lists_createoradd"
+        ],
+        [
+          "10915",
+          "test",
+          "lists_createoradd"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7dca138b301d7c92add64b9c6569ff14e450afd02b377ef54b6a5ed0a0464112",
+      "records": [
+        [
+          "10887",
+          "test",
+          "lists_remove"
+        ],
+        [
+          "11168",
+          "test",
+          "lists_remove"
+        ],
+        [
+          "11256",
+          "dev",
+          "lists_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "8793eef239977bbb2c78c70b601f903afe502c4e34116ed02ef984076dde4fed",
+      "records": [
+        [
+          "10901",
+          "dev",
+          "lists_createoradd"
+        ],
+        [
+          "11210",
+          "train",
+          "lists_createoradd"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "7c75da040c2008e19ead177950ed3d9a9df650b980c8cd550e019122f68bfaa6",
+      "records": [
+        [
+          "10972",
+          "train",
+          "lists_createoradd"
+        ],
+        [
+          "10973",
+          "dev",
+          "lists_createoradd"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b430c62f006360da8930b3f28a6342447a3ac479d2bbe2715cdda687c594ee8c",
+      "records": [
+        [
+          "11044",
+          "train",
+          "lists_query"
+        ],
+        [
+          "11214",
+          "dev",
+          "lists_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "06dcffb9dfadbf9b281c90152a145e434bfad797e60ddc1c9f900be40ed35b89",
+      "records": [
+        [
+          "11083",
+          "train",
+          "lists_remove"
+        ],
+        [
+          "11085",
+          "test",
+          "lists_remove"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "10a8b41799c968fcb7158c6708fa3dce669c08d422198c21d404ff482a6196a3",
+      "records": [
+        [
+          "11259",
+          "test",
+          "play_podcasts"
+        ],
+        [
+          "11358",
+          "dev",
+          "play_podcasts"
+        ],
+        [
+          "11394",
+          "train",
+          "play_podcasts"
+        ],
+        [
+          "11395",
+          "train",
+          "play_podcasts"
+        ],
+        [
+          "11446",
+          "train",
+          "play_podcasts"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "90ef90bdeeae5cbdbe22386d855c4fcc10b3379e2fb2972379f8f7e50fd367e6",
+      "records": [
+        [
+          "11260",
+          "train",
+          "play_podcasts"
+        ],
+        [
+          "11299",
+          "train",
+          "play_podcasts"
+        ],
+        [
+          "11300",
+          "dev",
+          "play_podcasts"
+        ],
+        [
+          "11324",
+          "dev",
+          "play_podcasts"
+        ],
+        [
+          "11364",
+          "dev",
+          "play_podcasts"
+        ],
+        [
+          "11392",
+          "train",
+          "play_podcasts"
+        ],
+        [
+          "11399",
+          "dev",
+          "play_podcasts"
+        ],
+        [
+          "11501",
+          "train",
+          "play_podcasts"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ea7a39748ed22639a034097ec4ed4777fc64836836a5647f79c59b0dc75e0002",
+      "records": [
+        [
+          "11261",
+          "test",
+          "play_podcasts"
+        ],
+        [
+          "11262",
+          "train",
+          "play_podcasts"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "bb32435ca9f738a0d3232148d369c3b4ba5fc8295a14cee5e64c69744e0c50ee",
+      "records": [
+        [
+          "11283",
+          "dev",
+          "play_podcasts"
+        ],
+        [
+          "11311",
+          "train",
+          "play_podcasts"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "50c9847911b50e1bdd3223a85d4dbed2226ca89a283e6d8d9be353eaf04f285f",
+      "records": [
+        [
+          "11318",
+          "test",
+          "play_podcasts"
+        ],
+        [
+          "11319",
+          "train",
+          "play_podcasts"
+        ],
+        [
+          "11365",
+          "train",
+          "play_podcasts"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "3e2c12eb12b2fc6b7b8cebb77eab1af203bd6fd7e98648e221d7707dbbe09d23",
+      "records": [
+        [
+          "11373",
+          "train",
+          "play_podcasts"
+        ],
+        [
+          "11553",
+          "dev",
+          "play_podcasts"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5dd8ef56f6c76ae6521ff7cf4e4888b6293ed6932c238f9904f54cf7398a0fd4",
+      "records": [
+        [
+          "11457",
+          "train",
+          "play_podcasts"
+        ],
+        [
+          "11458",
+          "test",
+          "play_podcasts"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "5f36f02201e911e10a6fb9d4ab910f74503d718c71faa17ac51b45af3c99db99",
+      "records": [
+        [
+          "11563",
+          "test",
+          "recommendation_events"
+        ],
+        [
+          "11880",
+          "train",
+          "recommendation_events"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "ddd46f838097b277d5fcaf987e986dfc2ef91953ae9ca7f39618cfaecb464ce4",
+      "records": [
+        [
+          "12143",
+          "train",
+          "transport_traffic"
+        ],
+        [
+          "12258",
+          "dev",
+          "transport_traffic"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "08ff608457efe2b5242be377ce6d3a73c12d7bd55f8f83ee7669cc9d318ebb69",
+      "records": [
+        [
+          "12156",
+          "train",
+          "transport_ticket"
+        ],
+        [
+          "12226",
+          "train",
+          "transport_ticket"
+        ],
+        [
+          "12461",
+          "dev",
+          "transport_ticket"
+        ],
+        [
+          "12471",
+          "train",
+          "transport_ticket"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "9fe1fbc3009329b8d3fbf1154285f625d92237968c02daade94144191a97cf6e",
+      "records": [
+        [
+          "12199",
+          "train",
+          "transport_ticket"
+        ],
+        [
+          "12468",
+          "test",
+          "transport_ticket"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c2c626c250bfd15731e32c26df2d8c5f11f4a7c31372a3516e53d6239a4dc05a",
+      "records": [
+        [
+          "12297",
+          "train",
+          "transport_taxi"
+        ],
+        [
+          "12710",
+          "test",
+          "transport_taxi"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "81a0f2b0e11f082527bd98e39dbb49c2d8613c89ac1607c83d5dba0f9999c03e",
+      "records": [
+        [
+          "12317",
+          "dev",
+          "transport_traffic"
+        ],
+        [
+          "12319",
+          "train",
+          "transport_traffic"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "88ba55539f12433270cc3632747acc5186ac862dc7f52189b81bd92ad3d1a51f",
+      "records": [
+        [
+          "12372",
+          "dev",
+          "transport_taxi"
+        ],
+        [
+          "12377",
+          "test",
+          "transport_taxi"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e25ec3cb82d47e43f1f9509af9c704dc0a0690948863067a9bb4e8fc6b5c84eb",
+      "records": [
+        [
+          "12457",
+          "train",
+          "transport_query"
+        ],
+        [
+          "14421",
+          "dev",
+          "recommendation_locations"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "10b760a58b27140a2af68f63c2e0abaa431f1eccaa04f2cd9c8d8d96eb78af2c",
+      "records": [
+        [
+          "12511",
+          "test",
+          "transport_ticket"
+        ],
+        [
+          "12764",
+          "dev",
+          "transport_ticket"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "fb01ea6a0e1789d76ecc0f6921bfb7f8cf2be96bbd132542769b5b7ab5667a62",
+      "records": [
+        [
+          "12550",
+          "dev",
+          "transport_query"
+        ],
+        [
+          "14465",
+          "test",
+          "transport_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "be850cac9ffbe7eba1f46e1c273ef14120640ff596eb127926f52ff0b131ba81",
+      "records": [
+        [
+          "12666",
+          "train",
+          "transport_traffic"
+        ],
+        [
+          "12685",
+          "test",
+          "transport_traffic"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "dfd787516784be491b6eb049819078bfd3aece3e769f23f92e8a6ca4a122cd16",
+      "records": [
+        [
+          "12667",
+          "dev",
+          "transport_query"
+        ],
+        [
+          "12836",
+          "train",
+          "transport_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "70b0224b9d796c900a1ca183cea0b293849e65f3c0a5ee23ee48b2993894df41",
+      "records": [
+        [
+          "12768",
+          "dev",
+          "transport_query"
+        ],
+        [
+          "12818",
+          "test",
+          "transport_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "53a3618185942afafd640f56b18f37f22d12ccfd6bb574011652b9b5ddf973d2",
+      "records": [
+        [
+          "12999",
+          "test",
+          "qa_factoid"
+        ],
+        [
+          "13758",
+          "test",
+          "qa_factoid"
+        ],
+        [
+          "13763",
+          "train",
+          "qa_factoid"
+        ],
+        [
+          "14250",
+          "train",
+          "qa_factoid"
+        ],
+        [
+          "14324",
+          "train",
+          "qa_factoid"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d149f31031b7963816a5d719a1241431d660e46141eec2fa704e87b41c22b21b",
+      "records": [
+        [
+          "13045",
+          "train",
+          "general_quirky"
+        ],
+        [
+          "13242",
+          "test",
+          "general_quirky"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "df783f06b44560730d12c587c92a6ffaf7295e48b39b796da76b79dd8adf220b",
+      "records": [
+        [
+          "13269",
+          "train",
+          "qa_factoid"
+        ],
+        [
+          "13603",
+          "train",
+          "qa_factoid"
+        ],
+        [
+          "13844",
+          "dev",
+          "qa_factoid"
+        ],
+        [
+          "13947",
+          "train",
+          "qa_factoid"
+        ],
+        [
+          "13972",
+          "train",
+          "qa_factoid"
+        ],
+        [
+          "15020",
+          "test",
+          "qa_factoid"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d3dd6e5cb77b4abe53e7ed738d9ea498628b039d889317b9be2ea7e1acaf326a",
+      "records": [
+        [
+          "13363",
+          "test",
+          "general_quirky"
+        ],
+        [
+          "13522",
+          "dev",
+          "general_quirky"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "72e130325383081c81fbc4bbccd6c7810b930132e31bc1fb1e150a05a0634746",
+      "records": [
+        [
+          "13554",
+          "test",
+          "qa_factoid"
+        ],
+        [
+          "15019",
+          "train",
+          "qa_factoid"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c551576f172cb99584591dfbe0ba7c3b13b6592809708366d348cfcc915a060e",
+      "records": [
+        [
+          "13636",
+          "test",
+          "qa_factoid"
+        ],
+        [
+          "13731",
+          "train",
+          "qa_factoid"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "32e4ad792cf815e3504347372ff0754968f685a8f583ade5bb76459702ebbd2b",
+      "records": [
+        [
+          "13646",
+          "train",
+          "qa_currency"
+        ],
+        [
+          "14029",
+          "test",
+          "qa_currency"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "0158004a57141bfc4626e148421c65607c35c87df9d26fdc178a62aaffd8e684",
+      "records": [
+        [
+          "13694",
+          "test",
+          "general_quirky"
+        ],
+        [
+          "13695",
+          "train",
+          "general_quirky"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f5040a3e96c5ea9fa9994031def376b18f442daf1572a2b94fc10ed2aceed0a3",
+      "records": [
+        [
+          "13875",
+          "dev",
+          "qa_factoid"
+        ],
+        [
+          "13876",
+          "train",
+          "qa_factoid"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d1c8b63fa83956963c4854aeb42ec9b9f7aad3cd719834db973d4631b6adc42c",
+      "records": [
+        [
+          "13906",
+          "train",
+          "qa_definition"
+        ],
+        [
+          "13907",
+          "test",
+          "qa_definition"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "74fe7bc2c54168ee2a6400de2d2c5445e8381f3da53b850694ab50b78be69de0",
+      "records": [
+        [
+          "13965",
+          "train",
+          "qa_currency"
+        ],
+        [
+          "14263",
+          "dev",
+          "qa_currency"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b4e4c5e73e4306fcd6040c0282629686ce019a7daebde717080f268f25a370fd",
+      "records": [
+        [
+          "14008",
+          "train",
+          "qa_factoid"
+        ],
+        [
+          "14285",
+          "dev",
+          "qa_factoid"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "c5fa76f83e007e935a01507fcc22cdf94a7d05884e6599f5753624da206caf8d",
+      "records": [
+        [
+          "14125",
+          "dev",
+          "qa_factoid"
+        ],
+        [
+          "14126",
+          "test",
+          "qa_factoid"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b158f17a0b49a70adab36af1ec537975ce23c61b5af2fbaf248ec0574157f07b",
+      "records": [
+        [
+          "14248",
+          "train",
+          "qa_factoid"
+        ],
+        [
+          "14755",
+          "dev",
+          "qa_factoid"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "28a754cbf5c3f32e9f1fb393df28e92b38b148bf94a3422fb009ef87d5426468",
+      "records": [
+        [
+          "14282",
+          "train",
+          "qa_factoid"
+        ],
+        [
+          "14706",
+          "test",
+          "qa_factoid"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "235446c7de644dc831e99104eac386efbb40ebebeff6030e4a7f9ae9c0fe328f",
+      "records": [
+        [
+          "14861",
+          "dev",
+          "qa_currency"
+        ],
+        [
+          "14862",
+          "train",
+          "qa_currency"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "3816c309ca15dc51afab3ae811d3bfce29b14cb7178820e1bda9a9c3645f6686",
+      "records": [
+        [
+          "14980",
+          "train",
+          "qa_definition"
+        ],
+        [
+          "14981",
+          "test",
+          "qa_definition"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "cf4d906a899f7597752fe136327453d0da1a6bc936fd6ef0f326b6e36ca650b6",
+      "records": [
+        [
+          "15029",
+          "train",
+          "qa_definition"
+        ],
+        [
+          "15030",
+          "dev",
+          "qa_definition"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "07d80c533d13f374b1a79609facb9d2d2e13bb4c4bc25e3774bd822a2be862fb",
+      "records": [
+        [
+          "15145",
+          "dev",
+          "social_query"
+        ],
+        [
+          "15227",
+          "train",
+          "social_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "29838f7a57879cb50d6f703a6c1b58dc7a5037378ca6ca89eec59cd7f2ed95a0",
+      "records": [
+        [
+          "15421",
+          "dev",
+          "social_post"
+        ],
+        [
+          "15422",
+          "train",
+          "social_post"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "08a0b6909429e7020cc5f956044ba701eb8029f87033a0af69da705a4ee6c980",
+      "records": [
+        [
+          "15504",
+          "train",
+          "social_post"
+        ],
+        [
+          "15625",
+          "dev",
+          "social_post"
+        ],
+        [
+          "15647",
+          "test",
+          "social_post"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "2ed76afca246853fa7fcc6ada8ad160a94d90f469706f0087ffd31e200babe42",
+      "records": [
+        [
+          "15776",
+          "train",
+          "email_query"
+        ],
+        [
+          "16260",
+          "train",
+          "email_query"
+        ],
+        [
+          "16299",
+          "train",
+          "email_query"
+        ],
+        [
+          "17006",
+          "dev",
+          "email_query"
+        ],
+        [
+          "17162",
+          "train",
+          "email_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "9d01c4b77d1373d6f79ec5acf7028ee1083ec3d7e7c342dffb5c21c28230f744",
+      "records": [
+        [
+          "15788",
+          "train",
+          "email_query"
+        ],
+        [
+          "16384",
+          "test",
+          "email_query"
+        ],
+        [
+          "16915",
+          "train",
+          "email_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "373972addba55f03d64b19a1045b097df5cb82c6ba8cb3d650cba1f2c9763ece",
+      "records": [
+        [
+          "15796",
+          "test",
+          "email_sendemail"
+        ],
+        [
+          "16013",
+          "train",
+          "email_sendemail"
+        ],
+        [
+          "16195",
+          "train",
+          "email_sendemail"
+        ],
+        [
+          "16314",
+          "test",
+          "email_sendemail"
+        ],
+        [
+          "16871",
+          "train",
+          "email_sendemail"
+        ],
+        [
+          "16995",
+          "test",
+          "email_sendemail"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f60d919d7f7ca94c447e07096b5cd84a3979b3f58731dd25b8214b9992495725",
+      "records": [
+        [
+          "15798",
+          "dev",
+          "email_query"
+        ],
+        [
+          "16270",
+          "train",
+          "email_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "e8d56b76a63d3289093d9d778b56f0568766fce9da190b796d4428ed1759e295",
+      "records": [
+        [
+          "15845",
+          "test",
+          "email_sendemail"
+        ],
+        [
+          "15846",
+          "train",
+          "email_sendemail"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "05ae11c87baa607bfceb011b200d48ef0d46150c129dbf84220ba93fa92eb917",
+      "records": [
+        [
+          "15870",
+          "train",
+          "email_querycontact"
+        ],
+        [
+          "16952",
+          "train",
+          "email_querycontact"
+        ],
+        [
+          "17095",
+          "test",
+          "email_querycontact"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "f59bce42a8560cebe43e2d73ab0869c7f35c2adc5c4331e0a7ae0d781d59f556",
+      "records": [
+        [
+          "15959",
+          "train",
+          "email_sendemail"
+        ],
+        [
+          "17113",
+          "test",
+          "email_sendemail"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "73d6a4fe552070dacdbf0738ece66ec9f6a421e6a61904daae15854db9fe5299",
+      "records": [
+        [
+          "16036",
+          "train",
+          "email_query"
+        ],
+        [
+          "16833",
+          "dev",
+          "email_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "4b42837ca3f30f5ecc8505af7f0e1f2cfef266ca6e5e79350bd3938c9e5145ba",
+      "records": [
+        [
+          "16085",
+          "dev",
+          "email_sendemail"
+        ],
+        [
+          "16086",
+          "train",
+          "email_sendemail"
+        ],
+        [
+          "16127",
+          "train",
+          "email_sendemail"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "6ab9205ff184737427ce0e7984edb0669f380c7bb4aa54b2857f12ce8a982b6b",
+      "records": [
+        [
+          "16144",
+          "dev",
+          "email_query"
+        ],
+        [
+          "17051",
+          "test",
+          "email_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "24c617bdd2dbe8273f2c22af54bf9e47807555f9fa2e38cec7780eb0bbc95a90",
+      "records": [
+        [
+          "16145",
+          "test",
+          "email_query"
+        ],
+        [
+          "16339",
+          "train",
+          "email_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "89bfacfb74f3b6999e834f0ff11dbd7e96f93fec73b03fcd0b4f7efdc912ec7b",
+      "records": [
+        [
+          "16161",
+          "dev",
+          "email_sendemail"
+        ],
+        [
+          "16516",
+          "train",
+          "email_sendemail"
+        ],
+        [
+          "16886",
+          "test",
+          "email_sendemail"
+        ],
+        [
+          "16887",
+          "train",
+          "email_sendemail"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "b223bd7dafe2a074e1a40671fe2e6076ce5742d8aff004b47b716aac21dc6c71",
+      "records": [
+        [
+          "16298",
+          "dev",
+          "email_query"
+        ],
+        [
+          "17107",
+          "test",
+          "email_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "83e227944b61987bef1dcc6555e25d244ddf06569e40e1477b53c9750054fb1e",
+      "records": [
+        [
+          "16386",
+          "dev",
+          "email_query"
+        ],
+        [
+          "16814",
+          "test",
+          "email_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "d95ad0e53417daf48622661061267eaacdc9ebcfbd5579ffccb18a23deed5df5",
+      "records": [
+        [
+          "16399",
+          "test",
+          "email_query"
+        ],
+        [
+          "16748",
+          "train",
+          "email_query"
+        ],
+        [
+          "16757",
+          "train",
+          "email_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "af36a71f475671cb0e22ae4f7e1b3d8e94b39c6350e875d50a9773f4f34f2719",
+      "records": [
+        [
+          "16407",
+          "dev",
+          "email_sendemail"
+        ],
+        [
+          "16410",
+          "test",
+          "email_sendemail"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "affe48da146217eee88e8398658372b1dc98c3d26f23023eb91c1c2d814f62e2",
+      "records": [
+        [
+          "16561",
+          "train",
+          "email_query"
+        ],
+        [
+          "16843",
+          "dev",
+          "email_query"
+        ]
+      ]
+    },
+    {
+      "text_sha256": "92763c4b9f991e91570b3a7ea5eb0ca6ef0019dfdf861070a5b849cd42e3339e",
+      "records": [
+        [
+          "16747",
+          "train",
+          "email_query"
+        ],
+        [
+          "17179",
+          "test",
+          "email_query"
+        ]
+      ]
+    }
+  ],
+  "train_test_exact_duplicate_text_groups": 182,
+  "cross_split_exact_text_groups_with_multiple_intents": 19,
+  "non_nfc_utterances": 0,
+  "empty_utterances": 0,
+  "slot_markup_reconstruction_mismatches": 0,
+  "interpretation": "Read-only structural audit. No native-speaker annotation review, data modification, or model training. Duplicate text alone does not establish harmful leakage; inspect groups before changing splits."
+}

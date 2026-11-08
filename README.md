@@ -31,4 +31,7 @@ The initial progress report is under `docs/reports/progress-report-01/` and can 
 
 - Thesis topic confirmed.
 - Progress Report I drafted.
-- Dataset scope, domains, and final model choices intentionally remain open pending literature review and feasibility analysis.
+- First real intent-only preliminary experiment completed: official MASSIVE 1.0 Azerbaijani train → dev, character TF-IDF + logistic regression, and a majority reference. See [PR5-INT-001](docs/experiments/PR5-INT-001.md) for measured results, exact commands, provenance, and limitations.
+- Slot filling, joint evaluation, and final model/resource scope remain outstanding.
+
+Run the focused tests with `PYTHONPATH=src python3 -B -m unittest discover -s tests -v`. The experiment uses the dependencies pinned in `requirements-pr5.txt`; its recorded interpreter is Python 3.12.4. Raw data remains ignored under `data/raw/`.

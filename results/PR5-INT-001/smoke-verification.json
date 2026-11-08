@@ -1,0 +1,19 @@
+{
+  "verified_at_utc": "2026-11-08T02:16:17.207121+00:00",
+  "run_directory": "results/PR5-INT-001/smoke",
+  "run_manifest_sha256": "a8fe53b4d8b0efe57a1713b63b628db07baf8810dcb2d588ecac28f9aca8a35d",
+  "verifier_sha256": "6580309e7e3bb774e5aa87559ece382e7e2657930b037541f323eb693e4943a1",
+  "result": "PASS",
+  "prediction_records": 59,
+  "source_files_verified": 8,
+  "output_files_verified": 5,
+  "checks": [
+    "Recorded source/output/data/audit/license hashes match",
+    "Train/dev record IDs match the official selected partitions",
+    "Development gold labels match source records",
+    "Both models' saved metrics exactly match recomputation from predictions",
+    "Saved duplicate diagnostics and error analysis match recomputation",
+    "Convergence recorded; no test predictions or scoring"
+  ],
+  "model_retrained": false
+}
