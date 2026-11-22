@@ -53,17 +53,22 @@ Use configuration files rather than scattered hard-coded parameters. Fix random 
 - Do not silently change evaluation definitions or data splits to improve results.
 - For long or expensive training, first validate the pipeline with a small smoke test unless the user explicitly requests the full run.
 
-## Research records
+## ChatGPT–Codex research handoff
 
-After substantive work, update `docs/research-log.md` (or the repository's existing equivalent) with:
+The GitHub repository is the shared source of truth for ChatGPT research discussions and Codex implementation tasks.
+
+After substantive work, including each substantive experiment, update `docs/research-log.md` with:
 
 - what was attempted and completed;
+- what was verified and the evidence for it;
 - important decisions and their rationale;
 - files/experiments affected;
-- observed results and unresolved problems;
+- observed findings, limitations, and unresolved problems;
 - next recommended step.
 
-Keep entries factual and dated. Distinguish observations from interpretations.
+Update the experiment-specific record in `docs/experiments/` and save the configuration, metrics, and reproducibility manifest in their designated repository directories when applicable. Link these artifacts and capture the inputs, method, commands, environment, and verification evidence needed for another ChatGPT conversation to reconstruct the work and current research status from the repository alone.
+
+Keep the records concise, factual, and dated. Clearly distinguish verified results from interpretations and proposed work.
 
 ## Git practice
 
@@ -83,6 +88,7 @@ Keep entries factual and dated. Distinguish observations from interpretations.
 - If a change contains multiple separable concerns, recommend separate commits and provide an appropriate message for each.
 - Do not commit, push, rewrite history, delete branches, or open a pull request unless Bahruz explicitly requests that action.
 - When a commit is authorized, inspect the final staged diff, exclude unrelated or sensitive files, choose the message according to these rules, and report the resulting commit hash.
+- After an authorized push, verify the remote branch and report the full SHA and changed files for each pushed commit.
 - Before handoff, summarize changed files, validation results, and the recommended commit message when no commit was requested.
 
 ## Academic integrity and writing
