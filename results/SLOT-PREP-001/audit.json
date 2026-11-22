@@ -1,0 +1,2365 @@
+{
+  "experiment_id": "SLOT-PREP-001",
+  "started_utc": "2026-11-20T23:22:37.659993+00:00",
+  "started_eastern": "2026-11-20T18:22:37.659993-05:00",
+  "duration_seconds_before_write": 0.6119862079995073,
+  "command": [
+    "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+    "-B",
+    "-m",
+    "azmassive.slot_prep",
+    "--config",
+    "configs/SLOT-PREP-001.json"
+  ],
+  "required_pythonpath": "src",
+  "git_base_revision": "5b6a7ed9fd6174919a5b2b262a0ad5ead384e1f1",
+  "source_config_sha256": {
+    "src/azmassive/slot_prep.py": "cb7278d2c75e2fda4bac1da442a1f09a9f880d618a0fc86712b48a186e373f17",
+    "src/azmassive/slots.py": "ccb3522f58e958177fa8413664ae1e4ed37e50525899885e1ebbffa3a1a43519",
+    "src/azmassive/dataset.py": "8960108707134e25cfaa959bc6e8e809af95475d33dd4e3dced701d2fc789ece",
+    "tests/test_slots.py": "bef68d7210c234a05ffa7b02dd91cfc406266216894438b09a7cce2c7cf4236b",
+    "configs/SLOT-PREP-001.json": "3ef8e5c0234b02e79faa238631c8bec96fdcbbeb6dfb2c7ee13367b13fb2a9bf"
+  },
+  "environment": {
+    "python": "3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit",
+    "unicode_version": "15.0.0",
+    "dependencies": "stdlib",
+    "randomness": "none"
+  },
+  "config": {
+    "experiment_id": "SLOT-PREP-001",
+    "dataset": {
+      "release": "MASSIVE 1.0",
+      "locale": "az-AZ",
+      "audit": "data/metadata/AUD-001.json",
+      "audit_sha256": "6c87b2b77d859f087341e72c728a26dca2c9efc505b899741caef813c8bbdcb8",
+      "archive": "data/raw/amazon-massive-dataset-1.0.tar.gz",
+      "jsonl": "data/raw/massive-1.0/az-AZ.jsonl",
+      "license": "data/raw/massive-1.0/LICENSE",
+      "partitions": [
+        "train",
+        "dev"
+      ]
+    },
+    "tokenizers": [
+      "whitespace",
+      "word_punctuation",
+      "keep_joiners"
+    ],
+    "selected_tokenizer": "word_punctuation",
+    "alignment": "strict_exact_boundaries",
+    "tag_scheme": "IOB2",
+    "output": "results/SLOT-PREP-001/audit.json"
+  },
+  "provenance": {
+    "audit_id": "AUD-001",
+    "license": "CC BY 4.0",
+    "source_url": "https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.0.tar.gz",
+    "sha256": {
+      "audit": "6c87b2b77d859f087341e72c728a26dca2c9efc505b899741caef813c8bbdcb8",
+      "archive": "7df623fd2d300a4d235d6ee5bd396c9a28258d3a0ccb29abdb054506eba153f8",
+      "jsonl": "9a643dbf6e07e90ba8b1554bd95e9946b42037bd52550aac90f4e774ee58ed8c",
+      "license": "c2e6ea015269147de02117ebdd91f30ef09831251f5345fa8365273b1db1d435"
+    },
+    "audited_slot_inventory": [
+      "alarm_type",
+      "app_name",
+      "artist_name",
+      "audiobook_author",
+      "audiobook_name",
+      "business_name",
+      "business_type",
+      "change_amount",
+      "coffee_type",
+      "color_type",
+      "cooking_type",
+      "currency_name",
+      "date",
+      "definition_word",
+      "device_type",
+      "drink_type",
+      "email_address",
+      "email_folder",
+      "event_name",
+      "food_type",
+      "game_name",
+      "game_type",
+      "general_frequency",
+      "house_place",
+      "ingredient",
+      "joke_type",
+      "list_name",
+      "meal_type",
+      "media_type",
+      "movie_name",
+      "movie_type",
+      "music_album",
+      "music_descriptor",
+      "music_genre",
+      "news_topic",
+      "order_type",
+      "person",
+      "personal_info",
+      "place_name",
+      "player_setting",
+      "playlist_name",
+      "podcast_descriptor",
+      "podcast_name",
+      "radio_name",
+      "relation",
+      "song_name",
+      "sport_type",
+      "time",
+      "time_zone",
+      "timeofday",
+      "transport_agency",
+      "transport_descriptor",
+      "transport_name",
+      "transport_type",
+      "weather_descriptor"
+    ]
+  },
+  "processing": {
+    "tokenizer_patterns": {
+      "whitespace": "\\S+",
+      "word_punctuation": "\\w+|[^\\w\\s]",
+      "keep_joiners": "\\w+(?:[-'’]\\w+)*|[^\\w\\s]"
+    },
+    "offsets": "Zero-based half-open Python character offsets in utt",
+    "normalization": "none",
+    "test": "Test records skipped by partition before annotation parsing and tokenization",
+    "conflict_policy": "Keep all original annotations and splits; report differences for review",
+    "training": "none"
+  },
+  "parsing": {
+    "train": {
+      "records": 11514,
+      "reconstructed": 11514,
+      "slot_free": 3755,
+      "slot_spans": 11202,
+      "multiword_spans": 5344,
+      "spans_with_punctuation": 261
+    },
+    "dev": {
+      "records": 2033,
+      "reconstructed": 2033,
+      "slot_free": 647,
+      "slot_spans": 1993,
+      "multiword_spans": 949,
+      "spans_with_punctuation": 41
+    }
+  },
+  "annotation_failures_by_split": {
+    "train": [],
+    "dev": []
+  },
+  "inventory_by_split": {
+    "train": {
+      "alarm_type": 9,
+      "app_name": 51,
+      "artist_name": 232,
+      "audiobook_author": 6,
+      "audiobook_name": 73,
+      "business_name": 382,
+      "business_type": 189,
+      "change_amount": 49,
+      "coffee_type": 22,
+      "color_type": 95,
+      "cooking_type": 17,
+      "currency_name": 172,
+      "date": 1795,
+      "definition_word": 225,
+      "device_type": 225,
+      "drink_type": 9,
+      "email_address": 32,
+      "email_folder": 32,
+      "event_name": 997,
+      "food_type": 294,
+      "game_name": 87,
+      "game_type": 1,
+      "general_frequency": 84,
+      "house_place": 198,
+      "ingredient": 21,
+      "joke_type": 35,
+      "list_name": 191,
+      "meal_type": 63,
+      "media_type": 480,
+      "movie_name": 16,
+      "movie_type": 10,
+      "music_album": 1,
+      "music_descriptor": 45,
+      "music_genre": 181,
+      "news_topic": 187,
+      "order_type": 107,
+      "person": 860,
+      "personal_info": 75,
+      "place_name": 1028,
+      "player_setting": 159,
+      "playlist_name": 62,
+      "podcast_descriptor": 68,
+      "podcast_name": 56,
+      "radio_name": 130,
+      "relation": 250,
+      "song_name": 128,
+      "sport_type": 5,
+      "time": 790,
+      "time_zone": 55,
+      "timeofday": 242,
+      "transport_agency": 31,
+      "transport_descriptor": 8,
+      "transport_name": 8,
+      "transport_type": 317,
+      "weather_descriptor": 317
+    },
+    "dev": {
+      "alarm_type": 2,
+      "app_name": 8,
+      "artist_name": 45,
+      "audiobook_author": 1,
+      "audiobook_name": 16,
+      "business_name": 58,
+      "business_type": 34,
+      "change_amount": 6,
+      "coffee_type": 2,
+      "color_type": 15,
+      "cooking_type": 2,
+      "currency_name": 38,
+      "date": 337,
+      "definition_word": 43,
+      "device_type": 35,
+      "drink_type": 3,
+      "email_address": 3,
+      "email_folder": 6,
+      "event_name": 160,
+      "food_type": 51,
+      "game_name": 18,
+      "game_type": 1,
+      "general_frequency": 15,
+      "house_place": 25,
+      "ingredient": 4,
+      "joke_type": 8,
+      "list_name": 37,
+      "meal_type": 12,
+      "media_type": 98,
+      "movie_name": 2,
+      "movie_type": 1,
+      "music_descriptor": 8,
+      "music_genre": 37,
+      "news_topic": 41,
+      "order_type": 19,
+      "person": 131,
+      "personal_info": 9,
+      "place_name": 200,
+      "player_setting": 36,
+      "playlist_name": 7,
+      "podcast_descriptor": 10,
+      "podcast_name": 7,
+      "radio_name": 21,
+      "relation": 42,
+      "song_name": 23,
+      "sport_type": 1,
+      "time": 138,
+      "time_zone": 5,
+      "timeofday": 49,
+      "transport_agency": 9,
+      "transport_name": 2,
+      "transport_type": 54,
+      "weather_descriptor": 58
+    }
+  },
+  "dev_labels_absent_from_train": [],
+  "audited_labels_absent_from_train_dev": [],
+  "tokenizer_comparison": {
+    "train": {
+      "whitespace": {
+        "tokens": 65664,
+        "aligned_records": 11514,
+        "aligned_spans": 11202,
+        "failed_spans": 0,
+        "failures": [],
+        "alignment_rate_records": 1.0,
+        "alignment_rate_parsed_spans": 1.0
+      },
+      "word_punctuation": {
+        "tokens": 66528,
+        "aligned_records": 11514,
+        "aligned_spans": 11202,
+        "failed_spans": 0,
+        "failures": [],
+        "alignment_rate_records": 1.0,
+        "alignment_rate_parsed_spans": 1.0
+      },
+      "keep_joiners": {
+        "tokens": 66504,
+        "aligned_records": 11514,
+        "aligned_spans": 11202,
+        "failed_spans": 0,
+        "failures": [],
+        "alignment_rate_records": 1.0,
+        "alignment_rate_parsed_spans": 1.0
+      }
+    },
+    "dev": {
+      "whitespace": {
+        "tokens": 11436,
+        "aligned_records": 2033,
+        "aligned_spans": 1993,
+        "failed_spans": 0,
+        "failures": [],
+        "alignment_rate_records": 1.0,
+        "alignment_rate_parsed_spans": 1.0
+      },
+      "word_punctuation": {
+        "tokens": 11570,
+        "aligned_records": 2033,
+        "aligned_spans": 1993,
+        "failed_spans": 0,
+        "failures": [],
+        "alignment_rate_records": 1.0,
+        "alignment_rate_parsed_spans": 1.0
+      },
+      "keep_joiners": {
+        "tokens": 11562,
+        "aligned_records": 2033,
+        "aligned_spans": 1993,
+        "failed_spans": 0,
+        "failures": [],
+        "alignment_rate_records": 1.0,
+        "alignment_rate_parsed_spans": 1.0
+      }
+    }
+  },
+  "duplicate_text_review": {
+    "train_dev_overlap_groups": 144,
+    "conflicting_groups": 50,
+    "conflicting_cross_split_groups": 15,
+    "groups": [
+      {
+        "text_sha256": "5a48e9a92ba14e55b714809cf8f2315c53c7d7398e50a3fe36c9e98dd4ed4f3b",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "115",
+            "partition": "dev",
+            "intent": "audio_volume_down",
+            "spans": [
+              {
+                "start": 5,
+                "end": 10,
+                "label": "change_amount"
+              }
+            ]
+          },
+          {
+            "id": "1367",
+            "partition": "train",
+            "intent": "audio_volume_down",
+            "spans": []
+          },
+          {
+            "id": "4732",
+            "partition": "train",
+            "intent": "audio_volume_down",
+            "spans": []
+          },
+          {
+            "id": "4963",
+            "partition": "train",
+            "intent": "audio_volume_down",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "text_sha256": "7ac9f95c44a32e7ef9909042a20a3587284a97812517a6407d8234f478bc63b0",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "181",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 5,
+                "end": 16,
+                "label": "weather_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "2332",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 5,
+                "end": 10,
+                "label": "weather_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "2736",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 11,
+                "end": 16,
+                "label": "weather_descriptor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "2bf11d6289e2dd37ff64bf5e15f19aff82a950f7756dfc902af0034e416c5ea6",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "190",
+            "partition": "train",
+            "intent": "iot_wemo_on",
+            "spans": [
+              {
+                "start": 0,
+                "end": 8,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "191",
+            "partition": "train",
+            "intent": "iot_wemo_on",
+            "spans": [
+              {
+                "start": 0,
+                "end": 8,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "192",
+            "partition": "train",
+            "intent": "iot_wemo_on",
+            "spans": [
+              {
+                "start": 0,
+                "end": 8,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "1290",
+            "partition": "train",
+            "intent": "iot_wemo_on",
+            "spans": []
+          },
+          {
+            "id": "3024",
+            "partition": "train",
+            "intent": "iot_wemo_on",
+            "spans": []
+          },
+          {
+            "id": "4202",
+            "partition": "train",
+            "intent": "iot_wemo_on",
+            "spans": [
+              {
+                "start": 0,
+                "end": 8,
+                "label": "device_type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "6ed0b9f6be10c4c76f39ddcab3695ae38a94ca587cb0abdfcd35b1f3075e1a43",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "232",
+            "partition": "dev",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "timeofday"
+              },
+              {
+                "start": 11,
+                "end": 17,
+                "label": "time"
+              }
+            ]
+          },
+          {
+            "id": "5084",
+            "partition": "dev",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 0,
+                "end": 17,
+                "label": "time"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "63418a786f146cc5702f069f4cc10df06db3760a36645314c72198e3e815db83",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "471",
+            "partition": "train",
+            "intent": "iot_hue_lighton",
+            "spans": []
+          },
+          {
+            "id": "1450",
+            "partition": "train",
+            "intent": "iot_hue_lighton",
+            "spans": []
+          },
+          {
+            "id": "2470",
+            "partition": "dev",
+            "intent": "iot_hue_lighton",
+            "spans": []
+          },
+          {
+            "id": "3808",
+            "partition": "train",
+            "intent": "iot_hue_lightup",
+            "spans": []
+          },
+          {
+            "id": "5752",
+            "partition": "train",
+            "intent": "iot_hue_lighton",
+            "spans": [
+              {
+                "start": 0,
+                "end": 8,
+                "label": "device_type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "b9fa6e25b551cfcd11d4fcaa2d72529bee401021b5f336e5ce23c80adb9533db",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "787",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "date"
+              }
+            ]
+          },
+          {
+            "id": "1196",
+            "partition": "dev",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "date"
+              }
+            ]
+          },
+          {
+            "id": "1991",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "date"
+              }
+            ]
+          },
+          {
+            "id": "3252",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "date"
+              }
+            ]
+          },
+          {
+            "id": "5971",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "date"
+              },
+              {
+                "start": 6,
+                "end": 10,
+                "label": "weather_descriptor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "61174a0723952f9d02675014100a0211c265ba51432aaa7b5bed4fd1d78c8e54",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "915",
+            "partition": "train",
+            "intent": "iot_hue_lightoff",
+            "spans": [
+              {
+                "start": 0,
+                "end": 14,
+                "label": "house_place"
+              }
+            ]
+          },
+          {
+            "id": "4315",
+            "partition": "train",
+            "intent": "iot_hue_lightoff",
+            "spans": [
+              {
+                "start": 6,
+                "end": 14,
+                "label": "house_place"
+              }
+            ]
+          },
+          {
+            "id": "4322",
+            "partition": "train",
+            "intent": "iot_hue_lightoff",
+            "spans": [
+              {
+                "start": 0,
+                "end": 14,
+                "label": "house_place"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "1c95633e31f95b5c89b9c93dcaf773a2f5d17d2328a7ec42642dc9e5927978b4",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "955",
+            "partition": "train",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 15,
+                "end": 20,
+                "label": "timeofday"
+              },
+              {
+                "start": 26,
+                "end": 30,
+                "label": "time"
+              }
+            ]
+          },
+          {
+            "id": "1134",
+            "partition": "train",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 15,
+                "end": 20,
+                "label": "timeofday"
+              },
+              {
+                "start": 26,
+                "end": 30,
+                "label": "time"
+              }
+            ]
+          },
+          {
+            "id": "1895",
+            "partition": "train",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 15,
+                "end": 30,
+                "label": "time"
+              }
+            ]
+          },
+          {
+            "id": "1912",
+            "partition": "train",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 15,
+                "end": 30,
+                "label": "time"
+              }
+            ]
+          },
+          {
+            "id": "5319",
+            "partition": "train",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 15,
+                "end": 30,
+                "label": "time"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "5c45a16b0bc8aefc84ee189280f2885e64fc87b8a93dc011ffca05a0b4c7ec97",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "1146",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "1926",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "2958",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "4075",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "5605",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "5854",
+            "partition": "dev",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "5855",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "text_sha256": "e2320d9ec2564e5fe9f13f8e77aa5f54fabdf0d005a711defd28d087e9609be5",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "1171",
+            "partition": "train",
+            "intent": "play_music",
+            "spans": []
+          },
+          {
+            "id": "11485",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 6,
+                "end": 17,
+                "label": "podcast_descriptor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "27d256a3d4b25414e803a9031d0c352e3c3f1ce3b07d1d54a97497fa8afd26dc",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "1271",
+            "partition": "dev",
+            "intent": "news_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 6,
+                "label": "date"
+              }
+            ]
+          },
+          {
+            "id": "2452",
+            "partition": "train",
+            "intent": "news_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 6,
+                "label": "date"
+              },
+              {
+                "start": 7,
+                "end": 14,
+                "label": "place_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "c9366e4dde65953b84d3e84683a78f339dd327f1aacc0033913bb5723237ef91",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "1292",
+            "partition": "train",
+            "intent": "iot_wemo_on",
+            "spans": [
+              {
+                "start": 7,
+                "end": 15,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "1552",
+            "partition": "train",
+            "intent": "iot_wemo_on",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "device_type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "3d7b7e665944b92b3013b8c21be653bf0ef326b4d313075b97696ff0923f97fe",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "1388",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 10,
+                "label": "date"
+              },
+              {
+                "start": 11,
+                "end": 16,
+                "label": "weather_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "2653",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 10,
+                "label": "date"
+              },
+              {
+                "start": 11,
+                "end": 16,
+                "label": "weather_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "3446",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 10,
+                "label": "date"
+              },
+              {
+                "start": 11,
+                "end": 24,
+                "label": "weather_descriptor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "5b98d0ccd63bfcea2ee87d1a7968bbd6f65441137013a6e863a64bf29d89cbe9",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "1416",
+            "partition": "dev",
+            "intent": "takeaway_order",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "order_type"
+              }
+            ]
+          },
+          {
+            "id": "2478",
+            "partition": "dev",
+            "intent": "takeaway_order",
+            "spans": [
+              {
+                "start": 0,
+                "end": 11,
+                "label": "order_type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "7e5a8c37f1b96a6bb9abee40d5c629bc0f497fa900c36379aa6459b89f7c7b87",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "1465",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 4,
+                "label": "date"
+              },
+              {
+                "start": 10,
+                "end": 23,
+                "label": "weather_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "4765",
+            "partition": "train",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 9,
+                "label": "date"
+              },
+              {
+                "start": 10,
+                "end": 23,
+                "label": "weather_descriptor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "9f3c2de8e131a5bbf3942d03844f4e1e59cec7332df722eb665c2cb0e3478f54",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "1573",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 9,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "1661",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 9,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "2383",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": []
+          },
+          {
+            "id": "3380",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 9,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "3508",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 9,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "3753",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 9,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "5767",
+            "partition": "train",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 9,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "6158",
+            "partition": "dev",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 9,
+                "label": "device_type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "b3d8a85c38bb76694fe104bab006b54176c64fe4f4fe642eb403214a094ecc74",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "1610",
+            "partition": "train",
+            "intent": "iot_coffee",
+            "spans": []
+          },
+          {
+            "id": "2749",
+            "partition": "dev",
+            "intent": "iot_coffee",
+            "spans": [
+              {
+                "start": 0,
+                "end": 14,
+                "label": "device_type"
+              }
+            ]
+          },
+          {
+            "id": "2971",
+            "partition": "dev",
+            "intent": "iot_coffee",
+            "spans": []
+          },
+          {
+            "id": "4170",
+            "partition": "train",
+            "intent": "iot_coffee",
+            "spans": [
+              {
+                "start": 0,
+                "end": 14,
+                "label": "device_type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "b57bc9316ecb0dff25f9184f85f68963e76d2a0f0e7b7b4430c8f336827af92f",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "1943",
+            "partition": "dev",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 2,
+                "label": "house_place"
+              }
+            ]
+          },
+          {
+            "id": "5696",
+            "partition": "dev",
+            "intent": "iot_cleaning",
+            "spans": [
+              {
+                "start": 0,
+                "end": 14,
+                "label": "house_place"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "5d0ec22de90228e11fe2801f3f15524afa078dbac142b16d206f8aeb83c1fa54",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "2137",
+            "partition": "train",
+            "intent": "play_music",
+            "spans": [
+              {
+                "start": 0,
+                "end": 4,
+                "label": "music_genre"
+              }
+            ]
+          },
+          {
+            "id": "3432",
+            "partition": "train",
+            "intent": "play_music",
+            "spans": [
+              {
+                "start": 0,
+                "end": 14,
+                "label": "music_genre"
+              }
+            ]
+          },
+          {
+            "id": "9475",
+            "partition": "train",
+            "intent": "play_music",
+            "spans": [
+              {
+                "start": 0,
+                "end": 14,
+                "label": "music_genre"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "8dbc5ad4dd6b76d188d02fd8161620ec70ba7488f5aea0be71faccdba6e80280",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "2333",
+            "partition": "train",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "date"
+              },
+              {
+                "start": 6,
+                "end": 23,
+                "label": "time"
+              }
+            ]
+          },
+          {
+            "id": "3219",
+            "partition": "train",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "date"
+              },
+              {
+                "start": 6,
+                "end": 11,
+                "label": "timeofday"
+              },
+              {
+                "start": 12,
+                "end": 23,
+                "label": "time"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "7555a0c15b3da91871c5d7e3a1b079c77b9bf770a70f24640229506b8da16a2d",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "2525",
+            "partition": "train",
+            "intent": "takeaway_query",
+            "spans": [
+              {
+                "start": 8,
+                "end": 19,
+                "label": "food_type"
+              }
+            ]
+          },
+          {
+            "id": "2742",
+            "partition": "dev",
+            "intent": "takeaway_query",
+            "spans": [
+              {
+                "start": 8,
+                "end": 19,
+                "label": "order_type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "bdbead14a740fcde59b20b3a0c3fd58b312e5e82fcf95d2af0db4528fd54d56a",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "2563",
+            "partition": "dev",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 15,
+                "end": 20,
+                "label": "date"
+              },
+              {
+                "start": 21,
+                "end": 26,
+                "label": "timeofday"
+              },
+              {
+                "start": 32,
+                "end": 39,
+                "label": "time"
+              }
+            ]
+          },
+          {
+            "id": "4717",
+            "partition": "train",
+            "intent": "alarm_set",
+            "spans": [
+              {
+                "start": 15,
+                "end": 20,
+                "label": "date"
+              },
+              {
+                "start": 21,
+                "end": 39,
+                "label": "time"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "9777c65134da422bd580444bef01071fdab70fa086903077d62d652183fdcd9d",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "2654",
+            "partition": "dev",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 11,
+                "label": "date"
+              },
+              {
+                "start": 12,
+                "end": 23,
+                "label": "weather_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "3898",
+            "partition": "dev",
+            "intent": "weather_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 11,
+                "label": "date"
+              },
+              {
+                "start": 12,
+                "end": 15,
+                "label": "weather_descriptor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "39863d4e5be688b07f8e6cc5b3750e5c3d6675a2119eeb536f9e8eef7cbbd818",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "2764",
+            "partition": "train",
+            "intent": "takeaway_order",
+            "spans": [
+              {
+                "start": 4,
+                "end": 15,
+                "label": "order_type"
+              }
+            ]
+          },
+          {
+            "id": "3250",
+            "partition": "train",
+            "intent": "takeaway_order",
+            "spans": [
+              {
+                "start": 4,
+                "end": 9,
+                "label": "order_type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "98031a45dd9d15a1c3c8d18099b4b9ebbbcf014fe01a71d522874efa29ff016b",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "2994",
+            "partition": "train",
+            "intent": "play_music",
+            "spans": []
+          },
+          {
+            "id": "5151",
+            "partition": "train",
+            "intent": "music_settings",
+            "spans": [
+              {
+                "start": 30,
+                "end": 33,
+                "label": "player_setting"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "5b657c464b525207d816019b461655b3d227d9cb3307a9d5d38fe69ec329c4e8",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "4316",
+            "partition": "train",
+            "intent": "iot_hue_lightoff",
+            "spans": []
+          },
+          {
+            "id": "5398",
+            "partition": "train",
+            "intent": "iot_hue_lightoff",
+            "spans": [
+              {
+                "start": 6,
+                "end": 14,
+                "label": "device_type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "48e574b53ff526ebc803a1f73c209ab9500565c1dc13c0ea6d5c16874621be9c",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "5256",
+            "partition": "train",
+            "intent": "music_settings",
+            "spans": [
+              {
+                "start": 0,
+                "end": 13,
+                "label": "player_setting"
+              }
+            ]
+          },
+          {
+            "id": "5785",
+            "partition": "train",
+            "intent": "music_settings",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "text_sha256": "3d15221e37c91e7427ce71a4f5d157bcfbc952df9603b1c71c3c1fae923fb4af",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "6778",
+            "partition": "dev",
+            "intent": "calendar_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 6,
+                "label": "date"
+              }
+            ]
+          },
+          {
+            "id": "6924",
+            "partition": "train",
+            "intent": "calendar_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 6,
+                "label": "date"
+              },
+              {
+                "start": 11,
+                "end": 18,
+                "label": "event_name"
+              }
+            ]
+          },
+          {
+            "id": "7907",
+            "partition": "dev",
+            "intent": "calendar_query",
+            "spans": [
+              {
+                "start": 0,
+                "end": 6,
+                "label": "date"
+              },
+              {
+                "start": 11,
+                "end": 18,
+                "label": "event_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "9f3d0bb1e9e1ce771fbbf7a7c373567c0d1bcab5f356643eee291a60d13a4f86",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "7024",
+            "partition": "train",
+            "intent": "calendar_remove",
+            "spans": [
+              {
+                "start": 10,
+                "end": 15,
+                "label": "event_name"
+              }
+            ]
+          },
+          {
+            "id": "8472",
+            "partition": "train",
+            "intent": "calendar_remove",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "text_sha256": "10a7cf841e87e682bea762e7be9722f3a411baf116c6413200af566c592374e2",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "7344",
+            "partition": "train",
+            "intent": "calendar_remove",
+            "spans": []
+          },
+          {
+            "id": "9016",
+            "partition": "train",
+            "intent": "calendar_remove",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "event_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "4fb2b652d3dc59e8dee65155fb1158b2819705bfbd6df100867d16eacb21394c",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "7514",
+            "partition": "train",
+            "intent": "calendar_set",
+            "spans": []
+          },
+          {
+            "id": "8995",
+            "partition": "train",
+            "intent": "calendar_set",
+            "spans": [
+              {
+                "start": 0,
+                "end": 16,
+                "label": "event_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "a101318ae6c7051a60132493264cf63c32409b527a478a0264ab6318739f2780",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "7631",
+            "partition": "dev",
+            "intent": "calendar_set",
+            "spans": [
+              {
+                "start": 0,
+                "end": 13,
+                "label": "general_frequency"
+              },
+              {
+                "start": 19,
+                "end": 40,
+                "label": "time"
+              },
+              {
+                "start": 41,
+                "end": 47,
+                "label": "event_name"
+              }
+            ]
+          },
+          {
+            "id": "7633",
+            "partition": "train",
+            "intent": "calendar_set",
+            "spans": [
+              {
+                "start": 0,
+                "end": 13,
+                "label": "general_frequency"
+              },
+              {
+                "start": 19,
+                "end": 31,
+                "label": "time"
+              },
+              {
+                "start": 35,
+                "end": 40,
+                "label": "time"
+              },
+              {
+                "start": 41,
+                "end": 47,
+                "label": "event_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "08ff90cd2c78a23832c9ff7f4eabdbcb429b6c45a9787261b975c815365fe29f",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "8135",
+            "partition": "train",
+            "intent": "calendar_set",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "date"
+              },
+              {
+                "start": 6,
+                "end": 25,
+                "label": "time"
+              },
+              {
+                "start": 26,
+                "end": 34,
+                "label": "event_name"
+              },
+              {
+                "start": 35,
+                "end": 44,
+                "label": "time"
+              }
+            ]
+          },
+          {
+            "id": "8137",
+            "partition": "train",
+            "intent": "calendar_set",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "date"
+              },
+              {
+                "start": 6,
+                "end": 25,
+                "label": "time"
+              },
+              {
+                "start": 35,
+                "end": 44,
+                "label": "time"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "65e5cf9b2c64c80e0b99abaf5c7f236437c95a633d6d4a6a3e1a0add292ded3f",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "8177",
+            "partition": "train",
+            "intent": "calendar_set",
+            "spans": [
+              {
+                "start": 6,
+                "end": 18,
+                "label": "date"
+              },
+              {
+                "start": 19,
+                "end": 36,
+                "label": "time"
+              },
+              {
+                "start": 37,
+                "end": 46,
+                "label": "person"
+              },
+              {
+                "start": 47,
+                "end": 52,
+                "label": "event_name"
+              }
+            ]
+          },
+          {
+            "id": "8178",
+            "partition": "train",
+            "intent": "calendar_set",
+            "spans": [
+              {
+                "start": 6,
+                "end": 18,
+                "label": "date"
+              },
+              {
+                "start": 19,
+                "end": 36,
+                "label": "time"
+              },
+              {
+                "start": 37,
+                "end": 52,
+                "label": "event_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "a4185f6af1851ff45a0463f28ae690418b7f6519e959e91a04dda254080e197c",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "9319",
+            "partition": "train",
+            "intent": "play_radio",
+            "spans": [
+              {
+                "start": 14,
+                "end": 27,
+                "label": "radio_name"
+              }
+            ]
+          },
+          {
+            "id": "9354",
+            "partition": "train",
+            "intent": "play_radio",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "text_sha256": "300b9a1eec6bd050383bd3f25539a7cf344f773b1de77ee6f53b08db30ebff47",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "9476",
+            "partition": "train",
+            "intent": "play_music",
+            "spans": [
+              {
+                "start": 0,
+                "end": 3,
+                "label": "music_genre"
+              }
+            ]
+          },
+          {
+            "id": "9714",
+            "partition": "train",
+            "intent": "play_audiobook",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "text_sha256": "d2897d6155fa318b94bfa5884d8b89e484c20ea55c61ba7406089a6684cfd874",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "9723",
+            "partition": "train",
+            "intent": "play_audiobook",
+            "spans": [
+              {
+                "start": 0,
+                "end": 11,
+                "label": "media_type"
+              }
+            ]
+          },
+          {
+            "id": "9727",
+            "partition": "train",
+            "intent": "play_audiobook",
+            "spans": [
+              {
+                "start": 0,
+                "end": 11,
+                "label": "media_type"
+              },
+              {
+                "start": 12,
+                "end": 25,
+                "label": "player_setting"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "b938088272928ee77faacfc3781ffb82b3a31129934026d876896318cf974b1c",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "10265",
+            "partition": "train",
+            "intent": "play_game",
+            "spans": []
+          },
+          {
+            "id": "12841",
+            "partition": "train",
+            "intent": "transport_taxi",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "app_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "cb676f350b833963c46dbff0c71e03d85a4ea4dfd1c415984dfaf950d3e93447",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "10492",
+            "partition": "train",
+            "intent": "lists_query",
+            "spans": [
+              {
+                "start": 6,
+                "end": 11,
+                "label": "list_name"
+              }
+            ]
+          },
+          {
+            "id": "10752",
+            "partition": "train",
+            "intent": "lists_query",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "text_sha256": "90ef90bdeeae5cbdbe22386d855c4fcc10b3379e2fb2972379f8f7e50fd367e6",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "11260",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "podcast_descriptor"
+              },
+              {
+                "start": 16,
+                "end": 19,
+                "label": "player_setting"
+              }
+            ]
+          },
+          {
+            "id": "11299",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "podcast_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "11300",
+            "partition": "dev",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "podcast_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "11324",
+            "partition": "dev",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "podcast_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "11364",
+            "partition": "dev",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "podcast_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "11392",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "podcast_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "11399",
+            "partition": "dev",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "podcast_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "11501",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "podcast_descriptor"
+              },
+              {
+                "start": 16,
+                "end": 19,
+                "label": "player_setting"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "50c9847911b50e1bdd3223a85d4dbed2226ca89a283e6d8d9be353eaf04f285f",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "11319",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 17,
+                "label": "podcast_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "11365",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 10,
+                "end": 27,
+                "label": "podcast_descriptor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "10a8b41799c968fcb7158c6708fa3dce669c08d422198c21d404ff482a6196a3",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "11358",
+            "partition": "dev",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 16,
+                "label": "podcast_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "11394",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": []
+          },
+          {
+            "id": "11395",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": []
+          },
+          {
+            "id": "11446",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "text_sha256": "3e2c12eb12b2fc6b7b8cebb77eab1af203bd6fd7e98648e221d7707dbbe09d23",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "11373",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 10,
+                "label": "podcast_name"
+              }
+            ]
+          },
+          {
+            "id": "11553",
+            "partition": "dev",
+            "intent": "play_podcasts",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "text_sha256": "96ddf9b60d9499c49c97b9d62aa0a1e3ffdfd5fafbe59091e4aaec2228d7320a",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "11407",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 25,
+                "label": "podcast_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "11466",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": [
+              {
+                "start": 0,
+                "end": 25,
+                "label": "podcast_descriptor"
+              }
+            ]
+          },
+          {
+            "id": "11540",
+            "partition": "train",
+            "intent": "play_podcasts",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "text_sha256": "46da7efd229c8f9352969bda9d2c9ab66becc8012a924ba513e38f120bee9c4f",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "12389",
+            "partition": "train",
+            "intent": "transport_ticket",
+            "spans": [
+              {
+                "start": 5,
+                "end": 10,
+                "label": "transport_type"
+              }
+            ]
+          },
+          {
+            "id": "12390",
+            "partition": "train",
+            "intent": "transport_ticket",
+            "spans": [
+              {
+                "start": 0,
+                "end": 20,
+                "label": "transport_type"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "061d0962b0b392e479785f3675b7b374b474a5f6f65271c5d3f2bd1305aec333",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "13025",
+            "partition": "train",
+            "intent": "qa_factoid",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "person"
+              }
+            ]
+          },
+          {
+            "id": "13912",
+            "partition": "train",
+            "intent": "qa_factoid",
+            "spans": [
+              {
+                "start": 0,
+                "end": 5,
+                "label": "artist_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "03a5d85474c023a5186b128a96e7ee8e5670b94e1b15f73b4de646f13dd335ee",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "13661",
+            "partition": "train",
+            "intent": "qa_currency",
+            "spans": []
+          },
+          {
+            "id": "14667",
+            "partition": "train",
+            "intent": "qa_currency",
+            "spans": [
+              {
+                "start": 4,
+                "end": 10,
+                "label": "currency_name"
+              },
+              {
+                "start": 16,
+                "end": 23,
+                "label": "currency_name"
+              }
+            ]
+          },
+          {
+            "id": "14743",
+            "partition": "train",
+            "intent": "qa_currency",
+            "spans": [
+              {
+                "start": 4,
+                "end": 10,
+                "label": "currency_name"
+              },
+              {
+                "start": 16,
+                "end": 23,
+                "label": "currency_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "66929154af4ea307bd0ddaaecb5201b65c3e0c9e97362e7ee2668fc1ad503d81",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "14037",
+            "partition": "train",
+            "intent": "qa_factoid",
+            "spans": []
+          },
+          {
+            "id": "14247",
+            "partition": "train",
+            "intent": "qa_factoid",
+            "spans": [
+              {
+                "start": 0,
+                "end": 14,
+                "label": "place_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "b158f17a0b49a70adab36af1ec537975ce23c61b5af2fbaf248ec0574157f07b",
+        "cross_split": true,
+        "variants": [
+          {
+            "id": "14248",
+            "partition": "train",
+            "intent": "qa_factoid",
+            "spans": []
+          },
+          {
+            "id": "14755",
+            "partition": "dev",
+            "intent": "qa_factoid",
+            "spans": [
+              {
+                "start": 0,
+                "end": 15,
+                "label": "place_name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text_sha256": "9da0d2f2169f68f20983117826e08963e3c270693cd862de6cf61e1c318014d2",
+        "cross_split": false,
+        "variants": [
+          {
+            "id": "15649",
+            "partition": "train",
+            "intent": "social_post",
+            "spans": [
+              {
+                "start": 8,
+                "end": 17,
+                "label": "media_type"
+              }
+            ]
+          },
+          {
+            "id": "15669",
+            "partition": "train",
+            "intent": "social_post",
+            "spans": [
+              {
+                "start": 8,
+                "end": 13,
+                "label": "media_type"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "selected_tokenizer_all_records_ready": true
+}

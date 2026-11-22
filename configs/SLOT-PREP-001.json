@@ -1,0 +1,18 @@
+{
+  "experiment_id": "SLOT-PREP-001",
+  "dataset": {
+    "release": "MASSIVE 1.0",
+    "locale": "az-AZ",
+    "audit": "data/metadata/AUD-001.json",
+    "audit_sha256": "6c87b2b77d859f087341e72c728a26dca2c9efc505b899741caef813c8bbdcb8",
+    "archive": "data/raw/amazon-massive-dataset-1.0.tar.gz",
+    "jsonl": "data/raw/massive-1.0/az-AZ.jsonl",
+    "license": "data/raw/massive-1.0/LICENSE",
+    "partitions": ["train", "dev"]
+  },
+  "tokenizers": ["whitespace", "word_punctuation", "keep_joiners"],
+  "selected_tokenizer": "word_punctuation",
+  "alignment": "strict_exact_boundaries",
+  "tag_scheme": "IOB2",
+  "output": "results/SLOT-PREP-001/audit.json"
+}
