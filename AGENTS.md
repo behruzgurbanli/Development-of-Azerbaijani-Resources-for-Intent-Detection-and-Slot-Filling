@@ -57,6 +57,8 @@ Use configuration files rather than scattered hard-coded parameters. Fix random 
 
 The GitHub repository is the shared source of truth for ChatGPT research discussions and Codex implementation tasks.
 
+Before substantive research work, read [the gap register](docs/thesis-gap-register.md) and identify the relevant gap IDs. Update their status after the work, add newly evidenced gaps, and retain resolved entries with dated verification and the associated experiment or commit. Keep the research log as a separate record of actual work and findings.
+
 After substantive work, including each substantive experiment, update `docs/research-log.md` with:
 
 - what was attempted and completed;
