@@ -1,0 +1,504 @@
+{
+  "invalid_iob2_by_id": [],
+  "errors_by_id": [
+    {
+      "id": "26",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 7,
+          "label": "house_place"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "30",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 49,
+          "end": 56,
+          "label": "house_place"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "58",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 13,
+          "label": "place_name"
+        },
+        {
+          "start": 24,
+          "end": 41,
+          "label": "order_type"
+        }
+      ],
+      "spurious": [
+        {
+          "start": 24,
+          "end": 29,
+          "label": "order_type"
+        }
+      ]
+    },
+    {
+      "id": "67",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 13,
+          "label": "artist_name"
+        },
+        {
+          "start": 14,
+          "end": 26,
+          "label": "song_name"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "68",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 5,
+          "end": 16,
+          "label": "artist_name"
+        },
+        {
+          "start": 17,
+          "end": 28,
+          "label": "song_name"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "99",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 8,
+          "label": "time"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "107",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 4,
+          "label": "song_name"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "109",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 7,
+          "label": "song_name"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "112",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 7,
+          "end": 20,
+          "label": "artist_name"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "113",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 11,
+          "end": 29,
+          "label": "player_setting"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "115",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 5,
+          "end": 10,
+          "label": "change_amount"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "147",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 4,
+          "end": 8,
+          "label": "music_genre"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "173",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 15,
+          "end": 20,
+          "label": "date"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "217",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 8,
+          "end": 13,
+          "label": "weather_descriptor"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "229",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 11,
+          "label": "place_name"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "230",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 7,
+          "label": "place_name"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "232",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 5,
+          "label": "timeofday"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "label": "time"
+        }
+      ],
+      "spurious": [
+        {
+          "start": 0,
+          "end": 17,
+          "label": "time"
+        }
+      ]
+    },
+    {
+      "id": "237",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 4,
+          "end": 9,
+          "label": "timeofday"
+        },
+        {
+          "start": 10,
+          "end": 25,
+          "label": "alarm_type"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "242",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 9,
+          "label": "place_name"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "251",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 15,
+          "end": 20,
+          "label": "music_genre"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "271",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 5,
+          "end": 12,
+          "label": "place_name"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "295",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 5,
+          "end": 12,
+          "label": "date"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "label": "media_type"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "298",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 6,
+          "label": "artist_name"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "311",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 5,
+          "label": "date"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "345",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 14,
+          "end": 24,
+          "label": "weather_descriptor"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "353",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 19,
+          "label": "date"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "365",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 21,
+          "label": "date"
+        }
+      ],
+      "spurious": [
+        {
+          "start": 0,
+          "end": 5,
+          "label": "date"
+        }
+      ]
+    },
+    {
+      "id": "375",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 5,
+          "end": 10,
+          "label": "place_name"
+        },
+        {
+          "start": 11,
+          "end": 21,
+          "label": "weather_descriptor"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "387",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 45,
+          "label": "news_topic"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "388",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 15,
+          "label": "device_type"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "406",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 4,
+          "end": 7,
+          "label": "music_genre"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "415",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 35,
+          "end": 46,
+          "label": "color_type"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "439",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 7,
+          "end": 12,
+          "label": "weather_descriptor"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "444",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 0,
+          "end": 23,
+          "label": "player_setting"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "490",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 8,
+          "end": 15,
+          "label": "weather_descriptor"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "516",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 14,
+          "end": 26,
+          "label": "time"
+        }
+      ],
+      "spurious": []
+    },
+    {
+      "id": "532",
+      "training_text_match": false,
+      "missed": [
+        {
+          "start": 24,
+          "end": 34,
+          "label": "place_name"
+        }
+      ],
+      "spurious": []
+    }
+  ],
+  "missed_gold_with_exact_boundary_wrong_type": 0,
+  "missed_gold_with_same_type_overlapping_wrong_boundary": 3
+}

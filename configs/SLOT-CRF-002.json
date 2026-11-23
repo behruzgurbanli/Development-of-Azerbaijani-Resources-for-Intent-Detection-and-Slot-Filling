@@ -1,0 +1,33 @@
+{
+  "experiment_id": "SLOT-CRF-002",
+  "purpose": "First feature-based Azerbaijani slot-filling baseline",
+  "preparation_config": "configs/SLOT-PREP-001.json",
+  "preparation_audit": "results/SLOT-PREP-001/audit.json",
+  "preparation_audit_sha256": "965bbaf37eb4688e22a67d4abda502f5e74da9a4dd04f8f09eb85f43362d2367",
+  "tokenizer": "word_punctuation",
+  "alignment": "strict_exact_boundaries",
+  "tag_scheme": "IOB2",
+  "fit_partition": "train",
+  "prediction_partition": "dev",
+  "features": {"affix_lengths": [1, 2, 3, 4], "context_radius": 1},
+  "crf": {
+    "algorithm": "lbfgs",
+    "type": "crf1d",
+    "parameters": {
+      "c1": 0.0,
+      "c2": 1.0,
+      "max_iterations": 300,
+      "feature.minfreq": 0.0,
+      "feature.possible_states": false,
+      "feature.possible_transitions": true
+    }
+  },
+  "evaluation": {
+    "invalid_iob2_transition": "promote_orphan_or_mismatched_i_to_b_and_log",
+    "zero_denominator": 0,
+    "primary": "exact_typed_character_span_micro_f1"
+  },
+  "seed": 42,
+  "smoke": {"train_records": 256, "dev_records": 64},
+  "output_dir": "results/SLOT-CRF-002"
+}

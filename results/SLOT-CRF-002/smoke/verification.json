@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "mode": "smoke",
+  "verified_dev_records": 64,
+  "manifest_sha256": "ac675c6b8e47a6ed190392b621cbc46661bee5d9e611cf3fe6d3ca0f809d0343",
+  "checks": [
+    "preparation and dataset hashes",
+    "source/config/artifact hashes",
+    "exact development ID coverage",
+    "recomputed metrics and diagnostics"
+  ],
+  "model_retrained": false
+}
