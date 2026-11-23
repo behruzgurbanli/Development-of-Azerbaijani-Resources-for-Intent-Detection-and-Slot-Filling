@@ -1,0 +1,45 @@
+{
+  "protocol_id": "EVAL-FREEZE-001",
+  "frozen_base_commit": "eea2b12818fd48477247bb93c09058c8dc35dd3e",
+  "pins": "results/EVAL-FREEZE-001/frozen-inputs.json",
+  "fit": {"partition": "train", "records": 11514, "order": "official_jsonl"},
+  "evaluation": {"partition": "test", "records": 2974},
+  "primary": {"intent": "INT-SVC-001", "slot": "SLOT-CRF-002"},
+  "comparison": {"intent": "INT-HYBRID-001", "slot": "SLOT-CRF-002", "replace_primary": false},
+  "model_configs": {
+    "PR5-INT-001": "configs/PR5-INT-001.json",
+    "INT-SVC-001": "configs/INT-SVC-001.json",
+    "INT-HYBRID-001": "configs/INT-HYBRID-001.json",
+    "SLOT-CRF-002": "configs/SLOT-CRF-002.json"
+  },
+  "data_files": {
+    "audit": "data/metadata/AUD-001.json",
+    "archive": "data/raw/amazon-massive-dataset-1.0.tar.gz",
+    "jsonl": "data/raw/massive-1.0/az-AZ.jsonl",
+    "license": "data/raw/massive-1.0/LICENSE"
+  },
+  "intent_labels": 60,
+  "slot_types": 55,
+  "metrics": {
+    "primary": "joint_exact_match",
+    "intent_macro_f1": "unweighted_fixed_training_labels",
+    "slot_micro": "exact_typed_half_open_python_character_span",
+    "slot_exact_match": "complete_span_set_equality_including_empty",
+    "joint_exact_match": "intent_correct_and_slot_set_exact",
+    "zero_division": 0,
+    "overlap": "verbatim_utt_in_official_train",
+    "bio_policy": "promote_orphan_or_mismatched_i_to_b_and_log",
+    "gold_alignment": "score_original_spans_and_report_unrepresentable_boundaries"
+  },
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 42,
+    "confidence_level": 0.95,
+    "unit": "utterance",
+    "sampling": "iid_with_replacement_same_draw_for_all_models_and_metrics",
+    "method": "percentile",
+    "quantile_method": "linear",
+    "rng": "numpy_PCG64"
+  },
+  "work_dir": "artifacts/EVAL-FREEZE-001"
+}

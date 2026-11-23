@@ -1,0 +1,160 @@
+{
+  "protocol_id": "EVAL-FREEZE-001",
+  "status": "passed",
+  "research_session_date_eastern": "2026-11-22",
+  "test_command": [
+    "PYTHONPATH=src:.venv/slot-crf/lib/python3.12/site-packages python3 -B -m unittest discover -s tests -v"
+  ],
+  "tests": {
+    "passed": 58,
+    "failed": 0,
+    "skipped": 0
+  },
+  "runtime": {
+    "python": "3.12.4",
+    "unicode": "15.0.0",
+    "packages": {
+      "numpy": "2.0.2",
+      "scipy": "1.14.1",
+      "scikit-learn": "1.5.2",
+      "joblib": "1.4.2",
+      "threadpoolctl": "3.5.0",
+      "python-crfsuite": "0.9.12"
+    },
+    "os": "Darwin",
+    "os_release": "27.2.0",
+    "architecture": "arm64"
+  },
+  "frozen_inputs_sha256": "acb7fd5fc7cc11db1ae0b154312cf18ad90d02ffb5c2d486ae5a1ddd18946667",
+  "verified_pin_count": 104,
+  "pinned_historical_files_equal_to_base": 99,
+  "data_hashes_verified": {
+    "audit": "6c87b2b77d859f087341e72c728a26dca2c9efc505b899741caef813c8bbdcb8",
+    "archive": "7df623fd2d300a4d235d6ee5bd396c9a28258d3a0ccb29abdb054506eba153f8",
+    "jsonl": "9a643dbf6e07e90ba8b1554bd95e9946b42037bd52550aac90f4e774ee58ed8c",
+    "license": "c2e6ea015269147de02117ebdd91f30ef09831251f5345fa8365273b1db1d435"
+  },
+  "synthetic": {
+    "real_estimators_fit": true,
+    "separate_scoring": true,
+    "prediction_did_not_open_gold_source": true,
+    "artifact_tampering_rejected": true
+  },
+  "development_check": {
+    "source": "results/JOINT-EVAL-001/diagnostics.jsonl",
+    "n": 2033,
+    "expected_source": "results/JOINT-EVAL-001/metrics.json",
+    "intents": {
+      "INT-SVC-001": {
+        "correct": 1716,
+        "accuracy": 0.8440727988194786,
+        "macro_f1": 0.8228981629075364
+      },
+      "INT-HYBRID-001": {
+        "correct": 1720,
+        "accuracy": 0.8460403344810624,
+        "macro_f1": 0.8243775118973673
+      }
+    },
+    "slots": {
+      "tp": 1312,
+      "fp": 327,
+      "fn": 681,
+      "support": 1993,
+      "precision": 0.8004881025015254,
+      "recall": 0.6583040642247867,
+      "f1": 0.7224669603524229
+    },
+    "slot_exact_matches": 1399,
+    "joint": {
+      "INT-SVC-001+SLOT-CRF-002": {
+        "joint_exact_matches": 1206,
+        "joint_exact_match": 0.5932120019675357,
+        "counts": {
+          "both_correct": 1206,
+          "intent_only_correct": 510,
+          "slots_only_correct": 193,
+          "neither_correct": 124
+        }
+      },
+      "INT-HYBRID-001+SLOT-CRF-002": {
+        "joint_exact_matches": 1211,
+        "joint_exact_match": 0.5956714215445155,
+        "counts": {
+          "both_correct": 1211,
+          "intent_only_correct": 509,
+          "slots_only_correct": 188,
+          "neither_correct": 125
+        }
+      }
+    },
+    "paired_counts": {
+      "both_joint_correct": 1188,
+      "primary_only_joint_correct": 18,
+      "comparison_only_joint_correct": 23,
+      "neither_joint_correct": 804
+    },
+    "bootstrap": {
+      "settings": {
+        "resamples": 2000,
+        "seed": 42,
+        "confidence_level": 0.95,
+        "unit": "utterance",
+        "sampling": "iid_with_replacement_same_draw_for_all_models_and_metrics",
+        "method": "percentile",
+        "quantile_method": "linear",
+        "rng": "numpy_PCG64"
+      },
+      "denominator": 2033,
+      "intervals": {
+        "INT-SVC-001.intent_accuracy": [
+          0.8283202164289228,
+          0.8598130841121495
+        ],
+        "INT-SVC-001.intent_macro_f1": [
+          0.7857974020449798,
+          0.8412276715081135
+        ],
+        "INT-HYBRID-001.intent_accuracy": [
+          0.8298081652729956,
+          0.8613010329562223
+        ],
+        "INT-HYBRID-001.intent_macro_f1": [
+          0.7867128710275522,
+          0.8411323626661251
+        ],
+        "SLOT-CRF-002.slot_micro_precision": [
+          0.7799480606285996,
+          0.8210787217730694
+        ],
+        "SLOT-CRF-002.slot_micro_recall": [
+          0.636085396317954,
+          0.6811967563344982
+        ],
+        "SLOT-CRF-002.slot_micro_f1": [
+          0.7024214561180984,
+          0.742202527720059
+        ],
+        "SLOT-CRF-002.slot_utterance_exact_match": [
+          0.6689621249385145,
+          0.7083128381701919
+        ],
+        "INT-SVC-001+SLOT-CRF-002.joint_exact_match": [
+          0.5720609936055091,
+          0.6148548942449582
+        ],
+        "INT-HYBRID-001+SLOT-CRF-002.joint_exact_match": [
+          0.575491883915396,
+          0.616342843089031
+        ],
+        "comparison_minus_primary.joint_exact_match": [
+          -0.003443187407771766,
+          0.008853910477127398
+        ]
+      }
+    }
+  },
+  "official_test_examples_deserialized": false,
+  "official_test_prediction_run": false,
+  "official_test_scoring_run": false
+}

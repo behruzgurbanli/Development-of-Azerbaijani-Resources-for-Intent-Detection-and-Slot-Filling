@@ -1,0 +1,69 @@
+{
+  "protocol_id": "EVAL-FREEZE-001",
+  "date_eastern": "2026-11-23",
+  "status": "passed",
+  "bundle": {
+    "name": "EVAL-FREEZE-001-implementation.zip",
+    "sha256": "99c0e7121b03c951d6335de7274a4e364f893c99e14cd38d785375d1837a0da0",
+    "full_apply_check": "conflicts with local protocol, validation, and research log",
+    "filtered_apply_check": "passed for new source and test files",
+    "bundle_evaluation_py_pin": "fb021ec547fc0d400abc4e663ad851d0c1eb906c5cd8ff4acae4d0bf99af9e2d",
+    "verified_published_evaluation_py_pin": "fb021ec547fc0d400abc4e663ad851d0c1eb906c5cd8ff4acae4d0df99af9e2d"
+  },
+  "prepare": {
+    "command": "PYTHONPATH=src python3 -B -m azmassive.eval_freeze --config configs/EVAL-FREEZE-001.json prepare",
+    "protocol_id": "EVAL-FREEZE-001",
+    "result": "PASS",
+    "frozen_base_commit": "eea2b12818fd48477247bb93c09058c8dc35dd3e",
+    "pins_sha256": "11fb083019324150f7c189e1d5417ebd4fc746fb53be730a4f6ab1efdddeb52c",
+    "static_files_verified": 107,
+    "raw_corpus_opened": false
+  },
+  "tests": [
+    {
+      "command": "PYTHONPATH=src:.venv/slot-crf/lib/python3.12/site-packages python3 -B -m unittest discover -s tests -p test_eval_freeze.py -v",
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "command": "PYTHONPATH=src:.venv/slot-crf/lib/python3.12/site-packages python3 -B -m unittest discover -s tests -p test_final_protocol.py -v",
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "command": "PYTHONPATH=src:.venv/slot-crf/lib/python3.12/site-packages python3 -B -m unittest discover -s tests -v",
+      "passed": 63,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "environment": {
+    "python": "3.12.4",
+    "unicode": "15.0.0",
+    "packages": {
+      "numpy": "2.0.2",
+      "scipy": "1.14.1",
+      "scikit-learn": "1.5.2",
+      "joblib": "1.4.2",
+      "threadpoolctl": "3.5.0",
+      "python-crfsuite": "0.9.12"
+    },
+    "os": "Darwin",
+    "os_release": "27.2.0",
+    "architecture": "arm64"
+  },
+  "published_files_verified_equal_to_base": 99,
+  "development_replay": {
+    "source": "results/JOINT-EVAL-001/diagnostics.jsonl",
+    "n": 2033,
+    "primary_joint_exact_matches": 1206,
+    "comparison_joint_exact_matches": 1211,
+    "slot_micro_f1": 0.7224669603524229,
+    "independent_point_count_check_passed": true
+  },
+  "official_test_partition_accessed": false,
+  "official_training_run": false,
+  "official_output_directory_created": false
+}
