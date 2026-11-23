@@ -1,0 +1,26 @@
+{
+  "result": "PASS",
+  "method": "Independent raw-BIO decoding and record-keyed set counts from saved predictions. Checked overall, per-type, overlap, all-O and invalid transition counts.",
+  "runs": {
+    "smoke": {
+      "tp": 16,
+      "fp": 3,
+      "fn": 44,
+      "exact_matches": 27,
+      "all_o_exact_matches": 17,
+      "invalid_transitions": 0,
+      "invalid_utterances": 0,
+      "prediction_sha256": "58250f94f425c7df3c2c081112a209534f9ade5e02452ef9955db87b406ee6cf"
+    },
+    "full": {
+      "tp": 1282,
+      "fp": 362,
+      "fn": 711,
+      "exact_matches": 1359,
+      "all_o_exact_matches": 647,
+      "invalid_transitions": 0,
+      "invalid_utterances": 0,
+      "prediction_sha256": "3c0524e1e11a24e0524f24bcc9fb9894cc0ec9063d36fa97216e8b4b1656507b"
+    }
+  }
+}
