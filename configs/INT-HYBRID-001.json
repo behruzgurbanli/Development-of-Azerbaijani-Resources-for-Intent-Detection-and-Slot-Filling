@@ -1,0 +1,23 @@
+{
+  "experiment_id": "INT-HYBRID-001",
+  "purpose": "Compare character plus word TF-IDF with the verified character-only LinearSVC",
+  "baseline_config": "configs/INT-SVC-001.json",
+  "baseline_config_sha256": "ebe4be4dd6723511fe4d06ef3b74fa391cf1d80c79ef184a290c2060085940e5",
+  "word_vectorizer": {
+    "analyzer": "word",
+    "token_pattern": "(?u)\\b\\w+\\b",
+    "ngram_range": [1, 2],
+    "lowercase": false,
+    "strip_accents": null,
+    "min_df": 1,
+    "max_df": 1.0,
+    "max_features": null,
+    "stop_words": null,
+    "sublinear_tf": true,
+    "use_idf": true,
+    "smooth_idf": true,
+    "norm": "l2"
+  },
+  "feature_union": {"weights": {"character": 1.0, "word": 1.0}, "row_norm": "l2"},
+  "output_dir": "results/INT-HYBRID-001"
+}

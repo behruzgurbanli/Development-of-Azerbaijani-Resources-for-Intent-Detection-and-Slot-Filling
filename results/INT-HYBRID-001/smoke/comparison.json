@@ -1,0 +1,219 @@
+{
+  "baseline": "INT-SVC-001",
+  "candidate": "INT-HYBRID-001",
+  "paired_outcomes": {
+    "both_wrong": 30,
+    "both_correct": 27,
+    "character_only_correct": 2
+  },
+  "paired_outcomes_by_exact_text_overlap": {
+    "seen": {
+      "both_correct": 1
+    },
+    "unseen": {
+      "both_wrong": 30,
+      "both_correct": 26,
+      "character_only_correct": 2
+    }
+  },
+  "changed_predictions": [
+    {
+      "id": "42",
+      "gold": "general_quirky",
+      "character_svc": "qa_stock",
+      "hybrid_svc": "qa_currency",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "67",
+      "gold": "play_music",
+      "character_svc": "news_query",
+      "hybrid_svc": "takeaway_order",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1179",
+      "gold": "music_dislikeness",
+      "character_svc": "play_music",
+      "hybrid_svc": "datetime_convert",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1209",
+      "gold": "cooking_recipe",
+      "character_svc": "recommendation_locations",
+      "hybrid_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1210",
+      "gold": "takeaway_order",
+      "character_svc": "recommendation_locations",
+      "hybrid_svc": "transport_taxi",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4822",
+      "gold": "qa_factoid",
+      "character_svc": "datetime_convert",
+      "hybrid_svc": "general_greet",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11281",
+      "gold": "play_podcasts",
+      "character_svc": "play_podcasts",
+      "hybrid_svc": "audio_volume_up",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12977",
+      "gold": "qa_maths",
+      "character_svc": "qa_maths",
+      "hybrid_svc": "play_game",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    }
+  ],
+  "per_class_f1_delta": {
+    "alarm_query": 0.0,
+    "alarm_remove": 0.0,
+    "alarm_set": 0.0,
+    "audio_volume_down": 0.0,
+    "audio_volume_mute": 0.0,
+    "audio_volume_other": 0.0,
+    "audio_volume_up": -0.16666666666666663,
+    "calendar_query": -0.16666666666666663,
+    "calendar_remove": 0.0,
+    "calendar_set": 0.0,
+    "cooking_query": 0.0,
+    "cooking_recipe": 0.0,
+    "datetime_convert": 0.0,
+    "datetime_query": 0.0,
+    "email_addcontact": 0.0,
+    "email_query": 0.0,
+    "email_querycontact": 0.0,
+    "email_sendemail": 0.0,
+    "general_greet": 0.0,
+    "general_joke": 0.0,
+    "general_quirky": 0.0,
+    "iot_cleaning": 0.0,
+    "iot_coffee": 0.0,
+    "iot_hue_lightchange": 0.0,
+    "iot_hue_lightdim": 0.0,
+    "iot_hue_lightoff": 0.0,
+    "iot_hue_lighton": 0.0,
+    "iot_hue_lightup": 0.0,
+    "iot_wemo_off": 0.0,
+    "iot_wemo_on": 0.0,
+    "lists_createoradd": 0.0,
+    "lists_query": 0.0,
+    "lists_remove": 0.0,
+    "music_dislikeness": 0.0,
+    "music_likeness": 0.0,
+    "music_query": 0.0,
+    "music_settings": 0.0,
+    "news_query": 0.0,
+    "play_audiobook": 0.0,
+    "play_game": -0.33333333333333337,
+    "play_music": 0.0,
+    "play_podcasts": -1.0,
+    "play_radio": 0.0,
+    "qa_currency": -0.33333333333333337,
+    "qa_definition": 0.0,
+    "qa_factoid": 0.0,
+    "qa_maths": -1.0,
+    "qa_stock": 0.33333333333333337,
+    "recommendation_events": 0.0,
+    "recommendation_locations": 0.2666666666666666,
+    "recommendation_movies": 0.0,
+    "social_post": 0.0,
+    "social_query": 0.0,
+    "takeaway_order": 0.0,
+    "takeaway_query": 0.0,
+    "transport_query": 0.0,
+    "transport_taxi": -0.33333333333333337,
+    "transport_ticket": 0.0,
+    "transport_traffic": 0.0,
+    "weather_query": 0.0
+  },
+  "confusion_deltas_hybrid_minus_character": [
+    {
+      "gold": "cooking_recipe",
+      "predicted": "calendar_query",
+      "delta": 1
+    },
+    {
+      "gold": "cooking_recipe",
+      "predicted": "recommendation_locations",
+      "delta": -1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "qa_currency",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "qa_stock",
+      "delta": -1
+    },
+    {
+      "gold": "music_dislikeness",
+      "predicted": "datetime_convert",
+      "delta": 1
+    },
+    {
+      "gold": "music_dislikeness",
+      "predicted": "play_music",
+      "delta": -1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "news_query",
+      "delta": -1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "takeaway_order",
+      "delta": 1
+    },
+    {
+      "gold": "play_podcasts",
+      "predicted": "audio_volume_up",
+      "delta": 1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "datetime_convert",
+      "delta": -1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "general_greet",
+      "delta": 1
+    },
+    {
+      "gold": "qa_maths",
+      "predicted": "play_game",
+      "delta": 1
+    },
+    {
+      "gold": "takeaway_order",
+      "predicted": "recommendation_locations",
+      "delta": -1
+    },
+    {
+      "gold": "takeaway_order",
+      "predicted": "transport_taxi",
+      "delta": 1
+    }
+  ]
+}

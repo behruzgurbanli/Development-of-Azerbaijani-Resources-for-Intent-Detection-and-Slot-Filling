@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "mode": "full",
+  "dev_predictions": 2033,
+  "run_manifest_sha256": "0a12ef5e9e9e7950933c88b0be7094de89053790376a23009a7321a69fcd0c34",
+  "checks": [
+    "audited inputs and baseline artifacts",
+    "identical character and classifier settings",
+    "source and result hashes",
+    "exact dev ID coverage and gold alignment",
+    "recomputed metrics, diagnostics and paired comparison"
+  ],
+  "model_retrained": false
+}

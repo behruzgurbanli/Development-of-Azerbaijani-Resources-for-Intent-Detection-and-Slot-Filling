@@ -1,0 +1,1402 @@
+{
+  "baseline": "INT-SVC-001",
+  "candidate": "INT-HYBRID-001",
+  "paired_outcomes": {
+    "both_correct": 1681,
+    "both_wrong": 278,
+    "character_only_correct": 35,
+    "hybrid_only_correct": 39
+  },
+  "paired_outcomes_by_exact_text_overlap": {
+    "seen": {
+      "both_correct": 155,
+      "both_wrong": 6,
+      "character_only_correct": 1
+    },
+    "unseen": {
+      "both_correct": 1526,
+      "both_wrong": 272,
+      "character_only_correct": 34,
+      "hybrid_only_correct": 39
+    }
+  },
+  "changed_predictions": [
+    {
+      "id": "109",
+      "gold": "play_music",
+      "character_svc": "cooking_recipe",
+      "hybrid_svc": "play_radio",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "147",
+      "gold": "play_music",
+      "character_svc": "play_music",
+      "hybrid_svc": "music_likeness",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "511",
+      "gold": "weather_query",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "cooking_recipe",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "806",
+      "gold": "audio_volume_down",
+      "character_svc": "audio_volume_mute",
+      "hybrid_svc": "audio_volume_down",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "943",
+      "gold": "datetime_convert",
+      "character_svc": "datetime_convert",
+      "hybrid_svc": "datetime_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1012",
+      "gold": "social_post",
+      "character_svc": "social_post",
+      "hybrid_svc": "news_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1333",
+      "gold": "weather_query",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "weather_query",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1625",
+      "gold": "alarm_query",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "weather_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1877",
+      "gold": "music_likeness",
+      "character_svc": "calendar_set",
+      "hybrid_svc": "music_likeness",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "2946",
+      "gold": "iot_wemo_off",
+      "character_svc": "iot_wemo_off",
+      "hybrid_svc": "iot_hue_lightoff",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3701",
+      "gold": "iot_hue_lightdim",
+      "character_svc": "iot_hue_lightdim",
+      "hybrid_svc": "iot_hue_lightchange",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3940",
+      "gold": "music_likeness",
+      "character_svc": "music_likeness",
+      "hybrid_svc": "music_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4003",
+      "gold": "play_music",
+      "character_svc": "play_music",
+      "hybrid_svc": "qa_factoid",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4008",
+      "gold": "music_settings",
+      "character_svc": "calendar_set",
+      "hybrid_svc": "music_settings",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4191",
+      "gold": "music_query",
+      "character_svc": "play_music",
+      "hybrid_svc": "music_query",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4551",
+      "gold": "news_query",
+      "character_svc": "news_query",
+      "hybrid_svc": "email_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4582",
+      "gold": "datetime_query",
+      "character_svc": "datetime_convert",
+      "hybrid_svc": "datetime_query",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5100",
+      "gold": "alarm_remove",
+      "character_svc": "alarm_query",
+      "hybrid_svc": "alarm_remove",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5372",
+      "gold": "music_query",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5408",
+      "gold": "music_query",
+      "character_svc": "music_query",
+      "hybrid_svc": "qa_definition",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5638",
+      "gold": "weather_query",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "recommendation_locations",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5667",
+      "gold": "alarm_query",
+      "character_svc": "audio_volume_other",
+      "hybrid_svc": "qa_maths",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6209",
+      "gold": "general_quirky",
+      "character_svc": "recommendation_locations",
+      "hybrid_svc": "general_quirky",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6236",
+      "gold": "general_quirky",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "news_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6404",
+      "gold": "general_quirky",
+      "character_svc": "lists_createoradd",
+      "hybrid_svc": "lists_remove",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6422",
+      "gold": "general_quirky",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "news_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6499",
+      "gold": "general_quirky",
+      "character_svc": "news_query",
+      "hybrid_svc": "qa_definition",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6522",
+      "gold": "general_quirky",
+      "character_svc": "email_sendemail",
+      "hybrid_svc": "recommendation_locations",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6760",
+      "gold": "calendar_remove",
+      "character_svc": "calendar_remove",
+      "hybrid_svc": "alarm_remove",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7101",
+      "gold": "calendar_set",
+      "character_svc": "calendar_query",
+      "hybrid_svc": "calendar_set",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7201",
+      "gold": "calendar_query",
+      "character_svc": "calendar_query",
+      "hybrid_svc": "lists_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7223",
+      "gold": "calendar_query",
+      "character_svc": "cooking_recipe",
+      "hybrid_svc": "datetime_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7255",
+      "gold": "calendar_remove",
+      "character_svc": "alarm_remove",
+      "hybrid_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7381",
+      "gold": "calendar_query",
+      "character_svc": "datetime_query",
+      "hybrid_svc": "calendar_remove",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7617",
+      "gold": "calendar_query",
+      "character_svc": "play_game",
+      "hybrid_svc": "calendar_query",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7729",
+      "gold": "calendar_set",
+      "character_svc": "calendar_query",
+      "hybrid_svc": "datetime_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7871",
+      "gold": "calendar_query",
+      "character_svc": "calendar_set",
+      "hybrid_svc": "calendar_query",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7968",
+      "gold": "calendar_query",
+      "character_svc": "qa_factoid",
+      "hybrid_svc": "general_quirky",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7969",
+      "gold": "recommendation_events",
+      "character_svc": "recommendation_events",
+      "hybrid_svc": "general_quirky",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8253",
+      "gold": "alarm_set",
+      "character_svc": "alarm_set",
+      "hybrid_svc": "calendar_set",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8418",
+      "gold": "calendar_query",
+      "character_svc": "calendar_query",
+      "hybrid_svc": "calendar_set",
+      "outcome": "character_only_correct",
+      "text_overlap": "seen"
+    },
+    {
+      "id": "8491",
+      "gold": "calendar_query",
+      "character_svc": "news_query",
+      "hybrid_svc": "calendar_query",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8699",
+      "gold": "calendar_query",
+      "character_svc": "cooking_recipe",
+      "hybrid_svc": "calendar_set",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8786",
+      "gold": "recommendation_events",
+      "character_svc": "recommendation_events",
+      "hybrid_svc": "recommendation_locations",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8847",
+      "gold": "calendar_set",
+      "character_svc": "calendar_set",
+      "hybrid_svc": "weather_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9589",
+      "gold": "play_radio",
+      "character_svc": "qa_factoid",
+      "hybrid_svc": "play_radio",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9743",
+      "gold": "play_audiobook",
+      "character_svc": "play_audiobook",
+      "hybrid_svc": "play_music",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9831",
+      "gold": "play_audiobook",
+      "character_svc": "play_music",
+      "hybrid_svc": "play_audiobook",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10135",
+      "gold": "cooking_recipe",
+      "character_svc": "takeaway_order",
+      "hybrid_svc": "qa_definition",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10196",
+      "gold": "cooking_recipe",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "takeaway_order",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10303",
+      "gold": "play_game",
+      "character_svc": "qa_factoid",
+      "hybrid_svc": "play_game",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10351",
+      "gold": "play_game",
+      "character_svc": "play_game",
+      "hybrid_svc": "play_radio",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10496",
+      "gold": "lists_query",
+      "character_svc": "recommendation_locations",
+      "hybrid_svc": "lists_query",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10532",
+      "gold": "lists_query",
+      "character_svc": "lists_query",
+      "hybrid_svc": "lists_createoradd",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10817",
+      "gold": "lists_remove",
+      "character_svc": "lists_query",
+      "hybrid_svc": "lists_remove",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10883",
+      "gold": "lists_remove",
+      "character_svc": "lists_remove",
+      "hybrid_svc": "lists_createoradd",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11477",
+      "gold": "play_podcasts",
+      "character_svc": "play_radio",
+      "hybrid_svc": "play_podcasts",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11624",
+      "gold": "recommendation_locations",
+      "character_svc": "recommendation_events",
+      "hybrid_svc": "recommendation_locations",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11730",
+      "gold": "recommendation_events",
+      "character_svc": "transport_query",
+      "hybrid_svc": "general_quirky",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11740",
+      "gold": "recommendation_movies",
+      "character_svc": "recommendation_movies",
+      "hybrid_svc": "recommendation_events",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11857",
+      "gold": "recommendation_movies",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "recommendation_movies",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11998",
+      "gold": "recommendation_events",
+      "character_svc": "news_query",
+      "hybrid_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12307",
+      "gold": "transport_ticket",
+      "character_svc": "transport_ticket",
+      "hybrid_svc": "transport_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12711",
+      "gold": "transport_taxi",
+      "character_svc": "transport_taxi",
+      "hybrid_svc": "alarm_set",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12741",
+      "gold": "transport_query",
+      "character_svc": "calendar_set",
+      "hybrid_svc": "transport_query",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12899",
+      "gold": "transport_ticket",
+      "character_svc": "transport_query",
+      "hybrid_svc": "transport_ticket",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13029",
+      "gold": "general_quirky",
+      "character_svc": "qa_factoid",
+      "hybrid_svc": "qa_definition",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13076",
+      "gold": "qa_factoid",
+      "character_svc": "qa_factoid",
+      "hybrid_svc": "music_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13113",
+      "gold": "qa_factoid",
+      "character_svc": "recommendation_movies",
+      "hybrid_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13185",
+      "gold": "qa_factoid",
+      "character_svc": "qa_factoid",
+      "hybrid_svc": "qa_maths",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13227",
+      "gold": "general_quirky",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "qa_factoid",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13275",
+      "gold": "general_quirky",
+      "character_svc": "calendar_query",
+      "hybrid_svc": "qa_factoid",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13280",
+      "gold": "qa_factoid",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "news_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13349",
+      "gold": "general_quirky",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "qa_maths",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13462",
+      "gold": "qa_maths",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "qa_maths",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13470",
+      "gold": "general_quirky",
+      "character_svc": "news_query",
+      "hybrid_svc": "general_quirky",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13490",
+      "gold": "general_quirky",
+      "character_svc": "weather_query",
+      "hybrid_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13519",
+      "gold": "qa_factoid",
+      "character_svc": "qa_factoid",
+      "hybrid_svc": "news_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13544",
+      "gold": "qa_factoid",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "qa_factoid",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13645",
+      "gold": "general_quirky",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "transport_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13704",
+      "gold": "qa_definition",
+      "character_svc": "qa_factoid",
+      "hybrid_svc": "qa_definition",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13812",
+      "gold": "qa_definition",
+      "character_svc": "qa_definition",
+      "hybrid_svc": "qa_factoid",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13938",
+      "gold": "calendar_query",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "social_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14156",
+      "gold": "qa_definition",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "qa_definition",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14195",
+      "gold": "qa_stock",
+      "character_svc": "recommendation_movies",
+      "hybrid_svc": "qa_stock",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14212",
+      "gold": "recommendation_locations",
+      "character_svc": "news_query",
+      "hybrid_svc": "recommendation_locations",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14479",
+      "gold": "qa_factoid",
+      "character_svc": "calendar_query",
+      "hybrid_svc": "weather_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14541",
+      "gold": "general_quirky",
+      "character_svc": "qa_factoid",
+      "hybrid_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14897",
+      "gold": "qa_factoid",
+      "character_svc": "email_query",
+      "hybrid_svc": "qa_factoid",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15064",
+      "gold": "qa_factoid",
+      "character_svc": "qa_maths",
+      "hybrid_svc": "play_radio",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15258",
+      "gold": "social_query",
+      "character_svc": "social_query",
+      "hybrid_svc": "news_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15559",
+      "gold": "social_post",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "social_post",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15596",
+      "gold": "social_post",
+      "character_svc": "social_query",
+      "hybrid_svc": "social_post",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15812",
+      "gold": "general_quirky",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "email_querycontact",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15903",
+      "gold": "email_sendemail",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "email_sendemail",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15993",
+      "gold": "email_sendemail",
+      "character_svc": "news_query",
+      "hybrid_svc": "email_sendemail",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16007",
+      "gold": "email_query",
+      "character_svc": "email_sendemail",
+      "hybrid_svc": "email_query",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16066",
+      "gold": "email_sendemail",
+      "character_svc": "general_greet",
+      "hybrid_svc": "email_sendemail",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16244",
+      "gold": "email_querycontact",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "qa_factoid",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16322",
+      "gold": "email_sendemail",
+      "character_svc": "general_quirky",
+      "hybrid_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16445",
+      "gold": "email_query",
+      "character_svc": "email_sendemail",
+      "hybrid_svc": "email_query",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16574",
+      "gold": "email_sendemail",
+      "character_svc": "email_querycontact",
+      "hybrid_svc": "email_sendemail",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16588",
+      "gold": "email_querycontact",
+      "character_svc": "audio_volume_mute",
+      "hybrid_svc": "calendar_remove",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16768",
+      "gold": "email_sendemail",
+      "character_svc": "email_query",
+      "hybrid_svc": "email_querycontact",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16850",
+      "gold": "email_query",
+      "character_svc": "email_query",
+      "hybrid_svc": "calendar_query",
+      "outcome": "character_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "17080",
+      "gold": "email_sendemail",
+      "character_svc": "email_query",
+      "hybrid_svc": "email_sendemail",
+      "outcome": "hybrid_only_correct",
+      "text_overlap": "unseen"
+    }
+  ],
+  "per_class_f1_delta": {
+    "alarm_query": 0.022522522522522515,
+    "alarm_remove": 0.0461538461538461,
+    "alarm_set": -0.032258064516129004,
+    "audio_volume_down": 0.08791208791208782,
+    "audio_volume_mute": 0.04692082111436946,
+    "audio_volume_other": 0.0,
+    "audio_volume_up": 0.0,
+    "calendar_query": -0.008383857521788496,
+    "calendar_remove": -0.03008626130864711,
+    "calendar_set": 0.0034249557368007943,
+    "cooking_query": 0.0,
+    "cooking_recipe": 0.019933554817275656,
+    "datetime_convert": -0.03921568627450989,
+    "datetime_query": -0.005128816793893098,
+    "email_addcontact": 0.0,
+    "email_query": 0.02087132725430596,
+    "email_querycontact": -0.01904761904761909,
+    "email_sendemail": 0.06488188976377951,
+    "general_greet": 0.09999999999999998,
+    "general_joke": 0.0,
+    "general_quirky": 0.0013393604553825211,
+    "iot_cleaning": 0.0,
+    "iot_coffee": 0.0,
+    "iot_hue_lightchange": -0.020289855072463836,
+    "iot_hue_lightdim": -0.032196969696969724,
+    "iot_hue_lightoff": -0.02552552552552545,
+    "iot_hue_lighton": 0.0,
+    "iot_hue_lightup": 0.0,
+    "iot_wemo_off": -0.13888888888888884,
+    "iot_wemo_on": 0.0,
+    "lists_createoradd": -0.01669085631349776,
+    "lists_query": 0.0,
+    "lists_remove": -0.01247484909456742,
+    "music_dislikeness": 0.0,
+    "music_likeness": -0.026455026455026398,
+    "music_query": -0.02991452991452992,
+    "music_settings": 0.08088235294117652,
+    "news_query": -0.006909839877748958,
+    "play_audiobook": 0.0,
+    "play_game": 0.02008456659619451,
+    "play_music": -0.005098882961478424,
+    "play_podcasts": 0.01673450927182274,
+    "play_radio": -0.006106497313141168,
+    "qa_currency": 0.0,
+    "qa_definition": -0.02028005794302279,
+    "qa_factoid": -0.003088538091969739,
+    "qa_maths": 0.0,
+    "qa_stock": 0.024154589371980673,
+    "recommendation_events": -0.053333333333333344,
+    "recommendation_locations": 0.02431761786600506,
+    "recommendation_movies": 0.06956521739130428,
+    "social_post": 0.011131725417439675,
+    "social_query": -0.033333333333333326,
+    "takeaway_order": 0.0,
+    "takeaway_query": 0.0,
+    "transport_query": 0.01543859649122803,
+    "transport_taxi": -0.019593613933236553,
+    "transport_ticket": 0.0,
+    "transport_traffic": 0.0,
+    "weather_query": -0.003207698476343279
+  },
+  "confusion_deltas_hybrid_minus_character": [
+    {
+      "gold": "weather_query",
+      "predicted": "general_quirky",
+      "delta": -3
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "cooking_recipe",
+      "delta": -2
+    },
+    {
+      "gold": "calendar_set",
+      "predicted": "calendar_query",
+      "delta": -2
+    },
+    {
+      "gold": "email_query",
+      "predicted": "email_sendemail",
+      "delta": -2
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "email_query",
+      "delta": -2
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "qa_definition",
+      "delta": 2
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "news_query",
+      "delta": 2
+    },
+    {
+      "gold": "recommendation_events",
+      "predicted": "general_quirky",
+      "delta": 2
+    },
+    {
+      "gold": "alarm_query",
+      "predicted": "audio_volume_other",
+      "delta": -1
+    },
+    {
+      "gold": "alarm_query",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "alarm_query",
+      "predicted": "qa_maths",
+      "delta": 1
+    },
+    {
+      "gold": "alarm_query",
+      "predicted": "weather_query",
+      "delta": 1
+    },
+    {
+      "gold": "alarm_remove",
+      "predicted": "alarm_query",
+      "delta": -1
+    },
+    {
+      "gold": "alarm_set",
+      "predicted": "calendar_set",
+      "delta": 1
+    },
+    {
+      "gold": "audio_volume_down",
+      "predicted": "audio_volume_mute",
+      "delta": -1
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "calendar_remove",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "calendar_set",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "lists_query",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "news_query",
+      "delta": -1
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "play_game",
+      "delta": -1
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "social_query",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_remove",
+      "predicted": "calendar_query",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_set",
+      "predicted": "datetime_query",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_set",
+      "predicted": "weather_query",
+      "delta": 1
+    },
+    {
+      "gold": "cooking_recipe",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "cooking_recipe",
+      "predicted": "qa_definition",
+      "delta": 1
+    },
+    {
+      "gold": "datetime_convert",
+      "predicted": "datetime_query",
+      "delta": 1
+    },
+    {
+      "gold": "datetime_query",
+      "predicted": "datetime_convert",
+      "delta": -1
+    },
+    {
+      "gold": "email_query",
+      "predicted": "calendar_query",
+      "delta": 1
+    },
+    {
+      "gold": "email_querycontact",
+      "predicted": "audio_volume_mute",
+      "delta": -1
+    },
+    {
+      "gold": "email_querycontact",
+      "predicted": "calendar_remove",
+      "delta": 1
+    },
+    {
+      "gold": "email_querycontact",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "email_querycontact",
+      "predicted": "qa_factoid",
+      "delta": 1
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "calendar_query",
+      "delta": 1
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "general_greet",
+      "delta": -1
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "news_query",
+      "delta": -1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "calendar_query",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "email_querycontact",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "email_sendemail",
+      "delta": -1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "lists_createoradd",
+      "delta": -1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "lists_remove",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "qa_maths",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "transport_query",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "weather_query",
+      "delta": -1
+    },
+    {
+      "gold": "iot_hue_lightdim",
+      "predicted": "iot_hue_lightchange",
+      "delta": 1
+    },
+    {
+      "gold": "iot_wemo_off",
+      "predicted": "iot_hue_lightoff",
+      "delta": 1
+    },
+    {
+      "gold": "lists_query",
+      "predicted": "lists_createoradd",
+      "delta": 1
+    },
+    {
+      "gold": "lists_query",
+      "predicted": "recommendation_locations",
+      "delta": -1
+    },
+    {
+      "gold": "lists_remove",
+      "predicted": "lists_createoradd",
+      "delta": 1
+    },
+    {
+      "gold": "lists_remove",
+      "predicted": "lists_query",
+      "delta": -1
+    },
+    {
+      "gold": "music_likeness",
+      "predicted": "calendar_set",
+      "delta": -1
+    },
+    {
+      "gold": "music_likeness",
+      "predicted": "music_query",
+      "delta": 1
+    },
+    {
+      "gold": "music_query",
+      "predicted": "calendar_query",
+      "delta": 1
+    },
+    {
+      "gold": "music_query",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "music_query",
+      "predicted": "play_music",
+      "delta": -1
+    },
+    {
+      "gold": "music_query",
+      "predicted": "qa_definition",
+      "delta": 1
+    },
+    {
+      "gold": "music_settings",
+      "predicted": "calendar_set",
+      "delta": -1
+    },
+    {
+      "gold": "news_query",
+      "predicted": "email_query",
+      "delta": 1
+    },
+    {
+      "gold": "play_game",
+      "predicted": "play_radio",
+      "delta": 1
+    },
+    {
+      "gold": "play_game",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "cooking_recipe",
+      "delta": -1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "music_likeness",
+      "delta": 1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "play_radio",
+      "delta": 1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "qa_factoid",
+      "delta": 1
+    },
+    {
+      "gold": "play_podcasts",
+      "predicted": "play_radio",
+      "delta": -1
+    },
+    {
+      "gold": "play_radio",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "qa_definition",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "email_query",
+      "delta": -1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "music_query",
+      "delta": 1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "play_radio",
+      "delta": 1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "recommendation_movies",
+      "delta": -1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "weather_query",
+      "delta": 1
+    },
+    {
+      "gold": "qa_maths",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "qa_stock",
+      "predicted": "recommendation_movies",
+      "delta": -1
+    },
+    {
+      "gold": "recommendation_events",
+      "predicted": "calendar_query",
+      "delta": 1
+    },
+    {
+      "gold": "recommendation_events",
+      "predicted": "news_query",
+      "delta": -1
+    },
+    {
+      "gold": "recommendation_events",
+      "predicted": "recommendation_locations",
+      "delta": 1
+    },
+    {
+      "gold": "recommendation_events",
+      "predicted": "transport_query",
+      "delta": -1
+    },
+    {
+      "gold": "recommendation_locations",
+      "predicted": "news_query",
+      "delta": -1
+    },
+    {
+      "gold": "recommendation_locations",
+      "predicted": "recommendation_events",
+      "delta": -1
+    },
+    {
+      "gold": "recommendation_movies",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "recommendation_movies",
+      "predicted": "recommendation_events",
+      "delta": 1
+    },
+    {
+      "gold": "social_post",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "social_post",
+      "predicted": "news_query",
+      "delta": 1
+    },
+    {
+      "gold": "social_post",
+      "predicted": "social_query",
+      "delta": -1
+    },
+    {
+      "gold": "social_query",
+      "predicted": "news_query",
+      "delta": 1
+    },
+    {
+      "gold": "transport_query",
+      "predicted": "calendar_set",
+      "delta": -1
+    },
+    {
+      "gold": "transport_taxi",
+      "predicted": "alarm_set",
+      "delta": 1
+    },
+    {
+      "gold": "weather_query",
+      "predicted": "cooking_recipe",
+      "delta": 1
+    },
+    {
+      "gold": "weather_query",
+      "predicted": "recommendation_locations",
+      "delta": 1
+    }
+  ]
+}

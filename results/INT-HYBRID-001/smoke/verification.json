@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "mode": "smoke",
+  "dev_predictions": 59,
+  "run_manifest_sha256": "deed6ce32520d71652a5dcde170a874b088ffbc6f94b520d1092bc1b74d91547",
+  "checks": [
+    "audited inputs and baseline artifacts",
+    "identical character and classifier settings",
+    "source and result hashes",
+    "exact dev ID coverage and gold alignment",
+    "recomputed metrics, diagnostics and paired comparison"
+  ],
+  "model_retrained": false
+}

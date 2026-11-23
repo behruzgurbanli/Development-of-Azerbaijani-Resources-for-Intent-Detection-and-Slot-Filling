@@ -41,3 +41,11 @@
 - LinearSVC converged in 47 iterations without warnings. The measured full fit took 2.2044 s versus 24.8101 s in the saved logistic run. These are single measurements. The 180/59 smoke run passed before full training.
 - All 38 tests passed. Both artifacts re-verified, and an independent count check reproduced the saved scores. See the [experiment record](experiments/INT-SVC-001.md), [saved full metrics](../results/INT-SVC-001/full/metrics.json), and [paired comparison](../results/INT-SVC-001/full/comparison.json).
 - LinearSVC is the stronger dev reference. There is no held-out result or calibration assessment. The proposed next experiment fixes LinearSVC settings and compares the current character features with character plus word TF-IDF.
+
+## 2026-11-22 — INT-HYBRID-001: add word TF-IDF to fixed LinearSVC
+
+- Preserved INT-SVC-001 classifier settings, PR5 character TF-IDF, audited official train/dev records and the 60-intent scorer. Added case-preserving Unicode word unigrams/bigrams with one-character tokens. Both train-fitted blocks had equal weight, followed by combined-row L2 normalization. Test remained held out.
+- Accuracy rose from 84.4073% to **84.6040%** (1,720/2,033), and macro-F1 rose from 0.8228981629 to **0.8243775119**. Unseen-text macro-F1 was nearly flat (0.8087411982 → 0.8087832954). Of 106 changed predictions, 39 were corrections and 35 were regressions. Email query/action confusions decreased, calendar changes were mixed, and `qa_definition` and `qa_factoid` F1 fell.
+- The hybrid used 80,622 character and 37,727 word features. Fit took 2.6696 s, dev prediction 0.1544 s, and peak process RSS through prediction was 371.3281 MiB. The solver finished in 46 iterations without warnings. Both primary dev point estimates improved, but the simpler character-only reference remains the practical default.
+- All 43 tests passed. The smoke and full hybrid runs and independent score recomputation verified, and the previous experiment artifacts remained intact. See the [experiment record](experiments/INT-HYBRID-001.md) and [paired comparison](../results/INT-HYBRID-001/full/comparison.json).
+- Both saved CRF outputs match the intent artifacts on all 2,033 unique dev IDs. The next proposed task is a separately configured joint dev exact-match evaluator. Joint metrics, test metrics, and uncertainty remain unmeasured.

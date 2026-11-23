@@ -1,0 +1,205 @@
+{
+  "experiment_id": "INT-HYBRID-001",
+  "mode": "full",
+  "started_eastern": "2026-11-22T23:31:19.980154-05:00",
+  "started_utc": "2026-11-23T04:31:19.980154+00:00",
+  "git_base_revision": "d1b07c4657e57805a520b3cfbd97b589609fc4b6",
+  "command": "PYTHONPATH=src python3 -B -m azmassive.intent_hybrid --config configs/INT-HYBRID-001.json --mode full",
+  "config": {
+    "experiment_id": "INT-HYBRID-001",
+    "purpose": "Compare character plus word TF-IDF with the verified character-only LinearSVC",
+    "baseline_config": "configs/INT-SVC-001.json",
+    "baseline_config_sha256": "ebe4be4dd6723511fe4d06ef3b74fa391cf1d80c79ef184a290c2060085940e5",
+    "word_vectorizer": {
+      "analyzer": "word",
+      "token_pattern": "(?u)\\b\\w+\\b",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "lowercase": false,
+      "strip_accents": null,
+      "min_df": 1,
+      "max_df": 1.0,
+      "max_features": null,
+      "stop_words": null,
+      "sublinear_tf": true,
+      "use_idf": true,
+      "smooth_idf": true,
+      "norm": "l2"
+    },
+    "feature_union": {
+      "weights": {
+        "character": 1.0,
+        "word": 1.0
+      },
+      "row_norm": "l2"
+    },
+    "output_dir": "results/INT-HYBRID-001"
+  },
+  "character_vectorizer": {
+    "analyzer": "char",
+    "ngram_range": [
+      3,
+      5
+    ],
+    "lowercase": false,
+    "strip_accents": null,
+    "min_df": 1,
+    "max_df": 1.0,
+    "max_features": null,
+    "sublinear_tf": true,
+    "use_idf": true,
+    "smooth_idf": true,
+    "norm": "l2"
+  },
+  "seed": 42,
+  "provenance": {
+    "audit_sha256": "6c87b2b77d859f087341e72c728a26dca2c9efc505b899741caef813c8bbdcb8",
+    "source_url": "https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.0.tar.gz",
+    "license": "CC BY 4.0",
+    "input_sha256": {
+      "archive": "7df623fd2d300a4d235d6ee5bd396c9a28258d3a0ccb29abdb054506eba153f8",
+      "jsonl": "9a643dbf6e07e90ba8b1554bd95e9946b42037bd52550aac90f4e774ee58ed8c",
+      "license": "c2e6ea015269147de02117ebdd91f30ef09831251f5345fa8365273b1db1d435"
+    },
+    "baseline_run_sha256": "72b7f065c8ab40d69a7dbb1a5f1e7e1a6093f3ffff15e79e3ddf008bbfc0ed94",
+    "baseline_predictions_sha256": "1e9e15d185173cb53e3583bdde6788a76ae5923df5f227eac57c52be74cf28b8",
+    "character_svc_run_sha256": "566816aa2f6a9353d962f052c0a58076604e5454a823cfa30ddb141162604961",
+    "character_svc_predictions_sha256": "e63165afe4344be124211a6ab7baf2b4fb7a1794a580d37805186ddd8f709deb"
+  },
+  "train_records": 11514,
+  "dev_records": 2033,
+  "labels": [
+    "alarm_query",
+    "alarm_remove",
+    "alarm_set",
+    "audio_volume_down",
+    "audio_volume_mute",
+    "audio_volume_other",
+    "audio_volume_up",
+    "calendar_query",
+    "calendar_remove",
+    "calendar_set",
+    "cooking_query",
+    "cooking_recipe",
+    "datetime_convert",
+    "datetime_query",
+    "email_addcontact",
+    "email_query",
+    "email_querycontact",
+    "email_sendemail",
+    "general_greet",
+    "general_joke",
+    "general_quirky",
+    "iot_cleaning",
+    "iot_coffee",
+    "iot_hue_lightchange",
+    "iot_hue_lightdim",
+    "iot_hue_lightoff",
+    "iot_hue_lighton",
+    "iot_hue_lightup",
+    "iot_wemo_off",
+    "iot_wemo_on",
+    "lists_createoradd",
+    "lists_query",
+    "lists_remove",
+    "music_dislikeness",
+    "music_likeness",
+    "music_query",
+    "music_settings",
+    "news_query",
+    "play_audiobook",
+    "play_game",
+    "play_music",
+    "play_podcasts",
+    "play_radio",
+    "qa_currency",
+    "qa_definition",
+    "qa_factoid",
+    "qa_maths",
+    "qa_stock",
+    "recommendation_events",
+    "recommendation_locations",
+    "recommendation_movies",
+    "social_post",
+    "social_query",
+    "takeaway_order",
+    "takeaway_query",
+    "transport_query",
+    "transport_taxi",
+    "transport_ticket",
+    "transport_traffic",
+    "weather_query"
+  ],
+  "feature_counts": {
+    "character": 80622,
+    "word": 37727,
+    "total": 118349
+  },
+  "classifier_parameters": {
+    "C": 1.0,
+    "class_weight": null,
+    "dual": true,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "loss": "squared_hinge",
+    "max_iter": 1000,
+    "multi_class": "ovr",
+    "penalty": "l2",
+    "random_state": 42,
+    "tol": 0.0001,
+    "verbose": 0
+  },
+  "iterations": 46,
+  "converged": true,
+  "warnings": [],
+  "timing_seconds": {
+    "tfidf_union_and_fit": 2.669624957998167,
+    "tfidf_union_and_dev_predict": 0.1544442500016885
+  },
+  "peak_process_rss_through_prediction_mib": 371.328125,
+  "environment": {
+    "python": "3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-27.2.1-arm64-arm-64bit",
+    "packages": {
+      "numpy": "2.0.2",
+      "scipy": "1.14.1",
+      "scikit-learn": "1.5.2",
+      "joblib": "1.4.2",
+      "threadpoolctl": "3.5.0"
+    },
+    "compute": "CPU",
+    "machine": "arm64",
+    "thread_limit": 1,
+    "threadpools": [
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libomp",
+        "filepath": "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sklearn/.dylibs/libomp.dylib",
+        "version": null
+      }
+    ]
+  },
+  "source_sha256": {
+    "configs/INT-HYBRID-001.json": "9eeb8efaa3be5c9726f6510cf1b96533c3f912dea99ecc3a9d8178797306c038",
+    "configs/INT-SVC-001.json": "ebe4be4dd6723511fe4d06ef3b74fa391cf1d80c79ef184a290c2060085940e5",
+    "configs/PR5-INT-001.json": "b3178399011d99bb00d07a1e5acf389d19367a2b5a29efd02b040181d545ee69",
+    "requirements-pr5.txt": "cb5797a1596e140056f0e184cdcd847a8adb1196f9efde062f32d41e5586a471",
+    "tests/test_intent_hybrid.py": "08f86f1b7229961a62b006a0dd6e4d6d7465a2b58e2c48404392dd9a972332ef",
+    "src/azmassive/intent_hybrid.py": "92671c35bf8cb06b3002cd1ef0dba670ad123260e500e45e577e9f874f81028a",
+    "src/azmassive/intent_svc.py": "ab6be059be1bfe9ddadc9b3369fba644d85556232a0b897d250c9be88b09a646",
+    "src/azmassive/experiment.py": "c31ca92433930e1fa846cffde8b479425a7031171956df8e7b0915f0441be819",
+    "src/azmassive/dataset.py": "8960108707134e25cfaa959bc6e8e809af95475d33dd4e3dced701d2fc789ece",
+    "src/azmassive/evaluation.py": "fb021ec547fc0d400abc4e663ad851d0c1eb906c5cd8ff4acae4d0df99af9e2d"
+  },
+  "artifacts_sha256": {
+    "comparison.json": "3b7cf48cdf647c30e0aa387285ee463ffb8390a00af76ac463e02b312613f550",
+    "config.json": "6b8968abeb73d1006c20cec449aa0cee8bd555f15e9c7ca594d3f0ca8148262f",
+    "error-analysis.json": "3b4d10b49384d645d853f48e1292ae4ecccd242f00bc31d4f0e6e0715ed8688f",
+    "metrics.json": "696de39f1f1588ad3ee6f5240918412ac23223316a578e5c504d079fa1467376",
+    "predictions.jsonl": "569557314db98e1778368a0ca402189b80d2cac9f187b0537e72b9753083a8ed"
+  }
+}
