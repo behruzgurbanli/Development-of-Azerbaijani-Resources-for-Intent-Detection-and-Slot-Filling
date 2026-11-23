@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "mode": "smoke",
+  "dev_predictions": 59,
+  "run_manifest_sha256": "355bf5db70e102216d8aa064119fef203f8efe54e044f7d61f133784943a125f",
+  "checks": [
+    "AUD-001 and verified baseline hashes",
+    "source and output hashes",
+    "train/dev IDs and development gold labels",
+    "recomputed metrics, errors and paired comparison",
+    "convergence warning check"
+  ],
+  "model_retrained": false
+}

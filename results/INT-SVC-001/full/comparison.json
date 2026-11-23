@@ -1,0 +1,3158 @@
+{
+  "paired_outcomes": {
+    "both_correct": 1572,
+    "svc_only_correct": 144,
+    "both_wrong": 261,
+    "logistic_only_correct": 56
+  },
+  "paired_outcomes_by_exact_text_overlap": {
+    "seen": {
+      "both_correct": 151,
+      "svc_only_correct": 5,
+      "both_wrong": 4,
+      "logistic_only_correct": 2
+    },
+    "unseen": {
+      "both_correct": 1421,
+      "svc_only_correct": 139,
+      "both_wrong": 257,
+      "logistic_only_correct": 54
+    }
+  },
+  "changed_predictions": [
+    {
+      "id": "24",
+      "gold": "iot_hue_lightdim",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_hue_lightdim",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "30",
+      "gold": "iot_cleaning",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_cleaning",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "67",
+      "gold": "play_music",
+      "logistic_regression": "news_query",
+      "linear_svc": "play_music",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "68",
+      "gold": "play_music",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "play_music",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "109",
+      "gold": "play_music",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "cooking_recipe",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "312",
+      "gold": "iot_hue_lighton",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_hue_lighton",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "331",
+      "gold": "audio_volume_down",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "audio_volume_up",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "626",
+      "gold": "play_music",
+      "logistic_regression": "news_query",
+      "linear_svc": "play_music",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "708",
+      "gold": "news_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "news_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "806",
+      "gold": "audio_volume_down",
+      "logistic_regression": "audio_volume_down",
+      "linear_svc": "audio_volume_mute",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "885",
+      "gold": "alarm_set",
+      "logistic_regression": "alarm_set",
+      "linear_svc": "alarm_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "943",
+      "gold": "datetime_convert",
+      "logistic_regression": "datetime_query",
+      "linear_svc": "datetime_convert",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1012",
+      "gold": "social_post",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "social_post",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1177",
+      "gold": "music_query",
+      "logistic_regression": "play_music",
+      "linear_svc": "transport_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1257",
+      "gold": "general_joke",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "general_joke",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1277",
+      "gold": "general_greet",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "general_greet",
+      "outcome": "svc_only_correct",
+      "text_overlap": "seen"
+    },
+    {
+      "id": "1334",
+      "gold": "weather_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "weather_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1346",
+      "gold": "datetime_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "datetime_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1357",
+      "gold": "iot_hue_lightchange",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_hue_lightchange",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1621",
+      "gold": "music_likeness",
+      "logistic_regression": "qa_stock",
+      "linear_svc": "takeaway_order",
+      "outcome": "both_wrong",
+      "text_overlap": "seen"
+    },
+    {
+      "id": "1678",
+      "gold": "music_query",
+      "logistic_regression": "play_music",
+      "linear_svc": "music_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1698",
+      "gold": "music_dislikeness",
+      "logistic_regression": "music_likeness",
+      "linear_svc": "music_dislikeness",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1732",
+      "gold": "alarm_query",
+      "logistic_regression": "alarm_set",
+      "linear_svc": "alarm_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1791",
+      "gold": "music_query",
+      "logistic_regression": "play_music",
+      "linear_svc": "social_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1805",
+      "gold": "iot_hue_lightup",
+      "logistic_regression": "weather_query",
+      "linear_svc": "iot_hue_lightup",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1914",
+      "gold": "alarm_set",
+      "logistic_regression": "news_query",
+      "linear_svc": "calendar_set",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1943",
+      "gold": "iot_cleaning",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_cleaning",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "1988",
+      "gold": "iot_hue_lighton",
+      "logistic_regression": "play_music",
+      "linear_svc": "iot_hue_lighton",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "2118",
+      "gold": "iot_hue_lightchange",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "play_music",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "2196",
+      "gold": "general_joke",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "general_joke",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "2303",
+      "gold": "music_likeness",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "weather_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "2318",
+      "gold": "iot_hue_lightdim",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_hue_lightdim",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "2417",
+      "gold": "music_settings",
+      "logistic_regression": "play_music",
+      "linear_svc": "music_settings",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "2622",
+      "gold": "audio_volume_mute",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "audio_volume_mute",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "2946",
+      "gold": "iot_wemo_off",
+      "logistic_regression": "iot_hue_lightoff",
+      "linear_svc": "iot_wemo_off",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "2955",
+      "gold": "music_likeness",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "music_likeness",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "2979",
+      "gold": "iot_hue_lightdim",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "audio_volume_mute",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3045",
+      "gold": "alarm_query",
+      "logistic_regression": "alarm_query",
+      "linear_svc": "alarm_set",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3082",
+      "gold": "takeaway_order",
+      "logistic_regression": "weather_query",
+      "linear_svc": "takeaway_order",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3151",
+      "gold": "alarm_remove",
+      "logistic_regression": "calendar_remove",
+      "linear_svc": "alarm_remove",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3202",
+      "gold": "music_likeness",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "music_likeness",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3454",
+      "gold": "audio_volume_mute",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "social_post",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3464",
+      "gold": "iot_hue_lighton",
+      "logistic_regression": "iot_hue_lightchange",
+      "linear_svc": "iot_hue_lighton",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3511",
+      "gold": "general_quirky",
+      "logistic_regression": "datetime_query",
+      "linear_svc": "general_quirky",
+      "outcome": "svc_only_correct",
+      "text_overlap": "seen"
+    },
+    {
+      "id": "3547",
+      "gold": "weather_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "weather_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3676",
+      "gold": "play_music",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "play_music",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3701",
+      "gold": "iot_hue_lightdim",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_hue_lightdim",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3840",
+      "gold": "iot_cleaning",
+      "logistic_regression": "iot_wemo_on",
+      "linear_svc": "iot_cleaning",
+      "outcome": "svc_only_correct",
+      "text_overlap": "seen"
+    },
+    {
+      "id": "3865",
+      "gold": "news_query",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "play_game",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "3968",
+      "gold": "play_music",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "play_music",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4003",
+      "gold": "play_music",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "play_music",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4033",
+      "gold": "datetime_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "recommendation_locations",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4114",
+      "gold": "play_music",
+      "logistic_regression": "play_music",
+      "linear_svc": "play_podcasts",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4134",
+      "gold": "play_music",
+      "logistic_regression": "play_music",
+      "linear_svc": "play_radio",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4421",
+      "gold": "audio_volume_mute",
+      "logistic_regression": "audio_volume_up",
+      "linear_svc": "audio_volume_mute",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4422",
+      "gold": "audio_volume_mute",
+      "logistic_regression": "play_audiobook",
+      "linear_svc": "audio_volume_mute",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4481",
+      "gold": "weather_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "weather_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4582",
+      "gold": "datetime_query",
+      "logistic_regression": "datetime_query",
+      "linear_svc": "datetime_convert",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4600",
+      "gold": "takeaway_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "lists_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4619",
+      "gold": "iot_wemo_on",
+      "logistic_regression": "iot_wemo_off",
+      "linear_svc": "iot_wemo_on",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4664",
+      "gold": "music_query",
+      "logistic_regression": "play_music",
+      "linear_svc": "music_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4723",
+      "gold": "alarm_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "alarm_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4728",
+      "gold": "qa_stock",
+      "logistic_regression": "news_query",
+      "linear_svc": "qa_stock",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4899",
+      "gold": "music_query",
+      "logistic_regression": "music_query",
+      "linear_svc": "music_likeness",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4900",
+      "gold": "music_query",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "music_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4942",
+      "gold": "qa_stock",
+      "logistic_regression": "news_query",
+      "linear_svc": "qa_stock",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4967",
+      "gold": "news_query",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "general_quirky",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "4979",
+      "gold": "audio_volume_down",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "audio_volume_down",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5004",
+      "gold": "datetime_query",
+      "logistic_regression": "datetime_query",
+      "linear_svc": "datetime_convert",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5021",
+      "gold": "music_likeness",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "play_music",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5025",
+      "gold": "iot_hue_lightchange",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_hue_lightchange",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5094",
+      "gold": "iot_hue_lighton",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_hue_lighton",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5126",
+      "gold": "news_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_maths",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5181",
+      "gold": "play_music",
+      "logistic_regression": "play_music",
+      "linear_svc": "music_dislikeness",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5372",
+      "gold": "music_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "general_quirky",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5408",
+      "gold": "music_query",
+      "logistic_regression": "play_music",
+      "linear_svc": "music_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5436",
+      "gold": "alarm_remove",
+      "logistic_regression": "alarm_set",
+      "linear_svc": "alarm_remove",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5478",
+      "gold": "iot_hue_lightchange",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_hue_lightchange",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5565",
+      "gold": "news_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "play_audiobook",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5604",
+      "gold": "play_music",
+      "logistic_regression": "play_music",
+      "linear_svc": "music_settings",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5609",
+      "gold": "alarm_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "alarm_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5667",
+      "gold": "alarm_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "audio_volume_other",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5696",
+      "gold": "iot_cleaning",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_cleaning",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5867",
+      "gold": "alarm_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "alarm_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "5943",
+      "gold": "news_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_stock",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6001",
+      "gold": "iot_coffee",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "iot_coffee",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6193",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "news_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6198",
+      "gold": "general_quirky",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "general_quirky",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6262",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_currency",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6271",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "calendar_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6303",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "cooking_recipe",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6314",
+      "gold": "general_quirky",
+      "logistic_regression": "news_query",
+      "linear_svc": "recommendation_events",
+      "outcome": "both_wrong",
+      "text_overlap": "seen"
+    },
+    {
+      "id": "6367",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "news_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6404",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "lists_createoradd",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6425",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "general_greet",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "seen"
+    },
+    {
+      "id": "6499",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "news_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6540",
+      "gold": "calendar_set",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "general_quirky",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6599",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_factoid",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6642",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "email_querycontact",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6655",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "cooking_recipe",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6677",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "transport_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "6925",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "recommendation_events",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7016",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "recommendation_events",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7101",
+      "gold": "calendar_set",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "calendar_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7223",
+      "gold": "calendar_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "cooking_recipe",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7255",
+      "gold": "calendar_remove",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "alarm_remove",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7381",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "datetime_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7571",
+      "gold": "calendar_query",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "calendar_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7753",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "calendar_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7877",
+      "gold": "news_query",
+      "logistic_regression": "news_query",
+      "linear_svc": "datetime_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7947",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "qa_factoid",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "7969",
+      "gold": "recommendation_events",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "recommendation_events",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8068",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "calendar_remove",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8207",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "calendar_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8253",
+      "gold": "alarm_set",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "alarm_set",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8270",
+      "gold": "calendar_set",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "calendar_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8425",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "news_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8491",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "news_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8699",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "cooking_recipe",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8723",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "calendar_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8749",
+      "gold": "calendar_set",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "calendar_set",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8786",
+      "gold": "recommendation_events",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "recommendation_events",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8859",
+      "gold": "calendar_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "calendar_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8863",
+      "gold": "calendar_remove",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "calendar_remove",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8896",
+      "gold": "calendar_remove",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "calendar_remove",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8899",
+      "gold": "calendar_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "weather_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8941",
+      "gold": "calendar_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "datetime_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "8953",
+      "gold": "calendar_set",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "calendar_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9040",
+      "gold": "calendar_remove",
+      "logistic_regression": "datetime_query",
+      "linear_svc": "calendar_remove",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9521",
+      "gold": "play_radio",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "play_podcasts",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9615",
+      "gold": "play_radio",
+      "logistic_regression": "play_music",
+      "linear_svc": "play_radio",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9709",
+      "gold": "play_audiobook",
+      "logistic_regression": "play_radio",
+      "linear_svc": "audio_volume_mute",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9743",
+      "gold": "play_audiobook",
+      "logistic_regression": "play_music",
+      "linear_svc": "play_audiobook",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9771",
+      "gold": "play_audiobook",
+      "logistic_regression": "play_music",
+      "linear_svc": "audio_volume_mute",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9783",
+      "gold": "play_audiobook",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "audio_volume_mute",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "9968",
+      "gold": "cooking_recipe",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "cooking_recipe",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10135",
+      "gold": "cooking_recipe",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "takeaway_order",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10143",
+      "gold": "cooking_recipe",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "cooking_recipe",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10186",
+      "gold": "cooking_recipe",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "cooking_recipe",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10210",
+      "gold": "cooking_recipe",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "social_post",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10267",
+      "gold": "play_game",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "play_game",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10273",
+      "gold": "play_game",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "play_game",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10324",
+      "gold": "play_game",
+      "logistic_regression": "play_music",
+      "linear_svc": "play_game",
+      "outcome": "svc_only_correct",
+      "text_overlap": "seen"
+    },
+    {
+      "id": "10351",
+      "gold": "play_game",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "play_game",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10367",
+      "gold": "play_game",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "play_game",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10453",
+      "gold": "lists_remove",
+      "logistic_regression": "lists_remove",
+      "linear_svc": "lists_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10475",
+      "gold": "lists_remove",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10496",
+      "gold": "lists_query",
+      "logistic_regression": "lists_query",
+      "linear_svc": "recommendation_locations",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10614",
+      "gold": "lists_remove",
+      "logistic_regression": "lists_remove",
+      "linear_svc": "lists_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10751",
+      "gold": "lists_query",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "calendar_set",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10758",
+      "gold": "lists_query",
+      "logistic_regression": "lists_remove",
+      "linear_svc": "lists_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "10883",
+      "gold": "lists_remove",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "lists_remove",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11041",
+      "gold": "lists_createoradd",
+      "logistic_regression": "takeaway_order",
+      "linear_svc": "calendar_set",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11061",
+      "gold": "email_addcontact",
+      "logistic_regression": "email_addcontact",
+      "linear_svc": "email_querycontact",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11169",
+      "gold": "lists_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "lists_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11182",
+      "gold": "lists_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "play_radio",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11212",
+      "gold": "lists_createoradd",
+      "logistic_regression": "play_music",
+      "linear_svc": "lists_remove",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11503",
+      "gold": "play_podcasts",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "play_audiobook",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11553",
+      "gold": "play_podcasts",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "play_podcasts",
+      "outcome": "svc_only_correct",
+      "text_overlap": "seen"
+    },
+    {
+      "id": "11617",
+      "gold": "recommendation_events",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "recommendation_events",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11624",
+      "gold": "recommendation_locations",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "recommendation_events",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11658",
+      "gold": "recommendation_events",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11730",
+      "gold": "recommendation_events",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "transport_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11740",
+      "gold": "recommendation_movies",
+      "logistic_regression": "recommendation_locations",
+      "linear_svc": "recommendation_movies",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11745",
+      "gold": "recommendation_movies",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "recommendation_movies",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11883",
+      "gold": "recommendation_events",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "cooking_recipe",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "11899",
+      "gold": "recommendation_movies",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "recommendation_movies",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12044",
+      "gold": "recommendation_locations",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "recommendation_locations",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12096",
+      "gold": "recommendation_events",
+      "logistic_regression": "news_query",
+      "linear_svc": "recommendation_events",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12125",
+      "gold": "transport_ticket",
+      "logistic_regression": "transport_query",
+      "linear_svc": "transport_ticket",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12149",
+      "gold": "transport_ticket",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "transport_ticket",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12205",
+      "gold": "transport_taxi",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "transport_taxi",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12260",
+      "gold": "transport_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "transport_ticket",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12267",
+      "gold": "transport_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "transport_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12307",
+      "gold": "transport_ticket",
+      "logistic_regression": "transport_query",
+      "linear_svc": "transport_ticket",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12325",
+      "gold": "transport_ticket",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "transport_traffic",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12478",
+      "gold": "transport_taxi",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "transport_taxi",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12602",
+      "gold": "transport_query",
+      "logistic_regression": "transport_ticket",
+      "linear_svc": "transport_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12669",
+      "gold": "transport_traffic",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "transport_traffic",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12680",
+      "gold": "transport_ticket",
+      "logistic_regression": "transport_query",
+      "linear_svc": "transport_ticket",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12711",
+      "gold": "transport_taxi",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "transport_taxi",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12712",
+      "gold": "transport_taxi",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "transport_taxi",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12840",
+      "gold": "transport_query",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "transport_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12891",
+      "gold": "transport_ticket",
+      "logistic_regression": "transport_query",
+      "linear_svc": "transport_ticket",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12950",
+      "gold": "qa_currency",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "qa_currency",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12974",
+      "gold": "qa_factoid",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_maths",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "12978",
+      "gold": "qa_maths",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "recommendation_locations",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13029",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_factoid",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13033",
+      "gold": "qa_maths",
+      "logistic_regression": "datetime_query",
+      "linear_svc": "qa_maths",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13113",
+      "gold": "qa_factoid",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "recommendation_movies",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13125",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "audio_volume_up",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13198",
+      "gold": "qa_maths",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_maths",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13211",
+      "gold": "general_quirky",
+      "logistic_regression": "qa_definition",
+      "linear_svc": "general_quirky",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13275",
+      "gold": "general_quirky",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "calendar_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13319",
+      "gold": "qa_factoid",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_factoid",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13338",
+      "gold": "qa_definition",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_definition",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13353",
+      "gold": "qa_definition",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_definition",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13367",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_definition",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13419",
+      "gold": "qa_factoid",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "news_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13455",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "email_sendemail",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13469",
+      "gold": "general_quirky",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "iot_hue_lightchange",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13470",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "news_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13480",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "iot_hue_lightchange",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13502",
+      "gold": "qa_factoid",
+      "logistic_regression": "iot_hue_lightchange",
+      "linear_svc": "qa_factoid",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13540",
+      "gold": "qa_definition",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_definition",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13572",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "news_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13587",
+      "gold": "qa_definition",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_definition",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13615",
+      "gold": "qa_factoid",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "general_quirky",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13708",
+      "gold": "qa_currency",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "qa_currency",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13756",
+      "gold": "qa_definition",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_factoid",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13812",
+      "gold": "qa_definition",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_definition",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13846",
+      "gold": "qa_factoid",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_factoid",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13892",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "calendar_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "13957",
+      "gold": "qa_definition",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_definition",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14152",
+      "gold": "qa_factoid",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "weather_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14156",
+      "gold": "qa_definition",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "general_quirky",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14173",
+      "gold": "qa_currency",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "qa_currency",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14175",
+      "gold": "qa_definition",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_definition",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14195",
+      "gold": "qa_stock",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "recommendation_movies",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14205",
+      "gold": "qa_stock",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "qa_stock",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14421",
+      "gold": "recommendation_locations",
+      "logistic_regression": "recommendation_locations",
+      "linear_svc": "transport_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "seen"
+    },
+    {
+      "id": "14430",
+      "gold": "qa_definition",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_definition",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14479",
+      "gold": "qa_factoid",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "calendar_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14541",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_factoid",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14645",
+      "gold": "qa_stock",
+      "logistic_regression": "social_post",
+      "linear_svc": "qa_stock",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14727",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_definition",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14737",
+      "gold": "cooking_query",
+      "logistic_regression": "cooking_recipe",
+      "linear_svc": "cooking_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14849",
+      "gold": "qa_maths",
+      "logistic_regression": "email_sendemail",
+      "linear_svc": "qa_maths",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14897",
+      "gold": "qa_factoid",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "email_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14930",
+      "gold": "qa_factoid",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "news_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "14971",
+      "gold": "general_quirky",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_factoid",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15064",
+      "gold": "qa_factoid",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "qa_maths",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15065",
+      "gold": "qa_factoid",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_factoid",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15093",
+      "gold": "qa_definition",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_factoid",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15097",
+      "gold": "qa_currency",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "qa_currency",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15182",
+      "gold": "social_query",
+      "logistic_regression": "social_post",
+      "linear_svc": "social_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15258",
+      "gold": "social_query",
+      "logistic_regression": "news_query",
+      "linear_svc": "social_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15265",
+      "gold": "social_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "social_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15294",
+      "gold": "social_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "social_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15388",
+      "gold": "social_post",
+      "logistic_regression": "social_post",
+      "linear_svc": "social_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15466",
+      "gold": "social_post",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "social_post",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15475",
+      "gold": "social_post",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "social_post",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15540",
+      "gold": "social_query",
+      "logistic_regression": "social_post",
+      "linear_svc": "social_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15588",
+      "gold": "social_post",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "social_post",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15596",
+      "gold": "social_post",
+      "logistic_regression": "social_post",
+      "linear_svc": "social_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15805",
+      "gold": "email_sendemail",
+      "logistic_regression": "calendar_set",
+      "linear_svc": "email_sendemail",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15861",
+      "gold": "email_sendemail",
+      "logistic_regression": "weather_query",
+      "linear_svc": "email_sendemail",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15903",
+      "gold": "email_sendemail",
+      "logistic_regression": "email_sendemail",
+      "linear_svc": "general_quirky",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "15993",
+      "gold": "email_sendemail",
+      "logistic_regression": "email_sendemail",
+      "linear_svc": "news_query",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16066",
+      "gold": "email_sendemail",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "general_greet",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16107",
+      "gold": "email_querycontact",
+      "logistic_regression": "email_sendemail",
+      "linear_svc": "email_querycontact",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16140",
+      "gold": "email_query",
+      "logistic_regression": "recommendation_locations",
+      "linear_svc": "email_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16244",
+      "gold": "email_querycontact",
+      "logistic_regression": "qa_factoid",
+      "linear_svc": "general_quirky",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16288",
+      "gold": "email_query",
+      "logistic_regression": "email_sendemail",
+      "linear_svc": "email_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16394",
+      "gold": "email_query",
+      "logistic_regression": "email_sendemail",
+      "linear_svc": "email_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16445",
+      "gold": "email_query",
+      "logistic_regression": "email_query",
+      "linear_svc": "email_sendemail",
+      "outcome": "logistic_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16493",
+      "gold": "email_query",
+      "logistic_regression": "email_sendemail",
+      "linear_svc": "email_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16580",
+      "gold": "email_query",
+      "logistic_regression": "email_sendemail",
+      "linear_svc": "email_querycontact",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16582",
+      "gold": "email_querycontact",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "cooking_recipe",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16588",
+      "gold": "email_querycontact",
+      "logistic_regression": "calendar_remove",
+      "linear_svc": "audio_volume_mute",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16745",
+      "gold": "email_query",
+      "logistic_regression": "email_sendemail",
+      "linear_svc": "email_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16818",
+      "gold": "email_querycontact",
+      "logistic_regression": "lists_query",
+      "linear_svc": "email_querycontact",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "16850",
+      "gold": "email_query",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "email_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "17080",
+      "gold": "email_sendemail",
+      "logistic_regression": "calendar_query",
+      "linear_svc": "email_query",
+      "outcome": "both_wrong",
+      "text_overlap": "unseen"
+    },
+    {
+      "id": "17153",
+      "gold": "email_query",
+      "logistic_regression": "general_quirky",
+      "linear_svc": "email_query",
+      "outcome": "svc_only_correct",
+      "text_overlap": "unseen"
+    }
+  ],
+  "per_class_f1_delta": {
+    "alarm_query": 0.08353808353808356,
+    "alarm_remove": 0.07272727272727275,
+    "alarm_set": 0.01382488479262678,
+    "audio_volume_down": 0.0,
+    "audio_volume_mute": -0.022727272727272707,
+    "audio_volume_other": 0.0,
+    "audio_volume_up": -0.03384615384615386,
+    "calendar_query": 0.035153449432225536,
+    "calendar_remove": 0.04319045035268576,
+    "calendar_set": 0.027773185650520782,
+    "cooking_query": 0.6666666666666666,
+    "cooking_recipe": -0.019933554817275656,
+    "datetime_convert": -0.008403361344537785,
+    "datetime_query": -0.0016826923076923572,
+    "email_addcontact": -0.10909090909090902,
+    "email_query": 0.03476777049005497,
+    "email_querycontact": 0.01904761904761909,
+    "email_sendemail": 0.03384615384615386,
+    "general_greet": 0.4,
+    "general_joke": 0.0714285714285714,
+    "general_quirky": 0.0330212423235679,
+    "iot_cleaning": 0.12448812448812452,
+    "iot_coffee": 0.03703703703703709,
+    "iot_hue_lightchange": 0.07619047619047625,
+    "iot_hue_lightdim": 0.10303030303030303,
+    "iot_hue_lightoff": 0.02552552552552545,
+    "iot_hue_lighton": 0.6666666666666667,
+    "iot_hue_lightup": 0.04347826086956519,
+    "iot_wemo_off": 0.2222222222222222,
+    "iot_wemo_on": 0.1428571428571429,
+    "lists_createoradd": -0.017345399698340924,
+    "lists_query": -0.0059793814432990144,
+    "lists_remove": -0.015694164989939696,
+    "music_dislikeness": 0.5,
+    "music_likeness": 0.10074074074074069,
+    "music_query": 0.07299843014128726,
+    "music_settings": 0.0535714285714286,
+    "news_query": -0.009355787222667722,
+    "play_audiobook": 0.004734848484848508,
+    "play_game": 0.1267942583732058,
+    "play_music": 0.041277919140514596,
+    "play_podcasts": -0.010101010101010055,
+    "play_radio": 0.0033578716259847763,
+    "qa_currency": 0.0516641828117238,
+    "qa_definition": 0.08238532110091745,
+    "qa_factoid": 0.05590321234876927,
+    "qa_maths": 0.11111111111111105,
+    "qa_stock": 0.10840108401084003,
+    "recommendation_events": 0.053333333333333344,
+    "recommendation_locations": -0.01322051824431525,
+    "recommendation_movies": 0.10000000000000009,
+    "social_post": 0.031979802230170384,
+    "social_query": 0.11904761904761907,
+    "takeaway_order": 0.00877192982456132,
+    "takeaway_query": 0.0,
+    "transport_query": 0.04888888888888887,
+    "transport_taxi": 0.08317289179822873,
+    "transport_ticket": 0.12523191094619668,
+    "transport_traffic": 0.0021645021645022577,
+    "weather_query": 0.012403100775193798
+  },
+  "confusion_deltas_svc_minus_logistic": [
+    {
+      "gold": "qa_definition",
+      "predicted": "general_quirky",
+      "delta": -9
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "calendar_set",
+      "delta": -7
+    },
+    {
+      "gold": "music_query",
+      "predicted": "play_music",
+      "delta": -5
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "general_quirky",
+      "delta": -5
+    },
+    {
+      "gold": "recommendation_events",
+      "predicted": "general_quirky",
+      "delta": -5
+    },
+    {
+      "gold": "email_query",
+      "predicted": "email_sendemail",
+      "delta": -4
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "news_query",
+      "delta": 4
+    },
+    {
+      "gold": "iot_hue_lightdim",
+      "predicted": "general_quirky",
+      "delta": -4
+    },
+    {
+      "gold": "music_likeness",
+      "predicted": "general_quirky",
+      "delta": -4
+    },
+    {
+      "gold": "play_game",
+      "predicted": "general_quirky",
+      "delta": -4
+    },
+    {
+      "gold": "transport_ticket",
+      "predicted": "transport_query",
+      "delta": -4
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "general_quirky",
+      "delta": -3
+    },
+    {
+      "gold": "cooking_recipe",
+      "predicted": "general_quirky",
+      "delta": -3
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "calendar_query",
+      "delta": 3
+    },
+    {
+      "gold": "iot_cleaning",
+      "predicted": "general_quirky",
+      "delta": -3
+    },
+    {
+      "gold": "iot_hue_lightchange",
+      "predicted": "general_quirky",
+      "delta": -3
+    },
+    {
+      "gold": "news_query",
+      "predicted": "general_quirky",
+      "delta": -3
+    },
+    {
+      "gold": "play_audiobook",
+      "predicted": "audio_volume_mute",
+      "delta": 3
+    },
+    {
+      "gold": "play_music",
+      "predicted": "general_quirky",
+      "delta": -3
+    },
+    {
+      "gold": "qa_currency",
+      "predicted": "qa_factoid",
+      "delta": -3
+    },
+    {
+      "gold": "social_post",
+      "predicted": "general_quirky",
+      "delta": -3
+    },
+    {
+      "gold": "transport_taxi",
+      "predicted": "calendar_set",
+      "delta": -3
+    },
+    {
+      "gold": "weather_query",
+      "predicted": "general_quirky",
+      "delta": -3
+    },
+    {
+      "gold": "alarm_query",
+      "predicted": "calendar_query",
+      "delta": -2
+    },
+    {
+      "gold": "alarm_query",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "audio_volume_down",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "audio_volume_mute",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "cooking_recipe",
+      "delta": 2
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "datetime_query",
+      "delta": 2
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "news_query",
+      "delta": 2
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "recommendation_events",
+      "delta": 2
+    },
+    {
+      "gold": "calendar_remove",
+      "predicted": "calendar_query",
+      "delta": -2
+    },
+    {
+      "gold": "cooking_recipe",
+      "predicted": "qa_factoid",
+      "delta": -2
+    },
+    {
+      "gold": "datetime_query",
+      "predicted": "datetime_convert",
+      "delta": 2
+    },
+    {
+      "gold": "general_joke",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "cooking_recipe",
+      "delta": 2
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "iot_hue_lightchange",
+      "delta": 2
+    },
+    {
+      "gold": "iot_hue_lighton",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "lists_query",
+      "predicted": "calendar_query",
+      "delta": -2
+    },
+    {
+      "gold": "lists_remove",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "lists_remove",
+      "predicted": "lists_query",
+      "delta": 2
+    },
+    {
+      "gold": "news_query",
+      "predicted": "qa_factoid",
+      "delta": -2
+    },
+    {
+      "gold": "play_audiobook",
+      "predicted": "play_music",
+      "delta": -2
+    },
+    {
+      "gold": "play_music",
+      "predicted": "news_query",
+      "delta": -2
+    },
+    {
+      "gold": "play_music",
+      "predicted": "qa_factoid",
+      "delta": -2
+    },
+    {
+      "gold": "play_podcasts",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "news_query",
+      "delta": 2
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "qa_maths",
+      "delta": 2
+    },
+    {
+      "gold": "qa_maths",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "qa_stock",
+      "predicted": "news_query",
+      "delta": -2
+    },
+    {
+      "gold": "recommendation_locations",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "social_post",
+      "predicted": "social_query",
+      "delta": 2
+    },
+    {
+      "gold": "social_query",
+      "predicted": "social_post",
+      "delta": -2
+    },
+    {
+      "gold": "transport_query",
+      "predicted": "calendar_query",
+      "delta": -2
+    },
+    {
+      "gold": "transport_ticket",
+      "predicted": "general_quirky",
+      "delta": -2
+    },
+    {
+      "gold": "alarm_query",
+      "predicted": "audio_volume_other",
+      "delta": 1
+    },
+    {
+      "gold": "alarm_remove",
+      "predicted": "alarm_set",
+      "delta": -1
+    },
+    {
+      "gold": "alarm_remove",
+      "predicted": "calendar_remove",
+      "delta": -1
+    },
+    {
+      "gold": "alarm_set",
+      "predicted": "alarm_query",
+      "delta": 1
+    },
+    {
+      "gold": "alarm_set",
+      "predicted": "news_query",
+      "delta": -1
+    },
+    {
+      "gold": "audio_volume_down",
+      "predicted": "audio_volume_mute",
+      "delta": 1
+    },
+    {
+      "gold": "audio_volume_down",
+      "predicted": "audio_volume_up",
+      "delta": 1
+    },
+    {
+      "gold": "audio_volume_mute",
+      "predicted": "audio_volume_up",
+      "delta": -1
+    },
+    {
+      "gold": "audio_volume_mute",
+      "predicted": "play_audiobook",
+      "delta": -1
+    },
+    {
+      "gold": "audio_volume_mute",
+      "predicted": "social_post",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "calendar_remove",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_query",
+      "predicted": "weather_query",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_remove",
+      "predicted": "alarm_remove",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_remove",
+      "predicted": "calendar_set",
+      "delta": -1
+    },
+    {
+      "gold": "calendar_remove",
+      "predicted": "datetime_query",
+      "delta": -1
+    },
+    {
+      "gold": "calendar_set",
+      "predicted": "calendar_query",
+      "delta": 1
+    },
+    {
+      "gold": "calendar_set",
+      "predicted": "general_quirky",
+      "delta": 1
+    },
+    {
+      "gold": "cooking_query",
+      "predicted": "cooking_recipe",
+      "delta": -1
+    },
+    {
+      "gold": "cooking_recipe",
+      "predicted": "social_post",
+      "delta": 1
+    },
+    {
+      "gold": "cooking_recipe",
+      "predicted": "takeaway_order",
+      "delta": 1
+    },
+    {
+      "gold": "datetime_convert",
+      "predicted": "datetime_query",
+      "delta": -1
+    },
+    {
+      "gold": "datetime_query",
+      "predicted": "calendar_query",
+      "delta": -1
+    },
+    {
+      "gold": "datetime_query",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "datetime_query",
+      "predicted": "recommendation_locations",
+      "delta": 1
+    },
+    {
+      "gold": "email_addcontact",
+      "predicted": "email_querycontact",
+      "delta": 1
+    },
+    {
+      "gold": "email_query",
+      "predicted": "calendar_query",
+      "delta": -1
+    },
+    {
+      "gold": "email_query",
+      "predicted": "email_querycontact",
+      "delta": 1
+    },
+    {
+      "gold": "email_query",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "email_query",
+      "predicted": "recommendation_locations",
+      "delta": -1
+    },
+    {
+      "gold": "email_querycontact",
+      "predicted": "audio_volume_mute",
+      "delta": 1
+    },
+    {
+      "gold": "email_querycontact",
+      "predicted": "calendar_remove",
+      "delta": -1
+    },
+    {
+      "gold": "email_querycontact",
+      "predicted": "cooking_recipe",
+      "delta": 1
+    },
+    {
+      "gold": "email_querycontact",
+      "predicted": "email_sendemail",
+      "delta": -1
+    },
+    {
+      "gold": "email_querycontact",
+      "predicted": "lists_query",
+      "delta": -1
+    },
+    {
+      "gold": "email_querycontact",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "calendar_query",
+      "delta": -1
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "calendar_set",
+      "delta": -1
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "email_query",
+      "delta": 1
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "general_greet",
+      "delta": 1
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "news_query",
+      "delta": 1
+    },
+    {
+      "gold": "email_sendemail",
+      "predicted": "weather_query",
+      "delta": -1
+    },
+    {
+      "gold": "general_greet",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "audio_volume_up",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "datetime_query",
+      "delta": -1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "email_querycontact",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "email_sendemail",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "general_greet",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "lists_createoradd",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "qa_currency",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "qa_definition",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "qa_factoid",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "recommendation_events",
+      "delta": 1
+    },
+    {
+      "gold": "general_quirky",
+      "predicted": "transport_query",
+      "delta": 1
+    },
+    {
+      "gold": "iot_cleaning",
+      "predicted": "iot_wemo_on",
+      "delta": -1
+    },
+    {
+      "gold": "iot_coffee",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "iot_hue_lightchange",
+      "predicted": "calendar_set",
+      "delta": -1
+    },
+    {
+      "gold": "iot_hue_lightchange",
+      "predicted": "play_music",
+      "delta": 1
+    },
+    {
+      "gold": "iot_hue_lightdim",
+      "predicted": "audio_volume_mute",
+      "delta": 1
+    },
+    {
+      "gold": "iot_hue_lighton",
+      "predicted": "iot_hue_lightchange",
+      "delta": -1
+    },
+    {
+      "gold": "iot_hue_lighton",
+      "predicted": "play_music",
+      "delta": -1
+    },
+    {
+      "gold": "iot_hue_lightup",
+      "predicted": "weather_query",
+      "delta": -1
+    },
+    {
+      "gold": "iot_wemo_off",
+      "predicted": "iot_hue_lightoff",
+      "delta": -1
+    },
+    {
+      "gold": "iot_wemo_on",
+      "predicted": "iot_wemo_off",
+      "delta": -1
+    },
+    {
+      "gold": "lists_createoradd",
+      "predicted": "calendar_set",
+      "delta": 1
+    },
+    {
+      "gold": "lists_createoradd",
+      "predicted": "lists_remove",
+      "delta": 1
+    },
+    {
+      "gold": "lists_createoradd",
+      "predicted": "play_music",
+      "delta": -1
+    },
+    {
+      "gold": "lists_createoradd",
+      "predicted": "takeaway_order",
+      "delta": -1
+    },
+    {
+      "gold": "lists_query",
+      "predicted": "calendar_set",
+      "delta": 1
+    },
+    {
+      "gold": "lists_query",
+      "predicted": "lists_remove",
+      "delta": -1
+    },
+    {
+      "gold": "lists_query",
+      "predicted": "play_radio",
+      "delta": 1
+    },
+    {
+      "gold": "lists_query",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "lists_query",
+      "predicted": "recommendation_locations",
+      "delta": 1
+    },
+    {
+      "gold": "lists_remove",
+      "predicted": "calendar_query",
+      "delta": 1
+    },
+    {
+      "gold": "music_dislikeness",
+      "predicted": "music_likeness",
+      "delta": -1
+    },
+    {
+      "gold": "music_likeness",
+      "predicted": "play_music",
+      "delta": 1
+    },
+    {
+      "gold": "music_likeness",
+      "predicted": "qa_stock",
+      "delta": -1
+    },
+    {
+      "gold": "music_likeness",
+      "predicted": "takeaway_order",
+      "delta": 1
+    },
+    {
+      "gold": "music_likeness",
+      "predicted": "weather_query",
+      "delta": 1
+    },
+    {
+      "gold": "music_query",
+      "predicted": "calendar_query",
+      "delta": -1
+    },
+    {
+      "gold": "music_query",
+      "predicted": "general_quirky",
+      "delta": 1
+    },
+    {
+      "gold": "music_query",
+      "predicted": "music_likeness",
+      "delta": 1
+    },
+    {
+      "gold": "music_query",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "music_query",
+      "predicted": "social_query",
+      "delta": 1
+    },
+    {
+      "gold": "music_query",
+      "predicted": "transport_query",
+      "delta": 1
+    },
+    {
+      "gold": "music_settings",
+      "predicted": "play_music",
+      "delta": -1
+    },
+    {
+      "gold": "news_query",
+      "predicted": "datetime_query",
+      "delta": 1
+    },
+    {
+      "gold": "news_query",
+      "predicted": "play_audiobook",
+      "delta": 1
+    },
+    {
+      "gold": "news_query",
+      "predicted": "play_game",
+      "delta": 1
+    },
+    {
+      "gold": "news_query",
+      "predicted": "qa_maths",
+      "delta": 1
+    },
+    {
+      "gold": "news_query",
+      "predicted": "qa_stock",
+      "delta": 1
+    },
+    {
+      "gold": "play_audiobook",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "play_audiobook",
+      "predicted": "play_radio",
+      "delta": -1
+    },
+    {
+      "gold": "play_game",
+      "predicted": "play_music",
+      "delta": -1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "cooking_recipe",
+      "delta": 1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "music_dislikeness",
+      "delta": 1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "music_settings",
+      "delta": 1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "play_podcasts",
+      "delta": 1
+    },
+    {
+      "gold": "play_music",
+      "predicted": "play_radio",
+      "delta": 1
+    },
+    {
+      "gold": "play_podcasts",
+      "predicted": "play_audiobook",
+      "delta": 1
+    },
+    {
+      "gold": "play_radio",
+      "predicted": "play_music",
+      "delta": -1
+    },
+    {
+      "gold": "play_radio",
+      "predicted": "play_podcasts",
+      "delta": 1
+    },
+    {
+      "gold": "play_radio",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "qa_currency",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "qa_definition",
+      "predicted": "qa_factoid",
+      "delta": 1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "calendar_query",
+      "delta": -1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "email_query",
+      "delta": 1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "iot_hue_lightchange",
+      "delta": -1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "recommendation_movies",
+      "delta": 1
+    },
+    {
+      "gold": "qa_factoid",
+      "predicted": "weather_query",
+      "delta": 1
+    },
+    {
+      "gold": "qa_maths",
+      "predicted": "datetime_query",
+      "delta": -1
+    },
+    {
+      "gold": "qa_maths",
+      "predicted": "email_sendemail",
+      "delta": -1
+    },
+    {
+      "gold": "qa_maths",
+      "predicted": "recommendation_locations",
+      "delta": 1
+    },
+    {
+      "gold": "qa_stock",
+      "predicted": "calendar_query",
+      "delta": -1
+    },
+    {
+      "gold": "qa_stock",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "qa_stock",
+      "predicted": "recommendation_movies",
+      "delta": 1
+    },
+    {
+      "gold": "qa_stock",
+      "predicted": "social_post",
+      "delta": -1
+    },
+    {
+      "gold": "recommendation_events",
+      "predicted": "cooking_recipe",
+      "delta": 1
+    },
+    {
+      "gold": "recommendation_events",
+      "predicted": "news_query",
+      "delta": -1
+    },
+    {
+      "gold": "recommendation_events",
+      "predicted": "transport_query",
+      "delta": 1
+    },
+    {
+      "gold": "recommendation_locations",
+      "predicted": "recommendation_events",
+      "delta": 1
+    },
+    {
+      "gold": "recommendation_locations",
+      "predicted": "transport_query",
+      "delta": 1
+    },
+    {
+      "gold": "recommendation_movies",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "recommendation_movies",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "recommendation_movies",
+      "predicted": "recommendation_locations",
+      "delta": -1
+    },
+    {
+      "gold": "social_post",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "social_query",
+      "predicted": "calendar_query",
+      "delta": -1
+    },
+    {
+      "gold": "social_query",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "social_query",
+      "predicted": "news_query",
+      "delta": -1
+    },
+    {
+      "gold": "takeaway_order",
+      "predicted": "weather_query",
+      "delta": -1
+    },
+    {
+      "gold": "takeaway_query",
+      "predicted": "general_quirky",
+      "delta": -1
+    },
+    {
+      "gold": "takeaway_query",
+      "predicted": "lists_query",
+      "delta": 1
+    },
+    {
+      "gold": "transport_query",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "transport_taxi",
+      "predicted": "qa_factoid",
+      "delta": -1
+    },
+    {
+      "gold": "transport_ticket",
+      "predicted": "transport_traffic",
+      "delta": 1
+    },
+    {
+      "gold": "transport_traffic",
+      "predicted": "general_quirky",
+      "delta": -1
+    }
+  ]
+}

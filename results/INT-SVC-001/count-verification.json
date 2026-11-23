@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "method": "Independent Python Counter recomputation from raw ID-keyed prediction rows",
+  "runs": {
+    "smoke": {
+      "prediction_sha256": "eab25c79eb2db75d46b92bc8c89dc212e1d393c962b75776291a5e68a3e431dc",
+      "n": 59,
+      "correct": 29,
+      "macro_f1": 0.39555555555555555
+    },
+    "full": {
+      "prediction_sha256": "e63165afe4344be124211a6ab7baf2b4fb7a1794a580d37805186ddd8f709deb",
+      "n": 2033,
+      "correct": 1716,
+      "macro_f1": 0.8228981629075365
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "mode": "full",
+  "dev_predictions": 2033,
+  "run_manifest_sha256": "566816aa2f6a9353d962f052c0a58076604e5454a823cfa30ddb141162604961",
+  "checks": [
+    "AUD-001 and verified baseline hashes",
+    "source and output hashes",
+    "train/dev IDs and development gold labels",
+    "recomputed metrics, errors and paired comparison",
+    "convergence warning check"
+  ],
+  "model_retrained": false
+}

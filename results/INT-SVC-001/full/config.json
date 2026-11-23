@@ -1,0 +1,20 @@
+{
+  "experiment_id": "INT-SVC-001",
+  "purpose": "Compare fixed LinearSVC with the saved PR5-INT-001 logistic regression baseline",
+  "baseline_config": "configs/PR5-INT-001.json",
+  "baseline_config_sha256": "b3178399011d99bb00d07a1e5acf389d19367a2b5a29efd02b040181d545ee69",
+  "classifier": {
+    "penalty": "l2",
+    "loss": "squared_hinge",
+    "dual": true,
+    "C": 1.0,
+    "multi_class": "ovr",
+    "tol": 0.0001,
+    "max_iter": 1000,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "class_weight": null,
+    "random_state": 42
+  },
+  "output_dir": "results/INT-SVC-001"
+}
