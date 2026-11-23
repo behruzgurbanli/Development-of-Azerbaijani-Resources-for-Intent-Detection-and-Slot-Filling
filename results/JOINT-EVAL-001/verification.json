@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "dev_ids": 2033,
+  "manifest_sha256": "2321ad4a4f5ab1171c05637aadd933260c3404f618d9f97293b31398bc10b8b6",
+  "checks": [
+    "source and artifact hashes",
+    "verified component metrics and exact ID joins",
+    "recomputed joint outcomes and ID diagnostics",
+    "independent correct-ID intersections"
+  ],
+  "primary_correct_id_intersection": 1206,
+  "model_retrained": false
+}

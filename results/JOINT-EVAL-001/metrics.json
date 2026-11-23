@@ -1,0 +1,5618 @@
+{
+  "intent_models": {
+    "PR5-INT-001": {
+      "n": 2033,
+      "correct": 1628,
+      "accuracy": 0.8007870142646335,
+      "macro_f1": 0.7461142413938736
+    },
+    "INT-SVC-001": {
+      "n": 2033,
+      "correct": 1716,
+      "accuracy": 0.8440727988194786,
+      "macro_f1": 0.8228981629075364
+    },
+    "INT-HYBRID-001": {
+      "n": 2033,
+      "correct": 1720,
+      "accuracy": 0.8460403344810624,
+      "macro_f1": 0.8243775118973673
+    }
+  },
+  "slot_models": {
+    "SLOT-CRF-001": {
+      "utterances": 2033,
+      "exact_matches": 1359,
+      "utterance_exact_match": 0.6684702410231186,
+      "micro": {
+        "tp": 1282,
+        "fp": 362,
+        "fn": 711,
+        "support": 1993,
+        "precision": 0.7798053527980535,
+        "recall": 0.643251379829403,
+        "f1": 0.7049766290899092
+      },
+      "invalid_iob2_transitions": 0
+    },
+    "SLOT-CRF-002": {
+      "utterances": 2033,
+      "exact_matches": 1399,
+      "utterance_exact_match": 0.6881455976389572,
+      "micro": {
+        "tp": 1312,
+        "fp": 327,
+        "fn": 681,
+        "support": 1993,
+        "precision": 0.8004881025015254,
+        "recall": 0.6583040642247867,
+        "f1": 0.7224669603524229
+      },
+      "invalid_iob2_transitions": 0
+    }
+  },
+  "primary": "INT-SVC-001+SLOT-CRF-002",
+  "comparison": "INT-HYBRID-001+SLOT-CRF-002",
+  "model_pairs": {
+    "PR5-INT-001+SLOT-CRF-001": {
+      "n": 2033,
+      "joint_exact_matches": 1129,
+      "joint_exact_match": 0.5553369404820462,
+      "counts": {
+        "both_correct": 1129,
+        "intent_only_correct": 499,
+        "slots_only_correct": 230,
+        "neither_correct": 175
+      },
+      "by_exact_text_overlap": {
+        "seen": {
+          "n": 162,
+          "joint_exact_matches": 136,
+          "joint_exact_match": 0.8395061728395061,
+          "counts": {
+            "both_correct": 136,
+            "intent_only_correct": 17,
+            "slots_only_correct": 7,
+            "neither_correct": 2
+          }
+        },
+        "unseen": {
+          "n": 1871,
+          "joint_exact_matches": 993,
+          "joint_exact_match": 0.5307322287546766,
+          "counts": {
+            "both_correct": 993,
+            "intent_only_correct": 482,
+            "slots_only_correct": 223,
+            "neither_correct": 173
+          }
+        }
+      },
+      "by_intent": {
+        "alarm_query": {
+          "n": 19,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.5263157894736842,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 2,
+            "slots_only_correct": 5,
+            "neither_correct": 2
+          }
+        },
+        "alarm_remove": {
+          "n": 14,
+          "joint_exact_matches": 7,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 7,
+            "intent_only_correct": 1,
+            "slots_only_correct": 5,
+            "neither_correct": 1
+          }
+        },
+        "alarm_set": {
+          "n": 31,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.7096774193548387,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 5,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "audio_volume_down": {
+          "n": 8,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 3,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_mute": {
+          "n": 15,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 0,
+            "slots_only_correct": 6,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_up": {
+          "n": 12,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "calendar_query": {
+          "n": 102,
+          "joint_exact_matches": 54,
+          "joint_exact_match": 0.5294117647058824,
+          "counts": {
+            "both_correct": 54,
+            "intent_only_correct": 22,
+            "slots_only_correct": 16,
+            "neither_correct": 10
+          }
+        },
+        "calendar_remove": {
+          "n": 47,
+          "joint_exact_matches": 33,
+          "joint_exact_match": 0.7021276595744681,
+          "counts": {
+            "both_correct": 33,
+            "intent_only_correct": 10,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "calendar_set": {
+          "n": 131,
+          "joint_exact_matches": 60,
+          "joint_exact_match": 0.4580152671755725,
+          "counts": {
+            "both_correct": 60,
+            "intent_only_correct": 60,
+            "slots_only_correct": 5,
+            "neither_correct": 6
+          }
+        },
+        "cooking_query": {
+          "n": 2,
+          "joint_exact_matches": 0,
+          "joint_exact_match": 0.0,
+          "counts": {
+            "both_correct": 0,
+            "intent_only_correct": 0,
+            "slots_only_correct": 2,
+            "neither_correct": 0
+          }
+        },
+        "cooking_recipe": {
+          "n": 41,
+          "joint_exact_matches": 21,
+          "joint_exact_match": 0.5121951219512195,
+          "counts": {
+            "both_correct": 21,
+            "intent_only_correct": 12,
+            "slots_only_correct": 2,
+            "neither_correct": 6
+          }
+        },
+        "datetime_convert": {
+          "n": 9,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.4444444444444444,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 1,
+            "neither_correct": 3
+          }
+        },
+        "datetime_query": {
+          "n": 64,
+          "joint_exact_matches": 50,
+          "joint_exact_match": 0.78125,
+          "counts": {
+            "both_correct": 50,
+            "intent_only_correct": 8,
+            "slots_only_correct": 3,
+            "neither_correct": 3
+          }
+        },
+        "email_addcontact": {
+          "n": 5,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 1.0,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 0,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "email_query": {
+          "n": 73,
+          "joint_exact_matches": 51,
+          "joint_exact_match": 0.6986301369863014,
+          "counts": {
+            "both_correct": 51,
+            "intent_only_correct": 8,
+            "slots_only_correct": 11,
+            "neither_correct": 3
+          }
+        },
+        "email_querycontact": {
+          "n": 16,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.25,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 6,
+            "slots_only_correct": 2,
+            "neither_correct": 4
+          }
+        },
+        "email_sendemail": {
+          "n": 63,
+          "joint_exact_matches": 42,
+          "joint_exact_match": 0.6666666666666666,
+          "counts": {
+            "both_correct": 42,
+            "intent_only_correct": 13,
+            "slots_only_correct": 6,
+            "neither_correct": 2
+          }
+        },
+        "general_greet": {
+          "n": 2,
+          "joint_exact_matches": 0,
+          "joint_exact_match": 0.0,
+          "counts": {
+            "both_correct": 0,
+            "intent_only_correct": 0,
+            "slots_only_correct": 2,
+            "neither_correct": 0
+          }
+        },
+        "general_joke": {
+          "n": 15,
+          "joint_exact_matches": 7,
+          "joint_exact_match": 0.4666666666666667,
+          "counts": {
+            "both_correct": 7,
+            "intent_only_correct": 6,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "general_quirky": {
+          "n": 105,
+          "joint_exact_matches": 56,
+          "joint_exact_match": 0.5333333333333333,
+          "counts": {
+            "both_correct": 56,
+            "intent_only_correct": 12,
+            "slots_only_correct": 28,
+            "neither_correct": 9
+          }
+        },
+        "iot_cleaning": {
+          "n": 19,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.6842105263157895,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 1,
+            "slots_only_correct": 1,
+            "neither_correct": 4
+          }
+        },
+        "iot_coffee": {
+          "n": 14,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.6428571428571429,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightchange": {
+          "n": 22,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.5909090909090909,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 5,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "iot_hue_lightdim": {
+          "n": 17,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.6470588235294118,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 2,
+            "slots_only_correct": 4,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightoff": {
+          "n": 17,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.7647058823529411,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 4,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lighton": {
+          "n": 5,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.2,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "iot_hue_lightup": {
+          "n": 12,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_wemo_off": {
+          "n": 5,
+          "joint_exact_matches": 3,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 3,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "iot_wemo_on": {
+          "n": 7,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 1
+          }
+        },
+        "lists_createoradd": {
+          "n": 25,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.76,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "lists_query": {
+          "n": 50,
+          "joint_exact_matches": 38,
+          "joint_exact_match": 0.76,
+          "counts": {
+            "both_correct": 38,
+            "intent_only_correct": 4,
+            "slots_only_correct": 5,
+            "neither_correct": 3
+          }
+        },
+        "lists_remove": {
+          "n": 37,
+          "joint_exact_matches": 25,
+          "joint_exact_match": 0.6756756756756757,
+          "counts": {
+            "both_correct": 25,
+            "intent_only_correct": 7,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "music_dislikeness": {
+          "n": 2,
+          "joint_exact_matches": 0,
+          "joint_exact_match": 0.0,
+          "counts": {
+            "both_correct": 0,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "music_likeness": {
+          "n": 16,
+          "joint_exact_matches": 7,
+          "joint_exact_match": 0.4375,
+          "counts": {
+            "both_correct": 7,
+            "intent_only_correct": 1,
+            "slots_only_correct": 5,
+            "neither_correct": 3
+          }
+        },
+        "music_query": {
+          "n": 30,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 0,
+            "slots_only_correct": 8,
+            "neither_correct": 4
+          }
+        },
+        "music_settings": {
+          "n": 8,
+          "joint_exact_matches": 2,
+          "joint_exact_match": 0.25,
+          "counts": {
+            "both_correct": 2,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 3
+          }
+        },
+        "news_query": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 34,
+            "slots_only_correct": 3,
+            "neither_correct": 9
+          }
+        },
+        "play_audiobook": {
+          "n": 35,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.34285714285714286,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 15,
+            "slots_only_correct": 2,
+            "neither_correct": 6
+          }
+        },
+        "play_game": {
+          "n": 22,
+          "joint_exact_matches": 7,
+          "joint_exact_match": 0.3181818181818182,
+          "counts": {
+            "both_correct": 7,
+            "intent_only_correct": 7,
+            "slots_only_correct": 3,
+            "neither_correct": 5
+          }
+        },
+        "play_music": {
+          "n": 123,
+          "joint_exact_matches": 69,
+          "joint_exact_match": 0.5609756097560976,
+          "counts": {
+            "both_correct": 69,
+            "intent_only_correct": 46,
+            "slots_only_correct": 3,
+            "neither_correct": 5
+          }
+        },
+        "play_podcasts": {
+          "n": 34,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.38235294117647056,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 15,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "play_radio": {
+          "n": 46,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.41304347826086957,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 18,
+            "slots_only_correct": 4,
+            "neither_correct": 5
+          }
+        },
+        "qa_currency": {
+          "n": 32,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.6875,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 6,
+            "slots_only_correct": 1,
+            "neither_correct": 3
+          }
+        },
+        "qa_definition": {
+          "n": 55,
+          "joint_exact_matches": 23,
+          "joint_exact_match": 0.41818181818181815,
+          "counts": {
+            "both_correct": 23,
+            "intent_only_correct": 16,
+            "slots_only_correct": 4,
+            "neither_correct": 12
+          }
+        },
+        "qa_factoid": {
+          "n": 90,
+          "joint_exact_matches": 48,
+          "joint_exact_match": 0.5333333333333333,
+          "counts": {
+            "both_correct": 48,
+            "intent_only_correct": 19,
+            "slots_only_correct": 16,
+            "neither_correct": 7
+          }
+        },
+        "qa_maths": {
+          "n": 13,
+          "joint_exact_matches": 3,
+          "joint_exact_match": 0.23076923076923078,
+          "counts": {
+            "both_correct": 3,
+            "intent_only_correct": 2,
+            "slots_only_correct": 8,
+            "neither_correct": 0
+          }
+        },
+        "qa_stock": {
+          "n": 24,
+          "joint_exact_matches": 8,
+          "joint_exact_match": 0.3333333333333333,
+          "counts": {
+            "both_correct": 8,
+            "intent_only_correct": 8,
+            "slots_only_correct": 7,
+            "neither_correct": 1
+          }
+        },
+        "recommendation_events": {
+          "n": 26,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.4230769230769231,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 3,
+            "slots_only_correct": 3,
+            "neither_correct": 9
+          }
+        },
+        "recommendation_locations": {
+          "n": 31,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.41935483870967744,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 12,
+            "slots_only_correct": 3,
+            "neither_correct": 3
+          }
+        },
+        "recommendation_movies": {
+          "n": 12,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.3333333333333333,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 3,
+            "slots_only_correct": 1,
+            "neither_correct": 4
+          }
+        },
+        "social_post": {
+          "n": 50,
+          "joint_exact_matches": 26,
+          "joint_exact_match": 0.52,
+          "counts": {
+            "both_correct": 26,
+            "intent_only_correct": 16,
+            "slots_only_correct": 2,
+            "neither_correct": 6
+          }
+        },
+        "social_query": {
+          "n": 18,
+          "joint_exact_matches": 8,
+          "joint_exact_match": 0.4444444444444444,
+          "counts": {
+            "both_correct": 8,
+            "intent_only_correct": 2,
+            "slots_only_correct": 4,
+            "neither_correct": 4
+          }
+        },
+        "takeaway_order": {
+          "n": 20,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 5,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "takeaway_query": {
+          "n": 24,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 5,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "transport_query": {
+          "n": 36,
+          "joint_exact_matches": 21,
+          "joint_exact_match": 0.5833333333333334,
+          "counts": {
+            "both_correct": 21,
+            "intent_only_correct": 7,
+            "slots_only_correct": 5,
+            "neither_correct": 3
+          }
+        },
+        "transport_taxi": {
+          "n": 27,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.4444444444444444,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 10,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "transport_ticket": {
+          "n": 25,
+          "joint_exact_matches": 15,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 15,
+            "intent_only_correct": 2,
+            "slots_only_correct": 4,
+            "neither_correct": 4
+          }
+        },
+        "transport_traffic": {
+          "n": 22,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.8181818181818182,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "weather_query": {
+          "n": 126,
+          "joint_exact_matches": 79,
+          "joint_exact_match": 0.626984126984127,
+          "counts": {
+            "both_correct": 79,
+            "intent_only_correct": 40,
+            "slots_only_correct": 3,
+            "neither_correct": 4
+          }
+        }
+      },
+      "by_scenario": {
+        "alarm": {
+          "n": 64,
+          "joint_exact_matches": 39,
+          "joint_exact_match": 0.609375,
+          "counts": {
+            "both_correct": 39,
+            "intent_only_correct": 8,
+            "slots_only_correct": 12,
+            "neither_correct": 5
+          }
+        },
+        "audio": {
+          "n": 35,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.6285714285714286,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 3,
+            "slots_only_correct": 10,
+            "neither_correct": 0
+          }
+        },
+        "calendar": {
+          "n": 280,
+          "joint_exact_matches": 147,
+          "joint_exact_match": 0.525,
+          "counts": {
+            "both_correct": 147,
+            "intent_only_correct": 92,
+            "slots_only_correct": 24,
+            "neither_correct": 17
+          }
+        },
+        "cooking": {
+          "n": 43,
+          "joint_exact_matches": 21,
+          "joint_exact_match": 0.4883720930232558,
+          "counts": {
+            "both_correct": 21,
+            "intent_only_correct": 12,
+            "slots_only_correct": 4,
+            "neither_correct": 6
+          }
+        },
+        "datetime": {
+          "n": 73,
+          "joint_exact_matches": 54,
+          "joint_exact_match": 0.7397260273972602,
+          "counts": {
+            "both_correct": 54,
+            "intent_only_correct": 9,
+            "slots_only_correct": 4,
+            "neither_correct": 6
+          }
+        },
+        "email": {
+          "n": 157,
+          "joint_exact_matches": 102,
+          "joint_exact_match": 0.6496815286624203,
+          "counts": {
+            "both_correct": 102,
+            "intent_only_correct": 27,
+            "slots_only_correct": 19,
+            "neither_correct": 9
+          }
+        },
+        "general": {
+          "n": 122,
+          "joint_exact_matches": 63,
+          "joint_exact_match": 0.5163934426229508,
+          "counts": {
+            "both_correct": 63,
+            "intent_only_correct": 18,
+            "slots_only_correct": 31,
+            "neither_correct": 10
+          }
+        },
+        "iot": {
+          "n": 118,
+          "joint_exact_matches": 77,
+          "joint_exact_match": 0.652542372881356,
+          "counts": {
+            "both_correct": 77,
+            "intent_only_correct": 19,
+            "slots_only_correct": 14,
+            "neither_correct": 8
+          }
+        },
+        "lists": {
+          "n": 112,
+          "joint_exact_matches": 82,
+          "joint_exact_match": 0.7321428571428571,
+          "counts": {
+            "both_correct": 82,
+            "intent_only_correct": 15,
+            "slots_only_correct": 9,
+            "neither_correct": 6
+          }
+        },
+        "music": {
+          "n": 56,
+          "joint_exact_matches": 27,
+          "joint_exact_match": 0.48214285714285715,
+          "counts": {
+            "both_correct": 27,
+            "intent_only_correct": 3,
+            "slots_only_correct": 15,
+            "neither_correct": 11
+          }
+        },
+        "news": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 34,
+            "slots_only_correct": 3,
+            "neither_correct": 9
+          }
+        },
+        "play": {
+          "n": 260,
+          "joint_exact_matches": 120,
+          "joint_exact_match": 0.46153846153846156,
+          "counts": {
+            "both_correct": 120,
+            "intent_only_correct": 101,
+            "slots_only_correct": 16,
+            "neither_correct": 23
+          }
+        },
+        "qa": {
+          "n": 214,
+          "joint_exact_matches": 104,
+          "joint_exact_match": 0.48598130841121495,
+          "counts": {
+            "both_correct": 104,
+            "intent_only_correct": 51,
+            "slots_only_correct": 36,
+            "neither_correct": 23
+          }
+        },
+        "recommendation": {
+          "n": 69,
+          "joint_exact_matches": 28,
+          "joint_exact_match": 0.4057971014492754,
+          "counts": {
+            "both_correct": 28,
+            "intent_only_correct": 18,
+            "slots_only_correct": 7,
+            "neither_correct": 16
+          }
+        },
+        "social": {
+          "n": 68,
+          "joint_exact_matches": 34,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 34,
+            "intent_only_correct": 18,
+            "slots_only_correct": 6,
+            "neither_correct": 10
+          }
+        },
+        "takeaway": {
+          "n": 44,
+          "joint_exact_matches": 28,
+          "joint_exact_match": 0.6363636363636364,
+          "counts": {
+            "both_correct": 28,
+            "intent_only_correct": 10,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "transport": {
+          "n": 110,
+          "joint_exact_matches": 66,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 66,
+            "intent_only_correct": 21,
+            "slots_only_correct": 13,
+            "neither_correct": 10
+          }
+        },
+        "weather": {
+          "n": 126,
+          "joint_exact_matches": 79,
+          "joint_exact_match": 0.626984126984127,
+          "counts": {
+            "both_correct": 79,
+            "intent_only_correct": 40,
+            "slots_only_correct": 3,
+            "neither_correct": 4
+          }
+        }
+      }
+    },
+    "PR5-INT-001+SLOT-CRF-002": {
+      "n": 2033,
+      "joint_exact_matches": 1166,
+      "joint_exact_match": 0.573536645351697,
+      "counts": {
+        "both_correct": 1166,
+        "intent_only_correct": 462,
+        "slots_only_correct": 233,
+        "neither_correct": 172
+      },
+      "by_exact_text_overlap": {
+        "seen": {
+          "n": 162,
+          "joint_exact_matches": 143,
+          "joint_exact_match": 0.8827160493827161,
+          "counts": {
+            "both_correct": 143,
+            "intent_only_correct": 10,
+            "slots_only_correct": 7,
+            "neither_correct": 2
+          }
+        },
+        "unseen": {
+          "n": 1871,
+          "joint_exact_matches": 1023,
+          "joint_exact_match": 0.5467664350614645,
+          "counts": {
+            "both_correct": 1023,
+            "intent_only_correct": 452,
+            "slots_only_correct": 226,
+            "neither_correct": 170
+          }
+        }
+      },
+      "by_intent": {
+        "alarm_query": {
+          "n": 19,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.5263157894736842,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 2,
+            "slots_only_correct": 5,
+            "neither_correct": 2
+          }
+        },
+        "alarm_remove": {
+          "n": 14,
+          "joint_exact_matches": 7,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 7,
+            "intent_only_correct": 1,
+            "slots_only_correct": 5,
+            "neither_correct": 1
+          }
+        },
+        "alarm_set": {
+          "n": 31,
+          "joint_exact_matches": 21,
+          "joint_exact_match": 0.6774193548387096,
+          "counts": {
+            "both_correct": 21,
+            "intent_only_correct": 6,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "audio_volume_down": {
+          "n": 8,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 3,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_mute": {
+          "n": 15,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 0,
+            "slots_only_correct": 6,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_up": {
+          "n": 12,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "calendar_query": {
+          "n": 102,
+          "joint_exact_matches": 54,
+          "joint_exact_match": 0.5294117647058824,
+          "counts": {
+            "both_correct": 54,
+            "intent_only_correct": 22,
+            "slots_only_correct": 16,
+            "neither_correct": 10
+          }
+        },
+        "calendar_remove": {
+          "n": 47,
+          "joint_exact_matches": 32,
+          "joint_exact_match": 0.6808510638297872,
+          "counts": {
+            "both_correct": 32,
+            "intent_only_correct": 11,
+            "slots_only_correct": 4,
+            "neither_correct": 0
+          }
+        },
+        "calendar_set": {
+          "n": 131,
+          "joint_exact_matches": 65,
+          "joint_exact_match": 0.4961832061068702,
+          "counts": {
+            "both_correct": 65,
+            "intent_only_correct": 55,
+            "slots_only_correct": 5,
+            "neither_correct": 6
+          }
+        },
+        "cooking_query": {
+          "n": 2,
+          "joint_exact_matches": 0,
+          "joint_exact_match": 0.0,
+          "counts": {
+            "both_correct": 0,
+            "intent_only_correct": 0,
+            "slots_only_correct": 2,
+            "neither_correct": 0
+          }
+        },
+        "cooking_recipe": {
+          "n": 41,
+          "joint_exact_matches": 21,
+          "joint_exact_match": 0.5121951219512195,
+          "counts": {
+            "both_correct": 21,
+            "intent_only_correct": 12,
+            "slots_only_correct": 2,
+            "neither_correct": 6
+          }
+        },
+        "datetime_convert": {
+          "n": 9,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.5555555555555556,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 0,
+            "slots_only_correct": 0,
+            "neither_correct": 4
+          }
+        },
+        "datetime_query": {
+          "n": 64,
+          "joint_exact_matches": 50,
+          "joint_exact_match": 0.78125,
+          "counts": {
+            "both_correct": 50,
+            "intent_only_correct": 8,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "email_addcontact": {
+          "n": 5,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 1.0,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 0,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "email_query": {
+          "n": 73,
+          "joint_exact_matches": 51,
+          "joint_exact_match": 0.6986301369863014,
+          "counts": {
+            "both_correct": 51,
+            "intent_only_correct": 8,
+            "slots_only_correct": 12,
+            "neither_correct": 2
+          }
+        },
+        "email_querycontact": {
+          "n": 16,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.3125,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 5,
+            "slots_only_correct": 2,
+            "neither_correct": 4
+          }
+        },
+        "email_sendemail": {
+          "n": 63,
+          "joint_exact_matches": 42,
+          "joint_exact_match": 0.6666666666666666,
+          "counts": {
+            "both_correct": 42,
+            "intent_only_correct": 13,
+            "slots_only_correct": 6,
+            "neither_correct": 2
+          }
+        },
+        "general_greet": {
+          "n": 2,
+          "joint_exact_matches": 0,
+          "joint_exact_match": 0.0,
+          "counts": {
+            "both_correct": 0,
+            "intent_only_correct": 0,
+            "slots_only_correct": 2,
+            "neither_correct": 0
+          }
+        },
+        "general_joke": {
+          "n": 15,
+          "joint_exact_matches": 8,
+          "joint_exact_match": 0.5333333333333333,
+          "counts": {
+            "both_correct": 8,
+            "intent_only_correct": 5,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "general_quirky": {
+          "n": 105,
+          "joint_exact_matches": 57,
+          "joint_exact_match": 0.5428571428571428,
+          "counts": {
+            "both_correct": 57,
+            "intent_only_correct": 11,
+            "slots_only_correct": 28,
+            "neither_correct": 9
+          }
+        },
+        "iot_cleaning": {
+          "n": 19,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.6842105263157895,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 1,
+            "slots_only_correct": 1,
+            "neither_correct": 4
+          }
+        },
+        "iot_coffee": {
+          "n": 14,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 3,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightchange": {
+          "n": 22,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.5909090909090909,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 5,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "iot_hue_lightdim": {
+          "n": 17,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.6470588235294118,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 2,
+            "slots_only_correct": 4,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightoff": {
+          "n": 17,
+          "joint_exact_matches": 16,
+          "joint_exact_match": 0.9411764705882353,
+          "counts": {
+            "both_correct": 16,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lighton": {
+          "n": 5,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.2,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "iot_hue_lightup": {
+          "n": 12,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_wemo_off": {
+          "n": 5,
+          "joint_exact_matches": 3,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 3,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "iot_wemo_on": {
+          "n": 7,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 1,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "lists_createoradd": {
+          "n": 25,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.76,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "lists_query": {
+          "n": 50,
+          "joint_exact_matches": 38,
+          "joint_exact_match": 0.76,
+          "counts": {
+            "both_correct": 38,
+            "intent_only_correct": 4,
+            "slots_only_correct": 6,
+            "neither_correct": 2
+          }
+        },
+        "lists_remove": {
+          "n": 37,
+          "joint_exact_matches": 27,
+          "joint_exact_match": 0.7297297297297297,
+          "counts": {
+            "both_correct": 27,
+            "intent_only_correct": 5,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "music_dislikeness": {
+          "n": 2,
+          "joint_exact_matches": 0,
+          "joint_exact_match": 0.0,
+          "counts": {
+            "both_correct": 0,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "music_likeness": {
+          "n": 16,
+          "joint_exact_matches": 7,
+          "joint_exact_match": 0.4375,
+          "counts": {
+            "both_correct": 7,
+            "intent_only_correct": 1,
+            "slots_only_correct": 5,
+            "neither_correct": 3
+          }
+        },
+        "music_query": {
+          "n": 30,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 0,
+            "slots_only_correct": 8,
+            "neither_correct": 4
+          }
+        },
+        "music_settings": {
+          "n": 8,
+          "joint_exact_matches": 3,
+          "joint_exact_match": 0.375,
+          "counts": {
+            "both_correct": 3,
+            "intent_only_correct": 1,
+            "slots_only_correct": 1,
+            "neither_correct": 3
+          }
+        },
+        "news_query": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 34,
+            "slots_only_correct": 3,
+            "neither_correct": 9
+          }
+        },
+        "play_audiobook": {
+          "n": 35,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.34285714285714286,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 15,
+            "slots_only_correct": 1,
+            "neither_correct": 7
+          }
+        },
+        "play_game": {
+          "n": 22,
+          "joint_exact_matches": 8,
+          "joint_exact_match": 0.36363636363636365,
+          "counts": {
+            "both_correct": 8,
+            "intent_only_correct": 6,
+            "slots_only_correct": 3,
+            "neither_correct": 5
+          }
+        },
+        "play_music": {
+          "n": 123,
+          "joint_exact_matches": 71,
+          "joint_exact_match": 0.5772357723577236,
+          "counts": {
+            "both_correct": 71,
+            "intent_only_correct": 44,
+            "slots_only_correct": 2,
+            "neither_correct": 6
+          }
+        },
+        "play_podcasts": {
+          "n": 34,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.5588235294117647,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 9,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "play_radio": {
+          "n": 46,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.4782608695652174,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 15,
+            "slots_only_correct": 4,
+            "neither_correct": 5
+          }
+        },
+        "qa_currency": {
+          "n": 32,
+          "joint_exact_matches": 23,
+          "joint_exact_match": 0.71875,
+          "counts": {
+            "both_correct": 23,
+            "intent_only_correct": 5,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "qa_definition": {
+          "n": 55,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.4,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 17,
+            "slots_only_correct": 5,
+            "neither_correct": 11
+          }
+        },
+        "qa_factoid": {
+          "n": 90,
+          "joint_exact_matches": 50,
+          "joint_exact_match": 0.5555555555555556,
+          "counts": {
+            "both_correct": 50,
+            "intent_only_correct": 17,
+            "slots_only_correct": 14,
+            "neither_correct": 9
+          }
+        },
+        "qa_maths": {
+          "n": 13,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.38461538461538464,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 0,
+            "slots_only_correct": 8,
+            "neither_correct": 0
+          }
+        },
+        "qa_stock": {
+          "n": 24,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.375,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 7,
+            "slots_only_correct": 5,
+            "neither_correct": 3
+          }
+        },
+        "recommendation_events": {
+          "n": 26,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.4230769230769231,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 3,
+            "slots_only_correct": 4,
+            "neither_correct": 8
+          }
+        },
+        "recommendation_locations": {
+          "n": 31,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.45161290322580644,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 11,
+            "slots_only_correct": 3,
+            "neither_correct": 3
+          }
+        },
+        "recommendation_movies": {
+          "n": 12,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.3333333333333333,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 3,
+            "slots_only_correct": 1,
+            "neither_correct": 4
+          }
+        },
+        "social_post": {
+          "n": 50,
+          "joint_exact_matches": 28,
+          "joint_exact_match": 0.56,
+          "counts": {
+            "both_correct": 28,
+            "intent_only_correct": 14,
+            "slots_only_correct": 3,
+            "neither_correct": 5
+          }
+        },
+        "social_query": {
+          "n": 18,
+          "joint_exact_matches": 8,
+          "joint_exact_match": 0.4444444444444444,
+          "counts": {
+            "both_correct": 8,
+            "intent_only_correct": 2,
+            "slots_only_correct": 5,
+            "neither_correct": 3
+          }
+        },
+        "takeaway_order": {
+          "n": 20,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.45,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 6,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "takeaway_query": {
+          "n": 24,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 5,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "transport_query": {
+          "n": 36,
+          "joint_exact_matches": 20,
+          "joint_exact_match": 0.5555555555555556,
+          "counts": {
+            "both_correct": 20,
+            "intent_only_correct": 8,
+            "slots_only_correct": 5,
+            "neither_correct": 3
+          }
+        },
+        "transport_taxi": {
+          "n": 27,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.5185185185185185,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 8,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "transport_ticket": {
+          "n": 25,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.56,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 3,
+            "slots_only_correct": 3,
+            "neither_correct": 5
+          }
+        },
+        "transport_traffic": {
+          "n": 22,
+          "joint_exact_matches": 17,
+          "joint_exact_match": 0.7727272727272727,
+          "counts": {
+            "both_correct": 17,
+            "intent_only_correct": 3,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "weather_query": {
+          "n": 126,
+          "joint_exact_matches": 84,
+          "joint_exact_match": 0.6666666666666666,
+          "counts": {
+            "both_correct": 84,
+            "intent_only_correct": 35,
+            "slots_only_correct": 4,
+            "neither_correct": 3
+          }
+        }
+      },
+      "by_scenario": {
+        "alarm": {
+          "n": 64,
+          "joint_exact_matches": 38,
+          "joint_exact_match": 0.59375,
+          "counts": {
+            "both_correct": 38,
+            "intent_only_correct": 9,
+            "slots_only_correct": 12,
+            "neither_correct": 5
+          }
+        },
+        "audio": {
+          "n": 35,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.6285714285714286,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 3,
+            "slots_only_correct": 10,
+            "neither_correct": 0
+          }
+        },
+        "calendar": {
+          "n": 280,
+          "joint_exact_matches": 151,
+          "joint_exact_match": 0.5392857142857143,
+          "counts": {
+            "both_correct": 151,
+            "intent_only_correct": 88,
+            "slots_only_correct": 25,
+            "neither_correct": 16
+          }
+        },
+        "cooking": {
+          "n": 43,
+          "joint_exact_matches": 21,
+          "joint_exact_match": 0.4883720930232558,
+          "counts": {
+            "both_correct": 21,
+            "intent_only_correct": 12,
+            "slots_only_correct": 4,
+            "neither_correct": 6
+          }
+        },
+        "datetime": {
+          "n": 73,
+          "joint_exact_matches": 55,
+          "joint_exact_match": 0.7534246575342466,
+          "counts": {
+            "both_correct": 55,
+            "intent_only_correct": 8,
+            "slots_only_correct": 4,
+            "neither_correct": 6
+          }
+        },
+        "email": {
+          "n": 157,
+          "joint_exact_matches": 103,
+          "joint_exact_match": 0.6560509554140127,
+          "counts": {
+            "both_correct": 103,
+            "intent_only_correct": 26,
+            "slots_only_correct": 20,
+            "neither_correct": 8
+          }
+        },
+        "general": {
+          "n": 122,
+          "joint_exact_matches": 65,
+          "joint_exact_match": 0.5327868852459017,
+          "counts": {
+            "both_correct": 65,
+            "intent_only_correct": 16,
+            "slots_only_correct": 31,
+            "neither_correct": 10
+          }
+        },
+        "iot": {
+          "n": 118,
+          "joint_exact_matches": 81,
+          "joint_exact_match": 0.6864406779661016,
+          "counts": {
+            "both_correct": 81,
+            "intent_only_correct": 15,
+            "slots_only_correct": 15,
+            "neither_correct": 7
+          }
+        },
+        "lists": {
+          "n": 112,
+          "joint_exact_matches": 84,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 84,
+            "intent_only_correct": 13,
+            "slots_only_correct": 10,
+            "neither_correct": 5
+          }
+        },
+        "music": {
+          "n": 56,
+          "joint_exact_matches": 28,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 28,
+            "intent_only_correct": 2,
+            "slots_only_correct": 15,
+            "neither_correct": 11
+          }
+        },
+        "news": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 34,
+            "slots_only_correct": 3,
+            "neither_correct": 9
+          }
+        },
+        "play": {
+          "n": 260,
+          "joint_exact_matches": 132,
+          "joint_exact_match": 0.5076923076923077,
+          "counts": {
+            "both_correct": 132,
+            "intent_only_correct": 89,
+            "slots_only_correct": 14,
+            "neither_correct": 25
+          }
+        },
+        "qa": {
+          "n": 214,
+          "joint_exact_matches": 109,
+          "joint_exact_match": 0.5093457943925234,
+          "counts": {
+            "both_correct": 109,
+            "intent_only_correct": 46,
+            "slots_only_correct": 34,
+            "neither_correct": 25
+          }
+        },
+        "recommendation": {
+          "n": 69,
+          "joint_exact_matches": 29,
+          "joint_exact_match": 0.42028985507246375,
+          "counts": {
+            "both_correct": 29,
+            "intent_only_correct": 17,
+            "slots_only_correct": 8,
+            "neither_correct": 15
+          }
+        },
+        "social": {
+          "n": 68,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.5294117647058824,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 16,
+            "slots_only_correct": 8,
+            "neither_correct": 8
+          }
+        },
+        "takeaway": {
+          "n": 44,
+          "joint_exact_matches": 27,
+          "joint_exact_match": 0.6136363636363636,
+          "counts": {
+            "both_correct": 27,
+            "intent_only_correct": 11,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "transport": {
+          "n": 110,
+          "joint_exact_matches": 65,
+          "joint_exact_match": 0.5909090909090909,
+          "counts": {
+            "both_correct": 65,
+            "intent_only_correct": 22,
+            "slots_only_correct": 12,
+            "neither_correct": 11
+          }
+        },
+        "weather": {
+          "n": 126,
+          "joint_exact_matches": 84,
+          "joint_exact_match": 0.6666666666666666,
+          "counts": {
+            "both_correct": 84,
+            "intent_only_correct": 35,
+            "slots_only_correct": 4,
+            "neither_correct": 3
+          }
+        }
+      }
+    },
+    "INT-SVC-001+SLOT-CRF-001": {
+      "n": 2033,
+      "joint_exact_matches": 1171,
+      "joint_exact_match": 0.5759960649286768,
+      "counts": {
+        "both_correct": 1171,
+        "intent_only_correct": 545,
+        "slots_only_correct": 188,
+        "neither_correct": 129
+      },
+      "by_exact_text_overlap": {
+        "seen": {
+          "n": 162,
+          "joint_exact_matches": 137,
+          "joint_exact_match": 0.845679012345679,
+          "counts": {
+            "both_correct": 137,
+            "intent_only_correct": 19,
+            "slots_only_correct": 6,
+            "neither_correct": 0
+          }
+        },
+        "unseen": {
+          "n": 1871,
+          "joint_exact_matches": 1034,
+          "joint_exact_match": 0.55264564404062,
+          "counts": {
+            "both_correct": 1034,
+            "intent_only_correct": 526,
+            "slots_only_correct": 182,
+            "neither_correct": 129
+          }
+        }
+      },
+      "by_intent": {
+        "alarm_query": {
+          "n": 19,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.6842105263157895,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 2,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "alarm_remove": {
+          "n": 14,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.6428571428571429,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 1,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "alarm_set": {
+          "n": 31,
+          "joint_exact_matches": 21,
+          "joint_exact_match": 0.6774193548387096,
+          "counts": {
+            "both_correct": 21,
+            "intent_only_correct": 6,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "audio_volume_down": {
+          "n": 8,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 3,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_mute": {
+          "n": 15,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 0,
+            "slots_only_correct": 3,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_up": {
+          "n": 12,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "calendar_query": {
+          "n": 102,
+          "joint_exact_matches": 55,
+          "joint_exact_match": 0.5392156862745098,
+          "counts": {
+            "both_correct": 55,
+            "intent_only_correct": 21,
+            "slots_only_correct": 15,
+            "neither_correct": 11
+          }
+        },
+        "calendar_remove": {
+          "n": 47,
+          "joint_exact_matches": 35,
+          "joint_exact_match": 0.7446808510638298,
+          "counts": {
+            "both_correct": 35,
+            "intent_only_correct": 11,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "calendar_set": {
+          "n": 131,
+          "joint_exact_matches": 58,
+          "joint_exact_match": 0.44274809160305345,
+          "counts": {
+            "both_correct": 58,
+            "intent_only_correct": 60,
+            "slots_only_correct": 7,
+            "neither_correct": 6
+          }
+        },
+        "cooking_query": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "cooking_recipe": {
+          "n": 41,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.5365853658536586,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 14,
+            "slots_only_correct": 1,
+            "neither_correct": 4
+          }
+        },
+        "datetime_convert": {
+          "n": 9,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.4444444444444444,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 2
+          }
+        },
+        "datetime_query": {
+          "n": 64,
+          "joint_exact_matches": 50,
+          "joint_exact_match": 0.78125,
+          "counts": {
+            "both_correct": 50,
+            "intent_only_correct": 7,
+            "slots_only_correct": 3,
+            "neither_correct": 4
+          }
+        },
+        "email_addcontact": {
+          "n": 5,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "email_query": {
+          "n": 73,
+          "joint_exact_matches": 56,
+          "joint_exact_match": 0.7671232876712328,
+          "counts": {
+            "both_correct": 56,
+            "intent_only_correct": 9,
+            "slots_only_correct": 6,
+            "neither_correct": 2
+          }
+        },
+        "email_querycontact": {
+          "n": 16,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.3125,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 7,
+            "slots_only_correct": 1,
+            "neither_correct": 3
+          }
+        },
+        "email_sendemail": {
+          "n": 63,
+          "joint_exact_matches": 42,
+          "joint_exact_match": 0.6666666666666666,
+          "counts": {
+            "both_correct": 42,
+            "intent_only_correct": 13,
+            "slots_only_correct": 6,
+            "neither_correct": 2
+          }
+        },
+        "general_greet": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "general_joke": {
+          "n": 15,
+          "joint_exact_matches": 8,
+          "joint_exact_match": 0.5333333333333333,
+          "counts": {
+            "both_correct": 8,
+            "intent_only_correct": 7,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "general_quirky": {
+          "n": 105,
+          "joint_exact_matches": 40,
+          "joint_exact_match": 0.38095238095238093,
+          "counts": {
+            "both_correct": 40,
+            "intent_only_correct": 8,
+            "slots_only_correct": 44,
+            "neither_correct": 13
+          }
+        },
+        "iot_cleaning": {
+          "n": 19,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.7368421052631579,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 4,
+            "slots_only_correct": 0,
+            "neither_correct": 1
+          }
+        },
+        "iot_coffee": {
+          "n": 14,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 4,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightchange": {
+          "n": 22,
+          "joint_exact_matches": 15,
+          "joint_exact_match": 0.6818181818181818,
+          "counts": {
+            "both_correct": 15,
+            "intent_only_correct": 6,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightdim": {
+          "n": 17,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.8235294117647058,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightoff": {
+          "n": 17,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.7647058823529411,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 4,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lighton": {
+          "n": 5,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightup": {
+          "n": 12,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.8333333333333334,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 2,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_wemo_off": {
+          "n": 5,
+          "joint_exact_matches": 3,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 3,
+            "intent_only_correct": 1,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_wemo_on": {
+          "n": 7,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 2,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "lists_createoradd": {
+          "n": 25,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.76,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "lists_query": {
+          "n": 50,
+          "joint_exact_matches": 40,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 40,
+            "intent_only_correct": 3,
+            "slots_only_correct": 3,
+            "neither_correct": 4
+          }
+        },
+        "lists_remove": {
+          "n": 37,
+          "joint_exact_matches": 24,
+          "joint_exact_match": 0.6486486486486487,
+          "counts": {
+            "both_correct": 24,
+            "intent_only_correct": 7,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "music_dislikeness": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 0,
+            "neither_correct": 1
+          }
+        },
+        "music_likeness": {
+          "n": 16,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.5625,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 1,
+            "slots_only_correct": 3,
+            "neither_correct": 3
+          }
+        },
+        "music_query": {
+          "n": 30,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.6333333333333333,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 2,
+            "slots_only_correct": 7,
+            "neither_correct": 2
+          }
+        },
+        "music_settings": {
+          "n": 8,
+          "joint_exact_matches": 3,
+          "joint_exact_match": 0.375,
+          "counts": {
+            "both_correct": 3,
+            "intent_only_correct": 2,
+            "slots_only_correct": 0,
+            "neither_correct": 3
+          }
+        },
+        "news_query": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 34,
+            "slots_only_correct": 3,
+            "neither_correct": 9
+          }
+        },
+        "play_audiobook": {
+          "n": 35,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.37142857142857144,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 15,
+            "slots_only_correct": 1,
+            "neither_correct": 6
+          }
+        },
+        "play_game": {
+          "n": 22,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.4090909090909091,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 10,
+            "slots_only_correct": 1,
+            "neither_correct": 2
+          }
+        },
+        "play_music": {
+          "n": 123,
+          "joint_exact_matches": 71,
+          "joint_exact_match": 0.5772357723577236,
+          "counts": {
+            "both_correct": 71,
+            "intent_only_correct": 46,
+            "slots_only_correct": 1,
+            "neither_correct": 5
+          }
+        },
+        "play_podcasts": {
+          "n": 34,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.4117647058823529,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 15,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "play_radio": {
+          "n": 46,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.41304347826086957,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 19,
+            "slots_only_correct": 4,
+            "neither_correct": 4
+          }
+        },
+        "qa_currency": {
+          "n": 32,
+          "joint_exact_matches": 23,
+          "joint_exact_match": 0.71875,
+          "counts": {
+            "both_correct": 23,
+            "intent_only_correct": 9,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "qa_definition": {
+          "n": 55,
+          "joint_exact_matches": 24,
+          "joint_exact_match": 0.43636363636363634,
+          "counts": {
+            "both_correct": 24,
+            "intent_only_correct": 23,
+            "slots_only_correct": 3,
+            "neither_correct": 5
+          }
+        },
+        "qa_factoid": {
+          "n": 90,
+          "joint_exact_matches": 48,
+          "joint_exact_match": 0.5333333333333333,
+          "counts": {
+            "both_correct": 48,
+            "intent_only_correct": 19,
+            "slots_only_correct": 16,
+            "neither_correct": 7
+          }
+        },
+        "qa_maths": {
+          "n": 13,
+          "joint_exact_matches": 6,
+          "joint_exact_match": 0.46153846153846156,
+          "counts": {
+            "both_correct": 6,
+            "intent_only_correct": 2,
+            "slots_only_correct": 5,
+            "neither_correct": 0
+          }
+        },
+        "qa_stock": {
+          "n": 24,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 8,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "recommendation_events": {
+          "n": 26,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.4230769230769231,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 7,
+            "slots_only_correct": 3,
+            "neither_correct": 5
+          }
+        },
+        "recommendation_locations": {
+          "n": 31,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.3870967741935484,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 13,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "recommendation_movies": {
+          "n": 12,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.4166666666666667,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 5,
+            "slots_only_correct": 0,
+            "neither_correct": 2
+          }
+        },
+        "social_post": {
+          "n": 50,
+          "joint_exact_matches": 25,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 25,
+            "intent_only_correct": 19,
+            "slots_only_correct": 3,
+            "neither_correct": 3
+          }
+        },
+        "social_query": {
+          "n": 18,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.6111111111111112,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 2
+          }
+        },
+        "takeaway_order": {
+          "n": 20,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.55,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 5,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "takeaway_query": {
+          "n": 24,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 5,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "transport_query": {
+          "n": 36,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.6111111111111112,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 9,
+            "slots_only_correct": 4,
+            "neither_correct": 1
+          }
+        },
+        "transport_taxi": {
+          "n": 27,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.5185185185185185,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 12,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "transport_ticket": {
+          "n": 25,
+          "joint_exact_matches": 17,
+          "joint_exact_match": 0.68,
+          "counts": {
+            "both_correct": 17,
+            "intent_only_correct": 5,
+            "slots_only_correct": 2,
+            "neither_correct": 1
+          }
+        },
+        "transport_traffic": {
+          "n": 22,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.8181818181818182,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 3,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "weather_query": {
+          "n": 126,
+          "joint_exact_matches": 80,
+          "joint_exact_match": 0.6349206349206349,
+          "counts": {
+            "both_correct": 80,
+            "intent_only_correct": 42,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        }
+      },
+      "by_scenario": {
+        "alarm": {
+          "n": 64,
+          "joint_exact_matches": 43,
+          "joint_exact_match": 0.671875,
+          "counts": {
+            "both_correct": 43,
+            "intent_only_correct": 9,
+            "slots_only_correct": 8,
+            "neither_correct": 4
+          }
+        },
+        "audio": {
+          "n": 35,
+          "joint_exact_matches": 25,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 25,
+            "intent_only_correct": 3,
+            "slots_only_correct": 7,
+            "neither_correct": 0
+          }
+        },
+        "calendar": {
+          "n": 280,
+          "joint_exact_matches": 148,
+          "joint_exact_match": 0.5285714285714286,
+          "counts": {
+            "both_correct": 148,
+            "intent_only_correct": 92,
+            "slots_only_correct": 23,
+            "neither_correct": 17
+          }
+        },
+        "cooking": {
+          "n": 43,
+          "joint_exact_matches": 23,
+          "joint_exact_match": 0.5348837209302325,
+          "counts": {
+            "both_correct": 23,
+            "intent_only_correct": 14,
+            "slots_only_correct": 2,
+            "neither_correct": 4
+          }
+        },
+        "datetime": {
+          "n": 73,
+          "joint_exact_matches": 54,
+          "joint_exact_match": 0.7397260273972602,
+          "counts": {
+            "both_correct": 54,
+            "intent_only_correct": 9,
+            "slots_only_correct": 4,
+            "neither_correct": 6
+          }
+        },
+        "email": {
+          "n": 157,
+          "joint_exact_matches": 107,
+          "joint_exact_match": 0.6815286624203821,
+          "counts": {
+            "both_correct": 107,
+            "intent_only_correct": 29,
+            "slots_only_correct": 14,
+            "neither_correct": 7
+          }
+        },
+        "general": {
+          "n": 122,
+          "joint_exact_matches": 49,
+          "joint_exact_match": 0.4016393442622951,
+          "counts": {
+            "both_correct": 49,
+            "intent_only_correct": 15,
+            "slots_only_correct": 45,
+            "neither_correct": 13
+          }
+        },
+        "iot": {
+          "n": 118,
+          "joint_exact_matches": 88,
+          "joint_exact_match": 0.7457627118644068,
+          "counts": {
+            "both_correct": 88,
+            "intent_only_correct": 26,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "lists": {
+          "n": 112,
+          "joint_exact_matches": 83,
+          "joint_exact_match": 0.7410714285714286,
+          "counts": {
+            "both_correct": 83,
+            "intent_only_correct": 14,
+            "slots_only_correct": 8,
+            "neither_correct": 7
+          }
+        },
+        "music": {
+          "n": 56,
+          "joint_exact_matches": 32,
+          "joint_exact_match": 0.5714285714285714,
+          "counts": {
+            "both_correct": 32,
+            "intent_only_correct": 5,
+            "slots_only_correct": 10,
+            "neither_correct": 9
+          }
+        },
+        "news": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 34,
+            "slots_only_correct": 3,
+            "neither_correct": 9
+          }
+        },
+        "play": {
+          "n": 260,
+          "joint_exact_matches": 126,
+          "joint_exact_match": 0.4846153846153846,
+          "counts": {
+            "both_correct": 126,
+            "intent_only_correct": 105,
+            "slots_only_correct": 10,
+            "neither_correct": 19
+          }
+        },
+        "qa": {
+          "n": 214,
+          "joint_exact_matches": 113,
+          "joint_exact_match": 0.5280373831775701,
+          "counts": {
+            "both_correct": 113,
+            "intent_only_correct": 61,
+            "slots_only_correct": 27,
+            "neither_correct": 13
+          }
+        },
+        "recommendation": {
+          "n": 69,
+          "joint_exact_matches": 28,
+          "joint_exact_match": 0.4057971014492754,
+          "counts": {
+            "both_correct": 28,
+            "intent_only_correct": 25,
+            "slots_only_correct": 7,
+            "neither_correct": 9
+          }
+        },
+        "social": {
+          "n": 68,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.5294117647058824,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 23,
+            "slots_only_correct": 4,
+            "neither_correct": 5
+          }
+        },
+        "takeaway": {
+          "n": 44,
+          "joint_exact_matches": 29,
+          "joint_exact_match": 0.6590909090909091,
+          "counts": {
+            "both_correct": 29,
+            "intent_only_correct": 10,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "transport": {
+          "n": 110,
+          "joint_exact_matches": 71,
+          "joint_exact_match": 0.6454545454545455,
+          "counts": {
+            "both_correct": 71,
+            "intent_only_correct": 29,
+            "slots_only_correct": 8,
+            "neither_correct": 2
+          }
+        },
+        "weather": {
+          "n": 126,
+          "joint_exact_matches": 80,
+          "joint_exact_match": 0.6349206349206349,
+          "counts": {
+            "both_correct": 80,
+            "intent_only_correct": 42,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        }
+      }
+    },
+    "INT-SVC-001+SLOT-CRF-002": {
+      "n": 2033,
+      "joint_exact_matches": 1206,
+      "joint_exact_match": 0.5932120019675357,
+      "counts": {
+        "both_correct": 1206,
+        "intent_only_correct": 510,
+        "slots_only_correct": 193,
+        "neither_correct": 124
+      },
+      "by_exact_text_overlap": {
+        "seen": {
+          "n": 162,
+          "joint_exact_matches": 144,
+          "joint_exact_match": 0.8888888888888888,
+          "counts": {
+            "both_correct": 144,
+            "intent_only_correct": 12,
+            "slots_only_correct": 6,
+            "neither_correct": 0
+          }
+        },
+        "unseen": {
+          "n": 1871,
+          "joint_exact_matches": 1062,
+          "joint_exact_match": 0.5676109032602886,
+          "counts": {
+            "both_correct": 1062,
+            "intent_only_correct": 498,
+            "slots_only_correct": 187,
+            "neither_correct": 124
+          }
+        }
+      },
+      "by_intent": {
+        "alarm_query": {
+          "n": 19,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.6842105263157895,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 2,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "alarm_remove": {
+          "n": 14,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.6428571428571429,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 1,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "alarm_set": {
+          "n": 31,
+          "joint_exact_matches": 20,
+          "joint_exact_match": 0.6451612903225806,
+          "counts": {
+            "both_correct": 20,
+            "intent_only_correct": 7,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "audio_volume_down": {
+          "n": 8,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 3,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_mute": {
+          "n": 15,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 0,
+            "slots_only_correct": 3,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_up": {
+          "n": 12,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "calendar_query": {
+          "n": 102,
+          "joint_exact_matches": 55,
+          "joint_exact_match": 0.5392156862745098,
+          "counts": {
+            "both_correct": 55,
+            "intent_only_correct": 21,
+            "slots_only_correct": 15,
+            "neither_correct": 11
+          }
+        },
+        "calendar_remove": {
+          "n": 47,
+          "joint_exact_matches": 35,
+          "joint_exact_match": 0.7446808510638298,
+          "counts": {
+            "both_correct": 35,
+            "intent_only_correct": 11,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "calendar_set": {
+          "n": 131,
+          "joint_exact_matches": 63,
+          "joint_exact_match": 0.48091603053435117,
+          "counts": {
+            "both_correct": 63,
+            "intent_only_correct": 55,
+            "slots_only_correct": 7,
+            "neither_correct": 6
+          }
+        },
+        "cooking_query": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "cooking_recipe": {
+          "n": 41,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.5365853658536586,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 14,
+            "slots_only_correct": 1,
+            "neither_correct": 4
+          }
+        },
+        "datetime_convert": {
+          "n": 9,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.5555555555555556,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 3
+          }
+        },
+        "datetime_query": {
+          "n": 64,
+          "joint_exact_matches": 49,
+          "joint_exact_match": 0.765625,
+          "counts": {
+            "both_correct": 49,
+            "intent_only_correct": 8,
+            "slots_only_correct": 5,
+            "neither_correct": 2
+          }
+        },
+        "email_addcontact": {
+          "n": 5,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "email_query": {
+          "n": 73,
+          "joint_exact_matches": 57,
+          "joint_exact_match": 0.7808219178082192,
+          "counts": {
+            "both_correct": 57,
+            "intent_only_correct": 8,
+            "slots_only_correct": 6,
+            "neither_correct": 2
+          }
+        },
+        "email_querycontact": {
+          "n": 16,
+          "joint_exact_matches": 6,
+          "joint_exact_match": 0.375,
+          "counts": {
+            "both_correct": 6,
+            "intent_only_correct": 6,
+            "slots_only_correct": 1,
+            "neither_correct": 3
+          }
+        },
+        "email_sendemail": {
+          "n": 63,
+          "joint_exact_matches": 42,
+          "joint_exact_match": 0.6666666666666666,
+          "counts": {
+            "both_correct": 42,
+            "intent_only_correct": 13,
+            "slots_only_correct": 6,
+            "neither_correct": 2
+          }
+        },
+        "general_greet": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "general_joke": {
+          "n": 15,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 6,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "general_quirky": {
+          "n": 105,
+          "joint_exact_matches": 39,
+          "joint_exact_match": 0.37142857142857144,
+          "counts": {
+            "both_correct": 39,
+            "intent_only_correct": 9,
+            "slots_only_correct": 46,
+            "neither_correct": 11
+          }
+        },
+        "iot_cleaning": {
+          "n": 19,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.7368421052631579,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 4,
+            "slots_only_correct": 0,
+            "neither_correct": 1
+          }
+        },
+        "iot_coffee": {
+          "n": 14,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.7857142857142857,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 3,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightchange": {
+          "n": 22,
+          "joint_exact_matches": 15,
+          "joint_exact_match": 0.6818181818181818,
+          "counts": {
+            "both_correct": 15,
+            "intent_only_correct": 6,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightdim": {
+          "n": 17,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.8235294117647058,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightoff": {
+          "n": 17,
+          "joint_exact_matches": 16,
+          "joint_exact_match": 0.9411764705882353,
+          "counts": {
+            "both_correct": 16,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lighton": {
+          "n": 5,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightup": {
+          "n": 12,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.8333333333333334,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 2,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_wemo_off": {
+          "n": 5,
+          "joint_exact_matches": 3,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 3,
+            "intent_only_correct": 1,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_wemo_on": {
+          "n": 7,
+          "joint_exact_matches": 6,
+          "joint_exact_match": 0.8571428571428571,
+          "counts": {
+            "both_correct": 6,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "lists_createoradd": {
+          "n": 25,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.76,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "lists_query": {
+          "n": 50,
+          "joint_exact_matches": 40,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 40,
+            "intent_only_correct": 3,
+            "slots_only_correct": 4,
+            "neither_correct": 3
+          }
+        },
+        "lists_remove": {
+          "n": 37,
+          "joint_exact_matches": 26,
+          "joint_exact_match": 0.7027027027027027,
+          "counts": {
+            "both_correct": 26,
+            "intent_only_correct": 5,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "music_dislikeness": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 0,
+            "neither_correct": 1
+          }
+        },
+        "music_likeness": {
+          "n": 16,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.5625,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 1,
+            "slots_only_correct": 3,
+            "neither_correct": 3
+          }
+        },
+        "music_query": {
+          "n": 30,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.6333333333333333,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 2,
+            "slots_only_correct": 7,
+            "neither_correct": 2
+          }
+        },
+        "music_settings": {
+          "n": 8,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 3
+          }
+        },
+        "news_query": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 34,
+            "slots_only_correct": 3,
+            "neither_correct": 9
+          }
+        },
+        "play_audiobook": {
+          "n": 35,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.34285714285714286,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 16,
+            "slots_only_correct": 1,
+            "neither_correct": 6
+          }
+        },
+        "play_game": {
+          "n": 22,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.45454545454545453,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 9,
+            "slots_only_correct": 1,
+            "neither_correct": 2
+          }
+        },
+        "play_music": {
+          "n": 123,
+          "joint_exact_matches": 72,
+          "joint_exact_match": 0.5853658536585366,
+          "counts": {
+            "both_correct": 72,
+            "intent_only_correct": 45,
+            "slots_only_correct": 1,
+            "neither_correct": 5
+          }
+        },
+        "play_podcasts": {
+          "n": 34,
+          "joint_exact_matches": 20,
+          "joint_exact_match": 0.5882352941176471,
+          "counts": {
+            "both_correct": 20,
+            "intent_only_correct": 9,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "play_radio": {
+          "n": 46,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.4782608695652174,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 16,
+            "slots_only_correct": 4,
+            "neither_correct": 4
+          }
+        },
+        "qa_currency": {
+          "n": 32,
+          "joint_exact_matches": 25,
+          "joint_exact_match": 0.78125,
+          "counts": {
+            "both_correct": 25,
+            "intent_only_correct": 7,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "qa_definition": {
+          "n": 55,
+          "joint_exact_matches": 23,
+          "joint_exact_match": 0.41818181818181815,
+          "counts": {
+            "both_correct": 23,
+            "intent_only_correct": 24,
+            "slots_only_correct": 4,
+            "neither_correct": 4
+          }
+        },
+        "qa_factoid": {
+          "n": 90,
+          "joint_exact_matches": 49,
+          "joint_exact_match": 0.5444444444444444,
+          "counts": {
+            "both_correct": 49,
+            "intent_only_correct": 18,
+            "slots_only_correct": 15,
+            "neither_correct": 8
+          }
+        },
+        "qa_maths": {
+          "n": 13,
+          "joint_exact_matches": 8,
+          "joint_exact_match": 0.6153846153846154,
+          "counts": {
+            "both_correct": 8,
+            "intent_only_correct": 0,
+            "slots_only_correct": 5,
+            "neither_correct": 0
+          }
+        },
+        "qa_stock": {
+          "n": 24,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.4583333333333333,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 9,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "recommendation_events": {
+          "n": 26,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.46153846153846156,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 6,
+            "slots_only_correct": 3,
+            "neither_correct": 5
+          }
+        },
+        "recommendation_locations": {
+          "n": 31,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.41935483870967744,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 12,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "recommendation_movies": {
+          "n": 12,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.4166666666666667,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 5,
+            "slots_only_correct": 0,
+            "neither_correct": 2
+          }
+        },
+        "social_post": {
+          "n": 50,
+          "joint_exact_matches": 28,
+          "joint_exact_match": 0.56,
+          "counts": {
+            "both_correct": 28,
+            "intent_only_correct": 16,
+            "slots_only_correct": 3,
+            "neither_correct": 3
+          }
+        },
+        "social_query": {
+          "n": 18,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.6111111111111112,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 4,
+            "slots_only_correct": 2,
+            "neither_correct": 1
+          }
+        },
+        "takeaway_order": {
+          "n": 20,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 6,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "takeaway_query": {
+          "n": 24,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 5,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "transport_query": {
+          "n": 36,
+          "joint_exact_matches": 21,
+          "joint_exact_match": 0.5833333333333334,
+          "counts": {
+            "both_correct": 21,
+            "intent_only_correct": 10,
+            "slots_only_correct": 4,
+            "neither_correct": 1
+          }
+        },
+        "transport_taxi": {
+          "n": 27,
+          "joint_exact_matches": 16,
+          "joint_exact_match": 0.5925925925925926,
+          "counts": {
+            "both_correct": 16,
+            "intent_only_correct": 10,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "transport_ticket": {
+          "n": 25,
+          "joint_exact_matches": 16,
+          "joint_exact_match": 0.64,
+          "counts": {
+            "both_correct": 16,
+            "intent_only_correct": 6,
+            "slots_only_correct": 1,
+            "neither_correct": 2
+          }
+        },
+        "transport_traffic": {
+          "n": 22,
+          "joint_exact_matches": 17,
+          "joint_exact_match": 0.7727272727272727,
+          "counts": {
+            "both_correct": 17,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "weather_query": {
+          "n": 126,
+          "joint_exact_matches": 85,
+          "joint_exact_match": 0.6746031746031746,
+          "counts": {
+            "both_correct": 85,
+            "intent_only_correct": 37,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        }
+      },
+      "by_scenario": {
+        "alarm": {
+          "n": 64,
+          "joint_exact_matches": 42,
+          "joint_exact_match": 0.65625,
+          "counts": {
+            "both_correct": 42,
+            "intent_only_correct": 10,
+            "slots_only_correct": 8,
+            "neither_correct": 4
+          }
+        },
+        "audio": {
+          "n": 35,
+          "joint_exact_matches": 25,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 25,
+            "intent_only_correct": 3,
+            "slots_only_correct": 7,
+            "neither_correct": 0
+          }
+        },
+        "calendar": {
+          "n": 280,
+          "joint_exact_matches": 153,
+          "joint_exact_match": 0.5464285714285714,
+          "counts": {
+            "both_correct": 153,
+            "intent_only_correct": 87,
+            "slots_only_correct": 23,
+            "neither_correct": 17
+          }
+        },
+        "cooking": {
+          "n": 43,
+          "joint_exact_matches": 23,
+          "joint_exact_match": 0.5348837209302325,
+          "counts": {
+            "both_correct": 23,
+            "intent_only_correct": 14,
+            "slots_only_correct": 2,
+            "neither_correct": 4
+          }
+        },
+        "datetime": {
+          "n": 73,
+          "joint_exact_matches": 54,
+          "joint_exact_match": 0.7397260273972602,
+          "counts": {
+            "both_correct": 54,
+            "intent_only_correct": 9,
+            "slots_only_correct": 5,
+            "neither_correct": 5
+          }
+        },
+        "email": {
+          "n": 157,
+          "joint_exact_matches": 109,
+          "joint_exact_match": 0.6942675159235668,
+          "counts": {
+            "both_correct": 109,
+            "intent_only_correct": 27,
+            "slots_only_correct": 14,
+            "neither_correct": 7
+          }
+        },
+        "general": {
+          "n": 122,
+          "joint_exact_matches": 49,
+          "joint_exact_match": 0.4016393442622951,
+          "counts": {
+            "both_correct": 49,
+            "intent_only_correct": 15,
+            "slots_only_correct": 47,
+            "neither_correct": 11
+          }
+        },
+        "iot": {
+          "n": 118,
+          "joint_exact_matches": 93,
+          "joint_exact_match": 0.788135593220339,
+          "counts": {
+            "both_correct": 93,
+            "intent_only_correct": 21,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "lists": {
+          "n": 112,
+          "joint_exact_matches": 85,
+          "joint_exact_match": 0.7589285714285714,
+          "counts": {
+            "both_correct": 85,
+            "intent_only_correct": 12,
+            "slots_only_correct": 9,
+            "neither_correct": 6
+          }
+        },
+        "music": {
+          "n": 56,
+          "joint_exact_matches": 33,
+          "joint_exact_match": 0.5892857142857143,
+          "counts": {
+            "both_correct": 33,
+            "intent_only_correct": 4,
+            "slots_only_correct": 10,
+            "neither_correct": 9
+          }
+        },
+        "news": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 34,
+            "slots_only_correct": 3,
+            "neither_correct": 9
+          }
+        },
+        "play": {
+          "n": 260,
+          "joint_exact_matches": 136,
+          "joint_exact_match": 0.5230769230769231,
+          "counts": {
+            "both_correct": 136,
+            "intent_only_correct": 95,
+            "slots_only_correct": 10,
+            "neither_correct": 19
+          }
+        },
+        "qa": {
+          "n": 214,
+          "joint_exact_matches": 116,
+          "joint_exact_match": 0.5420560747663551,
+          "counts": {
+            "both_correct": 116,
+            "intent_only_correct": 58,
+            "slots_only_correct": 27,
+            "neither_correct": 13
+          }
+        },
+        "recommendation": {
+          "n": 69,
+          "joint_exact_matches": 30,
+          "joint_exact_match": 0.43478260869565216,
+          "counts": {
+            "both_correct": 30,
+            "intent_only_correct": 23,
+            "slots_only_correct": 7,
+            "neither_correct": 9
+          }
+        },
+        "social": {
+          "n": 68,
+          "joint_exact_matches": 39,
+          "joint_exact_match": 0.5735294117647058,
+          "counts": {
+            "both_correct": 39,
+            "intent_only_correct": 20,
+            "slots_only_correct": 5,
+            "neither_correct": 4
+          }
+        },
+        "takeaway": {
+          "n": 44,
+          "joint_exact_matches": 28,
+          "joint_exact_match": 0.6363636363636364,
+          "counts": {
+            "both_correct": 28,
+            "intent_only_correct": 11,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "transport": {
+          "n": 110,
+          "joint_exact_matches": 70,
+          "joint_exact_match": 0.6363636363636364,
+          "counts": {
+            "both_correct": 70,
+            "intent_only_correct": 30,
+            "slots_only_correct": 7,
+            "neither_correct": 3
+          }
+        },
+        "weather": {
+          "n": 126,
+          "joint_exact_matches": 85,
+          "joint_exact_match": 0.6746031746031746,
+          "counts": {
+            "both_correct": 85,
+            "intent_only_correct": 37,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        }
+      }
+    },
+    "INT-HYBRID-001+SLOT-CRF-001": {
+      "n": 2033,
+      "joint_exact_matches": 1176,
+      "joint_exact_match": 0.5784554845056566,
+      "counts": {
+        "both_correct": 1176,
+        "intent_only_correct": 544,
+        "slots_only_correct": 183,
+        "neither_correct": 130
+      },
+      "by_exact_text_overlap": {
+        "seen": {
+          "n": 162,
+          "joint_exact_matches": 136,
+          "joint_exact_match": 0.8395061728395061,
+          "counts": {
+            "both_correct": 136,
+            "intent_only_correct": 19,
+            "slots_only_correct": 7,
+            "neither_correct": 0
+          }
+        },
+        "unseen": {
+          "n": 1871,
+          "joint_exact_matches": 1040,
+          "joint_exact_match": 0.5558524853019775,
+          "counts": {
+            "both_correct": 1040,
+            "intent_only_correct": 525,
+            "slots_only_correct": 176,
+            "neither_correct": 130
+          }
+        }
+      },
+      "by_intent": {
+        "alarm_query": {
+          "n": 19,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.6842105263157895,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 2,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "alarm_remove": {
+          "n": 14,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 1,
+            "slots_only_correct": 2,
+            "neither_correct": 1
+          }
+        },
+        "alarm_set": {
+          "n": 31,
+          "joint_exact_matches": 21,
+          "joint_exact_match": 0.6774193548387096,
+          "counts": {
+            "both_correct": 21,
+            "intent_only_correct": 5,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "audio_volume_down": {
+          "n": 8,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.625,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 1,
+            "slots_only_correct": 2,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_mute": {
+          "n": 15,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 0,
+            "slots_only_correct": 3,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_up": {
+          "n": 12,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "calendar_query": {
+          "n": 102,
+          "joint_exact_matches": 53,
+          "joint_exact_match": 0.5196078431372549,
+          "counts": {
+            "both_correct": 53,
+            "intent_only_correct": 24,
+            "slots_only_correct": 17,
+            "neither_correct": 8
+          }
+        },
+        "calendar_remove": {
+          "n": 47,
+          "joint_exact_matches": 35,
+          "joint_exact_match": 0.7446808510638298,
+          "counts": {
+            "both_correct": 35,
+            "intent_only_correct": 10,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "calendar_set": {
+          "n": 131,
+          "joint_exact_matches": 58,
+          "joint_exact_match": 0.44274809160305345,
+          "counts": {
+            "both_correct": 58,
+            "intent_only_correct": 60,
+            "slots_only_correct": 7,
+            "neither_correct": 6
+          }
+        },
+        "cooking_query": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "cooking_recipe": {
+          "n": 41,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.5365853658536586,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 14,
+            "slots_only_correct": 1,
+            "neither_correct": 4
+          }
+        },
+        "datetime_convert": {
+          "n": 9,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.4444444444444444,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 1,
+            "neither_correct": 3
+          }
+        },
+        "datetime_query": {
+          "n": 64,
+          "joint_exact_matches": 51,
+          "joint_exact_match": 0.796875,
+          "counts": {
+            "both_correct": 51,
+            "intent_only_correct": 7,
+            "slots_only_correct": 2,
+            "neither_correct": 4
+          }
+        },
+        "email_addcontact": {
+          "n": 5,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "email_query": {
+          "n": 73,
+          "joint_exact_matches": 57,
+          "joint_exact_match": 0.7808219178082192,
+          "counts": {
+            "both_correct": 57,
+            "intent_only_correct": 9,
+            "slots_only_correct": 5,
+            "neither_correct": 2
+          }
+        },
+        "email_querycontact": {
+          "n": 16,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.3125,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 7,
+            "slots_only_correct": 1,
+            "neither_correct": 3
+          }
+        },
+        "email_sendemail": {
+          "n": 63,
+          "joint_exact_matches": 45,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 45,
+            "intent_only_correct": 15,
+            "slots_only_correct": 3,
+            "neither_correct": 0
+          }
+        },
+        "general_greet": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "general_joke": {
+          "n": 15,
+          "joint_exact_matches": 8,
+          "joint_exact_match": 0.5333333333333333,
+          "counts": {
+            "both_correct": 8,
+            "intent_only_correct": 7,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "general_quirky": {
+          "n": 105,
+          "joint_exact_matches": 35,
+          "joint_exact_match": 0.3333333333333333,
+          "counts": {
+            "both_correct": 35,
+            "intent_only_correct": 9,
+            "slots_only_correct": 49,
+            "neither_correct": 12
+          }
+        },
+        "iot_cleaning": {
+          "n": 19,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.7368421052631579,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 4,
+            "slots_only_correct": 0,
+            "neither_correct": 1
+          }
+        },
+        "iot_coffee": {
+          "n": 14,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 4,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightchange": {
+          "n": 22,
+          "joint_exact_matches": 15,
+          "joint_exact_match": 0.6818181818181818,
+          "counts": {
+            "both_correct": 15,
+            "intent_only_correct": 6,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightdim": {
+          "n": 17,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.7647058823529411,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 2,
+            "slots_only_correct": 2,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightoff": {
+          "n": 17,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.7647058823529411,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 4,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lighton": {
+          "n": 5,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightup": {
+          "n": 12,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.8333333333333334,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 2,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_wemo_off": {
+          "n": 5,
+          "joint_exact_matches": 3,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 3,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "iot_wemo_on": {
+          "n": 7,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 2,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "lists_createoradd": {
+          "n": 25,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.76,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "lists_query": {
+          "n": 50,
+          "joint_exact_matches": 39,
+          "joint_exact_match": 0.78,
+          "counts": {
+            "both_correct": 39,
+            "intent_only_correct": 4,
+            "slots_only_correct": 4,
+            "neither_correct": 3
+          }
+        },
+        "lists_remove": {
+          "n": 37,
+          "joint_exact_matches": 24,
+          "joint_exact_match": 0.6486486486486487,
+          "counts": {
+            "both_correct": 24,
+            "intent_only_correct": 7,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "music_dislikeness": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 0,
+            "neither_correct": 1
+          }
+        },
+        "music_likeness": {
+          "n": 16,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.5625,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 1,
+            "slots_only_correct": 3,
+            "neither_correct": 3
+          }
+        },
+        "music_query": {
+          "n": 30,
+          "joint_exact_matches": 20,
+          "joint_exact_match": 0.6666666666666666,
+          "counts": {
+            "both_correct": 20,
+            "intent_only_correct": 1,
+            "slots_only_correct": 6,
+            "neither_correct": 3
+          }
+        },
+        "music_settings": {
+          "n": 8,
+          "joint_exact_matches": 3,
+          "joint_exact_match": 0.375,
+          "counts": {
+            "both_correct": 3,
+            "intent_only_correct": 3,
+            "slots_only_correct": 0,
+            "neither_correct": 2
+          }
+        },
+        "news_query": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 33,
+            "slots_only_correct": 3,
+            "neither_correct": 10
+          }
+        },
+        "play_audiobook": {
+          "n": 35,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.34285714285714286,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 16,
+            "slots_only_correct": 2,
+            "neither_correct": 5
+          }
+        },
+        "play_game": {
+          "n": 22,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.45454545454545453,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 9,
+            "slots_only_correct": 0,
+            "neither_correct": 3
+          }
+        },
+        "play_music": {
+          "n": 123,
+          "joint_exact_matches": 69,
+          "joint_exact_match": 0.5609756097560976,
+          "counts": {
+            "both_correct": 69,
+            "intent_only_correct": 46,
+            "slots_only_correct": 3,
+            "neither_correct": 5
+          }
+        },
+        "play_podcasts": {
+          "n": 34,
+          "joint_exact_matches": 15,
+          "joint_exact_match": 0.4411764705882353,
+          "counts": {
+            "both_correct": 15,
+            "intent_only_correct": 15,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "play_radio": {
+          "n": 46,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.41304347826086957,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 20,
+            "slots_only_correct": 4,
+            "neither_correct": 3
+          }
+        },
+        "qa_currency": {
+          "n": 32,
+          "joint_exact_matches": 23,
+          "joint_exact_match": 0.71875,
+          "counts": {
+            "both_correct": 23,
+            "intent_only_correct": 9,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "qa_definition": {
+          "n": 55,
+          "joint_exact_matches": 25,
+          "joint_exact_match": 0.45454545454545453,
+          "counts": {
+            "both_correct": 25,
+            "intent_only_correct": 23,
+            "slots_only_correct": 2,
+            "neither_correct": 5
+          }
+        },
+        "qa_factoid": {
+          "n": 90,
+          "joint_exact_matches": 49,
+          "joint_exact_match": 0.5444444444444444,
+          "counts": {
+            "both_correct": 49,
+            "intent_only_correct": 17,
+            "slots_only_correct": 15,
+            "neither_correct": 9
+          }
+        },
+        "qa_maths": {
+          "n": 13,
+          "joint_exact_matches": 7,
+          "joint_exact_match": 0.5384615384615384,
+          "counts": {
+            "both_correct": 7,
+            "intent_only_correct": 2,
+            "slots_only_correct": 4,
+            "neither_correct": 0
+          }
+        },
+        "qa_stock": {
+          "n": 24,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.5416666666666666,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 8,
+            "slots_only_correct": 2,
+            "neither_correct": 1
+          }
+        },
+        "recommendation_events": {
+          "n": 26,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.4230769230769231,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 5,
+            "slots_only_correct": 3,
+            "neither_correct": 7
+          }
+        },
+        "recommendation_locations": {
+          "n": 31,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.41935483870967744,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 14,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "recommendation_movies": {
+          "n": 12,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.4166666666666667,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 5,
+            "slots_only_correct": 0,
+            "neither_correct": 2
+          }
+        },
+        "social_post": {
+          "n": 50,
+          "joint_exact_matches": 26,
+          "joint_exact_match": 0.52,
+          "counts": {
+            "both_correct": 26,
+            "intent_only_correct": 19,
+            "slots_only_correct": 2,
+            "neither_correct": 3
+          }
+        },
+        "social_query": {
+          "n": 18,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.5555555555555556,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 4,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "takeaway_order": {
+          "n": 20,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.55,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 5,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "takeaway_query": {
+          "n": 24,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 5,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "transport_query": {
+          "n": 36,
+          "joint_exact_matches": 23,
+          "joint_exact_match": 0.6388888888888888,
+          "counts": {
+            "both_correct": 23,
+            "intent_only_correct": 9,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "transport_taxi": {
+          "n": 27,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.48148148148148145,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 12,
+            "slots_only_correct": 2,
+            "neither_correct": 0
+          }
+        },
+        "transport_ticket": {
+          "n": 25,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.72,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 2
+          }
+        },
+        "transport_traffic": {
+          "n": 22,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.8181818181818182,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 3,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "weather_query": {
+          "n": 126,
+          "joint_exact_matches": 81,
+          "joint_exact_match": 0.6428571428571429,
+          "counts": {
+            "both_correct": 81,
+            "intent_only_correct": 42,
+            "slots_only_correct": 1,
+            "neither_correct": 2
+          }
+        }
+      },
+      "by_scenario": {
+        "alarm": {
+          "n": 64,
+          "joint_exact_matches": 44,
+          "joint_exact_match": 0.6875,
+          "counts": {
+            "both_correct": 44,
+            "intent_only_correct": 8,
+            "slots_only_correct": 7,
+            "neither_correct": 5
+          }
+        },
+        "audio": {
+          "n": 35,
+          "joint_exact_matches": 26,
+          "joint_exact_match": 0.7428571428571429,
+          "counts": {
+            "both_correct": 26,
+            "intent_only_correct": 3,
+            "slots_only_correct": 6,
+            "neither_correct": 0
+          }
+        },
+        "calendar": {
+          "n": 280,
+          "joint_exact_matches": 146,
+          "joint_exact_match": 0.5214285714285715,
+          "counts": {
+            "both_correct": 146,
+            "intent_only_correct": 94,
+            "slots_only_correct": 25,
+            "neither_correct": 15
+          }
+        },
+        "cooking": {
+          "n": 43,
+          "joint_exact_matches": 23,
+          "joint_exact_match": 0.5348837209302325,
+          "counts": {
+            "both_correct": 23,
+            "intent_only_correct": 14,
+            "slots_only_correct": 2,
+            "neither_correct": 4
+          }
+        },
+        "datetime": {
+          "n": 73,
+          "joint_exact_matches": 55,
+          "joint_exact_match": 0.7534246575342466,
+          "counts": {
+            "both_correct": 55,
+            "intent_only_correct": 8,
+            "slots_only_correct": 3,
+            "neither_correct": 7
+          }
+        },
+        "email": {
+          "n": 157,
+          "joint_exact_matches": 111,
+          "joint_exact_match": 0.7070063694267515,
+          "counts": {
+            "both_correct": 111,
+            "intent_only_correct": 31,
+            "slots_only_correct": 10,
+            "neither_correct": 5
+          }
+        },
+        "general": {
+          "n": 122,
+          "joint_exact_matches": 44,
+          "joint_exact_match": 0.36065573770491804,
+          "counts": {
+            "both_correct": 44,
+            "intent_only_correct": 16,
+            "slots_only_correct": 50,
+            "neither_correct": 12
+          }
+        },
+        "iot": {
+          "n": 118,
+          "joint_exact_matches": 87,
+          "joint_exact_match": 0.7372881355932204,
+          "counts": {
+            "both_correct": 87,
+            "intent_only_correct": 25,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "lists": {
+          "n": 112,
+          "joint_exact_matches": 82,
+          "joint_exact_match": 0.7321428571428571,
+          "counts": {
+            "both_correct": 82,
+            "intent_only_correct": 15,
+            "slots_only_correct": 9,
+            "neither_correct": 6
+          }
+        },
+        "music": {
+          "n": 56,
+          "joint_exact_matches": 33,
+          "joint_exact_match": 0.5892857142857143,
+          "counts": {
+            "both_correct": 33,
+            "intent_only_correct": 5,
+            "slots_only_correct": 9,
+            "neither_correct": 9
+          }
+        },
+        "news": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 33,
+            "slots_only_correct": 3,
+            "neither_correct": 10
+          }
+        },
+        "play": {
+          "n": 260,
+          "joint_exact_matches": 125,
+          "joint_exact_match": 0.4807692307692308,
+          "counts": {
+            "both_correct": 125,
+            "intent_only_correct": 106,
+            "slots_only_correct": 11,
+            "neither_correct": 18
+          }
+        },
+        "qa": {
+          "n": 214,
+          "joint_exact_matches": 117,
+          "joint_exact_match": 0.5467289719626168,
+          "counts": {
+            "both_correct": 117,
+            "intent_only_correct": 59,
+            "slots_only_correct": 23,
+            "neither_correct": 15
+          }
+        },
+        "recommendation": {
+          "n": 69,
+          "joint_exact_matches": 29,
+          "joint_exact_match": 0.42028985507246375,
+          "counts": {
+            "both_correct": 29,
+            "intent_only_correct": 24,
+            "slots_only_correct": 6,
+            "neither_correct": 10
+          }
+        },
+        "social": {
+          "n": 68,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.5294117647058824,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 23,
+            "slots_only_correct": 4,
+            "neither_correct": 5
+          }
+        },
+        "takeaway": {
+          "n": 44,
+          "joint_exact_matches": 29,
+          "joint_exact_match": 0.6590909090909091,
+          "counts": {
+            "both_correct": 29,
+            "intent_only_correct": 10,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "transport": {
+          "n": 110,
+          "joint_exact_matches": 72,
+          "joint_exact_match": 0.6545454545454545,
+          "counts": {
+            "both_correct": 72,
+            "intent_only_correct": 28,
+            "slots_only_correct": 7,
+            "neither_correct": 3
+          }
+        },
+        "weather": {
+          "n": 126,
+          "joint_exact_matches": 81,
+          "joint_exact_match": 0.6428571428571429,
+          "counts": {
+            "both_correct": 81,
+            "intent_only_correct": 42,
+            "slots_only_correct": 1,
+            "neither_correct": 2
+          }
+        }
+      }
+    },
+    "INT-HYBRID-001+SLOT-CRF-002": {
+      "n": 2033,
+      "joint_exact_matches": 1211,
+      "joint_exact_match": 0.5956714215445155,
+      "counts": {
+        "both_correct": 1211,
+        "intent_only_correct": 509,
+        "slots_only_correct": 188,
+        "neither_correct": 125
+      },
+      "by_exact_text_overlap": {
+        "seen": {
+          "n": 162,
+          "joint_exact_matches": 143,
+          "joint_exact_match": 0.8827160493827161,
+          "counts": {
+            "both_correct": 143,
+            "intent_only_correct": 12,
+            "slots_only_correct": 7,
+            "neither_correct": 0
+          }
+        },
+        "unseen": {
+          "n": 1871,
+          "joint_exact_matches": 1068,
+          "joint_exact_match": 0.5708177445216461,
+          "counts": {
+            "both_correct": 1068,
+            "intent_only_correct": 497,
+            "slots_only_correct": 181,
+            "neither_correct": 125
+          }
+        }
+      },
+      "by_intent": {
+        "alarm_query": {
+          "n": 19,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.6842105263157895,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 2,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "alarm_remove": {
+          "n": 14,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 1,
+            "slots_only_correct": 2,
+            "neither_correct": 1
+          }
+        },
+        "alarm_set": {
+          "n": 31,
+          "joint_exact_matches": 20,
+          "joint_exact_match": 0.6451612903225806,
+          "counts": {
+            "both_correct": 20,
+            "intent_only_correct": 6,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "audio_volume_down": {
+          "n": 8,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.625,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 1,
+            "slots_only_correct": 2,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_mute": {
+          "n": 15,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 0,
+            "slots_only_correct": 3,
+            "neither_correct": 0
+          }
+        },
+        "audio_volume_up": {
+          "n": 12,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 2,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "calendar_query": {
+          "n": 102,
+          "joint_exact_matches": 53,
+          "joint_exact_match": 0.5196078431372549,
+          "counts": {
+            "both_correct": 53,
+            "intent_only_correct": 24,
+            "slots_only_correct": 17,
+            "neither_correct": 8
+          }
+        },
+        "calendar_remove": {
+          "n": 47,
+          "joint_exact_matches": 35,
+          "joint_exact_match": 0.7446808510638298,
+          "counts": {
+            "both_correct": 35,
+            "intent_only_correct": 10,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "calendar_set": {
+          "n": 131,
+          "joint_exact_matches": 63,
+          "joint_exact_match": 0.48091603053435117,
+          "counts": {
+            "both_correct": 63,
+            "intent_only_correct": 55,
+            "slots_only_correct": 7,
+            "neither_correct": 6
+          }
+        },
+        "cooking_query": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "cooking_recipe": {
+          "n": 41,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.5365853658536586,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 14,
+            "slots_only_correct": 1,
+            "neither_correct": 4
+          }
+        },
+        "datetime_convert": {
+          "n": 9,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.5555555555555556,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 0,
+            "slots_only_correct": 0,
+            "neither_correct": 4
+          }
+        },
+        "datetime_query": {
+          "n": 64,
+          "joint_exact_matches": 50,
+          "joint_exact_match": 0.78125,
+          "counts": {
+            "both_correct": 50,
+            "intent_only_correct": 8,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "email_addcontact": {
+          "n": 5,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "email_query": {
+          "n": 73,
+          "joint_exact_matches": 58,
+          "joint_exact_match": 0.7945205479452054,
+          "counts": {
+            "both_correct": 58,
+            "intent_only_correct": 8,
+            "slots_only_correct": 5,
+            "neither_correct": 2
+          }
+        },
+        "email_querycontact": {
+          "n": 16,
+          "joint_exact_matches": 6,
+          "joint_exact_match": 0.375,
+          "counts": {
+            "both_correct": 6,
+            "intent_only_correct": 6,
+            "slots_only_correct": 1,
+            "neither_correct": 3
+          }
+        },
+        "email_sendemail": {
+          "n": 63,
+          "joint_exact_matches": 45,
+          "joint_exact_match": 0.7142857142857143,
+          "counts": {
+            "both_correct": 45,
+            "intent_only_correct": 15,
+            "slots_only_correct": 3,
+            "neither_correct": 0
+          }
+        },
+        "general_greet": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "general_joke": {
+          "n": 15,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 6,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "general_quirky": {
+          "n": 105,
+          "joint_exact_matches": 34,
+          "joint_exact_match": 0.3238095238095238,
+          "counts": {
+            "both_correct": 34,
+            "intent_only_correct": 10,
+            "slots_only_correct": 51,
+            "neither_correct": 10
+          }
+        },
+        "iot_cleaning": {
+          "n": 19,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.7368421052631579,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 4,
+            "slots_only_correct": 0,
+            "neither_correct": 1
+          }
+        },
+        "iot_coffee": {
+          "n": 14,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.7857142857142857,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 3,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightchange": {
+          "n": 22,
+          "joint_exact_matches": 15,
+          "joint_exact_match": 0.6818181818181818,
+          "counts": {
+            "both_correct": 15,
+            "intent_only_correct": 6,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightdim": {
+          "n": 17,
+          "joint_exact_matches": 13,
+          "joint_exact_match": 0.7647058823529411,
+          "counts": {
+            "both_correct": 13,
+            "intent_only_correct": 2,
+            "slots_only_correct": 2,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightoff": {
+          "n": 17,
+          "joint_exact_matches": 16,
+          "joint_exact_match": 0.9411764705882353,
+          "counts": {
+            "both_correct": 16,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lighton": {
+          "n": 5,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.8,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_hue_lightup": {
+          "n": 12,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.8333333333333334,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 2,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "iot_wemo_off": {
+          "n": 5,
+          "joint_exact_matches": 3,
+          "joint_exact_match": 0.6,
+          "counts": {
+            "both_correct": 3,
+            "intent_only_correct": 0,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "iot_wemo_on": {
+          "n": 7,
+          "joint_exact_matches": 6,
+          "joint_exact_match": 0.8571428571428571,
+          "counts": {
+            "both_correct": 6,
+            "intent_only_correct": 1,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "lists_createoradd": {
+          "n": 25,
+          "joint_exact_matches": 19,
+          "joint_exact_match": 0.76,
+          "counts": {
+            "both_correct": 19,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 1
+          }
+        },
+        "lists_query": {
+          "n": 50,
+          "joint_exact_matches": 39,
+          "joint_exact_match": 0.78,
+          "counts": {
+            "both_correct": 39,
+            "intent_only_correct": 4,
+            "slots_only_correct": 5,
+            "neither_correct": 2
+          }
+        },
+        "lists_remove": {
+          "n": 37,
+          "joint_exact_matches": 26,
+          "joint_exact_match": 0.7027027027027027,
+          "counts": {
+            "both_correct": 26,
+            "intent_only_correct": 5,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "music_dislikeness": {
+          "n": 2,
+          "joint_exact_matches": 1,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 1,
+            "intent_only_correct": 0,
+            "slots_only_correct": 0,
+            "neither_correct": 1
+          }
+        },
+        "music_likeness": {
+          "n": 16,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.5625,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 1,
+            "slots_only_correct": 3,
+            "neither_correct": 3
+          }
+        },
+        "music_query": {
+          "n": 30,
+          "joint_exact_matches": 20,
+          "joint_exact_match": 0.6666666666666666,
+          "counts": {
+            "both_correct": 20,
+            "intent_only_correct": 1,
+            "slots_only_correct": 6,
+            "neither_correct": 3
+          }
+        },
+        "music_settings": {
+          "n": 8,
+          "joint_exact_matches": 4,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 4,
+            "intent_only_correct": 2,
+            "slots_only_correct": 0,
+            "neither_correct": 2
+          }
+        },
+        "news_query": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 33,
+            "slots_only_correct": 3,
+            "neither_correct": 10
+          }
+        },
+        "play_audiobook": {
+          "n": 35,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.34285714285714286,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 16,
+            "slots_only_correct": 1,
+            "neither_correct": 6
+          }
+        },
+        "play_game": {
+          "n": 22,
+          "joint_exact_matches": 11,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 11,
+            "intent_only_correct": 8,
+            "slots_only_correct": 0,
+            "neither_correct": 3
+          }
+        },
+        "play_music": {
+          "n": 123,
+          "joint_exact_matches": 70,
+          "joint_exact_match": 0.5691056910569106,
+          "counts": {
+            "both_correct": 70,
+            "intent_only_correct": 45,
+            "slots_only_correct": 3,
+            "neither_correct": 5
+          }
+        },
+        "play_podcasts": {
+          "n": 34,
+          "joint_exact_matches": 21,
+          "joint_exact_match": 0.6176470588235294,
+          "counts": {
+            "both_correct": 21,
+            "intent_only_correct": 9,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "play_radio": {
+          "n": 46,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.4782608695652174,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 17,
+            "slots_only_correct": 4,
+            "neither_correct": 3
+          }
+        },
+        "qa_currency": {
+          "n": 32,
+          "joint_exact_matches": 25,
+          "joint_exact_match": 0.78125,
+          "counts": {
+            "both_correct": 25,
+            "intent_only_correct": 7,
+            "slots_only_correct": 0,
+            "neither_correct": 0
+          }
+        },
+        "qa_definition": {
+          "n": 55,
+          "joint_exact_matches": 25,
+          "joint_exact_match": 0.45454545454545453,
+          "counts": {
+            "both_correct": 25,
+            "intent_only_correct": 23,
+            "slots_only_correct": 2,
+            "neither_correct": 5
+          }
+        },
+        "qa_factoid": {
+          "n": 90,
+          "joint_exact_matches": 49,
+          "joint_exact_match": 0.5444444444444444,
+          "counts": {
+            "both_correct": 49,
+            "intent_only_correct": 17,
+            "slots_only_correct": 15,
+            "neither_correct": 9
+          }
+        },
+        "qa_maths": {
+          "n": 13,
+          "joint_exact_matches": 9,
+          "joint_exact_match": 0.6923076923076923,
+          "counts": {
+            "both_correct": 9,
+            "intent_only_correct": 0,
+            "slots_only_correct": 4,
+            "neither_correct": 0
+          }
+        },
+        "qa_stock": {
+          "n": 24,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 9,
+            "slots_only_correct": 2,
+            "neither_correct": 1
+          }
+        },
+        "recommendation_events": {
+          "n": 26,
+          "joint_exact_matches": 12,
+          "joint_exact_match": 0.46153846153846156,
+          "counts": {
+            "both_correct": 12,
+            "intent_only_correct": 4,
+            "slots_only_correct": 3,
+            "neither_correct": 7
+          }
+        },
+        "recommendation_locations": {
+          "n": 31,
+          "joint_exact_matches": 14,
+          "joint_exact_match": 0.45161290322580644,
+          "counts": {
+            "both_correct": 14,
+            "intent_only_correct": 13,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "recommendation_movies": {
+          "n": 12,
+          "joint_exact_matches": 5,
+          "joint_exact_match": 0.4166666666666667,
+          "counts": {
+            "both_correct": 5,
+            "intent_only_correct": 5,
+            "slots_only_correct": 0,
+            "neither_correct": 2
+          }
+        },
+        "social_post": {
+          "n": 50,
+          "joint_exact_matches": 29,
+          "joint_exact_match": 0.58,
+          "counts": {
+            "both_correct": 29,
+            "intent_only_correct": 16,
+            "slots_only_correct": 2,
+            "neither_correct": 3
+          }
+        },
+        "social_query": {
+          "n": 18,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.5555555555555556,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 4,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "takeaway_order": {
+          "n": 20,
+          "joint_exact_matches": 10,
+          "joint_exact_match": 0.5,
+          "counts": {
+            "both_correct": 10,
+            "intent_only_correct": 6,
+            "slots_only_correct": 2,
+            "neither_correct": 2
+          }
+        },
+        "takeaway_query": {
+          "n": 24,
+          "joint_exact_matches": 18,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 18,
+            "intent_only_correct": 5,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "transport_query": {
+          "n": 36,
+          "joint_exact_matches": 22,
+          "joint_exact_match": 0.6111111111111112,
+          "counts": {
+            "both_correct": 22,
+            "intent_only_correct": 10,
+            "slots_only_correct": 3,
+            "neither_correct": 1
+          }
+        },
+        "transport_taxi": {
+          "n": 27,
+          "joint_exact_matches": 15,
+          "joint_exact_match": 0.5555555555555556,
+          "counts": {
+            "both_correct": 15,
+            "intent_only_correct": 10,
+            "slots_only_correct": 2,
+            "neither_correct": 0
+          }
+        },
+        "transport_ticket": {
+          "n": 25,
+          "joint_exact_matches": 16,
+          "joint_exact_match": 0.64,
+          "counts": {
+            "both_correct": 16,
+            "intent_only_correct": 6,
+            "slots_only_correct": 1,
+            "neither_correct": 2
+          }
+        },
+        "transport_traffic": {
+          "n": 22,
+          "joint_exact_matches": 17,
+          "joint_exact_match": 0.7727272727272727,
+          "counts": {
+            "both_correct": 17,
+            "intent_only_correct": 4,
+            "slots_only_correct": 1,
+            "neither_correct": 0
+          }
+        },
+        "weather_query": {
+          "n": 126,
+          "joint_exact_matches": 86,
+          "joint_exact_match": 0.6825396825396826,
+          "counts": {
+            "both_correct": 86,
+            "intent_only_correct": 37,
+            "slots_only_correct": 2,
+            "neither_correct": 1
+          }
+        }
+      },
+      "by_scenario": {
+        "alarm": {
+          "n": 64,
+          "joint_exact_matches": 43,
+          "joint_exact_match": 0.671875,
+          "counts": {
+            "both_correct": 43,
+            "intent_only_correct": 9,
+            "slots_only_correct": 7,
+            "neither_correct": 5
+          }
+        },
+        "audio": {
+          "n": 35,
+          "joint_exact_matches": 26,
+          "joint_exact_match": 0.7428571428571429,
+          "counts": {
+            "both_correct": 26,
+            "intent_only_correct": 3,
+            "slots_only_correct": 6,
+            "neither_correct": 0
+          }
+        },
+        "calendar": {
+          "n": 280,
+          "joint_exact_matches": 151,
+          "joint_exact_match": 0.5392857142857143,
+          "counts": {
+            "both_correct": 151,
+            "intent_only_correct": 89,
+            "slots_only_correct": 25,
+            "neither_correct": 15
+          }
+        },
+        "cooking": {
+          "n": 43,
+          "joint_exact_matches": 23,
+          "joint_exact_match": 0.5348837209302325,
+          "counts": {
+            "both_correct": 23,
+            "intent_only_correct": 14,
+            "slots_only_correct": 2,
+            "neither_correct": 4
+          }
+        },
+        "datetime": {
+          "n": 73,
+          "joint_exact_matches": 55,
+          "joint_exact_match": 0.7534246575342466,
+          "counts": {
+            "both_correct": 55,
+            "intent_only_correct": 8,
+            "slots_only_correct": 4,
+            "neither_correct": 6
+          }
+        },
+        "email": {
+          "n": 157,
+          "joint_exact_matches": 113,
+          "joint_exact_match": 0.7197452229299363,
+          "counts": {
+            "both_correct": 113,
+            "intent_only_correct": 29,
+            "slots_only_correct": 10,
+            "neither_correct": 5
+          }
+        },
+        "general": {
+          "n": 122,
+          "joint_exact_matches": 44,
+          "joint_exact_match": 0.36065573770491804,
+          "counts": {
+            "both_correct": 44,
+            "intent_only_correct": 16,
+            "slots_only_correct": 52,
+            "neither_correct": 10
+          }
+        },
+        "iot": {
+          "n": 118,
+          "joint_exact_matches": 92,
+          "joint_exact_match": 0.7796610169491526,
+          "counts": {
+            "both_correct": 92,
+            "intent_only_correct": 20,
+            "slots_only_correct": 4,
+            "neither_correct": 2
+          }
+        },
+        "lists": {
+          "n": 112,
+          "joint_exact_matches": 84,
+          "joint_exact_match": 0.75,
+          "counts": {
+            "both_correct": 84,
+            "intent_only_correct": 13,
+            "slots_only_correct": 10,
+            "neither_correct": 5
+          }
+        },
+        "music": {
+          "n": 56,
+          "joint_exact_matches": 34,
+          "joint_exact_match": 0.6071428571428571,
+          "counts": {
+            "both_correct": 34,
+            "intent_only_correct": 4,
+            "slots_only_correct": 9,
+            "neither_correct": 9
+          }
+        },
+        "news": {
+          "n": 82,
+          "joint_exact_matches": 36,
+          "joint_exact_match": 0.43902439024390244,
+          "counts": {
+            "both_correct": 36,
+            "intent_only_correct": 33,
+            "slots_only_correct": 3,
+            "neither_correct": 10
+          }
+        },
+        "play": {
+          "n": 260,
+          "joint_exact_matches": 136,
+          "joint_exact_match": 0.5230769230769231,
+          "counts": {
+            "both_correct": 136,
+            "intent_only_correct": 95,
+            "slots_only_correct": 10,
+            "neither_correct": 19
+          }
+        },
+        "qa": {
+          "n": 214,
+          "joint_exact_matches": 120,
+          "joint_exact_match": 0.5607476635514018,
+          "counts": {
+            "both_correct": 120,
+            "intent_only_correct": 56,
+            "slots_only_correct": 23,
+            "neither_correct": 15
+          }
+        },
+        "recommendation": {
+          "n": 69,
+          "joint_exact_matches": 31,
+          "joint_exact_match": 0.4492753623188406,
+          "counts": {
+            "both_correct": 31,
+            "intent_only_correct": 22,
+            "slots_only_correct": 6,
+            "neither_correct": 10
+          }
+        },
+        "social": {
+          "n": 68,
+          "joint_exact_matches": 39,
+          "joint_exact_match": 0.5735294117647058,
+          "counts": {
+            "both_correct": 39,
+            "intent_only_correct": 20,
+            "slots_only_correct": 5,
+            "neither_correct": 4
+          }
+        },
+        "takeaway": {
+          "n": 44,
+          "joint_exact_matches": 28,
+          "joint_exact_match": 0.6363636363636364,
+          "counts": {
+            "both_correct": 28,
+            "intent_only_correct": 11,
+            "slots_only_correct": 3,
+            "neither_correct": 2
+          }
+        },
+        "transport": {
+          "n": 110,
+          "joint_exact_matches": 70,
+          "joint_exact_match": 0.6363636363636364,
+          "counts": {
+            "both_correct": 70,
+            "intent_only_correct": 30,
+            "slots_only_correct": 7,
+            "neither_correct": 3
+          }
+        },
+        "weather": {
+          "n": 126,
+          "joint_exact_matches": 86,
+          "joint_exact_match": 0.6825396825396826,
+          "counts": {
+            "both_correct": 86,
+            "intent_only_correct": 37,
+            "slots_only_correct": 2,
+            "neither_correct": 1
+          }
+        }
+      }
+    }
+  },
+  "paired_comparison": {
+    "primary": "INT-SVC-001+SLOT-CRF-002",
+    "comparison": "INT-HYBRID-001+SLOT-CRF-002",
+    "counts": {
+      "both_joint_correct": 1188,
+      "primary_only_joint_correct": 18,
+      "comparison_only_joint_correct": 23,
+      "neither_joint_correct": 804
+    },
+    "by_exact_text_overlap": {
+      "seen": {
+        "both_joint_correct": 143,
+        "primary_only_joint_correct": 1,
+        "comparison_only_joint_correct": 0,
+        "neither_joint_correct": 18
+      },
+      "unseen": {
+        "both_joint_correct": 1045,
+        "primary_only_joint_correct": 17,
+        "comparison_only_joint_correct": 23,
+        "neither_joint_correct": 786
+      }
+    },
+    "joint_status_changes": [
+      {
+        "id": "147",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "806",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "1333",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "1877",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "3701",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "3940",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "4003",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "4191",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "4582",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "5100",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "6236",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "6422",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "7201",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "8418",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "seen"
+      },
+      {
+        "id": "10303",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "10532",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "10817",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "10883",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "11477",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "12711",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "12741",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "13185",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "13227",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "13349",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "13462",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "13519",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "13544",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "13645",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "13704",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "14156",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "14195",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "14212",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "14897",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "15258",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "15596",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "15993",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "16007",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "16066",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "16445",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "16574",
+        "direction": "comparison_only_joint_correct",
+        "text_overlap": "unseen"
+      },
+      {
+        "id": "16850",
+        "direction": "primary_only_joint_correct",
+        "text_overlap": "unseen"
+      }
+    ],
+    "net_additional_joint_matches": 5
+  },
+  "independent_correct_id_intersection": {
+    "PR5-INT-001+SLOT-CRF-001": 1129,
+    "PR5-INT-001+SLOT-CRF-002": 1166,
+    "INT-SVC-001+SLOT-CRF-001": 1171,
+    "INT-SVC-001+SLOT-CRF-002": 1206,
+    "INT-HYBRID-001+SLOT-CRF-001": 1176,
+    "INT-HYBRID-001+SLOT-CRF-002": 1211
+  },
+  "bio_repairs_by_model": {
+    "SLOT-CRF-001": [],
+    "SLOT-CRF-002": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "experiment_id": "JOINT-EVAL-001",
+  "evaluation_partition": "dev",
+  "intent_models": {
+    "PR5-INT-001": {
+      "config": "configs/PR5-INT-001.json",
+      "prediction_key": "logistic_regression"
+    },
+    "INT-SVC-001": {
+      "config": "configs/INT-SVC-001.json",
+      "prediction_key": "linear_svc"
+    },
+    "INT-HYBRID-001": {
+      "config": "configs/INT-HYBRID-001.json",
+      "prediction_key": "hybrid_svc"
+    }
+  },
+  "slot_models": {
+    "SLOT-CRF-001": "configs/SLOT-CRF-001.json",
+    "SLOT-CRF-002": "configs/SLOT-CRF-002.json"
+  },
+  "primary": {
+    "intent": "INT-SVC-001",
+    "slot": "SLOT-CRF-002"
+  },
+  "comparison": {
+    "intent": "INT-HYBRID-001",
+    "slot": "SLOT-CRF-002"
+  },
+  "output_dir": "results/JOINT-EVAL-001"
+}
