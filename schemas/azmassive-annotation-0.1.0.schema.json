@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AzMASSIVE 0.1.0 source annotation record",
+  "$ref": "#/$defs/sourceRecord",
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[0-9]+$"},
+    "label": {"type": "string", "pattern": "^[a-z][a-z_]*$"},
+    "partition": {"enum": ["train", "dev"]},
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end", "label"],
+      "properties": {
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1},
+        "label": {"$ref": "#/$defs/label"}
+      },
+      "description": "Zero-based half-open Unicode code point interval in utt."
+    },
+    "spans": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/span"}
+    },
+    "sourceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "id", "partition", "locale", "scenario", "utt", "source_annotation"],
+      "properties": {
+        "schema_version": {"const": "0.1.0"},
+        "id": {"$ref": "#/$defs/id"},
+        "partition": {"$ref": "#/$defs/partition"},
+        "locale": {"const": "az-AZ"},
+        "scenario": {"$ref": "#/$defs/label"},
+        "utt": {"type": "string", "minLength": 1},
+        "source_annotation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["intent", "annot_utt", "spans"],
+          "properties": {
+            "intent": {"$ref": "#/$defs/label"},
+            "annot_utt": {"type": "string", "minLength": 1},
+            "spans": {"$ref": "#/$defs/spans"}
+          }
+        }
+      }
+    },
+    "reviewProposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "source_sha256", "id", "partition", "reviewer", "review_date", "reason", "proposed_intent", "proposed_spans"],
+      "properties": {
+        "schema_version": {"const": "0.1.0"},
+        "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "SHA-256 of source.jsonl in the base export."},
+        "id": {"$ref": "#/$defs/id"},
+        "partition": {"$ref": "#/$defs/partition"},
+        "reviewer": {"type": "string", "minLength": 1},
+        "review_date": {"type": "string", "format": "date"},
+        "reason": {"type": "string", "minLength": 1},
+        "proposed_intent": {"anyOf": [{"$ref": "#/$defs/label"}, {"type": "null"}]},
+        "proposed_spans": {"anyOf": [{"$ref": "#/$defs/spans"}, {"type": "null"}]}
+      },
+      "description": "Optional human proposal against an immutable source record. Null leaves a field unchanged."
+    }
+  }
+}

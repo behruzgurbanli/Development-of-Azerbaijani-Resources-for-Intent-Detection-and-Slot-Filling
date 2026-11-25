@@ -1,0 +1,13 @@
+{
+  "experiment_id": "RESOURCE-EXPORT-001",
+  "schema_version": "0.1.0",
+  "schema": "schemas/azmassive-annotation-0.1.0.schema.json",
+  "audit": "data/metadata/AUD-001.json",
+  "audit_sha256": "6c87b2b77d859f087341e72c728a26dca2c9efc505b899741caef813c8bbdcb8",
+  "source": "data/raw/massive-1.0/az-AZ.jsonl",
+  "license": "data/raw/massive-1.0/LICENSE",
+  "slot_audit": "results/SLOT-PREP-001/audit.json",
+  "slot_audit_sha256": "965bbaf37eb4688e22a67d4abda502f5e74da9a4dd04f8f09eb85f43362d2367",
+  "partitions": ["train", "dev"],
+  "output_root": "artifacts/RESOURCE-EXPORT-001"
+}
